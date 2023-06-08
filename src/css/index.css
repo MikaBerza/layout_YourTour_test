@@ -1,0 +1,18 @@
+body {
+  background-image: url('../assets/images/header-img.png');
+}
+
+.www {
+  font-family: 'Roboto', cursive;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 96px;
+  line-height: 109%;
+  /* or 105px */
+
+  text-align: center;
+  letter-spacing: 0.02em;
+
+  /* White */
+  color: #FFFFFF;
+}
