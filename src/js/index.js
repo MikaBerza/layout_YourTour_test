@@ -1,4 +1,7 @@
-import '../css/fonts.css'
+import '../css/fonts.css';
 import '../css/index.css';
 import '../css/normalizeStyle.css';
-import '../assets/images/header-img.png';
+
+import '../assets/images/headerBackgroundImg.png';
+import '../assets/images/logoYourTour.png';
+import '../assets/images/telephoneNumberIcon.png'
