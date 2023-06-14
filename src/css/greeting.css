@@ -11,8 +11,7 @@
 
 .greeting__title {
   margin: auto;
-  padding-top: 207.9px;
-  padding-bottom: 50px;
+  padding: 207.9px 30px 0 30px;
   text-align: center;
 
   font-family: 'Roboto';
@@ -28,7 +27,7 @@
 .greeting__slogan {
   width: 562px;
   margin: auto;
-  padding-bottom: 50px;
+  padding-top: 50px;
 
   font-family: 'Roboto';
   font-style: normal;
@@ -42,6 +41,7 @@
 .greeting__btn {
   padding-bottom: 119px;
   margin: auto;
+  padding-top: 50px;
   text-align: center;
 }
 

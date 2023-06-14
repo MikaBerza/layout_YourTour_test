@@ -2,6 +2,11 @@
 /*1024px___________________________________________________*/
 @media (max-width: 1024px) {
 
+  .navbar {
+    padding-left: 57px;
+    padding-right: 57px;
+  }
+
   /* Выберем все пункты списка, кроме последнего */
   .navbar__menu-item:not(:last-child) {
     margin-right: 2.9vw;
@@ -14,7 +19,7 @@
 
 /*870px___________________________________________________*/
 @media (max-width: 870px) {
-  .navbar__logo_YourTour {
+  .navbar__logo-YourTour {
     width: 163.656px;
     height: 27.216px;
   }
@@ -37,7 +42,7 @@
 
 /*770px___________________________________________________*/
 @media (max-width: 770px) {
-  .navbar__logo_YourTour {
+  .navbar__logo-YourTour {
     width: 147.29px;
     height: 24.16px;
   }
@@ -89,7 +94,7 @@
 /*360px___________________________________________________*/
 @media (max-width: 360px) {
 
-  .navbar__logo_YourTour {
+  .navbar__logo-YourTour {
     width: 134px;
     height: 23px;
   }
@@ -97,14 +102,14 @@
   .greeting__title {
     font-size: 34px;
     line-height: 112%;
-    padding-bottom: 40px;
   }
 
   .greeting__slogan {
-    padding-bottom: 40px;
+    padding-top: 40px;
   }
 
   .greeting__btn {
+    padding-top: 40px;
     padding-bottom: 52px;
   }
 

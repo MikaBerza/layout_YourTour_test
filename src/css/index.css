@@ -52,10 +52,11 @@ body {
 
 /* внутренняя обертка */
 .wrapper-inner {
-  max-width: 1168px;
+  max-width: 1230px;
   margin: auto;
 }
 
 @import url('./heading.css');
 @import url('./greeting.css');
 @import url('./media.css');
+@import url('./chooseTour.css');

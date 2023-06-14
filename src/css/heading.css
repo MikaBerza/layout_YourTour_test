@@ -10,10 +10,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 29px 57px 0px 57px;
+  box-sizing: border-box;
+  padding: 29px 30px 0px 30px;
 }
 
-.navbar__logo_YourTour {
+.navbar__logo-YourTour {
   fill: var(--white-color);
 }
 

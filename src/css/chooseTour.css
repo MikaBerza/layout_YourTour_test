@@ -1,0 +1,67 @@
+.chooseTour {
+  background-size: 100% 100%;
+  max-width: 100vw;
+}
+
+.chooseTour__title {
+  margin: auto;
+  padding-top: 135px;
+
+  text-align: center;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 59px;
+  line-height: 124%;
+
+  color: var(--black-color);
+}
+
+.chooseTour__navbar {
+  margin: auto;
+
+  text-align: center;
+  padding-top: 35px;
+}
+
+.chooseTour__navbar-link {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 23px;
+  line-height: 122%;
+
+  color: var(--black-color);
+  padding-bottom: 4px;
+}
+
+/* Выберем все пункты списка, кроме последнего */
+.chooseTour__navbar-link:not(:last-child) {
+  margin-right: 1.37vw;
+}
+
+.chooseTour__navbar-link:hover {
+  text-decoration: none;
+  border-bottom: 2px solid var(--black-color)
+}
+
+.chooseTour__navbar-link:active {
+  color: var(--orange200-color);
+  text-decoration: none;
+  border-bottom: 2px solid var(--orange200-color);
+}
+
+.chooseTour__card {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-top: 106px;
+}
+
+.chooseTour__card-tur {
+  width: 370px;
+  height: 531px;
+  border-radius: 50px;
+  margin: 15px;
+}
