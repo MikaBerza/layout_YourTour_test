@@ -1,0 +1,116 @@
+/* ___________@media-директива_____________________________________ */
+/*1024px___________________________________________________*/
+@media (max-width: 1024px) {
+
+  /* Выберем все пункты списка, кроме последнего */
+  .navbar__menu-item:not(:last-child) {
+    margin-right: 2.9vw;
+  }
+
+  .greeting__slogan {
+    width: 442px;
+  }
+}
+
+/*870px___________________________________________________*/
+@media (max-width: 870px) {
+  .navbar__logo_YourTour {
+    width: 163.656px;
+    height: 27.216px;
+  }
+
+  /* Выберем все пункты списка, кроме последнего */
+  .navbar__menu-item:not(:last-child) {
+    margin-right: 1.4vw;
+  }
+
+  .navbar__menu-link,
+  .navbar__telephoneNumber,
+  .greeting__slogan {
+    font-size: 18px;
+  }
+
+  .greeting__title {
+    font-size: 86.4px;
+  }
+}
+
+/*770px___________________________________________________*/
+@media (max-width: 770px) {
+  .navbar__logo_YourTour {
+    width: 147.29px;
+    height: 24.16px;
+  }
+
+  /* Выберем все пункты списка, кроме последнего */
+  .navbar__menu-item:not(:last-child) {
+    margin-right: 1vw;
+  }
+
+  .navbar__menu-link,
+  .navbar__telephoneNumber,
+  .greeting__slogan {
+    font-size: 16px;
+  }
+
+  .greeting__title {
+    font-size: 76.4px;
+  }
+}
+
+/*670px___________________________________________________*/
+@media (max-width: 670px) {
+  .navbar__menu {
+    display: none;
+  }
+
+  .greeting__title {
+    font-size: 66.4px;
+    padding-top: 141px;
+  }
+
+  .greeting__slogan {
+    max-width: 80%;
+    word-wrap: break-word;
+  }
+}
+
+/*450px___________________________________________________*/
+@media (max-width: 450px) {
+  .navbar {
+    padding: 33px 20px 0px 20px;
+  }
+
+  .greeting__title {
+    font-size: 52px;
+  }
+}
+
+/*360px___________________________________________________*/
+@media (max-width: 360px) {
+
+  .navbar__logo_YourTour {
+    width: 134px;
+    height: 23px;
+  }
+
+  .greeting__title {
+    font-size: 34px;
+    line-height: 112%;
+    padding-bottom: 40px;
+  }
+
+  .greeting__slogan {
+    padding-bottom: 40px;
+  }
+
+  .greeting__btn {
+    padding-bottom: 52px;
+  }
+
+  .greeting__btn-small {
+    width: 114px;
+    height: 33px;
+    font-size: 16px;
+  }
+}

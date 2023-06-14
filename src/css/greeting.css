@@ -1,0 +1,77 @@
+/* ___________Main_________________________________________________ */
+/* __section__greeting(приветствие)__*/
+/* Есть вопрос!!!
+Есть ли картинки для  размера экрана 1024px и 360px*/
+.greeting {
+  background-image: url('../assets/images/headerBackgroundImg1920.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  max-width: 100vw;
+}
+
+.greeting__title {
+  margin: auto;
+  padding-top: 207.9px;
+  padding-bottom: 50px;
+  text-align: center;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 96px;
+  line-height: 109%;
+
+  letter-spacing: 0.02em;
+  color: var(--white-color);
+}
+
+.greeting__slogan {
+  width: 562px;
+  margin: auto;
+  padding-bottom: 50px;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 142%;
+  text-align: center;
+  color: var(--white-color);
+}
+
+.greeting__btn {
+  padding-bottom: 119px;
+  margin: auto;
+  text-align: center;
+}
+
+.greeting__btn-small {
+  width: 118px;
+  height: 34px;
+
+  background: var(--white-color);
+  border: none;
+  border-radius: 10px;
+
+  cursor: pointer;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 142%;
+  letter-spacing: -0.01em;
+  color: var(--black-color);
+}
+
+.greeting__btn-small:hover {
+  background: var(--orange200-color);
+  color: var(--white-color);
+  cursor: pointer;
+}
+
+.greeting__btn-small:active {
+  background: var(--orange100-color);
+  color: var(--black-color);
+  cursor: pointer;
+}

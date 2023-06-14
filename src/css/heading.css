@@ -1,0 +1,64 @@
+/* ___________Header_____________________________________________________ */
+.heading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 29px 57px 0px 57px;
+}
+
+.navbar__logo_YourTour {
+  fill: var(--white-color);
+}
+
+.navbar__menu {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 4px;
+}
+
+/* Выберем все пункты списка, кроме последнего */
+.navbar__menu-item:not(:last-child) {
+  margin-right: 2.6vw;
+}
+
+.navbar__menu-link {
+  font-family: 'Roboto';
+  font-size: 20px;
+  color: var(--white-color);
+}
+
+.navbar__menu-link:hover {
+  text-decoration: none;
+  border-bottom: 1px solid var(--white-color)
+}
+
+.navbar__telephoneNumber {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 142%;
+  color: var(--white-color);
+  padding-bottom: 4px;
+}
+
+.scrolled-bgn {
+  background-color: rgba(243, 239, 232, 0.6);
+  backdrop-filter: blur(27px);
+}
+
+.scrolled-color {
+  color: var(--black-color);
+  fill: var(--black-color);
+}
+
+.scrolled-hover:hover {
+  border-bottom: 1px solid var(--black-color)
+}

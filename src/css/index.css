@@ -1,9 +1,12 @@
+@import url('./fonts.css');
+@import url('./normalizeStyle.css');
+
+
 ul {
   /* Убираем маркеры */
   list-style-type: none;
   margin: 0;
   padding: 0;
-
 }
 
 a {
@@ -21,9 +24,9 @@ a {
 Использование свойства `overflow-x: hidden;` также защищает страницу от 
 нежелательной горизонтальной прокрутки, которая может быть вызвана 
 например содержимым внутри элементов, которые выходят за его границы. */
-/* body {
+body {
   overflow-x: hidden;
-} */
+}
 
 :root {
   --black-color: #1B1F2B;
@@ -44,19 +47,7 @@ a {
 
 /* внешняя обертка */
 .wrapper {
-  max-width: 1920px;
-  /* max-width: 100%;
-  margin: 0 auto; */
-}
-
-/* Есть вопрос!!!
-Есть ли картинки для  размера экрана 1024px и 360px*/
-/* ___________Header_____________________________________________________ */
-.heading {
-  background-image: url('../assets/images/headerBackgroundImg1920.png');
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  width: 100vw;
+  width: 1920px;
 }
 
 /* внутренняя обертка */
@@ -65,244 +56,6 @@ a {
   margin: auto;
 }
 
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 29px 57px 142.9px 57px;
-
-  position: sticky;
-  top: 0;
-  z-index: -1;
-}
-
-.navbar__logo_YourTour {
-  fill: var(--white-color);
-}
-
-.navbar__menu {
-  display: flex;
-  justify-content: space-between;
-  padding-bottom: 4px;
-}
-
-/* Выберем все пункты списка, кроме последнего */
-.navbar__menu-item:not(:last-child) {
-  margin-right: 2.6vw;
-}
-
-.navbar__menu-link {
-  font-family: 'Roboto';
-  font-size: 20px;
-  color: var(--white-color);
-}
-
-.navbar__menu-link:hover {
-  text-decoration: none;
-  border-bottom: 1px solid var(--white-color)
-}
-
-/* _________________________________________________________________________________________________ */
-.navbar__telephoneNumber {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 142%;
-  color: var(--white-color);
-  padding-bottom: 4px;
-}
-
-.content__title {
-  margin: auto;
-  padding-bottom: 50px;
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 96px;
-  line-height: 109%;
-
-  text-align: center;
-  letter-spacing: 0.02em;
-  color: var(--white-color);
-}
-
-.content__slogan {
-  width: 562px;
-  margin: auto;
-  padding-bottom: 50px;
-
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 142%;
-  text-align: center;
-  color: var(--white-color);
-}
-
-.content__btn {
-  padding-bottom: 119px;
-  margin: auto;
-  text-align: center;
-
-}
-
-.content__btn-small {
-  width: 118px;
-  height: 34px;
-
-  background: var(--white-color);
-  border: none;
-  border-radius: 10px;
-
-  cursor: pointer;
-
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 17px;
-  line-height: 142%;
-  letter-spacing: -0.01em;
-  color: var(--black-color);
-}
-
-.content__btn-small:hover {
-  background: var(--orange200-color);
-  color: var(--white-color);
-  cursor: pointer;
-}
-
-.content__btn-small:active {
-  background: var(--orange100-color);
-  color: var(--black-color);
-  cursor: pointer;
-}
-
-.scrolled-background {
-  background-color: rgba(243, 239, 232, 0.6);
-  backdrop-filter: blur(27px);
-  /* задержку в 3 секунды для перехода в другое состояние */
-  transition: background-color 3s;
-}
-
-.scrolled-color {
-  color: var(--black-color);
-  fill: var(--black-color);
-}
-
-/*1024px___________________________________________________*/
-@media (max-width: 1024px) {
-
-  /* Выберем все пункты списка, кроме последнего */
-  .navbar__menu-item:not(:last-child) {
-    margin-right: 2.9vw;
-  }
-
-  .content__slogan {
-    width: 442px;
-  }
-}
-
-/*870px___________________________________________________*/
-@media (max-width: 870px) {
-  .navbar__logo_YourTour {
-    width: 163.656px;
-    height: 27.216px;
-  }
-
-  /* Выберем все пункты списка, кроме последнего */
-  .navbar__menu-item:not(:last-child) {
-    margin-right: 1.4vw;
-  }
-
-  .navbar__menu-link,
-  .navbar__telephoneNumber,
-  .content__slogan {
-    font-size: 18px;
-  }
-
-  .content__title {
-    font-size: 86.4px;
-  }
-}
-
-
-/*770px___________________________________________________*/
-@media (max-width: 770px) {
-  .navbar__logo_YourTour {
-    width: 147.29px;
-    height: 24.16px;
-  }
-
-  /* Выберем все пункты списка, кроме последнего */
-  .navbar__menu-item:not(:last-child) {
-    margin-right: 1vw;
-  }
-
-  .navbar__menu-link,
-  .navbar__telephoneNumber,
-  .content__slogan {
-    font-size: 16px;
-  }
-
-  .content__title {
-    font-size: 76.4px;
-  }
-}
-
-/*670px___________________________________________________*/
-@media (max-width: 670px) {
-  .navbar__menu {
-    display: none;
-  }
-
-  .content__title {
-    font-size: 66.4px;
-  }
-
-  .content__slogan {
-    max-width: 80%;
-    word-wrap: break-word;
-  }
-}
-
-/*450px___________________________________________________*/
-@media (max-width: 450px) {
-  .navbar {
-    padding: 33px 20px 80.5px 20px;
-  }
-
-  .content__title {
-    font-size: 52px;
-  }
-}
-
-/*360px___________________________________________________*/
-@media (max-width: 360px) {
-
-  .navbar__logo_YourTour {
-    width: 134px;
-    height: 23px;
-  }
-
-  .content__title {
-    font-size: 34px;
-    line-height: 112%;
-    padding-bottom: 40px;
-  }
-
-  .content__slogan {
-    padding-bottom: 40px;
-  }
-
-  .content__btn {
-    padding-bottom: 52px;
-  }
-
-  .content__btn-small {
-    width: 114px;
-    height: 33px;
-    font-size: 16px;
-  }
-}
+@import url('./heading.css');
+@import url('./greeting.css');
+@import url('./media.css');
