@@ -11,6 +11,20 @@ a {
   text-decoration: none;
 }
 
+/* overflow-x: hidden; применяется к элементу и указывает, 
+что содержимое, которое выходит за пределы элемента по горизонтали, 
+должно быть скрыто. То есть, содержимое не будет видно и не добавит 
+горизонтальный скролл на страницу в случае, если элементу установлено 
+определенное значение ширины и внутреннее содержимое этого элемента 
+выходит за пределы этой ширины в следствие чего скролл появляется. 
+
+Использование свойства `overflow-x: hidden;` также защищает страницу от 
+нежелательной горизонтальной прокрутки, которая может быть вызвана 
+например содержимым внутри элементов, которые выходят за его границы. */
+/* body {
+  overflow-x: hidden;
+} */
+
 :root {
   --black-color: #1B1F2B;
   --orange200-color: #EFA501;
@@ -30,10 +44,10 @@ a {
 
 /* внешняя обертка */
 .wrapper {
-  /* max-width: 1920px;
-  margin: auto; */
+  max-width: 1920px;
+  /* max-width: 100%;
+  margin: 0 auto; */
 }
-/* navbar__logoYourTour */
 
 /* Есть вопрос!!!
 Есть ли картинки для  размера экрана 1024px и 360px*/
@@ -42,7 +56,7 @@ a {
   background-image: url('../assets/images/headerBackgroundImg1920.png');
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  max-width: 100vw;
+  width: 100vw;
 }
 
 /* внутренняя обертка */
@@ -55,7 +69,15 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 29px 57px 143px 57px;
+  padding: 29px 57px 142.9px 57px;
+
+  position: sticky;
+  top: 0;
+  z-index: -1;
+}
+
+.navbar__logo_YourTour {
+  fill: var(--white-color);
 }
 
 .navbar__menu {
@@ -75,15 +97,12 @@ a {
   color: var(--white-color);
 }
 
-/* Есть вопрос!!! 
-Применять к последнему элементу списка или ко всем не понятно из задания???
-Сейчас применяю ко всем элементам */
 .navbar__menu-link:hover {
   text-decoration: none;
   border-bottom: 1px solid var(--white-color)
 }
 
-
+/* _________________________________________________________________________________________________ */
 .navbar__telephoneNumber {
   font-family: 'Roboto';
   font-style: normal;
@@ -95,10 +114,8 @@ a {
 }
 
 .content__title {
-  /* width: 768px; */
   margin: auto;
   padding-bottom: 50px;
-
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 700;
@@ -115,7 +132,6 @@ a {
   margin: auto;
   padding-bottom: 50px;
 
-
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
@@ -126,10 +142,10 @@ a {
 }
 
 .content__btn {
-
   padding-bottom: 119px;
   margin: auto;
   text-align: center;
+
 }
 
 .content__btn-small {
@@ -163,6 +179,18 @@ a {
   cursor: pointer;
 }
 
+.scrolled-background {
+  background-color: rgba(243, 239, 232, 0.6);
+  backdrop-filter: blur(27px);
+  /* задержку в 3 секунды для перехода в другое состояние */
+  transition: background-color 3s;
+}
+
+.scrolled-color {
+  color: var(--black-color);
+  fill: var(--black-color);
+}
+
 /*1024px___________________________________________________*/
 @media (max-width: 1024px) {
 
@@ -178,7 +206,7 @@ a {
 
 /*870px___________________________________________________*/
 @media (max-width: 870px) {
-  .navbar__logoYourTour {
+  .navbar__logo_YourTour {
     width: 163.656px;
     height: 27.216px;
   }
@@ -194,17 +222,15 @@ a {
     font-size: 18px;
   }
 
-
   .content__title {
     font-size: 86.4px;
   }
-
 }
 
 
 /*770px___________________________________________________*/
 @media (max-width: 770px) {
-  .navbar__logoYourTour {
+  .navbar__logo_YourTour {
     width: 147.29px;
     height: 24.16px;
   }
@@ -233,33 +259,19 @@ a {
 
   .content__title {
     font-size: 66.4px;
-    /* padding-left: 10px;
-    padding-right: 10px; */
   }
 
   .content__slogan {
     max-width: 80%;
     word-wrap: break-word;
-    /* padding-left: 10px;
-    padding-right: 10px; */
   }
 }
 
 /*450px___________________________________________________*/
 @media (max-width: 450px) {
   .navbar {
-    padding: 33px 20px 83px 20px;
-    /* background: rgba(243, 239, 232, 0.6); */
-    /* position: fixed; */
-    /* padding-right: 20px;
-    padding-left: 20px;
-    background-color: rgba(0, 0, 0, 0.5); */
-    /* прозрачный белый цвет */
+    padding: 33px 20px 80.5px 20px;
   }
-
-  /* .navbar__telephoneNumber {
-    color: var(--black-color);
-  } */
 
   .content__title {
     font-size: 52px;
@@ -269,9 +281,9 @@ a {
 /*360px___________________________________________________*/
 @media (max-width: 360px) {
 
-  .navbar__logoYourTour {
-    width: 133px;
-    height: 22px;
+  .navbar__logo_YourTour {
+    width: 134px;
+    height: 23px;
   }
 
   .content__title {
@@ -281,7 +293,7 @@ a {
   }
 
   .content__slogan {
-    padding-bottom: 39px;
+    padding-bottom: 40px;
   }
 
   .content__btn {
