@@ -8,6 +8,9 @@ module.exports = {
   mode: 'development',
   entry: {
     index: './src/js/index.js',
+    images: './src/js/images.js',
+    heading: './src/js/heading.js',
+    chooseTour: './src/js/chooseTour.js',
   },
   output: {
     filename: '[name].js',
@@ -23,7 +26,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       filename: 'index.html',
       template: './src/pages/index.html',
-      chunks: ['index'],
+      chunks: ['index', 'images', 'heading', 'chooseTour'],
     }),
     new MiniCssExtractPlugin({
       filename: '[name].css',

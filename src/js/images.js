@@ -8,7 +8,7 @@ import photo_4 from '../assets/images/card_tour_photo_4.png';
 import photo_5 from '../assets/images/card_tour_photo_5.png';
 import photo_6 from '../assets/images/card_tour_photo_6.png';
 // массив с ссылками на изображения из (section class="chooseTour")
-export const arrChooseTourPhoto = [
+export const arrayLinksToImages = [
   photo_1,
   photo_2,
   photo_3,

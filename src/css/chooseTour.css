@@ -18,14 +18,14 @@
   color: var(--black-color);
 }
 
-.chooseTour__navbar {
+.chooseTour__tabs {
   margin: auto;
 
   text-align: center;
   padding-top: 35px;
 }
 
-.chooseTour__navbar-link {
+.chooseTour__tabs-link {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 700;
@@ -37,31 +37,193 @@
 }
 
 /* Выберем все пункты списка, кроме последнего */
-.chooseTour__navbar-link:not(:last-child) {
+.chooseTour__tabs-link:not(:last-child) {
   margin-right: 1.37vw;
 }
 
-.chooseTour__navbar-link:hover {
+.chooseTour__tabs-link:hover {
+  color: var(--black-color);
   text-decoration: none;
   border-bottom: 2px solid var(--black-color)
 }
 
-.chooseTour__navbar-link:active {
+.chooseTour__tabs-link_active {
   color: var(--orange200-color);
   text-decoration: none;
   border-bottom: 2px solid var(--orange200-color);
 }
 
-.chooseTour__card {
+
+.chooseTour__cardContainer {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  padding-top: 106px;
+  padding-top: 91px;
 }
 
-.chooseTour__card-tur {
+.chooseTour__cardTur {
   width: 370px;
   height: 531px;
-  border-radius: 50px;
   margin: 15px;
+  border-radius: 50px;
+  overflow: hidden;
+
+  z-index: -1;
 }
+
+.chooseTour__cardTur-img {
+  width: 100%;
+  height: 100%;
+}
+
+.chooseTour__cardTur-img {
+  transition: transform 0.3s ease-in-out;
+}
+
+.chooseTour__cardTur-title {
+  position: relative;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 122%;
+
+  color: var(--white-color);
+  margin: 0;
+  left: 50px;
+  bottom: 480px;
+
+}
+
+.chooseTour__cardTur-price {
+  position: relative;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 142%;
+  letter-spacing: -0.01em;
+
+  color: var(--white-color);
+  margin: 0;
+  left: 50px;
+  bottom: 464px;
+}
+
+.chooseTour__cardTur-link {
+  position: relative;
+  left: 30px;
+  bottom: 187px;
+}
+
+.chooseTour__cardTur-link-item {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 23px;
+  line-height: 122%;
+
+  color: var(--white-color);
+  padding: 7px 59px 7px 20px;
+}
+
+.chooseTour__cardTur-link-item::after {
+  position: relative;
+  content: url('../assets/images/Vector.svg');
+  left: 11px;
+}
+
+/* делаем такую запись чтобы при наведении курсора на один элемент
+применялось сразу два стиля: 
+1-й_стиль увеличивал фоновое изображение
+2-й_стиль создавал форму кнопки на ссылке */
+.chooseTour__cardTur:hover .chooseTour__cardTur-img {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.chooseTour__cardTur:hover .chooseTour__cardTur-link-item {
+  background-color: var(--green400-color);
+  border-radius: 50px;
+}
+
+
+
+
+
+/* .chooseTour__card-tur {
+  width: 370px;
+  height: 531px;
+  overflow: hidden;
+  margin: 15px;
+  border-radius: 50px;
+}
+
+.cardTur {
+  width: 100%;
+  height: 100%;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.cardTur:hover {
+  transform: scale(1.2);
+} */
+
+
+/* .cardTur-title {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 122%;
+
+  color: var(--white-color);
+  margin: 0;
+  padding-top: 50px;
+  padding-left: 50px;
+}
+
+.cardTur-price {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 142%;
+  letter-spacing: -0.01em;
+
+  color: var(--white-color);
+  margin: 0;
+  padding-top: 16px;
+  padding-left: 50px;
+}
+
+.cardTur-link {
+  padding-top: 278px;
+  padding-left: 50px;
+}
+
+.cardTur-link-item {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 23px;
+  line-height: 122%;
+
+  color: var(--white-color);
+  padding: 7px 59px 7px 0px;
+}
+
+.cardTur-link-item::after {
+  content: url('../assets/images/Vector.svg');
+  position: relative;
+  left: 11px;
+}
+
+.cardTur-link-item:hover {
+  background-color: var(--green400-color);
+  padding: 7px 59px 7px 20px;
+  border-radius: 50px;
+} */

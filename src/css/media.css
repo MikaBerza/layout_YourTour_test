@@ -1,6 +1,6 @@
 /* ___________@media-директива_____________________________________ */
-/*1024px___________________________________________________*/
-@media (max-width: 1024px) {
+/*от1024px-до1919px___________________________________________________*/
+@media screen and (max-width: 1919px) {
 
   .navbar {
     padding-left: 57px;
@@ -15,97 +15,46 @@
   .greeting__slogan {
     width: 442px;
   }
-}
 
-/*870px___________________________________________________*/
-@media (max-width: 870px) {
-  .navbar__logo-YourTour {
-    width: 163.656px;
-    height: 27.216px;
-  }
-
-  /* Выберем все пункты списка, кроме последнего */
-  .navbar__menu-item:not(:last-child) {
-    margin-right: 1.4vw;
-  }
-
-  .navbar__menu-link,
-  .navbar__telephoneNumber,
-  .greeting__slogan {
-    font-size: 18px;
-  }
-
-  .greeting__title {
-    font-size: 86.4px;
+  .greeting__btn {
+    padding-top: 49px;
   }
 }
 
-/*770px___________________________________________________*/
-@media (max-width: 770px) {
-  .navbar__logo-YourTour {
-    width: 147.29px;
-    height: 24.16px;
-  }
 
-  /* Выберем все пункты списка, кроме последнего */
-  .navbar__menu-item:not(:last-child) {
-    margin-right: 1vw;
-  }
 
-  .navbar__menu-link,
-  .navbar__telephoneNumber,
-  .greeting__slogan {
-    font-size: 16px;
-  }
+/*от360px-до1023px___________________________________________________*/
+@media screen and (max-width: 1023px) {
 
-  .greeting__title {
-    font-size: 76.4px;
-  }
-}
-
-/*670px___________________________________________________*/
-@media (max-width: 670px) {
-  .navbar__menu {
-    display: none;
-  }
-
-  .greeting__title {
-    font-size: 66.4px;
-    padding-top: 141px;
-  }
-
-  .greeting__slogan {
-    max-width: 80%;
-    word-wrap: break-word;
-  }
-}
-
-/*450px___________________________________________________*/
-@media (max-width: 450px) {
   .navbar {
-    padding: 33px 20px 0px 20px;
+    width: 360px;
+    padding: 32.5px 20px 0px 20px;
   }
-
-  .greeting__title {
-    font-size: 52px;
-  }
-}
-
-/*360px___________________________________________________*/
-@media (max-width: 360px) {
 
   .navbar__logo-YourTour {
     width: 134px;
     height: 23px;
   }
 
+  .navbar__menu {
+    display: none;
+  }
+
+  .navbar__telephoneNumber {
+    font-size: 16px;
+  }
+
   .greeting__title {
+    max-width: 360px;
+    padding-top: 140px;
     font-size: 34px;
     line-height: 112%;
   }
 
   .greeting__slogan {
-    padding-top: 40px;
+    max-width: 310px;
+    padding-top: 41px;
+    font-size: 16px;
   }
 
   .greeting__btn {
@@ -117,5 +66,12 @@
     width: 114px;
     height: 33px;
     font-size: 16px;
+  }
+
+  /*от450px___________________________________________________*/
+  @media (max-width: 450px) {
+    .heading {
+      position: absolute;
+    }
   }
 }
