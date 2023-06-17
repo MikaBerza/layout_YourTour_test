@@ -19,6 +19,23 @@
   .greeting__btn {
     padding-top: 49px;
   }
+
+  .chooseTour__cardContainer {
+    padding-top: 97px;
+  }
+
+  .chooseTour__cardTur {
+    width: 450px;
+    margin: 9px;
+  }
+
+  .chooseTour__cardTur-title {
+    max-width: 340px;
+  }
+
+  .chooseTour__cardTur-link {
+    bottom: 145px;
+  }
 }
 
 
@@ -67,6 +84,30 @@
     height: 33px;
     font-size: 16px;
   }
+
+  .chooseTour__title {
+    padding-top: 74.5px;
+    font-size: 34px;
+    line-height: 112%;
+    letter-spacing: 0.02em;
+  }
+
+  .chooseTour__tabs {
+    width: 282px;
+    padding-top: 30px;
+  }
+
+  .chooseTour__tabs-link {
+    font-size: 16px;
+    line-height: 142%;
+    padding-bottom: 0px;
+  }
+
+  /* Выберем все пункты списка, кроме последнего */
+  .chooseTour__tabs-link:not(:last-child) {
+    margin-right: 12.5px;
+  }
+
 
   /*от450px___________________________________________________*/
   @media (max-width: 450px) {

@@ -58,5 +58,7 @@ body {
 
 @import url('./heading.css');
 @import url('./greeting.css');
-@import url('./media.css');
 @import url('./chooseTour.css');
+
+/* последний файл */
+@import url('./media.css');
