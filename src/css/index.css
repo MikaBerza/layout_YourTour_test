@@ -34,7 +34,8 @@ a {
 /* внешняя обертка */
 .wrapper {
   max-width: 1920px;
-  margin: auto
+  margin: auto;
+  background: var(--beige100-color);
 }
 
 @import url('./heading.css');
