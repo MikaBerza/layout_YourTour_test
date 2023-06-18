@@ -41,6 +41,7 @@ a {
 @import url('./heading.css');
 @import url('./greeting.css');
 @import url('./chooseTour.css');
+@import url('./collectTour.css');
 
 /* последний файл */
 @import url('./media.css');

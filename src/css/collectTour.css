@@ -1,0 +1,39 @@
+.collectTour {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.secondaryTitle {
+  margin: auto;
+}
+
+.secondaryTitle__title {
+  margin: auto;
+  padding-top: 122px;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 59px;
+  line-height: 124%;
+
+  text-align: center;
+  color: var(--black-color);
+}
+
+.secondaryTitle__subtitle {
+  margin: auto;
+  padding-top: 30px;
+
+  max-width: 409px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 142%;
+
+  text-align: center;
+  color: var(--gray300-color);
+
+}

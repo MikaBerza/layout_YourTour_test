@@ -134,7 +134,6 @@
   /* Выберем 5 элемент списка */
   .chooseTour__tabs-link:nth-child(5) {
     position: relative;
-    color: green;
     top: 9px;
     right: 13px;
   }
