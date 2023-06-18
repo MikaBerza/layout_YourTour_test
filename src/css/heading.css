@@ -1,18 +1,28 @@
 /* ___________Header_____________________________________________________ */
 .heading {
+  /* Классу "heading" задано свойство "position: fixed", 
+которое фиксирует его относительно экрана и позволят ему оставаться на месте 
+независимо от скроллинга страницы. Также ему задано свойство "left: 50%", 
+которое заставляет его начинаться по центру родительского блока, 
+а свойство "transform: translateX(-50%)" сдвигает его влево на 50% от его 
+собственной ширины. Это позволяет шапке находиться по центру родительского 
+блока независимо от его ширины. */
   position: fixed;
   top: 0;
-  left: 0;
-  width: 100vw;
+  left: 50%;
+  transform: translateX(-50%);
   z-index: 999;
+
+  display: block;
+  width: 100%;
 }
 
 .navbar {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  box-sizing: border-box;
-  padding: 29px 30px 29px 30px;
+  padding-top: 29px;
+  padding-bottom: 29px;
 }
 
 .navbar__logo-YourTour {
@@ -21,8 +31,9 @@
 
 .navbar__menu {
   display: flex;
-  justify-content: space-between;
-  padding-bottom: 4px;
+  padding-left: 182px;
+  padding-right: 182px;
+  /* padding-bottom: 4px; */
 }
 
 /* Выберем все пункты списка, кроме последнего */

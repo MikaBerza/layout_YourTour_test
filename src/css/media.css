@@ -2,9 +2,12 @@
 /*от1024px-до1919px___________________________________________________*/
 @media screen and (max-width: 1919px) {
 
-  .navbar {
-    padding-left: 57px;
-    padding-right: 57px;
+  /* __heading(раздел-заголовок)__ */
+  .navbar__menu {
+    display: flex;
+    padding-left: 85px;
+    padding-right: 85px;
+    padding-bottom: 4px;
   }
 
   /* Выберем все пункты списка, кроме последнего */
@@ -12,6 +15,7 @@
     margin-right: 2.9vw;
   }
 
+  /* __greeting(раздел-приветствие)__ */
   .greeting__slogan {
     width: 442px;
   }
@@ -20,6 +24,7 @@
     padding-top: 49px;
   }
 
+  /* __chooseTour(раздел-выбрать тур) */
   .chooseTour__cardContainer {
     padding-top: 97px;
   }
@@ -43,14 +48,17 @@
 /*от360px-до1023px___________________________________________________*/
 @media screen and (max-width: 1023px) {
 
+  /* __heading(раздел-заголовок)__ */
   .navbar {
     width: 360px;
-    padding: 32.5px 20px 0px 20px;
+    padding: 32.5px 0px 0px 0px;
+    margin: auto;
   }
 
   .navbar__logo-YourTour {
     width: 134px;
     height: 23px;
+    padding-right: 63px;
   }
 
   .navbar__menu {
@@ -61,6 +69,7 @@
     font-size: 16px;
   }
 
+  /* __greeting(раздел-приветствие)__ */
   .greeting__title {
     max-width: 360px;
     padding-top: 140px;
@@ -85,6 +94,7 @@
     font-size: 16px;
   }
 
+  /* __chooseTour(раздел-выбрать тур)__ */
   .chooseTour__title {
     padding-top: 74.5px;
     font-size: 34px;
@@ -93,8 +103,14 @@
   }
 
   .chooseTour__tabs {
-    width: 282px;
+    width: 275px;
+
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
     padding-top: 30px;
+    margin: auto;
   }
 
   .chooseTour__tabs-link {
@@ -105,12 +121,78 @@
 
   /* Выберем все пункты списка, кроме последнего */
   .chooseTour__tabs-link:not(:last-child) {
-    margin-right: 12.5px;
+    margin-right: 0px;
+  }
+
+  /* Выберем 4 элемент списка */
+  .chooseTour__tabs-link:nth-child(4) {
+    position: relative;
+    top: 9px;
+    left: 13px;
+  }
+
+  /* Выберем 5 элемент списка */
+  .chooseTour__tabs-link:nth-child(5) {
+    position: relative;
+    color: green;
+    top: 9px;
+    right: 13px;
+  }
+
+  .chooseTour__tabs-link_active {
+    border-bottom: 2px solid var(--orange200-color);
+  }
+
+  .chooseTour__cardContainer {
+    padding-top: 50px;
+  }
+
+  .chooseTour__cardTur {
+    width: 318px;
+    height: 318px;
+    border-radius: 20px;
+  }
+
+  .chooseTour__cardTur-title {
+    max-width: 268px;
+    font-weight: 500;
+    font-size: 23px;
+    line-height: 120%;
+    letter-spacing: 0.04em;
+    padding-left: 25px;
+    bottom: 292px;
+  }
+
+  .chooseTour__cardTur-price {
+    position: relative;
+    font-size: 16px;
+    padding-left: 25px;
+    bottom: 279px;
+  }
+
+  .chooseTour__cardTur-link {
+    left: 5px;
+    bottom: 100px;
+  }
+
+  .chooseTour__cardTur-link-item {
+    font-size: 16px;
+    line-height: 142%;
+  }
+
+  .chooseTour__cardTur-link-item::after {
+    position: relative;
+    content: url('../assets/images/Vector.svg');
+    top: 2px;
+    left: 12px;
+
   }
 
 
   /*от450px___________________________________________________*/
   @media (max-width: 450px) {
+
+    /* __heading(раздел-заголовок)__ */
     .heading {
       position: absolute;
     }

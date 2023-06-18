@@ -1,5 +1,6 @@
 // импортируем изображение для раздела (header class="heading")
 import '../assets/images/headerBackgroundImg1920.png';
+import '../assets/images/headerBackgroundImg1921.png';
 // импортируем изображение для раздела (section class="chooseTour")
 import photo_1 from '../assets/images/card_tour_photo_1.png';
 import photo_2 from '../assets/images/card_tour_photo_2.png';
