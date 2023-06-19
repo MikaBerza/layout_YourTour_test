@@ -1,27 +1,43 @@
 // импортируем массив с ссылками на изображения из раздела chooseTour(раздел-выбрать тур)
 import { arrayLinksToImages } from './images';
 
-// самовызывающаяся функция добавляет/удаляет стиль вкладки
+// самовызывающаяся функция добавляет/удаляет стиль для вкладки и ссылке
 (function () {
   // получим статическую коллекцию NodeList элементов вкладок
   const nodeListOfTabs = document.querySelectorAll('.chooseTour__tabs-link');
+  // получим статическую коллекцию NodeList элементов ссылок
+  const nodeListLinkItem = document.querySelectorAll(
+    '.chooseTour__cardTur-link-item'
+  );
 
-  // удалить стиль вкладки
-  function removeStyleFromTab() {
-    nodeListOfTabs.forEach((item) => {
-      item.classList.remove('chooseTour__tabs-link_active');
+  // удалить стиль элемента
+  function removeStyleAnItem(nodeListName, className) {
+    nodeListName.forEach((item) => {
+      item.classList.remove(className);
     });
   }
 
-  // добавить стиль вкладке
-  function addStyleFromTab(item) {
-    item.classList.add('chooseTour__tabs-link_active');
+  // добавить стиль элементу
+  function addStyleAnItem(item, className) {
+    item.classList.add(className);
   }
 
+  // добавим/удалим стиль вкладки
   nodeListOfTabs.forEach((item) => {
     item.addEventListener('click', () => {
-      removeStyleFromTab();
-      addStyleFromTab(item);
+      removeStyleAnItem(nodeListOfTabs, 'chooseTour__tabs-link_active');
+      addStyleAnItem(item, 'chooseTour__tabs-link_active');
+    });
+  });
+
+  // добавим/удалим стиль ссылке
+  nodeListLinkItem.forEach((item) => {
+    item.addEventListener('click', () => {
+      removeStyleAnItem(
+        nodeListLinkItem,
+        'chooseTour__cardTur-link-item_active'
+      );
+      addStyleAnItem(item, 'chooseTour__cardTur-link-item_active');
     });
   });
 })();
@@ -30,7 +46,6 @@ import { arrayLinksToImages } from './images';
 (function () {
   // получим статическую коллекцию NodeList элементов карточек
   const nodeListOfCard = document.querySelectorAll('.chooseTour__cardTur-img');
-  console.log(nodeListOfCard);
 
   // фоновый градиент(стиль), для карточки
   const gradientBackground =

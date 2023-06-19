@@ -136,6 +136,12 @@
   left: 11px;
 }
 
+.chooseTour__cardTur-link-item_active {
+  color: var(--white-color);
+  background-color: var(--orange200-color);
+  border-radius: 50px;
+}
+
 /* делаем такую запись чтобы при наведении курсора на один элемент
 применялось сразу два стиля: 
 1-й_стиль увеличивал фоновое изображение
