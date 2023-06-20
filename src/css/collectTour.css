@@ -4,13 +4,14 @@
   justify-content: center;
 }
 
+/* __________secondaryTitle */
 .secondaryTitle {
   margin: auto;
 }
 
 .secondaryTitle__title {
   margin: auto;
-  padding-top: 122px;
+  padding-top: 120px;
 
   font-family: 'Roboto';
   font-style: normal;
@@ -25,8 +26,8 @@
 .secondaryTitle__subtitle {
   margin: auto;
   padding-top: 30px;
-
   max-width: 409px;
+
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
@@ -35,5 +36,186 @@
 
   text-align: center;
   color: var(--gray300-color);
+}
 
+/* __________formFill */
+.formFill {
+  max-width: 1170px;
+  min-height: 986px;
+  background-color: var(--white-color);
+
+  box-sizing: border-box;
+  padding: 37px 70px 70px 70px;
+  margin: auto;
+  margin-top: 98px;
+  border-radius: 50px;
+}
+
+/* Примечание
+Эта запись задает стиль для всех непосредственных потомков элементов, 
+которые являются дочерними элементами элементов с классом "formFill" */
+.formFill>* {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 142%;
+}
+
+/* _____formFill__inputFields */
+.formFill__inputFields {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+}
+
+.formFill__inputFields-name-label,
+.formFill__inputFields-dropdown-label,
+.formFill__inputFields-email-label,
+.formFill__inputFields-phone-label,
+.formFill__inputFields-dateFrom-label,
+.formFill__inputFields-dateTo-label,
+.formFill__commentField-label,
+.formFill__age-legend {
+  color: var(--black-color);
+  /* inline-block — элемент ведёт себя снаружи как строчный, а внутри как блочный */
+  display: inline-block;
+  padding-top: 33px;
+  padding-bottom: 8px;
+}
+
+.formFill__inputFields-dropdown-select-item,
+.formFill__inputFields-dateFrom-input[type="date"]::-webkit-calendar-picker-indicator,
+.formFill__inputFields-dateTo-input[type="date"]::-webkit-calendar-picker-indicator {
+  /* уберем стрелку у select */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  /* уберем значок календаря у (input type="date") */
+  display: none;
+
+}
+
+.formFill__inputFields-name-input,
+.formFill__inputFields-dropdown-select-item,
+.formFill__inputFields-email-input,
+.formFill__inputFields-phone-input,
+.formFill__inputFields-dateFrom-input,
+.formFill__inputFields-dateTo-input,
+.formFill__commentField-textarea {
+  /* убираем обводку вокруг нажатого поля */
+  outline: none;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 20px;
+  gap: 10px;
+
+  width: 500px;
+  height: 68px;
+  background: var(--beige100-color);
+
+  border: 1px solid var(--beige200-color);
+  border-radius: 10px;
+  color: var(--black-color);
+}
+
+
+.formFill__inputFields-name-input::placeholder,
+.formFill__inputFields-dropdown-select-item,
+.formFill__inputFields-email-input::placeholder,
+.formFill__inputFields-phone-input::placeholder {
+  color: var(--gray300-color);
+}
+
+
+.formFill__inputFields-dropdown-select-item_active {
+  color: var(--black-color);
+}
+
+.formFill__inputFields-name-input:hover,
+.formFill__inputFields-dropdown-select-item:hover,
+.formFill__inputFields-email-input:hover,
+.formFill__inputFields-phone-input:hover,
+.formFill__inputFields-dateFrom-input:hover,
+.formFill__inputFields-dateTo-input:hover,
+.formFill__commentField-textarea:hover {
+  background: var(--beige200-color);
+  cursor: pointer;
+}
+
+.formFill__inputFields-name-input:focus,
+.formFill__inputFields-dropdown-select-item:focus,
+.formFill__inputFields-email-input:focus,
+.formFill__inputFields-phone-input:focus,
+.formFill__inputFields-dateFrom-input:focus,
+.formFill__inputFields-dateTo-input:focus,
+.formFill__commentField-textarea:focus {
+  border: 1px solid var(--gray300-color);
+}
+
+.formFill__inputFields-dropdown-select {
+  /* чтобы стрелка оказалась в границах select */
+  position: relative;
+}
+
+.formFill__inputFields-dropdown-select::before {
+  content: url('../../dist/images/VectorDown.svg');
+  position: absolute;
+  /* отступ 50% от верхней границе*/
+  top: 50%;
+  /* отступ справа от границе*/
+  right: 23.59px;
+  /* подвинем на 50% высоты вектора вверх */
+  transform: translateY(-50%);
+
+  /* Свойство pointer-events определяет, 
+  как HTML-элемент реагирует на различные события мыши,
+  т.е. мы делаем элемент прозрачным для клика и 
+  клик происходит как бы за этим элементов */
+  pointer-events: none;
+}
+
+.formFill__inputFields-dateFrom-input,
+.formFill__inputFields-dateTo-input {
+  /* преобразуем текст элемента в заглавные символы */
+  text-transform: uppercase;
+  color: var(--gray300-color);
+}
+
+/* _____formFill__commentField */
+.formFill__commentField-textarea {
+  height: 152px;
+  width: 100%;
+  resize: none;
+}
+
+/* _____formFill__age */
+.formFill__age {
+  border: 0;
+  padding: 0;
+}
+
+.formFill__age-radioGroup {
+  display: flex;
+}
+
+.formFill__age-radioGroup-block {
+  display: flex;
+  padding-right: 31px;
+}
+
+.formFill__age-radioGroup-block-input {
+  width: 26px;
+  height: 26px;
+}
+
+.formFill__age-radioGroup-block-label {
+  padding-left: 11px;
+}
+
+.formFill__age-radioGroup-block-input[type='radio'] {
+  accent-color: var(--black-color);
 }

@@ -182,7 +182,7 @@
 
   .chooseTour__cardTur-link-item::after {
     position: relative;
-    content: url('../assets/images/Vector.svg');
+    content: url('../../dist/images/VectorRight.svg');
     top: 2px;
     left: 12px;
 

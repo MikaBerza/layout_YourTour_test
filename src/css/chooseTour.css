@@ -44,7 +44,17 @@
   border-bottom: 2px solid var(--black-color)
 }
 
+/* Выбранный вариант вкладки*/
 .chooseTour__tabs-link_active {
+  color: var(--orange200-color);
+  text-decoration: none;
+  border-bottom: 2px solid var(--orange200-color);
+}
+
+/* установим :hover для выбранного варианта вкладки, чтобы
+обычный :hover--->(.chooseTour__tabs-link:hover) не перебивал его 
+Без такой записи обычный :hover перебивает выбранный варианта вкладки */
+.chooseTour__tabs-link_active:hover {
   color: var(--orange200-color);
   text-decoration: none;
   border-bottom: 2px solid var(--orange200-color);
@@ -132,10 +142,11 @@
 
 .chooseTour__cardTur-link-item::after {
   position: relative;
-  content: url('../assets/images/Vector.svg');
+  content: url('../../dist/images/VectorRight.svg');
   left: 11px;
 }
 
+/* Выбранный вариант ссылке*/
 .chooseTour__cardTur-link-item_active {
   color: var(--white-color);
   background-color: var(--orange200-color);
@@ -153,5 +164,25 @@
 
 .chooseTour__cardTur:hover .chooseTour__cardTur-link-item {
   background-color: var(--green400-color);
+  border-radius: 50px;
+}
+
+/*___Примечание №1 
+.class1 .class2 такая запись означает, 
+что стили будут применяться к тем элементам HTML, 
+которые имеют класс `.class2`, 
+но только внутри элементов HTML с классом `.class1` 
+___Примечание №2
+Если записать без пробела (`.class1.class2`), 
+это означает, что стили будут применяться к элементам HTML, 
+которые одновременно имеют два класса: `.class1` и `.class2` */
+
+/* установим :hover для выбранного варианта ссылки, чтобы
+обычный :hover--->(.chooseTour__cardTur:hover .chooseTour__cardTur-link-item) 
+не перебивал его.
+Без такой записи обычный :hover перебивает выбранный варианта ссылки*/
+.chooseTour__cardTur:hover .chooseTour__cardTur-link-item_active {
+  color: var(--white-color);
+  background-color: var(--orange200-color);
   border-radius: 50px;
 }

@@ -3,7 +3,7 @@
 /* Есть вопрос!!!
 Есть ли картинки для  размера экрана 1024px и 360px*/
 .greeting {
-  background-image: url('../assets/images/headerBackgroundImg1921.png');
+  background-image: url('../../dist/images/headerBackgroundImg1920.png');
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
