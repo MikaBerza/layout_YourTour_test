@@ -1,3 +1,5 @@
+// импортируем функции
+import { removeStyleAnItem, addStyleAnItem } from './modules';
 // получим элемент формы
 const formElement = document.querySelector('.formFill');
 // получим элемент select
@@ -6,16 +8,6 @@ const dropdownSelectItem = formElement.querySelector(
 );
 // получим элемент кнопки (Сбросить)
 const btnReset = formElement.querySelector('.formFill__buttons-reset');
-
-// добавить стиль элементу
-function addStyleAnElement(element, className) {
-  element.classList.add(className);
-}
-
-// удалить стиль элемента
-function removeStyleAnElement(element, className) {
-  element.classList.remove(className);
-}
 
 // получаем данные формы из полей ввода
 function getFormData(event) {
@@ -58,16 +50,15 @@ function clearFormFields(event) {
   // очищаем поля формы
   formElement.reset();
   // удаляем стиль элементу
-  removeStyleAnElement(
+  removeStyleAnItem(
     dropdownSelectItem,
     'formFill__inputFields-dropdown-select-item_active'
   );
 }
 
-/* когда пользователь выберет элемент из выпадающего списка,
-   тогда примениться стиль для выбранного элемента */
+// Для применения стиля выбранному элементу из списка, навешивается обработчик
 dropdownSelectItem.addEventListener('change', () => {
-  addStyleAnElement(
+  addStyleAnItem(
     dropdownSelectItem,
     'formFill__inputFields-dropdown-select-item_active'
   );

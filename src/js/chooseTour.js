@@ -1,27 +1,24 @@
 // импортируем массив с ссылками на изображения из раздела chooseTour(раздел-выбрать тур)
 import { arrayLinksToImages } from './images';
+// импортируем функции
+import { removeStyleAnItem, addStyleAnItem } from './modules';
 
 // самовызывающаяся функция добавляет/удаляет стиль для вкладки и ссылке
 (function () {
   // получим статическую коллекцию NodeList элементов вкладок
   const nodeListOfTabs = document.querySelectorAll('.chooseTour__tabs-link');
 
-  // удалить стиль элемента
-  function removeStyleAnItem(nodeListName, className) {
+  // удалить стиль из всех элементов
+  function removeStyleFromAllItems(nodeListName, className) {
     nodeListName.forEach((item) => {
-      item.classList.remove(className);
+      removeStyleAnItem(item, className);
     });
-  }
-
-  // добавить стиль элементу
-  function addStyleAnItem(item, className) {
-    item.classList.add(className);
   }
 
   // добавим/удалим стиль вкладки
   nodeListOfTabs.forEach((item) => {
     item.addEventListener('click', () => {
-      removeStyleAnItem(nodeListOfTabs, 'chooseTour__tabs-link_active');
+      removeStyleFromAllItems(nodeListOfTabs, 'chooseTour__tabs-link_active');
       addStyleAnItem(item, 'chooseTour__tabs-link_active');
     });
   });

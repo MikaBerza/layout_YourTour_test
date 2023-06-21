@@ -12,6 +12,8 @@ module.exports = {
     heading: './src/js/heading.js',
     chooseTour: './src/js/chooseTour.js',
     collectTour: './src/js/collectTour.js',
+    // всегда последний
+    modules: './src/js/modules.js',
   },
   output: {
     filename: '[name].js',
@@ -27,7 +29,14 @@ module.exports = {
     new HtmlWebpackPlugin({
       filename: 'index.html',
       template: './src/pages/index.html',
-      chunks: ['index', 'images', 'heading', 'chooseTour', 'collectTour'],
+      chunks: [
+        'index',
+        'images',
+        'heading',
+        'chooseTour',
+        'collectTour',
+        'modules',
+      ],
     }),
     new MiniCssExtractPlugin({
       filename: '[name].css',
