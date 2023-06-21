@@ -146,13 +146,6 @@
   left: 11px;
 }
 
-/* Выбранный вариант ссылке*/
-.chooseTour__cardTur-link-item_active {
-  color: var(--white-color);
-  background-color: var(--orange200-color);
-  border-radius: 50px;
-}
-
 /* делаем такую запись чтобы при наведении курсора на один элемент
 применялось сразу два стиля: 
 1-й_стиль увеличивал фоновое изображение
@@ -178,10 +171,10 @@ ___Примечание №2
 которые одновременно имеют два класса: `.class1` и `.class2` */
 
 /* установим :hover для выбранного варианта ссылки, чтобы
-обычный :hover--->(.chooseTour__cardTur:hover .chooseTour__cardTur-link-item) 
+обычный :hover--->(.chooseTour__cardTur:hover .chooseTour__cardTur-link-item:active) 
 не перебивал его.
 Без такой записи обычный :hover перебивает выбранный варианта ссылки*/
-.chooseTour__cardTur:hover .chooseTour__cardTur-link-item_active {
+.chooseTour__cardTur:hover .chooseTour__cardTur-link-item:active {
   color: var(--white-color);
   background-color: var(--orange200-color);
   border-radius: 50px;

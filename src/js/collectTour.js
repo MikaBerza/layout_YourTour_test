@@ -1,5 +1,9 @@
 // получим элемент формы
 const formElement = document.querySelector('.formFill');
+// получим элемент кнопки (Найти тур)
+const btnFind = formElement.querySelector('.formFill__buttons-find');
+// получим элемент кнопки (Сбросить)
+const btnReset = formElement.querySelector('.formFill__buttons-reset');
 
 // самовызывающаяся функция добавляет стиль для выбранного элемента select
 (function () {
@@ -16,6 +20,8 @@ const formElement = document.querySelector('.formFill');
     );
   });
 })();
+
+//
 
 // получаем данные формы из полей ввода
 function getFormData(event) {
@@ -51,5 +57,20 @@ function getFormData(event) {
   // Выведем полученные данные
   console.log('userDataEnteredJson', userDataEnteredJson);
 }
-/* Для получения данных, навешивается обработчик */
+
+// очистить поля формы
+function clearFormFields(event) {
+  event.preventDefault();
+  // очищаем поля формы
+  formElement.reset();
+  // удаляем стиль элементу
+  formElement
+    .querySelector('.formFill__inputFields-dropdown-select-item')
+    .classList.remove('formFill__inputFields-dropdown-select-item_active');
+}
+
+// Для проверки получения данных, навешивается обработчик
 formElement.addEventListener('submit', getFormData);
+
+// Для очистки полей формы навешиваем обработчик
+btnReset.addEventListener('click', clearFormFields);

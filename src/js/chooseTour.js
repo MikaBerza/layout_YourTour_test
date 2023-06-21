@@ -5,10 +5,6 @@ import { arrayLinksToImages } from './images';
 (function () {
   // получим статическую коллекцию NodeList элементов вкладок
   const nodeListOfTabs = document.querySelectorAll('.chooseTour__tabs-link');
-  // получим статическую коллекцию NodeList элементов ссылок
-  const nodeListLinkItem = document.querySelectorAll(
-    '.chooseTour__cardTur-link-item'
-  );
 
   // удалить стиль элемента
   function removeStyleAnItem(nodeListName, className) {
@@ -27,17 +23,6 @@ import { arrayLinksToImages } from './images';
     item.addEventListener('click', () => {
       removeStyleAnItem(nodeListOfTabs, 'chooseTour__tabs-link_active');
       addStyleAnItem(item, 'chooseTour__tabs-link_active');
-    });
-  });
-
-  // добавим/удалим стиль ссылке
-  nodeListLinkItem.forEach((item) => {
-    item.addEventListener('click', () => {
-      removeStyleAnItem(
-        nodeListLinkItem,
-        'chooseTour__cardTur-link-item_active'
-      );
-      addStyleAnItem(item, 'chooseTour__cardTur-link-item_active');
     });
   });
 })();

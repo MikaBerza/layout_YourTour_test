@@ -196,26 +196,129 @@
 .formFill__age {
   border: 0;
   padding: 0;
+  margin: 0;
 }
 
 .formFill__age-radioGroup {
   display: flex;
 }
 
-.formFill__age-radioGroup-block {
-  display: flex;
-  padding-right: 31px;
-}
-
-.formFill__age-radioGroup-block-input {
-  width: 26px;
-  height: 26px;
+.formFill__age-radioGroup-block-input,
+.formFill__agreement-input {
+  /* Скрываем стандартный radio и checkbox*/
+  /* Это необходимо, чтобы мы могли получить состояние фокуса, 
+  а затем стилизовать нами сделанный radio и checkbox */
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
 }
 
 .formFill__age-radioGroup-block-label {
-  padding-left: 11px;
+  padding-right: 31px;
 }
 
-.formFill__age-radioGroup-block-input[type='radio'] {
-  accent-color: var(--black-color);
+.formFill__age-radioGroup-block-input+.formFill__age-radioGroup-block-label,
+.formFill__agreement-input+.formFill__agreement-label {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+}
+
+.formFill__age-radioGroup-block-input+.formFill__age-radioGroup-block-label::before,
+.formFill__agreement-input+.formFill__agreement-label::before {
+  content: '';
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border: 1px solid var(--black-color);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+}
+
+.formFill__age-radioGroup-block-input+.formFill__age-radioGroup-block-label::before {
+  border-radius: 0.60em;
+  margin-right: 11px;
+}
+
+.formFill__age-radioGroup-block-input:checked+.formFill__age-radioGroup-block-label::before,
+.formFill__agreement-input:checked+.formFill__agreement-label::before {
+  border-color: var(--black-color);
+  background-color: var(--white-color);
+}
+
+.formFill__age-radioGroup-block-input:checked+.formFill__age-radioGroup-block-label::before {
+  background-image: url('../../dist/images/VectorRadio.svg');
+}
+
+
+/* _____formFill__agreement */
+.formFill__agreement {
+  display: flex;
+  padding-top: 25px;
+}
+
+.formFill__agreement-label {
+  font-size: 17px;
+  letter-spacing: -0.01em;
+}
+
+.formFill__agreement-label-span {
+  color: var(--gray300-color);
+}
+
+.formFill__agreement-input+.formFill__agreement-label::before {
+  border-radius: 0.25em;
+  margin-right: 19px;
+}
+
+.formFill__agreement-input:checked+.formFill__agreement-label::before {
+  background-image: url('../../dist/images/VectorChecked.svg');
+}
+
+
+/* _____formFill__buttons */
+.formFill__buttons {
+  padding-top: 31px;
+}
+
+.formFill__buttons-find,
+.formFill__buttons-reset {
+  border: none;
+
+  width: 235px;
+  height: 58px;
+  align-items: center;
+  padding: 15px 30px;
+  gap: 10px;
+  background: var(--green400-color);
+  border-radius: 10px;
+
+  color: var(--white-color);
+}
+
+.formFill__buttons-reset {
+  margin-left: 25px;
+  background: var(--green100-color);
+  color: var(--green400-color);
+}
+
+.formFill__buttons-find:hover {
+  background: var(--green300-color);
+  cursor: pointer;
+}
+
+.formFill__buttons-find:active {
+  background: var(--green200-color);
+}
+
+.formFill__buttons-reset:hover {
+  background: var(--gray100-color);
+  cursor: pointer;
+}
+
+.formFill__buttons-reset:active {
+  background: var(--gray200-color);
 }

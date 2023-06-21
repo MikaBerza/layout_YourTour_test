@@ -18,4 +18,8 @@ export const arrayLinksToImages = [
   photo_6,
 ];
 // импортируем изображение для раздела ("collectTour")
-import VectorDown from '../assets/images/VectorDown.svg'
+import VectorDown from '../assets/images/VectorDown.svg';
+// импортируем изображение для раздела ("Age")
+import VectorRadio from '../assets/images/VectorRadio.svg';
+// импортируем изображение для раздела ("agreement")
+import VectorChecked from '../assets/images/VectorChecked.svg';
