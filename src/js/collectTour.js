@@ -1,27 +1,21 @@
 // получим элемент формы
 const formElement = document.querySelector('.formFill');
-// получим элемент кнопки (Найти тур)
-const btnFind = formElement.querySelector('.formFill__buttons-find');
+// получим элемент select
+const dropdownSelectItem = formElement.querySelector(
+  '.formFill__inputFields-dropdown-select-item'
+);
 // получим элемент кнопки (Сбросить)
 const btnReset = formElement.querySelector('.formFill__buttons-reset');
 
-// самовызывающаяся функция добавляет стиль для выбранного элемента select
-(function () {
-  // получим элемент select
-  const dropdownSelectItem = formElement.querySelector(
-    '.formFill__inputFields-dropdown-select-item'
-  );
+// добавить стиль элементу
+function addStyleAnElement(element, className) {
+  element.classList.add(className);
+}
 
-  /* когда пользователь выберет элемент из выпадающего списка,
-   тогда примениться стиль для выбранного элемента */
-  dropdownSelectItem.addEventListener('change', () => {
-    dropdownSelectItem.classList.add(
-      'formFill__inputFields-dropdown-select-item_active'
-    );
-  });
-})();
-
-//
+// удалить стиль элемента
+function removeStyleAnElement(element, className) {
+  element.classList.remove(className);
+}
 
 // получаем данные формы из полей ввода
 function getFormData(event) {
@@ -64,10 +58,20 @@ function clearFormFields(event) {
   // очищаем поля формы
   formElement.reset();
   // удаляем стиль элементу
-  formElement
-    .querySelector('.formFill__inputFields-dropdown-select-item')
-    .classList.remove('formFill__inputFields-dropdown-select-item_active');
+  removeStyleAnElement(
+    dropdownSelectItem,
+    'formFill__inputFields-dropdown-select-item_active'
+  );
 }
+
+/* когда пользователь выберет элемент из выпадающего списка,
+   тогда примениться стиль для выбранного элемента */
+dropdownSelectItem.addEventListener('change', () => {
+  addStyleAnElement(
+    dropdownSelectItem,
+    'formFill__inputFields-dropdown-select-item_active'
+  );
+});
 
 // Для проверки получения данных, навешивается обработчик
 formElement.addEventListener('submit', getFormData);
