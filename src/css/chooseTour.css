@@ -40,14 +40,12 @@
 
 .chooseTour__tabs-link:hover {
   color: var(--black-color);
-  text-decoration: none;
   border-bottom: 2px solid var(--black-color)
 }
 
 /* Выбранный вариант вкладки*/
 .chooseTour__tabs-link_active {
   color: var(--orange200-color);
-  text-decoration: none;
   border-bottom: 2px solid var(--orange200-color);
 }
 
@@ -56,7 +54,6 @@
 Без такой записи обычный :hover перебивает выбранный варианта вкладки */
 .chooseTour__tabs-link_active:hover {
   color: var(--orange200-color);
-  text-decoration: none;
   border-bottom: 2px solid var(--orange200-color);
 }
 
