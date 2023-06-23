@@ -121,7 +121,6 @@
 
   .greeting__btn-small {
     width: 114px;
-    height: 33px;
     font-size: 16px;
   }
 
@@ -307,7 +306,6 @@
     display: inline-block;
   }
 
-
   .formFill__agreement-text-span1 {
     font-size: 16px;
     letter-spacing: -0.17px;
@@ -317,7 +315,6 @@
   .formFill__agreement-input+.formFill__agreement-customCheckbox::before {
     margin-right: 10px;
   }
-
 
   /* _____formFill__buttons */
   .formFill__buttons {

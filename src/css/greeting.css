@@ -48,7 +48,7 @@
 
 .greeting__btn-small {
   width: 118px;
-  height: 34px;
+  padding: 5px 20px;
 
   background: var(--white-color);
   border: none;
