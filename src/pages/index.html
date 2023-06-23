@@ -145,16 +145,16 @@
         <form class="formFill" action="#">
           <div class="formFill__inputFields">
             <!-- Name -->
-            <div class="formFill__inputFields-name">
-              <label class="formFill__inputFields-name-label" for="connectionName">Имя</label>
-              <input class="formFill__inputFields-name-input" name="name" type="text" id="connectionName"
+            <div class="formFill__inputFields-name col-t1">
+              <label class="formFill__inputFields-name-label col-t2" for="connectionName">Имя</label>
+              <input class="formFill__inputFields-name-input col-t3" name="name" type="text" id="connectionName"
                 placeholder="Введите Ваше имя" autocomplete="off" required>
             </div>
             <!-- dropdown-select -->
-            <div class="formFill__inputFields-dropdown">
-              <label class="formFill__inputFields-dropdown-label" for="connectionDropdown">Направление</label>
+            <div class="formFill__inputFields-dropdown col-t1">
+              <label class="formFill__inputFields-dropdown-label col-t2" for="connectionDropdown">Направление</label>
               <div class="formFill__inputFields-dropdown-select">
-                <select class="formFill__inputFields-dropdown-select-item" name="direction" id="connectionDropdown"
+                <select class="formFill__inputFields-dropdown-select-item col-t3" name="direction" id="connectionDropdown"
                   required>
                   <option value="" selected disabled>Куда хотите ехать</option>
                   <option value="Вариант 1">Вариант 1</option>
@@ -165,42 +165,42 @@
               </div>
             </div>
             <!-- Email -->
-            <div class="formFill__inputFields-email">
-              <label class="formFill__inputFields-email-label" for="connectionEmail">Email</label>
-              <input class="formFill__inputFields-email-input" name="email" type="email" id="connectionEmail"
+            <div class="formFill__inputFields-email col-t1">
+              <label class="formFill__inputFields-email-label col-t2" for="connectionEmail">Email</label>
+              <input class="formFill__inputFields-email-input col-t3" name="email" type="email" id="connectionEmail"
                 placeholder="example@mail.com" autocomplete="off" required>
             </div>
             <!-- Phone -->
-            <div class="formFill__inputFields-phone">
-              <label class="formFill__inputFields-phone-label" for="connectionPhone">Телефон</label>
-              <input class="formFill__inputFields-phone-input" name="phone" type="tel" pattern="\+7\d{10}"
+            <div class="formFill__inputFields-phone col-t1">
+              <label class="formFill__inputFields-phone-label col-t2" for="connectionPhone">Телефон</label>
+              <input class="formFill__inputFields-phone-input col-t3" name="phone" type="tel" pattern="\+7\d{10}"
                 maxlength="12" id="connectionPhone" placeholder="+ 7 ( _ _ _ ) _ _ _ - _ _ - _ _" autocomplete="off"
                 required>
             </div>
             <!-- DateFrom -->
-            <div class="formFill__inputFields-dateFrom">
-              <label class="formFill__inputFields-dateFrom-label" for="connectionDateFrom">Дата от</label>
-              <input class="formFill__inputFields-dateFrom-input" name="dateFrom" type="date" id="connectionDateFrom"
+            <div class="formFill__inputFields-dateFrom col-t1">
+              <label class="formFill__inputFields-dateFrom-label col-t2" for="connectionDateFrom">Дата от</label>
+              <input class="formFill__inputFields-dateFrom-input col-t3" name="dateFrom" type="date" id="connectionDateFrom"
                 placeholder="ДД.ММ.ГГГГ" autocomplete="off" required>
             </div>
             <!-- DateTo -->
-            <div class="formFill__inputFields-dateTo">
-              <label class="formFill__inputFields-dateTo-label" for="connectionDateTo">Дата до</label>
-              <input class="formFill__inputFields-dateTo-input" name="dateTo" type="date" id="connectionDateTo"
+            <div class="formFill__inputFields-dateTo col-t1">
+              <label class="formFill__inputFields-dateTo-label col-t2" for="connectionDateTo">Дата до</label>
+              <input class="formFill__inputFields-dateTo-input col-t3" name="dateTo" type="date" id="connectionDateTo"
                 placeholder="ДД.ММ.ГГГГ" autocomplete="off" required>
             </div>
           </div>
 
           <!-- Comment -->
-          <div class="formFill__commentField">
-            <label class="formFill__commentField-label" for="connectionComment">Комментарий</label>
-            <textarea class="formFill__commentField-textarea" name="comment" id="connectionComment" autocomplete="off"
+          <div class="formFill__commentField col-t1">
+            <label class="formFill__commentField-label col-t2" for="connectionComment">Комментарий</label>
+            <textarea class="formFill__commentField-textarea col-t3" name="comment" id="connectionComment" autocomplete="off"
               maxlength="300" required></textarea>
           </div>
 
           <!-- Age -->
-          <fieldset class="formFill__age">
-            <legend class="formFill__age-legend">Вам есть 18 лет?</legend>
+          <fieldset class="formFill__age col-t1">
+            <legend class="formFill__age-legend col-t2">Вам есть 18 лет?</legend>
             <div class="formFill__age-radioGroup">
               <div class="formFill__age-radioGroup-block">
                 <input class="formFill__age-radioGroup-block-input" type="radio" name="clientAge" id="connectionAgeYes"
@@ -216,15 +216,15 @@
           </fieldset>
 
           <!-- Agreement -->
-          <div class="formFill__agreement">
+          <div class="formFill__agreement col-t1">
             <input class="formFill__agreement-input" type="checkbox" name="acceptAgreement" id="connectionAgreement">
-            <label class="formFill__agreement-label" for="connectionAgreement">
-              <span class="formFill__agreement-label-span">Нажимая кнопку, я принимаю условия&nbsp;</span>
-              Лицензионного договора
+            <label class="formFill__agreement-customCheckbox" for="connectionAgreement"></label>
+            <label class="formFill__agreement-text" for="connectionAgreement">
+              <span class="formFill__agreement-text-span1">Нажимая кнопку, я принимаю условия</span>
             </label>
           </div>
           <!-- Buttons -->
-          <div class="formFill__buttons">
+          <div class="formFill__buttons col-t1">
             <button class="formFill__buttons-find">Найти тур</button>
             <button class="formFill__buttons-reset">Сбросить</button>
           </div>

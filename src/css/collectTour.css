@@ -1,3 +1,38 @@
+/* 
+Обведение нескольких стилей в один:
+<==Было==>
+.formFill__inputFields-name,
+.formFill__inputFields-dropdown,
+.formFill__inputFields-email,
+.formFill__inputFields-phone,
+.formFill__inputFields-dateFrom,
+.formFill__inputFields-dateTo,
+.formFill__commentField,
+.formFill__age 
+>==Стало==> "col-t1"
+
+<==Было==>
+.formFill__inputFields-name-label,
+.formFill__inputFields-dropdown-label,
+.formFill__inputFields-email-label,
+.formFill__inputFields-phone-label,
+.formFill__inputFields-dateFrom-label,
+.formFill__inputFields-dateTo-label,
+.formFill__commentField-label,
+.formFill__age-legend
+>==Стало==> "col-t2"
+
+<==Было==>
+.formFill__inputFields-name-input,
+.formFill__inputFields-dropdown-select-item,
+.formFill__inputFields-email-input,
+.formFill__inputFields-phone-input,
+.formFill__inputFields-dateFrom-input,
+.formFill__inputFields-dateTo-input,
+.formFill__commentField-textarea
+>==Стало==> "col-t3" 
+*/
+
 .collectTour {
   display: flex;
   flex-direction: column;
@@ -42,7 +77,6 @@
 /* __________formFill */
 .formFill {
   max-width: 1170px;
-  min-height: 986px;
   background-color: var(--white-color);
 
   box-sizing: border-box;
@@ -70,28 +104,14 @@
   flex-wrap: wrap;
 }
 
-.formFill__inputFields-name,
-.formFill__inputFields-dropdown,
-.formFill__inputFields-email,
-.formFill__inputFields-phone,
-.formFill__inputFields-dateFrom,
-.formFill__inputFields-dateTo,
-.formFill__commentField,
-.formFill__age {
+.col-t1 {
   margin-top: 33px;
   width: 500px;
 }
 
-.formFill__inputFields-name-label,
-.formFill__inputFields-dropdown-label,
-.formFill__inputFields-email-label,
-.formFill__inputFields-phone-label,
-.formFill__inputFields-dateFrom-label,
-.formFill__inputFields-dateTo-label,
-.formFill__commentField-label,
-.formFill__age-legend {
+.col-t2 {
   color: var(--black-color);
-  /* inline-block — элемент ведёт себя снаружи как строчный, а внутри как блочный */
+  /* inline-block эл. ведёт себя снаружи как строчный, а внутри как блочный */
   display: inline-block;
 }
 
@@ -107,13 +127,7 @@
 
 }
 
-.formFill__inputFields-name-input,
-.formFill__inputFields-dropdown-select-item,
-.formFill__inputFields-email-input,
-.formFill__inputFields-phone-input,
-.formFill__inputFields-dateFrom-input,
-.formFill__inputFields-dateTo-input,
-.formFill__commentField-textarea {
+.col-t3 {
   /* убираем обводку вокруг нажатого поля */
   outline: none;
   box-sizing: border-box;
@@ -220,11 +234,10 @@
   margin-top: 8px;
 }
 
-.formFill__age-radioGroup-block-input,
-.formFill__agreement-input {
-  /* Скрываем стандартный radio и checkbox*/
+.formFill__age-radioGroup-block-input {
+  /* Скрываем стандартный radio*/
   /* Это необходимо, чтобы мы могли получить состояние фокуса, 
-  а затем стилизовать нами сделанный radio и checkbox */
+  а затем стилизовать нами сделанный radio */
   position: absolute;
   z-index: -1;
   opacity: 0;
@@ -241,15 +254,13 @@
 /* Примечание
 .className1+.className2 - это означает, что этот CSS применяется только для тех 
 элементов className2, которые следуют непосредственно за элементом className1  */
-.formFill__age-radioGroup-block-input+.formFill__age-radioGroup-block-label,
-.formFill__agreement-input+.formFill__agreement-label {
+.formFill__age-radioGroup-block-input+.formFill__age-radioGroup-block-label {
   display: inline-flex;
   align-items: center;
   user-select: none;
 }
 
-.formFill__age-radioGroup-block-input+.formFill__age-radioGroup-block-label::before,
-.formFill__agreement-input+.formFill__agreement-label::before {
+.formFill__age-radioGroup-block-input+.formFill__age-radioGroup-block-label::before {
   content: '';
   display: inline-block;
   width: 24px;
@@ -267,8 +278,7 @@
   margin-right: 11px;
 }
 
-.formFill__age-radioGroup-block-input:checked+.formFill__age-radioGroup-block-label::before,
-.formFill__agreement-input:checked+.formFill__agreement-label::before {
+.formFill__age-radioGroup-block-input:checked+.formFill__age-radioGroup-block-label::before {
   border-color: var(--black-color);
   background-color: var(--white-color);
 }
@@ -281,25 +291,66 @@
 /* _____formFill__agreement */
 .formFill__agreement {
   display: flex;
-  margin-top: 25px;
+  width: 565px;
+  margin-top: 26px;
 }
 
-.formFill__agreement-label {
+/* Скрываем чекбокс и оставляем функциональность фокуса */
+.formFill__agreement-input[type=checkbox] {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.formFill__agreement-input+.formFill__agreement-customCheckbox {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+}
+
+.formFill__agreement-input+.formFill__agreement-customCheckbox::before {
+  content: '';
+  display: inline-block;
+  width: 26px;
+  height: 26px;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border: 1px solid var(--black-color);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+}
+
+.formFill__agreement-input:checked+.formFill__agreement-customCheckbox::before {
+  border-color: var(--black-color);
+  background-color: var(--white-color);
+}
+
+.formFill__agreement-text {
+  display: flex;
+}
+
+.formFill__agreement-text-span1 {
   font-size: 17px;
+  line-height: 142%;
   letter-spacing: -0.17px;
-  max-width: 565px;
-}
-
-.formFill__agreement-label-span {
   color: var(--gray300-color);
 }
 
-.formFill__agreement-input+.formFill__agreement-label::before {
+.formFill__agreement-text-span1::after {
+  content: 'Лицензионного договора';
+  position: relative;
+  padding-left: 4.5px;
+  color: var(--black-color);
+}
+
+
+.formFill__agreement-input+.formFill__agreement-customCheckbox::before {
   border-radius: 0.25em;
   margin-right: 19px;
 }
 
-.formFill__agreement-input:checked+.formFill__agreement-label::before {
+.formFill__agreement-input:checked+.formFill__agreement-customCheckbox::before {
   background-image: url('../../dist/images/VectorChecked.svg');
 }
 
@@ -312,15 +363,12 @@
 .formFill__buttons-find,
 .formFill__buttons-reset {
   border: none;
-
   width: 235px;
-  height: 58px;
   align-items: center;
-  padding: 15px 30px;
+  padding: 17px 30px;
   gap: 10px;
   background: var(--green400-color);
   border-radius: 10px;
-
   color: var(--white-color);
 }
 
