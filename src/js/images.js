@@ -23,3 +23,6 @@ import VectorDown from '../assets/images/VectorDown.svg';
 import VectorRadio from '../assets/images/VectorRadio.svg';
 // импортируем изображение для раздела ("agreement")
 import VectorChecked from '../assets/images/VectorChecked.svg';
+// импортируем изображение для раздела ("reviews")
+import reviewPhoto1 from '../assets/images/review photo-1.png'
+import reviewPhoto2 from '../assets/images/review photo-2.png'

@@ -72,6 +72,21 @@
     margin-right: 11px;
   }
 
+  /* __reviews(раздел-отзывы) */
+  .rv1 {
+    padding-top: 135px;
+  }
+
+  .reviews__cardReviews {
+    margin-right: 53px;
+    margin-left: 53px;
+  }
+
+
+  .reviews__cardReviews-item {
+    max-width: 450px;
+    min-height: 841px;
+  }
 }
 
 
@@ -333,6 +348,67 @@
 
   .formFill__buttons-find {
     margin-right: 4px;
+  }
+
+  /* __reviews(раздел-отзывы) */
+  .rv1 {
+    padding-top: 77px;
+  }
+
+  .reviews__cardReviews {
+    margin-right: 0;
+    margin-left: 0;
+    margin-top: 50px;
+    flex-wrap: wrap;
+    justify-content: center;
+
+  }
+
+  .reviews__cardReviews-item {
+    max-width: 318px;
+    min-height: 408px;
+    border-radius: 20px;
+    padding: 20px;
+  }
+
+  .reviews__cardReviews-item:not(:last-child) {
+    margin-bottom: 18px;
+  }
+
+  .reviews__cardReviews-item-text {
+    font-size: 16px;
+    line-height: 143%;
+    max-width: 277px;
+  }
+
+  .rv3 {
+    padding-bottom: 25px;
+  }
+
+  .rv4 {
+    padding-bottom: 36px;
+  }
+
+  .reviews__cardReviews-item-person-block {
+    justify-content: end;
+  }
+
+  .reviews__cardReviews-item-person-block-name {
+    font-size: 23px;
+    font-weight: 700;
+    line-height: 120%;
+    letter-spacing: 0.92px;
+    padding-bottom: 10px;
+  }
+
+  .reviews__cardReviews-item-person-block-tour {
+    font-size: 16px;
+    letter-spacing: -0.16px;
+  }
+
+  .reviews__cardReviews-item-person-photo img {
+    position: relative;
+    top: 3px;
   }
 
 

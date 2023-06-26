@@ -42,12 +42,13 @@
 /* __________secondaryTitle */
 .secondaryTitle {
   margin: auto;
-  max-width: 460px;
+  /* max-width: 460px; */
 }
 
 .secondaryTitle__title {
   margin: auto;
   padding-top: 120px;
+  max-width: 460px;
 
   font-family: 'Roboto';
   font-style: normal;

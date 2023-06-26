@@ -43,6 +43,7 @@ a {
 @import url('./greeting.css');
 @import url('./chooseTour.css');
 @import url('./collectTour.css');
+@import url('./reviews.css');
 
 /* последний файл */
 @import url('./media.css');
