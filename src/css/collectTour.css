@@ -1,38 +1,3 @@
-/* 
-Обведение нескольких стилей в один:
-<==Было==>
-.formFill__inputFields-name,
-.formFill__inputFields-dropdown,
-.formFill__inputFields-email,
-.formFill__inputFields-phone,
-.formFill__inputFields-dateFrom,
-.formFill__inputFields-dateTo,
-.formFill__commentField,
-.formFill__age 
->==Стало==> "col-t1"
-
-<==Было==>
-.formFill__inputFields-name-label,
-.formFill__inputFields-dropdown-label,
-.formFill__inputFields-email-label,
-.formFill__inputFields-phone-label,
-.formFill__inputFields-dateFrom-label,
-.formFill__inputFields-dateTo-label,
-.formFill__commentField-label,
-.formFill__age-legend
->==Стало==> "col-t2"
-
-<==Было==>
-.formFill__inputFields-name-input,
-.formFill__inputFields-dropdown-select-item,
-.formFill__inputFields-email-input,
-.formFill__inputFields-phone-input,
-.formFill__inputFields-dateFrom-input,
-.formFill__inputFields-dateTo-input,
-.formFill__commentField-textarea
->==Стало==> "col-t3" 
-*/
-
 .collectTour {
   display: flex;
   flex-direction: column;
@@ -105,12 +70,28 @@
   flex-wrap: wrap;
 }
 
-.col-t1 {
+.formFill__inputFields-name,
+.formFill__inputFields-dropdown,
+.formFill__inputFields-email,
+.formFill__inputFields-phone,
+.formFill__inputFields-dateFrom,
+.formFill__inputFields-dateTo,
+.formFill__commentField,
+.formFill__age,
+.formFill__agreement,
+.formFill__buttons {
   margin-top: 33px;
   width: 500px;
 }
 
-.col-t2 {
+.formFill__inputFields-name-label,
+.formFill__inputFields-dropdown-label,
+.formFill__inputFields-email-label,
+.formFill__inputFields-phone-label,
+.formFill__inputFields-dateFrom-label,
+.formFill__inputFields-dateTo-label,
+.formFill__commentField-label,
+.formFill__age-legend {
   color: var(--black-color);
   /* inline-block эл. ведёт себя снаружи как строчный, а внутри как блочный */
   display: inline-block;
@@ -125,10 +106,15 @@
   appearance: none;
   /* уберем значок календаря у (input type="date") */
   display: none;
-
 }
 
-.col-t3 {
+.formFill__inputFields-name-input,
+.formFill__inputFields-dropdown-select-item,
+.formFill__inputFields-email-input,
+.formFill__inputFields-phone-input,
+.formFill__inputFields-dateFrom-input,
+.formFill__inputFields-dateTo-input,
+.formFill__commentField-textarea {
   /* убираем обводку вокруг нажатого поля */
   outline: none;
   box-sizing: border-box;

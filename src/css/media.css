@@ -52,7 +52,16 @@
     padding: 28px 60px 60px 60px;
   }
 
-  .col-t1 {
+  .formFill__inputFields-name,
+  .formFill__inputFields-dropdown,
+  .formFill__inputFields-email,
+  .formFill__inputFields-phone,
+  .formFill__inputFields-dateFrom,
+  .formFill__inputFields-dateTo,
+  .formFill__commentField,
+  .formFill__age,
+  .formFill__agreement,
+  .formFill__buttons {
     width: 389px;
   }
 
@@ -256,7 +265,16 @@
     flex-direction: column;
   }
 
-  .col-t1 {
+  .formFill__inputFields-name,
+  .formFill__inputFields-dropdown,
+  .formFill__inputFields-email,
+  .formFill__inputFields-phone,
+  .formFill__inputFields-dateFrom,
+  .formFill__inputFields-dateTo,
+  .formFill__commentField,
+  .formFill__age,
+  .formFill__agreement,
+  .formFill__buttons {
     margin-top: 30px;
     width: 278px;
   }
@@ -269,7 +287,13 @@
     margin-top: 33px;
   }
 
-  .col-t3 {
+  .formFill__inputFields-name-input,
+  .formFill__inputFields-dropdown-select-item,
+  .formFill__inputFields-email-input,
+  .formFill__inputFields-phone-input,
+  .formFill__inputFields-dateFrom-input,
+  .formFill__inputFields-dateTo-input,
+  .formFill__commentField-textarea {
     height: 43px;
     padding: 10px;
     padding-right: 35px;
