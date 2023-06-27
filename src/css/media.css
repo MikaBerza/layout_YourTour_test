@@ -54,10 +54,6 @@
   }
 
   /* __collectTour(раздел-собрать тур) */
-  .secondaryTitle__title {
-    padding-top: 126px;
-  }
-
   .formFill {
     max-width: 918px;
     padding: 28px 60px 60px 60px;
@@ -93,10 +89,6 @@
   }
 
   /* __reviews(раздел-отзывы) */
-  .rv1 {
-    padding-top: 135px;
-  }
-
   .reviews__cardReviews {
     margin-right: 53px;
     margin-left: 53px;
@@ -161,7 +153,7 @@
 
   /* __chooseTour(раздел-выбрать тур)__ */
   .chooseTour__title {
-    padding-top: 74.5px;
+    margin-top: 75px;
     font-size: 34px;
     line-height: 112%;
     letter-spacing: 0.92px;
@@ -252,14 +244,14 @@
 
   /* __collectTour(раздел-собрать тур) */
   .secondaryTitle__title {
-    padding-top: 67px;
+    margin-top: 75px;
     font-size: 34px;
     line-height: 112%;
     letter-spacing: 0.68px;
   }
 
   .secondaryTitle__subtitle {
-    padding-top: 20px;
+    padding-top: 21px;
     max-width: 318px;
     font-size: 16px;
   }
@@ -391,8 +383,8 @@
   }
 
   /* __reviews(раздел-отзывы) */
-  .rv1 {
-    padding-top: 77px;
+  .reviews .secondaryTitle__subtitle {
+    max-width: 318px;
   }
 
   .reviews__cardReviews {
@@ -417,16 +409,17 @@
 
   .reviews__cardReviews-item-text {
     font-size: 16px;
-    line-height: 143%;
+    line-height: 144%;
     max-width: 277px;
   }
 
-  .rv3 {
-    padding-bottom: 25px;
+  /* применяем стили ко всем элементам, начиная с второго */
+  .reviews__cardReviews-item-text-par1:nth-child(n+2) {
+    margin-top: 22px;
   }
 
-  .rv4 {
-    padding-bottom: 36px;
+  .reviews__cardReviews-item-person {
+    margin-top: 36px;
   }
 
   .reviews__cardReviews-item-person-block {
@@ -434,11 +427,11 @@
   }
 
   .reviews__cardReviews-item-person-block-name {
+    margin-top: 20px;
     font-size: 23px;
     font-weight: 700;
     line-height: 120%;
     letter-spacing: 0.92px;
-    padding-bottom: 10px;
   }
 
   .reviews__cardReviews-item-person-block-tour {
