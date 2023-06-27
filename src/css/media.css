@@ -26,12 +26,23 @@
 
   /* __chooseTour(раздел-выбрать тур) */
   .chooseTour__cardContainer {
-    padding-top: 97px;
+    max-width: 918px;
+    margin-top: 106px;
+    justify-content: space-between;
+  }
+
+  /* отменяем применение стилей к трём последним элементам */
+  .chooseTour__cardTur:nth-last-child(-n+3) {
+    margin-top: 0px;
+  }
+
+  /* применяем стили ко всем элементам, кроме двух первых */
+  .chooseTour__cardTur:nth-child(n+3) {
+    margin-top: 18px;
   }
 
   .chooseTour__cardTur {
     width: 450px;
-    margin: 9px;
   }
 
   .chooseTour__cardTur-title {
@@ -193,14 +204,19 @@
   }
 
   .chooseTour__cardContainer {
-    padding-top: 50px;
     flex-direction: column;
+    margin-top: 59px;
   }
 
   .chooseTour__cardTur {
     width: 318px;
     height: 318px;
     border-radius: 20px;
+  }
+
+  /* применяем стили ко всем элементам, кроме двух первых */
+  .chooseTour__cardTur:nth-child(n+2) {
+    margin-top: 18px;
   }
 
   .chooseTour__cardTur-title {
@@ -220,8 +236,8 @@
   }
 
   .chooseTour__cardTur-link {
-    left: 5px;
-    bottom: 100px;
+    left: 6px;
+    bottom: 98px;
   }
 
   .chooseTour__cardTur-link-item {
