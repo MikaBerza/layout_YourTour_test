@@ -9,7 +9,7 @@ import photo_5 from '../assets/images/card_tour_photo_5.png';
 import photo_6 from '../assets/images/card_tour_photo_6.png';
 import VectorRight from '../assets/images/VectorRight.svg';
 // массив с ссылками на изображения из ("chooseTour")
-export const arrayLinksToImages = [
+export const arrayLinksToImagesChooseTour = [
   photo_1,
   photo_2,
   photo_3,

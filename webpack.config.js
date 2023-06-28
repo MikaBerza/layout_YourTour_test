@@ -12,6 +12,7 @@ module.exports = {
     heading: './src/js/heading.js',
     chooseTour: './src/js/chooseTour.js',
     collectTour: './src/js/collectTour.js',
+    travelPhotos: './src/js/travelPhotos.js',
     // всегда последний
     modules: './src/js/modules.js',
   },
@@ -35,7 +36,8 @@ module.exports = {
         'heading',
         'chooseTour',
         'collectTour',
-        'modules',
+        'travelPhotos',
+        'modules'
       ],
     }),
     new MiniCssExtractPlugin({

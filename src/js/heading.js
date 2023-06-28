@@ -1,4 +1,6 @@
-//
+// импортируем функции
+import { removeStyleAnItem, addStyleAnItem } from './modules';
+
 // самовызывающаяся функция добавляет/удаляет стиль навигационной панели
 (function () {
   // элементы раздела heading(раздел-заголовок)
@@ -11,28 +13,27 @@
 
   // добавить стиль навигационной панели
   function addNavbarStyle() {
-    heading.classList.add('scrolled-bgn');
-    logoYourTour.classList.add('scrolled-color');
+    addStyleAnItem(heading, 'scrolled-bgn');
+    addStyleAnItem(logoYourTour, 'scrolled-color');
 
     nodeListOfNavbarLinkItems.forEach((item) => {
-      item.classList.add('scrolled-color');
-      item.classList.add('scrolled-hover');
+      addStyleAnItem(item, 'scrolled-color');
+      addStyleAnItem(item, 'scrolled-hover');
     });
-
-    telephoneNumber.classList.add('scrolled-color');
+    addStyleAnItem(telephoneNumber, 'scrolled-color');
   }
 
   // удалить стиль навигационной панели
   function removeNavbarStyle() {
-    heading.classList.remove('scrolled-bgn');
-    logoYourTour.classList.remove('scrolled-color');
+    removeStyleAnItem(heading, 'scrolled-bgn');
+    removeStyleAnItem(logoYourTour, 'scrolled-color');
 
     nodeListOfNavbarLinkItems.forEach((item) => {
-      item.classList.remove('scrolled-color');
-      item.classList.remove('scrolled-hover');
+      removeStyleAnItem(item, 'scrolled-color');
+      removeStyleAnItem(item, 'scrolled-hover');
     });
 
-    telephoneNumber.classList.remove('scrolled-color');
+    removeStyleAnItem(telephoneNumber, 'scrolled-color');
   }
 
   window.addEventListener('scroll', () => {

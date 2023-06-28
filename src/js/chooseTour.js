@@ -1,5 +1,5 @@
 // импортируем массив с ссылками на изображения из раздела chooseTour(раздел-выбрать тур)
-import { arrayLinksToImages } from './images';
+import { arrayLinksToImagesChooseTour } from './images';
 // импортируем функции
 import { removeStyleAnItem, addStyleAnItem } from './modules';
 
@@ -35,7 +35,7 @@ import { removeStyleAnItem, addStyleAnItem } from './modules';
 
   nodeListOfCard.forEach((card, index) => {
     // ссылка на фоновое изображение для карточки
-    let linkToImag = arrayLinksToImages[index];
+    let linkToImag = arrayLinksToImagesChooseTour[index];
     card.style.backgroundImage = `${gradientBackground}, url(${linkToImag})`;
   });
 })();
