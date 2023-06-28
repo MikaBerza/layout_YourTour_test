@@ -40,3 +40,24 @@ import travelPhoto10 from '../assets/images/travelPhoto10.png';
 import travelPhoto11 from '../assets/images/travelPhoto11.png';
 import travelPhoto12 from '../assets/images/travelPhoto12.png';
 import travelPhoto13 from '../assets/images/travelPhoto13.png';
+
+// массив с ссылками на изображения из ("travelPhotos") блок 1
+export const arrayLinksToImagesTravelPhotosB1 = [
+  travelPhoto1,
+  travelPhoto2,
+  travelPhoto3,
+  travelPhoto4,
+  travelPhoto9,
+  travelPhoto10,
+  travelPhoto11,
+  travelPhoto12,
+];
+
+// массив с ссылками на изображения из ("travelPhotos") блок 2
+export const arrayLinksToImagesTravelPhotosB2 = [
+  travelPhoto5,
+  travelPhoto6,
+  travelPhoto7,
+  travelPhoto8,
+  travelPhoto13,
+];

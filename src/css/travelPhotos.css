@@ -8,6 +8,7 @@
 }
 
 .travelPhotos__cardContainer {
+  margin: auto;
   margin-top: 99px;
   display: flex;
   flex-direction: column;
@@ -21,46 +22,25 @@
   justify-content: space-evenly;
 }
 
-.travelPhotos__cardContainer-block1-img {
-  max-width: 442.5px;
-  min-height: 300px;
+.travelPhotos__cardContainer-block1-img,
+.travelPhotos__cardContainer-block2-img {
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
   border-radius: 50px;
-
 }
 
-/* .travelPhotos__cardContainer-block1-img:not(:last-child) { */
-  /* margin-right: 30px; */
-/* } */
+.travelPhotos__cardContainer-block1-img {
+  width: 441px;
+  height: 301px;
+}
 
 .travelPhotos__cardContainer-block2 {
   margin-top: 30px;
   margin-bottom: 30px;
-
 }
 
 .travelPhotos__cardContainer-block2-img {
-  max-width: 348.16px;
-  min-height: 301px;
-  border-radius: 50px;
+  width: 348.16px;
+  height: 301px;
 }
-
-/* .travelPhotos__cardContainer-block2-img:not(:last-child) { */
-  /* margin-right: 30px; */
-/* } */
-
-/* отключаем 3 дочерний элемент */
-/* .travelPhotos__cardContainer-block2-img:nth-child(3) {
-  display: none;
-} */
-
-/* border-radius: 50px;
-background: lightgray -28.87px 0px / 113.049% 100.488% no-repeat; */
-
-/* применяем стиль к 3 дочернему элементу */
-/* .travelPhotos__cardContainer-block1-img:nth-child(2) {
-  width: 442.5px;
-  height: 300px;
-  border-radius: 50px;
-
-  background: url('../assets/images/travelPhoto2.png'), rgb(160, 45, 45) 0px -288.139px / 100% 199.8% no-repeat;
-} */
