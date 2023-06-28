@@ -4,15 +4,15 @@
 
   /* __heading(раздел-заголовок)__ */
   .navbar__menu {
+    padding-left: 84px;
+    padding-right: 84px;
     display: flex;
-    padding-left: 85px;
-    padding-right: 85px;
     padding-bottom: 4px;
   }
 
   /* Выберем все пункты списка, кроме последнего */
   .navbar__menu-item:not(:last-child) {
-    margin-right: 2.9vw;
+    margin-right: 30px;
   }
 
   /* __greeting(раздел-приветствие)__ */
@@ -89,13 +89,12 @@
   }
 
   /* __reviews(раздел-отзывы) */
-  .reviews__cardReviews {
-    margin-right: 53px;
-    margin-left: 53px;
+  .reviews__cardContainer {
+    max-width: 918px;
   }
 
 
-  .reviews__cardReviews-item {
+  .reviews__cardContainer-item {
     max-width: 450px;
     min-height: 841px;
   }
@@ -387,46 +386,45 @@
     max-width: 318px;
   }
 
-  .reviews__cardReviews {
-    margin-right: 0;
-    margin-left: 0;
+  .reviews__cardContainer {
+    max-width: 318px;
     margin-top: 50px;
     flex-wrap: wrap;
     justify-content: center;
 
   }
 
-  .reviews__cardReviews-item {
+  .reviews__cardContainer-item {
     max-width: 318px;
     min-height: 408px;
     border-radius: 20px;
     padding: 20px;
   }
 
-  .reviews__cardReviews-item:not(:last-child) {
+  .reviews__cardContainer-item:not(:last-child) {
     margin-bottom: 18px;
   }
 
-  .reviews__cardReviews-item-text {
+  .reviews__cardContainer-item-text {
     font-size: 16px;
     line-height: 144%;
     max-width: 277px;
   }
 
   /* применяем стили ко всем элементам, начиная с второго */
-  .reviews__cardReviews-item-text-par1:nth-child(n+2) {
+  .reviews__cardContainer-item-text-par1:nth-child(n+2) {
     margin-top: 22px;
   }
 
-  .reviews__cardReviews-item-person {
+  .reviews__cardContainer-item-person {
     margin-top: 36px;
   }
 
-  .reviews__cardReviews-item-person-block {
+  .reviews__cardContainer-item-person-block {
     justify-content: end;
   }
 
-  .reviews__cardReviews-item-person-block-name {
+  .reviews__cardContainer-item-person-block-name {
     margin-top: 20px;
     font-size: 23px;
     font-weight: 700;
@@ -434,12 +432,12 @@
     letter-spacing: 0.92px;
   }
 
-  .reviews__cardReviews-item-person-block-tour {
+  .reviews__cardContainer-item-person-block-tour {
     font-size: 16px;
     letter-spacing: -0.16px;
   }
 
-  .reviews__cardReviews-item-person-photo img {
+  .reviews__cardContainer-item-person-photo img {
     position: relative;
     top: 3px;
   }

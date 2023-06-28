@@ -2,7 +2,7 @@
   max-width: 418px;
 }
 
-.reviews__cardReviews {
+.reviews__cardContainer {
   max-width: 1170px;
   margin: auto;
   margin-top: 100px;
@@ -13,7 +13,7 @@
   align-items: stretch;
 }
 
-.reviews__cardReviews-item {
+.reviews__cardContainer-item {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -28,7 +28,7 @@
   background: var(--beige200-color);
 }
 
-.reviews__cardReviews-item-text {
+.reviews__cardContainer-item-text {
   margin: 0;
   color: var(--black-color);
   font-size: 23px;
@@ -37,22 +37,22 @@
   line-height: 28px;
 }
 
-.reviews__cardReviews-item-text-par1 {
+.reviews__cardContainer-item-text-par1 {
   margin: 0;
 }
 
 /* применяем стили ко всем элементам, начиная с второго */
-.reviews__cardReviews-item-text-par1:nth-child(n+2) {
+.reviews__cardContainer-item-text-par1:nth-child(n+2) {
   margin-top: 27px;
 }
 
-.reviews__cardReviews-item-person {
+.reviews__cardContainer-item-person {
   margin-top: 70px;
   display: flex;
   justify-content: space-between;
 }
 
-.reviews__cardReviews-item-person-block-name {
+.reviews__cardContainer-item-person-block-name {
   display: block;
   font-size: 35px;
   font-family: 'Roboto';
@@ -60,7 +60,7 @@
   line-height: 122%;
 }
 
-.reviews__cardReviews-item-person-block-tour {
+.reviews__cardContainer-item-person-block-tour {
   display: block;
   margin-top: 8px;
   font-size: 17px;
@@ -69,7 +69,7 @@
   letter-spacing: -0.17px;
 }
 
-.reviews__cardReviews-item-person-photo img {
+.reviews__cardContainer-item-person-photo img {
   width: 75px;
   height: 75px;
   border-radius: 100px;

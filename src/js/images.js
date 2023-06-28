@@ -24,5 +24,19 @@ import VectorRadio from '../assets/images/VectorRadio.svg';
 // импортируем изображение для раздела ("agreement")
 import VectorChecked from '../assets/images/VectorChecked.svg';
 // импортируем изображение для раздела ("reviews")
-import reviewPhoto1 from '../assets/images/reviewPhoto1.png'
-import reviewPhoto2 from '../assets/images/reviewPhoto2.png'
+import reviewPhoto1 from '../assets/images/reviewPhoto1.png';
+import reviewPhoto2 from '../assets/images/reviewPhoto2.png';
+// импортируем изображение для раздела ("travelPhotos")
+import travelPhoto1 from '../assets/images/travelPhoto1.png';
+import travelPhoto2 from '../assets/images/travelPhoto2.png';
+import travelPhoto3 from '../assets/images/travelPhoto3.png';
+import travelPhoto4 from '../assets/images/travelPhoto4.png';
+import travelPhoto5 from '../assets/images/travelPhoto5.png';
+import travelPhoto6 from '../assets/images/travelPhoto6.png';
+import travelPhoto7 from '../assets/images/travelPhoto7.png';
+import travelPhoto8 from '../assets/images/travelPhoto8.png';
+import travelPhoto9 from '../assets/images/travelPhoto9.png';
+import travelPhoto10 from '../assets/images/travelPhoto10.png';
+import travelPhoto11 from '../assets/images/travelPhoto11.png';
+import travelPhoto12 from '../assets/images/travelPhoto12.png';
+import travelPhoto13 from '../assets/images/travelPhoto13.png';

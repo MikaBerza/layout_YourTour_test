@@ -44,6 +44,7 @@ a {
 @import url('./chooseTour.css');
 @import url('./collectTour.css');
 @import url('./reviews.css');
+@import url('./travelPhotos.css');
 
 /* последний файл */
 @import url('./media.css');
