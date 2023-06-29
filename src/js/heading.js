@@ -45,3 +45,19 @@ import { removeStyleAnItem, addStyleAnItem } from './modules';
     }
   });
 })();
+
+// самовызывающаяся функция для плавного скролла до якорного элемента
+(function () {
+  const linkItem = document.querySelectorAll('.navbar__menu-link');
+
+  for (let item of linkItem) {
+    item.addEventListener('click', function (e) {
+      e.preventDefault();
+      const target = document.querySelector(this.getAttribute('href'));
+      window.scrollTo({
+        behavior: 'smooth',
+        top: target.offsetTop,
+      });
+    });
+  }
+})();

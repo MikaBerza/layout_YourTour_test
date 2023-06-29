@@ -183,7 +183,7 @@
 
   /* __chooseTour(раздел-выбрать тур)__ */
   .chooseTour__title {
-    margin-top: 75px;
+    padding-top: 75px;
     font-size: 34px;
     line-height: 112%;
     letter-spacing: 0.92px;
@@ -272,7 +272,7 @@
 
   /* __collectTour(раздел-собрать тур) */
   .secondaryTitle__title {
-    margin-top: 75px;
+    padding-top: 75px;
     font-size: 34px;
     line-height: 112%;
     letter-spacing: 0.68px;
