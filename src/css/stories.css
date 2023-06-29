@@ -6,193 +6,174 @@
   max-width: 418px;
 }
 
-/* Примечание
-Эта запись задает стиль для всех непосредственных потомков элементов, 
-которые являются дочерними элементами элементов с классом "stories__cardContainer" */
-/* .stories__cardContainer>* {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 142%;
-
-  color: black;
-} */
-
 /* _________________________________________________________________________________________________________________________________*/
+
 .stories {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.stories__title {
-  margin: 0px;
-  margin-top: 135px;
-  text-align: center;
+/* Примечание
+Эта запись задает стиль для всех непосредственных потомков элементов, 
+которые являются дочерними элементами элементов с классом "stories" */
+.stories>* {
   font-family: 'Roboto';
   font-style: normal;
-  font-weight: 700;
-  font-size: 59px;
-  line-height: 124%;
-
-  color: var(--black-color);
 }
-
-.stories__tabs {
-  text-align: center;
-  padding-top: 35px;
-}
-
-.stories__tabs-link {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 23px;
-  line-height: 122%;
-
-  color: var(--black-color);
-  padding-bottom: 4px;
-}
-
-/* Выберем все пункты списка, кроме последнего */
-.stories__tabs-link:not(:last-child) {
-  margin-right: 26.5px;
-}
-
-.stories__tabs-link:hover {
-  color: var(--black-color);
-  border-bottom: 2px solid var(--black-color)
-}
-
-/* Выбранный вариант вкладки*/
-.stories__tabs-link_active {
-  color: var(--orange200-color);
-  border-bottom: 2px solid var(--orange200-color);
-}
-
-/* установим :hover для выбранного варианта вкладки, чтобы
-обычный :hover--->(.stories__tabs-link:hover) не перебивал его 
-Без такой записи обычный :hover перебивает выбранный варианта вкладки */
-.stories__tabs-link_active:hover {
-  color: var(--orange200-color);
-  border-bottom: 2px solid var(--orange200-color);
-}
-
 
 .stories__cardContainer {
-  max-width: 1200px;
+  width: 1170px;
   margin: auto;
+  margin-top: 100px;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  margin-top: 106px;
 }
 
-.stories__cardTur {
+.stories__card {
   position: relative;
-  width: 370px;
-  min-height: 531px;
+  width: 100%;
+  height: auto;
   border-radius: 50px;
   overflow: hidden;
-
-  background-repeat: no-repeat;
 }
 
-/* применяем стили к трём последним элементам */
-.stories__cardTur:nth-last-child(-n+3) {
-  margin-top: 30px;
+.stories__card:not(:last-child) {
+  margin-bottom: 49px;
 }
 
-.stories__cardTur-img {
-  background: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%), url('../assets/images/card_tour_photo_1.png');
+.stories__card-img {
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
   height: 100%;
 }
 
-.stories__cardTur-img {
+.stories__card-img {
   transition: transform 0.3s ease-in-out;
 }
 
-.stories__cardTur-content {
-  display: flex;
-  flex-direction: column;
+.stories__card-content {
   /* Элемент с position: sticky «прилипает» к экрану при 
   прокрутке, пока не встретится с границей 
   родительского блока */
   position: sticky;
-  bottom: 407px;
+  bottom: 0;
+  box-sizing: border-box;
+  padding: 60px 60px 60px 40px;
+
+  display: flex;
+  flex-direction: column;
+
+  cursor: pointer;
 }
 
-.stories__cardTur-content-title {
-  max-width: 240px;
+.stories__card-content-title {
+  max-width: 554px;
   position: relative;
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 500;
+  left: 0;
+  bottom: 0;
+  margin: 0;
+  padding-left: 20px;
+  padding-bottom: 37px;
+
   font-size: 35px;
+  font-weight: 500;
   line-height: 122%;
-  color: var(--white-color);
-  margin: 0;
-  left: 0;
-  padding-left: 50px;
-  padding-top: 10px;
-  bottom: 0;
 
+  color: var(--white-color);
 }
 
-.stories__cardTur-content-price {
+.stories__card-content-text {
+  max-width: 554px;
   position: relative;
-  font-family: 'Roboto';
-  font-style: normal;
+  left: 0;
+  bottom: 0;
+  margin: 0;
+  padding-left: 20px;
+  padding-bottom: 115px;
+
+  font-size: 20px;
   font-weight: 400;
-  font-size: 17px;
   line-height: 142%;
-  letter-spacing: -0.01em;
+
   color: var(--white-color);
+}
+
+.stories__card-content-text-main,
+.stories__card-content-text-list {
   margin: 0;
-  left: 0;
-  padding-left: 50px;
-  bottom: 0;
 }
 
-.stories__cardTur-content-link {
-  position: relative;
-  left: 0;
-  bottom: 0;
+.stories__card-content-text-main {
+  padding-bottom: 25px;
 }
 
-.stories__cardTur-content-link-item {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 23px;
-  line-height: 122%;
+.stories__card-content-text-list {
+  padding-left: 12px;
+  list-style: none;
+}
 
-  color: var(--white-color);
+/* кастомный размер маркера списка ul*/
+.stories__card-content-text-list .stories__card-content-text-list-item::before {
+  content: "•";
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.stories__card-content-link {
+  display: flex;
+  justify-content: space-between;
+}
+
+.stories__card-content-link-btn-item {
   padding: 7px 59px 7px 20px;
+  font-size: 23px;
+  font-weight: 700;
+  line-height: 122%;
+  color: var(--white-color);
 }
 
-.stories__cardTur-content-link-item::after {
+.stories__card-content-link-btn-item::after {
   position: relative;
   content: url('../../dist/images/VectorRight.svg');
   left: 11px;
+}
+
+.stories__card-content-link-socialNetwork-item {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 142%;
+  color: var(--white-color);
+}
+
+.stories__card-content-link-socialNetwork-item:not(:last-child) {
+  margin-right: 31px;
+}
+
+.stories__card-content-link-socialNetwork-item:hover {
+  text-decoration: none;
+  border-bottom: 1px solid var(--white-color);
+}
+
+.stories__card-content-link-socialNetwork-item:active {
+  border-bottom: 1px solid var(--orange200-color);
+  color: var(--orange200-color);
 }
 
 /* делаем такую запись чтобы при наведении курсора на один элемент
 применялось сразу два стиля: 
 1-й_стиль увеличивал фоновое изображение
 2-й_стиль создавал форму кнопки на ссылке */
-.stories__cardTur:hover .stories__cardTur-img {
+.stories__card:hover .stories__card-img {
   transform: scale(1.2);
   cursor: pointer;
 }
 
-.stories__cardTur:hover .stories__cardTur-content-link-item {
-  background-color: var(--green400-color);
+.stories__card:hover .stories__card-content-link-btn-item {
   border-radius: 50px;
+  background-color: var(--green400-color);
 }
 
 /*___Примечание №1 
@@ -206,11 +187,16 @@ ___Примечание №2
 которые одновременно имеют два класса: `.class1` и `.class2` */
 
 /* установим :hover для выбранного варианта ссылки, чтобы
-обычный :hover--->(.stories__cardTur:hover .stories__cardTur-link-item:active) 
+обычный :hover--->(.stories__card:hover .stories__card-content-link-btn-item:active) 
 не перебивал его.
 Без такой записи обычный :hover перебивает выбранный варианта ссылки*/
-.stories__cardTur:hover .stories__cardTur-content-link-item:active {
-  color: var(--white-color);
-  background-color: var(--orange200-color);
+.stories__card:hover .stories__card-content-link-btn-item:active {
   border-radius: 50px;
+  background-color: var(--orange200-color);
+  color: var(--white-color);
+}
+
+/* установить нижний отступ */
+.pd-b1 {
+  padding-bottom: 201px;
 }
