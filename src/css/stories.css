@@ -1,165 +1,181 @@
-.chooseTour {
+.stories .secondaryTitle__title {
+  max-width: 615px;
+}
+
+.stories .secondaryTitle__subtitle {
+  max-width: 418px;
+}
+
+/* Примечание
+Эта запись задает стиль для всех непосредственных потомков элементов, 
+которые являются дочерними элементами элементов с классом "stories__cardContainer" */
+/* .stories__cardContainer>* {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 142%;
+
+  color: black;
+} */
+
+/* _________________________________________________________________________________________________________________________________*/
+.stories {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-/* Примечание
-Эта запись задает стиль для всех непосредственных потомков элементов, 
-которые являются дочерними элементами элементов с классом "chooseTour" */
-.chooseTour>* {
-  font-family: 'Roboto';
-  font-style: normal;
-}
-
-.chooseTour__title {
+.stories__title {
   margin: 0px;
   margin-top: 135px;
-
+  text-align: center;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
   font-size: 59px;
-  font-weight: 700;
   line-height: 124%;
-  text-align: center;
+
   color: var(--black-color);
 }
 
-.chooseTour__tabs {
+.stories__tabs {
+  text-align: center;
   padding-top: 35px;
-  text-align: center;
 }
 
-.chooseTour__tabs-link {
-  padding-bottom: 4px;
-  font-size: 23px;
+.stories__tabs-link {
+  font-family: 'Roboto';
+  font-style: normal;
   font-weight: 700;
+  font-size: 23px;
   line-height: 122%;
-  color: var(--black-color);
 
+  color: var(--black-color);
+  padding-bottom: 4px;
 }
 
 /* Выберем все пункты списка, кроме последнего */
-.chooseTour__tabs-link:not(:last-child) {
+.stories__tabs-link:not(:last-child) {
   margin-right: 26.5px;
 }
 
-.chooseTour__tabs-link:hover {
-  border-bottom: 2px solid var(--black-color);
+.stories__tabs-link:hover {
   color: var(--black-color);
+  border-bottom: 2px solid var(--black-color)
 }
 
 /* Выбранный вариант вкладки*/
-.chooseTour__tabs-link_active {
-  border-bottom: 2px solid var(--orange200-color);
+.stories__tabs-link_active {
   color: var(--orange200-color);
+  border-bottom: 2px solid var(--orange200-color);
 }
 
 /* установим :hover для выбранного варианта вкладки, чтобы
-обычный :hover--->(.chooseTour__tabs-link:hover) не перебивал его 
+обычный :hover--->(.stories__tabs-link:hover) не перебивал его 
 Без такой записи обычный :hover перебивает выбранный варианта вкладки */
-.chooseTour__tabs-link_active:hover {
-  border-bottom: 2px solid var(--orange200-color);
+.stories__tabs-link_active:hover {
   color: var(--orange200-color);
+  border-bottom: 2px solid var(--orange200-color);
 }
 
 
-.chooseTour__cardContainer {
+.stories__cardContainer {
   max-width: 1200px;
   margin: auto;
-  margin-top: 106px;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+  margin-top: 106px;
 }
 
-.chooseTour__cardTur {
+.stories__cardTur {
   position: relative;
   width: 370px;
-  /* min-height: 531px; */
-  height: auto;
+  min-height: 531px;
   border-radius: 50px;
   overflow: hidden;
+
+  background-repeat: no-repeat;
 }
 
 /* применяем стили к трём последним элементам */
-.chooseTour__cardTur:nth-last-child(-n+3) {
+.stories__cardTur:nth-last-child(-n+3) {
   margin-top: 30px;
 }
 
-.chooseTour__cardTur-img {
+.stories__cardTur-img {
+  background: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%), url('../assets/images/card_tour_photo_1.png');
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
   height: 100%;
 }
 
-.chooseTour__cardTur-img {
+.stories__cardTur-img {
   transition: transform 0.3s ease-in-out;
 }
 
-.chooseTour__cardTur-content {
-  min-height: 531px;
+.stories__cardTur-content {
+  display: flex;
+  flex-direction: column;
   /* Элемент с position: sticky «прилипает» к экрану при 
   прокрутке, пока не встретится с границей 
   родительского блока */
   position: sticky;
-  bottom: 0;
-  box-sizing: border-box;
-  padding: 50px 30px;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-
-  cursor: pointer;
+  bottom: 407px;
 }
 
-.chooseTour__cardTur-content-title {
+.stories__cardTur-content-title {
   max-width: 240px;
   position: relative;
-  left: 0;
-  bottom: 0;
-  margin: 0;
-  padding-left: 20px;
-  padding-bottom: 16px;
-
-  font-size: 35px;
+  font-family: 'Roboto';
+  font-style: normal;
   font-weight: 500;
+  font-size: 35px;
   line-height: 122%;
-
   color: var(--white-color);
+  margin: 0;
+  left: 0;
+  padding-left: 50px;
+  padding-top: 10px;
+  bottom: 0;
+
 }
 
-.chooseTour__cardTur-content-price {
+.stories__cardTur-content-price {
   position: relative;
-  left: 0;
-  bottom: 0;
-  margin: 0;
-  padding-left: 20px;
-  padding-bottom: 277px;
-
-  font-size: 17px;
+  font-family: 'Roboto';
+  font-style: normal;
   font-weight: 400;
+  font-size: 17px;
   line-height: 142%;
   letter-spacing: -0.01em;
-
   color: var(--white-color);
+  margin: 0;
+  left: 0;
+  padding-left: 50px;
+  bottom: 0;
 }
 
-.chooseTour__cardTur-content-link {
+.stories__cardTur-content-link {
   position: relative;
   left: 0;
   bottom: 0;
 }
 
-.chooseTour__cardTur-content-link-item {
-  padding: 7px 59px 7px 20px;
-  font-size: 23px;
+.stories__cardTur-content-link-item {
+  font-family: 'Roboto';
+  font-style: normal;
   font-weight: 700;
+  font-size: 23px;
   line-height: 122%;
+
   color: var(--white-color);
+  padding: 7px 59px 7px 20px;
 }
 
-.chooseTour__cardTur-content-link-item::after {
+.stories__cardTur-content-link-item::after {
   position: relative;
   content: url('../../dist/images/VectorRight.svg');
   left: 11px;
@@ -169,14 +185,14 @@
 применялось сразу два стиля: 
 1-й_стиль увеличивал фоновое изображение
 2-й_стиль создавал форму кнопки на ссылке */
-.chooseTour__cardTur:hover .chooseTour__cardTur-img {
+.stories__cardTur:hover .stories__cardTur-img {
   transform: scale(1.2);
   cursor: pointer;
 }
 
-.chooseTour__cardTur:hover .chooseTour__cardTur-content-link-item {
-  border-radius: 50px;
+.stories__cardTur:hover .stories__cardTur-content-link-item {
   background-color: var(--green400-color);
+  border-radius: 50px;
 }
 
 /*___Примечание №1 
@@ -190,11 +206,11 @@ ___Примечание №2
 которые одновременно имеют два класса: `.class1` и `.class2` */
 
 /* установим :hover для выбранного варианта ссылки, чтобы
-обычный :hover--->(.chooseTour__cardTur:hover .chooseTour__cardTur-content-link-item:active) 
+обычный :hover--->(.stories__cardTur:hover .stories__cardTur-link-item:active) 
 не перебивал его.
 Без такой записи обычный :hover перебивает выбранный варианта ссылки*/
-.chooseTour__cardTur:hover .chooseTour__cardTur-content-link-item:active {
-  border-radius: 50px;
-  background-color: var(--orange200-color);
+.stories__cardTur:hover .stories__cardTur-content-link-item:active {
   color: var(--white-color);
+  background-color: var(--orange200-color);
+  border-radius: 50px;
 }

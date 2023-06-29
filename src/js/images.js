@@ -61,3 +61,8 @@ export const arrayLinksToImagesTravelPhotosB2 = [
   travelPhoto8,
   travelPhoto13,
 ];
+
+// импортируем изображение для раздела ("stories")
+import storiesPhoto1 from '../assets/images/storyPhoto1.png';
+import storiesPhoto2 from '../assets/images/storyPhoto2.png';
+import storiesPhoto3 from '../assets/images/storyPhoto3.png';

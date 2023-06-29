@@ -1,14 +1,6 @@
 @import url('./fonts.css');
 @import url('./normalizeStyle.css');
 
-
-ul {
-  /* Убираем маркеры */
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
 a {
   /* убираем подчеркивание */
   text-decoration: none;
@@ -45,6 +37,7 @@ a {
 @import url('./collectTour.css');
 @import url('./reviews.css');
 @import url('./travelPhotos.css');
+@import url('./stories.css');
 
 /* последний файл */
 @import url('./media.css');

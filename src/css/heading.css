@@ -34,6 +34,10 @@
   padding-left: 182px;
   padding-right: 182px;
   padding-bottom: 4px;
+
+  /* Убираем маркеры */
+  list-style-type: none;
+  margin: 0;
 }
 
 /* Выберем все пункты списка, кроме последнего */

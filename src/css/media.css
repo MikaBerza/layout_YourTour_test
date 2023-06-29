@@ -45,12 +45,16 @@
     width: 450px;
   }
 
-  .chooseTour__cardTur-title {
+  .chooseTour__cardTur-content {
+    justify-content: start;
+  }
+
+  .chooseTour__cardTur-content-title {
     max-width: 340px;
   }
 
-  .chooseTour__cardTur-link {
-    bottom: 145px;
+  .chooseTour__cardTur-content-price {
+    padding-bottom: 320px;
   }
 
   /* __collectTour(раздел-собрать тур) */
@@ -222,13 +226,13 @@
   }
 
   .chooseTour__cardContainer {
-    flex-direction: column;
+    max-width: 360px;
+    justify-content: center;
     margin-top: 59px;
   }
 
   .chooseTour__cardTur {
     width: 318px;
-    height: 318px;
     border-radius: 20px;
   }
 
@@ -237,36 +241,34 @@
     margin-top: 18px;
   }
 
-  .chooseTour__cardTur-title {
+  .chooseTour__cardTur-content {
+    min-height: 318px;
+    padding: 25px 6px;
+  }
+
+  .chooseTour__cardTur-content-title {
     max-width: 268px;
-    font-weight: 500;
     font-size: 23px;
+    font-weight: 500;
     line-height: 120%;
     letter-spacing: 0.04em;
-    padding-left: 25px;
-    bottom: 292px;
+    padding-bottom: 14px;
   }
 
-  .chooseTour__cardTur-price {
+  .chooseTour__cardTur-content-price {
     font-size: 16px;
-    padding-left: 25px;
-    bottom: 279px;
+    padding-bottom: 180px;
   }
 
-  .chooseTour__cardTur-link {
-    left: 6px;
-    bottom: 98px;
-  }
-
-  .chooseTour__cardTur-link-item {
+  .chooseTour__cardTur-content-link-item {
     font-size: 16px;
     line-height: 142%;
   }
 
-  .chooseTour__cardTur-link-item::after {
+  .chooseTour__cardTur-content-link-item::after {
     top: 2px;
     left: 12px;
-  }
+  } 
 
   /* __collectTour(раздел-собрать тур) */
   .secondaryTitle__title {
