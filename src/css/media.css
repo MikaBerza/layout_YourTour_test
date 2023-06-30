@@ -137,6 +137,11 @@
   .travelPhotos__cardContainer .travelPhotos__cardContainer-block1:nth-child(3) .travelPhotos__cardContainer-block1-img:nth-child(4) {
     display: none;
   }
+
+  /* __stories(раздел-истории)__ */
+  .stories__cardContainer {
+    max-width: 918px;
+  }
 }
 
 
@@ -542,6 +547,83 @@
   /* убираем 2 картинку из блока2 */
   .travelPhotos__cardContainer-block2-img:nth-child(2) {
     display: none;
+  }
+
+  /* __stories(раздел-истории)__ */
+  .stories .secondaryTitle__title,
+  .stories .secondaryTitle__subtitle {
+    max-width: 318px;
+  }
+
+  .stories__cardContainer {
+    max-width: 318px;
+    margin-top: 50px;
+  }
+
+  .stories__card {
+    border-radius: 20px;
+  }
+
+  .stories__card-img {
+    background-position: 40% center;
+  }
+
+  .stories__card:not(:last-child) {
+    margin-bottom: 19px;
+  }
+
+  .stories__card-content {
+    padding: 30px 10px 33px 10px;
+  }
+
+  .stories__card-content-title {
+    max-width: 160px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+
+    font-size: 23px;
+    font-weight: 700;
+    line-height: 122%;
+    letter-spacing: 0.92px;
+  }
+
+  .stories__card-content-text {
+    max-width: 263px;
+    padding-left: 20px;
+    padding-bottom: 65px;
+    line-height: 143%;
+    font-size: 16px;
+  }
+
+  .stories__card-content-text-main {
+    padding-bottom: 24.7px;
+  }
+
+  .stories__card-content-text-list {
+    padding-left: 9px;
+  }
+
+  /* кастомный размер маркера списка ul*/
+  .stories__card-content-text-list .stories__card-content-text-list-item::before {
+    font-size: 16px;
+  }
+
+  .stories__card-content-link-btn-item {
+    font-size: 16px;
+  }
+
+  .stories__card-content-link-btn-item::after {
+    top: 3px;
+    left: 12px;
+  }
+
+  .stories__card-content-link-socialNetwork {
+    display: none;
+  }
+
+  /* установить нижний отступ */
+  .pd-b1 {
+    padding-bottom: 134px !important;
   }
 
 
