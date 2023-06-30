@@ -1,5 +1,6 @@
 // импортируем изображение для раздела ("heading")
 import '../assets/images/headerBackgroundImg1920.png';
+import '../assets/images/headerBackgroundImg1024.png';
 // импортируем изображение для раздела ("chooseTour")
 import photo_1 from '../assets/images/card_tour_photo_1.png';
 import photo_2 from '../assets/images/card_tour_photo_2.png';
@@ -18,14 +19,14 @@ export const arrayLinksToImagesChooseTour = [
   photo_6,
 ];
 // импортируем изображение для раздела ("collectTour")
-import VectorDown from '../assets/images/VectorDown.svg';
+import '../assets/images/VectorDown.svg';
 // импортируем изображение для раздела ("Age")
-import VectorRadio from '../assets/images/VectorRadio.svg';
+import '../assets/images/VectorRadio.svg';
 // импортируем изображение для раздела ("agreement")
-import VectorChecked from '../assets/images/VectorChecked.svg';
+import '../assets/images/VectorChecked.svg';
 // импортируем изображение для раздела ("reviews")
-import reviewPhoto1 from '../assets/images/reviewPhoto1.png';
-import reviewPhoto2 from '../assets/images/reviewPhoto2.png';
+import '../assets/images/reviewPhoto1.png';
+import '../assets/images/reviewPhoto2.png';
 // импортируем изображение для раздела ("travelPhotos")
 import travelPhoto1 from '../assets/images/travelPhoto1.png';
 import travelPhoto2 from '../assets/images/travelPhoto2.png';
