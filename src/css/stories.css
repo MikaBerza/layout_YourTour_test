@@ -1,25 +1,18 @@
+.stories {
+  width: 1920px;
+  margin: auto;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .stories .secondaryTitle__title {
   max-width: 615px;
 }
 
 .stories .secondaryTitle__subtitle {
   max-width: 418px;
-}
-
-/* _________________________________________________________________________________________________________________________________*/
-
-.stories {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-/* Примечание
-Эта запись задает стиль для всех непосредственных потомков элементов, 
-которые являются дочерними элементами элементов с классом "stories" */
-.stories>* {
-  font-family: 'Roboto';
-  font-style: normal;
 }
 
 .stories__cardContainer {

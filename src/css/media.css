@@ -3,6 +3,10 @@
 @media screen and (max-width: 1919px) {
 
   /* __heading(раздел-заголовок)__ */
+  .heading {
+    width: 1024px;
+  }
+
   .navbar__menu {
     padding-left: 84px;
     padding-right: 84px;
@@ -17,8 +21,7 @@
 
   /* __greeting(раздел-приветствие)__ */
   .greeting {
-    max-width: 1024px;
-    margin: auto;
+    width: 1024px;
     background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.40) 0%, rgba(0, 0, 0, 0.00) 100%),
       linear-gradient(0deg, rgba(0, 0, 0, 0.30) 0%, rgba(0, 0, 0, 0.30) 100%),
       url('../../dist/images/headerBackgroundImg1024.png');
@@ -33,6 +36,10 @@
   }
 
   /* __chooseTour(раздел-выбрать тур) */
+  .chooseTour {
+    width: 1024px;
+  }
+
   .chooseTour__cardContainer {
     max-width: 918px;
     margin-top: 106px;
@@ -150,6 +157,10 @@
 @media screen and (max-width: 1023px) {
 
   /* __heading(раздел-заголовок)__ */
+  .heading {
+    width: 360px;
+  }
+
   .navbar {
     width: 360px;
     padding: 32.5px 0px 0px 0px;

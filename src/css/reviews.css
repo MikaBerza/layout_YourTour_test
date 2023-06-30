@@ -1,3 +1,8 @@
+.reviews {
+  width: 1920px;
+  margin: auto;
+}
+
 .reviews .secondaryTitle__subtitle {
   max-width: 418px;
 }
@@ -32,7 +37,6 @@
   margin: 0;
   color: var(--black-color);
   font-size: 23px;
-  font-family: 'Roboto';
   font-weight: 700;
   line-height: 28px;
 }
@@ -55,7 +59,6 @@
 .reviews__cardContainer-item-person-block-name {
   display: block;
   font-size: 35px;
-  font-family: 'Roboto';
   font-weight: 500;
   line-height: 122%;
 }
@@ -64,7 +67,6 @@
   display: block;
   margin-top: 8px;
   font-size: 17px;
-  font-family: 'Roboto';
   line-height: 142%;
   letter-spacing: -0.17px;
 }
