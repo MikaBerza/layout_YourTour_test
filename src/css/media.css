@@ -1,12 +1,11 @@
 /* ___________@media-директива_____________________________________ */
 /*от1024px-до1919px___________________________________________________*/
 @media screen and (max-width: 1919px) {
-
-  /* __heading(раздел-заголовок)__ */
-  .heading {
+  .vt-w1 {
     width: 1024px;
   }
 
+  /* __heading(раздел-заголовок)__ */
   .navbar__menu {
     padding-left: 84px;
     padding-right: 84px;
@@ -21,7 +20,6 @@
 
   /* __greeting(раздел-приветствие)__ */
   .greeting {
-    width: 1024px;
     background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.40) 0%, rgba(0, 0, 0, 0.00) 100%),
       linear-gradient(0deg, rgba(0, 0, 0, 0.30) 0%, rgba(0, 0, 0, 0.30) 100%),
       url('../../dist/images/headerBackgroundImg1024.png');
@@ -36,10 +34,6 @@
   }
 
   /* __chooseTour(раздел-выбрать тур) */
-  .chooseTour {
-    width: 1024px;
-  }
-
   .chooseTour__cardContainer {
     max-width: 918px;
     margin-top: 106px;
@@ -155,15 +149,14 @@
 
 /*от360px-до1023px___________________________________________________*/
 @media screen and (max-width: 1023px) {
-
-  /* __heading(раздел-заголовок)__ */
-  .heading {
+  .vt-w1 {
     width: 360px;
   }
 
+  /* __heading(раздел-заголовок)__ */
   .navbar {
     width: 360px;
-    padding: 32.5px 0px 0px 0px;
+    padding: 32.5px 0px 20px 0px;
     margin: auto;
   }
 
@@ -182,10 +175,6 @@
   }
 
   /* __greeting(раздел-приветствие)__ */
-  .greeting {
-    width: 360px;
-  }
-
   .greeting__title {
     max-width: 360px;
     padding-top: 140px;
@@ -632,9 +621,9 @@
     display: none;
   }
 
-  /* установить нижний отступ */
-  .pd-b1 {
-    padding-bottom: 134px !important;
+  /* нижний отступ */
+  .pb-1 {
+    padding-bottom: 134px;
   }
 
 
@@ -645,5 +634,15 @@
     .heading {
       position: absolute;
     }
+  }
+}
+
+/*от0px-до359px___________________________________________________*/
+@media screen and (max-width: 359px) {
+
+  /* __heading(раздел-заголовок)__ */
+  .heading {
+    left: auto;
+    transform: none;
   }
 }

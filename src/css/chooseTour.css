@@ -4,9 +4,6 @@
 которые являются дочерними элементами элементов с классом "chooseTour" */
 
 .chooseTour {
-  width: 1920px;
-  margin: auto;
-  
   display: flex;
   flex-direction: column;
   justify-content: center;

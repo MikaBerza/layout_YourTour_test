@@ -1,41 +1,9 @@
 @import url('./fonts.css');
 @import url('./normalizeStyle.css');
 
-a {
-  /* убираем подчеркивание */
-  text-decoration: none;
-}
 
-:root {
-  --black-color: #1B1F2B;
-  --orange200-color: #EFA501;
-  --green400-color: #286562;
-  --gray300-color: #A6A6A6;
-  --beige200-color: #F4F0E9;
 
-  --white-color: #FFFFFF;
-  --orange100-color: #F8E6BE;
-  --green300-color: #3B7E7B;
-  --gray200-color: #D9DFDB;
-  --beige100-color: #F9F7F4;
-
-  --green200-color: #627F7E;
-  --gray100-color: #F1F3F2;
-  --green100-color: #E0F0E5;
-}
-
-/* внешняя обертка */
-.wrapper {
-  font-family: 'Roboto', 'Times New Roman', Times, serif;
-  font-style: normal;
-
-  max-width: 1920px;
-  margin: auto;
-
-  background: var(--beige100-color);
-  background-color: red
-}
-
+@import url('./commonSource.css');
 @import url('./heading.css');
 @import url('./greeting.css');
 @import url('./chooseTour.css');

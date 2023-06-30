@@ -1,8 +1,6 @@
 /* ___________Main_________________________________________________ */
 /* __section__greeting(приветствие)__*/
 .greeting {
-  width: 1920px;
-  margin: auto;
   background-image: url('../../dist/images/headerBackgroundImg1920.png');
   background-repeat: no-repeat;
   background-position: center center;
