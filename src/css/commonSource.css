@@ -25,9 +25,6 @@ a {
 .wrapper {
   font-family: 'Roboto', 'Times New Roman', Times, serif;
   font-style: normal;
-
-  max-width: 1920px;
-  margin: auto;
 }
 
 /* размер viewport */

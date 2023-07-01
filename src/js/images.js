@@ -73,3 +73,6 @@ export const arrayLinksToImagesStories = [
   storiesPhoto2,
   storiesPhoto3,
 ];
+
+// импортируем изображение для раздела ("footers")
+import '../assets/images/footersPhoto.png';

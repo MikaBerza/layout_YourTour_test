@@ -1,8 +1,6 @@
 @import url('./fonts.css');
 @import url('./normalizeStyle.css');
 
-
-
 @import url('./commonSource.css');
 @import url('./heading.css');
 @import url('./greeting.css');
@@ -11,6 +9,7 @@
 @import url('./reviews.css');
 @import url('./travelPhotos.css');
 @import url('./stories.css');
+@import url('./footers.css');
 
 /* последний файл */
 @import url('./media.css');

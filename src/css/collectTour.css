@@ -317,11 +317,13 @@
   color: var(--gray300-color);
 }
 
+/* ПОДУМАТЬ, как сделать Условия Лицензионного договора */
 .formFill__agreement-text-span1::after {
   content: 'Лицензионного договора';
   position: relative;
   padding-left: 4.5px;
   color: var(--black-color);
+  cursor: pointer;
 }
 
 
