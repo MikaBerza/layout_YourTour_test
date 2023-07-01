@@ -307,25 +307,27 @@
 }
 
 .formFill__agreement-text {
-  display: flex;
-}
-
-.formFill__agreement-text-span1 {
+  margin: 0;
+  color: var(--gray300-color);
   font-size: 17px;
+  font-weight: 400;
   line-height: 142%;
   letter-spacing: -0.17px;
-  color: var(--gray300-color);
 }
 
-/* ПОДУМАТЬ, как сделать Условия Лицензионного договора */
-.formFill__agreement-text-span1::after {
-  content: 'Лицензионного договора';
-  position: relative;
-  padding-left: 4.5px;
+.formFill__agreement-text-link {
   color: var(--black-color);
   cursor: pointer;
 }
 
+.formFill__agreement-text-link:hover {
+  text-decoration: underline;
+}
+
+.formFill__agreement-text-link:active {
+  color: var(--green400-color);
+  text-decoration: underline;
+}
 
 .formFill__agreement-input+.formFill__agreement-customCheckbox::before {
   border-radius: 0.25em;

@@ -399,14 +399,8 @@
   }
 
   .formFill__agreement-text {
-    width: 248px;
-    display: inline-block;
-  }
-
-  .formFill__agreement-text-span1 {
     font-size: 16px;
     letter-spacing: -0.17px;
-    margin-right: 0;
   }
 
   .formFill__agreement-input+.formFill__agreement-customCheckbox::before {
