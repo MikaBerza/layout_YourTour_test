@@ -1,6 +1,6 @@
-// импортируем изображение для раздела ("heading")
-import '../assets/images/headerBackgroundImg1920.png';
-import '../assets/images/headerBackgroundImg1024.png';
+// импортируем изображение для раздела ("greeting")
+import '../assets/images/greetingBackgroundImg1920.png';
+import '../assets/images/greetingBackgroundImg1024.png';
 // импортируем изображение для раздела ("chooseTour")
 import photo_1 from '../assets/images/card_tour_photo_1.png';
 import photo_2 from '../assets/images/card_tour_photo_2.png';
@@ -8,7 +8,7 @@ import photo_3 from '../assets/images/card_tour_photo_3.png';
 import photo_4 from '../assets/images/card_tour_photo_4.png';
 import photo_5 from '../assets/images/card_tour_photo_5.png';
 import photo_6 from '../assets/images/card_tour_photo_6.png';
-import VectorRight from '../assets/images/VectorRight.svg';
+import '../assets/images/VectorRight.svg';
 // массив с ссылками на изображения из ("chooseTour")
 export const arrayLinksToImagesChooseTour = [
   photo_1,

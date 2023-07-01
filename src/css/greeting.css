@@ -1,7 +1,7 @@
 /* ___________Main_________________________________________________ */
 /* __section__greeting(приветствие)__*/
 .greeting {
-  background-image: url('../../dist/images/headerBackgroundImg1920.png');
+  background-image: url('../../dist/images/greetingBackgroundImg1920.png');
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
