@@ -6,9 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- description — для описания страницы-->
   <meta name="description" content="Продажа туров для идеальных путешествий и отдыха">
-  <!-- keywords — ключевые слова -->
   <meta name="keywords" content="туры, путешествия, отдых, экскурсии, вакансии, бронирование, путевки,
     выгодные предложения, отели, вечеринки, авиабилеты, горящие туры, путешествия по всему миру">
   <title>YourTour.ru</title>
@@ -17,11 +15,9 @@
 
 <body>
   <div class="wrapper">
-    <!--__heading(раздел-заголовок)__-->
     <header class="heading vt-w1">
       <nav class="navbar">
         <a class="navbar__logo" href="#YourTour">
-          <!-- svg-картинка -->
           <svg class="navbar__logo-YourTour" width="181.84" height="32" viewBox="0 0 181.84 32">
             <path
               d="M7.476 0.879883L13.902 14.0679L20.412 0.879883H27.93L17.304 20.5359V30.6999H10.458V20.4519L0 0.879883H7.476Z" />
@@ -54,7 +50,6 @@
     </header>
 
     <main class="vt-w1 bgc-1">
-      <!--__greeting(раздел-приветствие)__-->
       <section class="greeting">
         <h1 class="greeting__title" id="YourTour">Идеальные путешествия существуют</h1>
         <p class="greeting__slogan">Идейные соображения высшего порядка, а также рамки и место обучения кадров</p>
@@ -63,7 +58,6 @@
         </div>
       </section>
 
-      <!--__chooseTour(раздел-выбрать тур)__-->
       <section class="chooseTour">
         <h2 class="chooseTour__title" id="chooseTour">Выбери свой тур</h2>
         <nav class="chooseTour__tabs">
@@ -144,7 +138,6 @@
         </div>
       </section>
 
-      <!--__collectTour(раздел-собрать тур)__-->
       <section class="collectTour">
         <div class="secondaryTitle">
           <h2 class="secondaryTitle__title" id="collectTour">Собери свой тур</h2>
@@ -154,13 +147,11 @@
 
         <form class="formFill" action="#">
           <div class="formFill__inputFields">
-            <!-- Name -->
             <div class="formFill__inputFields-name">
               <label class="formFill__inputFields-name-label" for="connectionName">Имя</label>
               <input class="formFill__inputFields-name-input" name="name" type="text" id="connectionName"
                 placeholder="Введите Ваше имя" autocomplete="off" required>
             </div>
-            <!-- dropdown-select -->
             <div class="formFill__inputFields-dropdown">
               <label class="formFill__inputFields-dropdown-label" for="connectionDropdown">Направление</label>
               <div class="formFill__inputFields-dropdown-select">
@@ -174,26 +165,26 @@
                 </select>
               </div>
             </div>
-            <!-- Email -->
+
             <div class="formFill__inputFields-email">
               <label class="formFill__inputFields-email-label" for="connectionEmail">Email</label>
               <input class="formFill__inputFields-email-input" name="email" type="email" id="connectionEmail"
                 placeholder="example@mail.com" autocomplete="off" required>
             </div>
-            <!-- Phone -->
+
             <div class="formFill__inputFields-phone">
               <label class="formFill__inputFields-phone-label" for="connectionPhone">Телефон</label>
               <input class="formFill__inputFields-phone-input" name="phone" type="tel" pattern="\+7\d{10}"
                 maxlength="12" id="connectionPhone" placeholder="+ 7 ( _ _ _ ) _ _ _ - _ _ - _ _" autocomplete="off"
                 required>
             </div>
-            <!-- DateFrom -->
+
             <div class="formFill__inputFields-dateFrom">
               <label class="formFill__inputFields-dateFrom-label" for="connectionDateFrom">Дата от</label>
               <input class="formFill__inputFields-dateFrom-input" name="dateFrom" type="date" id="connectionDateFrom"
                 autocomplete="off" required>
             </div>
-            <!-- DateTo -->
+
             <div class="formFill__inputFields-dateTo">
               <label class="formFill__inputFields-dateTo-label" for="connectionDateTo">Дата до</label>
               <input class="formFill__inputFields-dateTo-input" name="dateTo" type="date" id="connectionDateTo"
@@ -201,14 +192,14 @@
             </div>
           </div>
 
-          <!-- Comment -->
+
           <div class="formFill__commentField">
             <label class="formFill__commentField-label" for="connectionComment">Комментарий</label>
             <textarea class="formFill__commentField-textarea" name="comment" id="connectionComment" autocomplete="off"
               maxlength="300" required></textarea>
           </div>
 
-          <!-- Age -->
+
           <fieldset class="formFill__age">
             <legend class="formFill__age-legend">Вам есть 18 лет?</legend>
             <div class="formFill__age-radioGroup">
@@ -225,7 +216,7 @@
             </div>
           </fieldset>
 
-          <!-- Agreement -->
+
           <div class="formFill__agreement">
             <input class="formFill__agreement-input" type="checkbox" name="acceptAgreement" id="connectionAgreement">
             <label class="formFill__agreement-customCheckbox" for="connectionAgreement"></label>
@@ -233,7 +224,7 @@
               <a class="formFill__agreement-text-link" href="#licenseAgreement">Лицензионного договора</a>
             </p>
           </div>
-          <!-- Buttons -->
+
           <div class="formFill__buttons">
             <button class="formFill__buttons-find">Найти тур</button>
             <button class="formFill__buttons-reset">Сбросить</button>
@@ -241,7 +232,7 @@
         </form>
       </section>
 
-      <!--__reviews(отзывы)__-->
+
       <section class="reviews">
         <div class="secondaryTitle">
           <h2 class="secondaryTitle__title" id="reviews">Отзывы наших путешественников</h2>
@@ -297,7 +288,7 @@
         </div>
       </section>
 
-      <!--__travelPhotos(раздел-фотографии путешествий)__-->
+
       <section class="travelPhotos">
         <div class="secondaryTitle">
           <h2 class="secondaryTitle__title">Фотографии путешествий</h2>
@@ -329,7 +320,7 @@
         </div>
       </section>
 
-      <!--__stories(раздел-истории)__-->
+
       <section class="stories">
         <div class="secondaryTitle">
           <h2 class="secondaryTitle__title" id="stories">Истории путешествий</h2>
@@ -429,7 +420,7 @@
       </section>
     </main>
 
-    <!--__footer(раздел-нижний колонтитул)__-->
+
     <footer class="footers vt-w1 bgc-1">
       <div class="footers__card">
         <div class="footers__card-img"></div>
