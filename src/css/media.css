@@ -6,11 +6,8 @@
   }
 
   /* __heading(раздел-заголовок)__ */
-  .navbar__menu {
-    padding-left: 84px;
-    padding-right: 84px;
-    display: flex;
-    padding-bottom: 4px;
+  .navbar {
+    width: 910px;
   }
 
   /* Выберем все пункты списка, кроме последнего */
@@ -160,7 +157,7 @@
 
   /* __heading(раздел-заголовок)__ */
   .navbar {
-    width: 360px;
+    width: 320px;
     padding: 32.5px 0px 20px 0px;
     margin: auto;
   }
@@ -168,7 +165,6 @@
   .navbar__logo-YourTour {
     width: 134px;
     height: 23px;
-    padding-right: 63px;
   }
 
   .navbar__menu {

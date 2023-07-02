@@ -17,8 +17,11 @@
 }
 
 .navbar {
+  width: 1168px;
+  margin: auto;
+
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   padding-top: 29px;
   padding-bottom: 29px;
@@ -30,8 +33,7 @@
 
 .navbar__menu {
   display: flex;
-  padding-left: 182px;
-  padding-right: 182px;
+  padding-left: 0;
   padding-bottom: 4px;
 
   /* Убираем маркеры */
@@ -41,7 +43,7 @@
 
 /* Выберем все пункты списка, кроме последнего */
 .navbar__menu-item:not(:last-child) {
-  margin-right: 2.6vw;
+  margin-right: 50px;
 }
 
 .navbar__menu-link {
