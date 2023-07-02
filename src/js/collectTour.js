@@ -4,7 +4,7 @@ import { removeStyleAnItem, addStyleAnItem } from './modules';
 const formElement = document.querySelector('.formFill');
 // получим элемент select
 const dropdownSelectItem = formElement.querySelector(
-  '.formFill__inputFields-dropdown-select-item'
+  '.formFill__inputFields-dropdown-select-item',
 );
 // получим элемент кнопки (Сбросить)
 const btnReset = formElement.querySelector('.formFill__buttons-reset');
@@ -52,7 +52,7 @@ function clearFormFields(event) {
   // удаляем стиль элементу
   removeStyleAnItem(
     dropdownSelectItem,
-    'formFill__inputFields-dropdown-select-item_active'
+    'formFill__inputFields-dropdown-select-item_active',
   );
 }
 
@@ -60,7 +60,7 @@ function clearFormFields(event) {
 dropdownSelectItem.addEventListener('change', () => {
   addStyleAnItem(
     dropdownSelectItem,
-    'formFill__inputFields-dropdown-select-item_active'
+    'formFill__inputFields-dropdown-select-item_active',
   );
 });
 

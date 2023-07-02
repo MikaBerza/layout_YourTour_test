@@ -2,22 +2,13 @@
 import '../assets/images/greetingBackgroundImg1920.png';
 import '../assets/images/greetingBackgroundImg1024.png';
 // импортируем изображение для раздела ("chooseTour")
-import photo_1 from '../assets/images/card_tour_photo_1.png';
-import photo_2 from '../assets/images/card_tour_photo_2.png';
-import photo_3 from '../assets/images/card_tour_photo_3.png';
-import photo_4 from '../assets/images/card_tour_photo_4.png';
-import photo_5 from '../assets/images/card_tour_photo_5.png';
-import photo_6 from '../assets/images/card_tour_photo_6.png';
+import photo1 from '../assets/images/card_tour_photo_1.png';
+import photo2 from '../assets/images/card_tour_photo_2.png';
+import photo3 from '../assets/images/card_tour_photo_3.png';
+import photo4 from '../assets/images/card_tour_photo_4.png';
+import photo5 from '../assets/images/card_tour_photo_5.png';
+import photo6 from '../assets/images/card_tour_photo_6.png';
 import '../assets/images/VectorRight.svg';
-// массив с ссылками на изображения из ("chooseTour")
-export const arrayLinksToImagesChooseTour = [
-  photo_1,
-  photo_2,
-  photo_3,
-  photo_4,
-  photo_5,
-  photo_6,
-];
 // импортируем изображение для раздела ("collectTour")
 import '../assets/images/VectorDown.svg';
 // импортируем изображение для раздела ("Age")
@@ -41,6 +32,22 @@ import travelPhoto10 from '../assets/images/travelPhoto10.png';
 import travelPhoto11 from '../assets/images/travelPhoto11.png';
 import travelPhoto12 from '../assets/images/travelPhoto12.png';
 import travelPhoto13 from '../assets/images/travelPhoto13.png';
+// импортируем изображение для раздела ("stories")
+import storiesPhoto1 from '../assets/images/storyPhoto1.png';
+import storiesPhoto2 from '../assets/images/storyPhoto2.png';
+import storiesPhoto3 from '../assets/images/storyPhoto3.png';
+// импортируем изображение для раздела ("footers")
+import '../assets/images/footersPhoto.png';
+
+// массив с ссылками на изображения из ("chooseTour")
+export const arrayLinksToImagesChooseTour = [
+  photo1,
+  photo2,
+  photo3,
+  photo4,
+  photo5,
+  photo6,
+];
 
 // массив с ссылками на изображения из ("travelPhotos") блок 1
 export const arrayLinksToImagesTravelPhotosB1 = [
@@ -63,16 +70,9 @@ export const arrayLinksToImagesTravelPhotosB2 = [
   travelPhoto13,
 ];
 
-// импортируем изображение для раздела ("stories")
-import storiesPhoto1 from '../assets/images/storyPhoto1.png';
-import storiesPhoto2 from '../assets/images/storyPhoto2.png';
-import storiesPhoto3 from '../assets/images/storyPhoto3.png';
 // массив с ссылками на изображения из ("stories")
 export const arrayLinksToImagesStories = [
   storiesPhoto1,
   storiesPhoto2,
   storiesPhoto3,
 ];
-
-// импортируем изображение для раздела ("footers")
-import '../assets/images/footersPhoto.png';
