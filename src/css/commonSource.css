@@ -29,8 +29,7 @@ a {
 
 /* размер viewport */
 .vt-w1 {
-  width: 1920px;
-  margin: auto;
+  width: 100%;
 }
 
 /* фоновый цвет */

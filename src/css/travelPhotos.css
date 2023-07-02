@@ -8,6 +8,7 @@
 }
 
 .travelPhotos__cardContainer {
+  max-width: 1920px;
   margin: auto;
   margin-top: 99px;
   display: flex;
