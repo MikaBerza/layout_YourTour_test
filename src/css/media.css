@@ -17,7 +17,7 @@
     width: 442px;
   }
 
-  .greeting__btn {
+  .greeting__buttons {
     padding-top: 49px;
   }
 
@@ -177,12 +177,12 @@
     font-size: 16px;
   }
 
-  .greeting__btn {
+  .greeting__buttons {
     padding-top: 40px;
     padding-bottom: 52px;
   }
 
-  .greeting__btn-small {
+  .greeting__buttons-small {
     width: 114px;
     font-size: 16px;
   }

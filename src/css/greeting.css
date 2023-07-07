@@ -33,14 +33,14 @@
   color: var(--white-color);
 }
 
-.greeting__btn {
+.greeting__buttons {
   margin: auto;
   padding-top: 50px;
   padding-bottom: 119px;
   text-align: center;
 }
 
-.greeting__btn-small {
+.greeting__buttons-small {
   width: 118px;
   padding: 5px 20px;
 
@@ -60,13 +60,13 @@
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.greeting__btn-small:hover {
+.greeting__buttons-small:hover {
   background: var(--orange200-color);
   color: var(--white-color);
   cursor: pointer;
 }
 
-.greeting__btn-small:active {
+.greeting__buttons-small:active {
   background: var(--orange100-color);
   color: var(--black-color);
   cursor: pointer;
