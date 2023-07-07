@@ -49,17 +49,23 @@
 }
 
 .footers__card-content-text-link {
+  /* начальное значение */
+  border-bottom: 1px solid transparent;
+  transition: border-bottom 0.3s ease, color 0.3s ease;
   color: var(--black-color);
   cursor: pointer;
 }
 
 .footers__card-content-text-link:hover {
-  text-decoration: underline;
+  /* измененное значение */
+  border-bottom: 1px solid var(--black-color);
+  color: var(--black-color);
 }
 
 .footers__card-content-text-link:active {
+  /* измененное значение */
+  border-bottom: 1px solid var(--green400-color);
   color: var(--green400-color);
-  text-decoration: underline;
 }
 
 .footers__linkContainer {
@@ -100,11 +106,14 @@
 }
 
 .footers__link-socialNetwork-block-item {
+  /* начальное значение */
+  border-bottom: 1px solid transparent;
   color: var(--black-color);
+  transition: border-bottom 0.3s ease;
 }
 
 .footers__link-socialNetwork-block-item:hover {
-  text-decoration: none;
+  /* измененное значение */
   border-bottom: 1px solid var(--black-color);
   cursor: pointer;
 }

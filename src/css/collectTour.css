@@ -318,15 +318,22 @@
 .formFill__agreement-text-link {
   color: var(--black-color);
   cursor: pointer;
+
+  /* начальное значение */
+  border-bottom: 1px solid transparent;
+  transition: border-bottom 0.3s ease, color 0.3s ease;
 }
 
 .formFill__agreement-text-link:hover {
-  text-decoration: underline;
+  /* измененное значение */
+  border-bottom: 1px solid var(--black-color);
+  color: var(--black-color);
 }
 
 .formFill__agreement-text-link:active {
+  /* измененное значение */
+  border-bottom: 1px solid var(--green400-color);
   color: var(--green400-color);
-  text-decoration: underline;
 }
 
 .formFill__agreement-input+.formFill__agreement-customCheckbox::before {
@@ -354,6 +361,9 @@
   background: var(--green400-color);
   border-radius: 10px;
   color: var(--white-color);
+  /* ease определяет функцию плавности и */
+  /* обозначает постепенное ускорение и замедление в течение всего перехода */
+  transition: background-color 0.3s ease;
 }
 
 .formFill__buttons-find {

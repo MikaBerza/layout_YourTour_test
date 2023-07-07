@@ -55,6 +55,9 @@
   line-height: 142%;
   letter-spacing: -0.01em;
   color: var(--black-color);
+  /* ease определяет функцию плавности и */
+  /* обозначает постепенное ускорение и замедление в течение всего перехода */
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .greeting__btn-small:hover {

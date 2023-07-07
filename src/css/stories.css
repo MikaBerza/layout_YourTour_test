@@ -41,7 +41,9 @@
 }
 
 .stories__card-img {
-  transition: transform 0.3s ease-in-out;
+  /* ease определяет функцию плавности и */
+  /* обозначает постепенное ускорение и замедление в течение всего перехода */
+  transition: transform 0.3s ease;
 }
 
 .stories__card-content {
@@ -123,6 +125,11 @@
   font-weight: 700;
   line-height: 122%;
   color: var(--white-color);
+
+  border-radius: 50px;
+  /* ease определяет функцию плавности и */
+  /* обозначает постепенное ускорение и замедление в течение всего перехода */
+  transition: background-color 0.3s ease;
 }
 
 .stories__card-content-link-btn-item::after {
@@ -136,6 +143,10 @@
   font-weight: 400;
   line-height: 142%;
   color: var(--white-color);
+
+  /* начальное значение */
+  border-bottom: 1px solid transparent;
+  transition: border-bottom 0.3s ease, color 0.3s ease;
 }
 
 .stories__card-content-link-socialNetwork-item:not(:last-child) {
@@ -143,11 +154,13 @@
 }
 
 .stories__card-content-link-socialNetwork-item:hover {
-  text-decoration: none;
+  /* измененное значение */
   border-bottom: 1px solid var(--white-color);
+  color: var(--white-color);
 }
 
 .stories__card-content-link-socialNetwork-item:active {
+  /* измененное значение */
   border-bottom: 1px solid var(--orange200-color);
   color: var(--orange200-color);
 }

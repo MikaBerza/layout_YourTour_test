@@ -32,6 +32,9 @@
   line-height: 122%;
   color: var(--black-color);
 
+  /* начальное значение */
+  border-bottom: 2px solid transparent;
+  transition: border-bottom 0.3s ease, color 0.3s ease;
 }
 
 /* Выберем все пункты списка, кроме последнего */
@@ -40,12 +43,14 @@
 }
 
 .chooseTour__tabs-link:hover {
+  /* измененное значение */
   border-bottom: 2px solid var(--black-color);
   color: var(--black-color);
 }
 
 /* Выбранный вариант вкладки*/
 .chooseTour__tabs-link_active {
+  /* измененное значение */
   border-bottom: 2px solid var(--orange200-color);
   color: var(--orange200-color);
 }
@@ -90,7 +95,9 @@
 }
 
 .chooseTour__cardTur-img {
-  transition: transform 0.3s ease-in-out;
+  /* ease определяет функцию плавности и */
+  /* обозначает постепенное ускорение и замедление в течение всего перехода */
+  transition: transform 0.3s ease;
 }
 
 .chooseTour__cardTur-content {
@@ -154,6 +161,11 @@
   font-weight: 700;
   line-height: 122%;
   color: var(--white-color);
+
+  border-radius: 50px;
+  /* ease определяет функцию плавности и */
+  /* обозначает постепенное ускорение и замедление в течение всего перехода */
+  transition: background-color 0.3s ease;
 }
 
 .chooseTour__cardTur-content-link-item::after {
