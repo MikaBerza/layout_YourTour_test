@@ -36,11 +36,11 @@ import { removeStyleAnItem, addStyleAnItem } from './modules';
 
   window.addEventListener('scroll', () => {
     // Использование локальной переменной thisScrollY вместо глобальной переменной scrollY
-    const thiScrollY = window.scrollY;
-    // Использование локальной переменной thiInnerWidth вместо глобальной переменной innerWidth
-    const thiInnerWidth = window.innerWidth;
+    const thisScrollY = window.scrollY;
+    // Использование локальной переменной thisInnerWidth вместо глобальной переменной innerWidth
+    const thisInnerWidth = window.innerWidth;
     // если ширина экрана больше 450px и scroll больше 0
-    if (thiInnerWidth > 450 && thiScrollY > 0) {
+    if (thisInnerWidth > 450 && thisScrollY > 0) {
       addNavbarStyle();
     } else {
       removeNavbarStyle();
