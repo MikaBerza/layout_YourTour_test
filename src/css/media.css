@@ -579,8 +579,8 @@
   }
 
   .stories__card-content-link-btn-item::after {
-    top: 3px;
-    left: 12px;
+    top: 2px;
+    left: 17px;
   }
 
   .stories__card-content-link-socialNetwork {
@@ -593,7 +593,6 @@
   }
 
   /* __footer(раздел-нижний колонтитул)__ */
-
   .footers__card {
     padding-top: 75px;
     padding-bottom: 75px;

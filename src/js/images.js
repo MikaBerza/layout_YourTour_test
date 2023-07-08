@@ -41,10 +41,18 @@ import travelPhoto10A from '../assets/images/travelPhotos/1024px/travelPhoto10_1
 // импортируем изображение для раздела ("travelPhotos 1024px")
 import travelPhoto1B from '../assets/images/travelPhotos/360px/travelPhoto1_360.png';
 import travelPhoto10B from '../assets/images/travelPhotos/360px/travelPhoto10_360.png';
-// импортируем изображение для раздела ("stories")
-import storiesPhoto1 from '../assets/images/storyPhoto1.png';
-import storiesPhoto2 from '../assets/images/storyPhoto2.png';
-import storiesPhoto3 from '../assets/images/storyPhoto3.png';
+// импортируем изображение для раздела ("stories 1920px")
+import storiesPhoto1 from '../assets/images/stories/1920px/storyPhoto1_1920.png';
+import storiesPhoto2 from '../assets/images/stories/1920px/storyPhoto2_1920.png';
+import storiesPhoto3 from '../assets/images/stories/1920px/storyPhoto3_1920.png';
+// импортируем изображение для раздела ("stories 1024px")
+import storiesPhoto1A from '../assets/images/stories/1024px/storyPhoto1_1024.png';
+import storiesPhoto2A from '../assets/images/stories/1024px/storyPhoto2_1024.png';
+import storiesPhoto3A from '../assets/images/stories/1024px/storyPhoto3_1024.png';
+// импортируем изображение для раздела ("stories 360px")
+import storiesPhoto1B from '../assets/images/stories/360px/storyPhoto1_360.png';
+import storiesPhoto2B from '../assets/images/stories/360px/storyPhoto2_360.png';
+import storiesPhoto3B from '../assets/images/stories/360px/storyPhoto3_360.png';
 // импортируем изображение для раздела ("footers")
 import '../assets/images/footersPhoto.png';
 
@@ -109,9 +117,21 @@ export const arrayLinksToImagesTravelPhotos3 = [
   travelPhoto13,
 ];
 
-// массив с ссылками на изображения из ("stories")
-export const arrayLinksToImagesStories = [
+// массив с ссылками на изображения из ("stories 1920px")
+export const arrayLinksToImagesStories1 = [
   storiesPhoto1,
   storiesPhoto2,
   storiesPhoto3,
+];
+// массив с ссылками на изображения из ("stories 1024px")
+export const arrayLinksToImagesStories2 = [
+  storiesPhoto1A,
+  storiesPhoto2A,
+  storiesPhoto3A,
+];
+// массив с ссылками на изображения из ("stories 360px")
+export const arrayLinksToImagesStories3 = [
+  storiesPhoto1B,
+  storiesPhoto2B,
+  storiesPhoto3B,
 ];

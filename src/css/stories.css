@@ -135,7 +135,7 @@
 .stories__card-content-link-btn-item::after {
   position: relative;
   content: url('../../dist/images/VectorRight.svg');
-  left: 11px;
+  left: 15px;
 }
 
 .stories__card-content-link-socialNetwork-item {
