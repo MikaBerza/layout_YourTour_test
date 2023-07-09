@@ -1,6 +1,6 @@
 // импортируем изображение для раздела ("greeting")
-import '../assets/images/greetingBackgroundImg1920.png';
-import '../assets/images/greetingBackgroundImg1024.png';
+import '../assets/images/greeting/greetingBackgroundImg1920.png';
+import '../assets/images/greeting/greetingBackgroundImg1024.png';
 // импортируем изображение для раздела ("chooseTour")
 import photo1 from '../assets/images/chooseTour/card_tour_photo_1.png';
 import photo2 from '../assets/images/chooseTour/card_tour_photo_2.png';
