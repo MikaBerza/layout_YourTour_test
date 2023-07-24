@@ -36,3 +36,22 @@ a {
 .bgc-1 {
   background: var(--beige100-color);
 }
+
+/* стили для изображений */
+.bgi-1 {
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 50px;
+}
+
+/* ширина и высота картинки */
+.w1-h1 {
+  width: 23%;
+  height: 301px;
+}
+
+.w2-h2 {
+  width: 23%;
+  height: 301px;
+}

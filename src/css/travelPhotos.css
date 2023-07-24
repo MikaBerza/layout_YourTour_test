@@ -8,34 +8,39 @@
 }
 
 .travelPhotos__cardContainer {
-  max-width: 1860px;
   margin: auto;
   margin-top: 100px;
+}
 
+.travelPhotos__cardContainer-block1,
+.travelPhotos__cardContainer-block2,
+.travelPhotos__cardContainer-block3 {
+  width: 100%;
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  text-align: center;
+  justify-content: center;
 }
 
-.travelPhotos__cardContainer-img {
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  border-radius: 50px;
-}
-/* задаем последним 4 элементам верхний отступ */
-.travelPhotos__cardContainer-img:nth-last-child(-n+4) {
+/* применяем ко всем элементам кроме первого */
+.travelPhotos__cardContainer-block1:not(:first-child),
+.travelPhotos__cardContainer-block2:not(:first-child),
+.travelPhotos__cardContainer-block3:not(:first-child) {
   margin-top: 30px;
 }
 
-.travelPhotos__cardContainer-img_w1 {
-  width: 442px;
+.w1-h1 {
+  width: 23%;
   height: 301px;
+  margin-right: 30px;
 }
 
-.travelPhotos__cardContainer-img_w2 {
-  width: 347px;
+.w2-h2 {
+  width: 18.1%;
   height: 301px;
-  margin-top: 30px;
+  margin-right: 30px;
+}
+
+.travelPhotos__cardContainer-block1-img:first-child,
+.travelPhotos__cardContainer-block2-img:first-child,
+.travelPhotos__cardContainer-block3-img:first-child {
+  margin-left: 30px;
 }

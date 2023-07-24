@@ -8,7 +8,7 @@ import {
 import { addBackgroundImagesToCards } from './modules';
 // получим статическую коллекцию NodeList элементов карточек блока 1
 const nodeListOfCard = document.querySelectorAll(
-  '.travelPhotos__cardContainer-img',
+  '.bgi-1',
 );
 
 // добавить фотогалерею
@@ -16,10 +16,10 @@ function addPhotoGallery() {
 // Использование локальной переменной thisInnerWidth вместо глобальной переменной innerWidth
   const thisInnerWidth = window.innerWidth;
 
-  if (thisInnerWidth >= 0 && thisInnerWidth < 1024) {
+  if (thisInnerWidth >= 0 && thisInnerWidth < 360) {
     // функция добавляет карточкам фоновое изображение
     addBackgroundImagesToCards(nodeListOfCard, arrayLinksToImagesTravelPhotos3);
-  } else if (thisInnerWidth >= 1024 && thisInnerWidth < 1920) {
+  } else if (thisInnerWidth > 360 && thisInnerWidth < 1024) {
     // функция добавляет карточкам фоновое изображение
     addBackgroundImagesToCards(nodeListOfCard, arrayLinksToImagesTravelPhotos2);
   } else if (thisInnerWidth >= 1920) {
