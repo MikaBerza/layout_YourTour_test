@@ -21,18 +21,35 @@
   margin: auto;
 
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   padding-top: 29px;
   padding-bottom: 29px;
 }
 
-.navbar__logo-YourTour {
+.navbar__logo {
+  padding-right: 10px;
+  /* прижмем элемент к левому краю */
+  margin-right: auto;
+}
+
+.navbar__telephoneNumber {
+  padding-left: 10px;
+  /* прижмем элемент к правому краю */
+  margin-left: auto;
+}
+
+.navbar__logo-YourTour,
+.navbar__telephoneNumber-item {
   fill: var(--white-color);
+  fill: black;
 }
 
 .navbar__menu {
+  width: 468px;
+
   display: flex;
+  justify-content: space-between;
   padding-left: 0;
   padding-bottom: 4px;
 
@@ -43,15 +60,19 @@
 
 /* Выберем все пункты списка, кроме последнего */
 .navbar__menu-item:not(:last-child) {
-  margin-right: 50px;
+  padding-right: 10px;
 }
 
 .navbar__menu-link {
   font-size: 20px;
   color: var(--white-color);
+  color: black;
   /* начальное значение */
   border-bottom: 1px solid transparent;
   transition: border-bottom 0.3s ease;
+
+  /* запрещаем перенос текста на другую строку */
+  white-space: nowrap;
 }
 
 .navbar__menu-link:hover {
@@ -59,13 +80,17 @@
   border-bottom: 1px solid var(--white-color)
 }
 
-.navbar__telephoneNumber {
+/* .navbar__telephoneNumber {
   font-weight: 400;
   font-size: 20px;
   line-height: 142%;
   color: var(--white-color);
+
+  padding-left: 10px;
   padding-bottom: 4px;
-}
+  margin-left: auto;
+  white-space: nowrap;
+} */
 
 .scrolled-bgn {
   background-color: rgba(243, 239, 232, 0.6);
