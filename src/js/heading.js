@@ -6,32 +6,32 @@ import { removeStyleAnItem, addStyleAnItem } from './modules';
   // элементы раздела heading(раздел-заголовок)
   const heading = document.querySelector('.heading');
   const logoYourTour = heading.querySelector('.navbar__logo-YourTour');
+  const logoTelephoneNumber = heading.querySelector('.navbar__telephoneNumber-item');
   // получим статическую коллекцию NodeList элементов ссылок навигационной панели
   const nodeListOfNavbarLinkItems = heading.querySelectorAll('.navbar__menu-link');
-  const telephoneNumber = heading.querySelector('.navbar__telephoneNumber');
 
   // добавить стиль навигационной панели
   function addNavbarStyle() {
     addStyleAnItem(heading, 'scrolled-bgn');
     addStyleAnItem(logoYourTour, 'scrolled-color');
+    addStyleAnItem(logoTelephoneNumber, 'scrolled-color');
 
     nodeListOfNavbarLinkItems.forEach((item) => {
       addStyleAnItem(item, 'scrolled-color');
       addStyleAnItem(item, 'scrolled-hover');
     });
-    addStyleAnItem(telephoneNumber, 'scrolled-color');
   }
 
   // удалить стиль навигационной панели
   function removeNavbarStyle() {
     removeStyleAnItem(heading, 'scrolled-bgn');
     removeStyleAnItem(logoYourTour, 'scrolled-color');
+    removeStyleAnItem(logoTelephoneNumber, 'scrolled-color');
 
     nodeListOfNavbarLinkItems.forEach((item) => {
       removeStyleAnItem(item, 'scrolled-color');
       removeStyleAnItem(item, 'scrolled-hover');
     });
-    removeStyleAnItem(telephoneNumber, 'scrolled-color');
   }
 
   window.addEventListener('scroll', () => {
