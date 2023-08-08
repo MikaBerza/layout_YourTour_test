@@ -2,6 +2,7 @@
 /*от1025px-до1920px___________________________________________________*/
 @media (max-width: 1920px) {
 
+  /*  */
   /* __heading(раздел-заголовок)__ */
   .navbar {
     /* функция, при ширине экрана (1920px равен 1168px), (1025px равен 910px) */
@@ -13,6 +14,7 @@
     width: calc(408px + (468 - 408) * ((100vw - 1025px) / (1920 - 1025)));
   }
 
+  /*  */
   /* __greeting(раздел-приветствие)__ */
   .greeting {
     background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0.00) 100%),
@@ -29,6 +31,7 @@
     padding-top: 49px;
   }
 
+  /*  */
   /* __chooseTour(раздел-выбрать тур)__ */
   /*от1025px-до1200px___________________________________________________*/
   @media (max-width: 1200px) {
@@ -46,6 +49,7 @@
   /* C помощью линейной интерполяции определяю какие размеры должны быть
   у элементов при размере экрана 550px  */
 
+  /*  */
   /* __heading(раздел-заголовок)__ */
   .navbar {
     /* функция, при ширине экрана (1024px равен 910px), (550px равен 488px) */
@@ -67,12 +71,11 @@
     width: calc(130px + (155 - 130) * ((100vw - 550px) / (1024 - 550)));
   }
 
+  /*  */
   /* __greeting(раздел-приветствие)__ */
   .greeting__title {
     /* функция, при ширине экрана (1024px равен 768px), (550px равен 460px) */
     width: calc(460px + (768 - 460) * ((100vw - 550px) / (1024 - 550)));
-    /* функция, при ширине экрана (1024px равен 207.9px), (550px равен 159px) */
-    /* padding-top: calc(159px + (207.9 - 159) * ((100vw - 550px) / (1024 - 550))); */
     /* функция, при ширине экрана (1024px равен 96px), (550px равен 51px) */
     font-size: calc(51px + (96 - 51) * ((100vw - 550px) / (1024 - 550)));
   }
@@ -84,16 +87,85 @@
     font-size: calc(18px + (20 - 18) * ((100vw - 550px) / (1024 - 550)));
   }
 
+  /*  */
   /* __chooseTour(раздел-выбрать тур)__ */
+  .chooseTour__cardContainer {
+    max-width: 918px;
+    margin-top: 106px;
+    justify-content: space-between;
+  }
+
+  /* отменяем применение стилей к трём последним элементам */
+  .chooseTour__cardTur:nth-last-child(-n+3) {
+    margin-top: 0px;
+  }
+
+  /* применяем стили ко всем элементам, кроме двух первых */
+  .chooseTour__cardTur:nth-child(n+3) {
+    margin-top: 18px;
+  }
+
   .chooseTour__cardTur {
-    /* функция, при ширине экрана (1024px равен 509px), (360px равен 320px) */
-    width: calc(320px + (509 - 320) * ((100vw - 360px) / (1024 - 360)));
+    width: 450px;
+  }
+
+  .chooseTour__cardTur-content {
+    justify-content: start;
+  }
+
+  .chooseTour__cardTur-content-title {
+    max-width: 340px;
+  }
+
+  .chooseTour__cardTur-content-price {
+    padding-bottom: 320px;
+  }
+
+  /*от550px-до918px___________________________________________________*/
+  @media (max-width: 918px) {
+    .chooseTour__title {
+      /* функция, при ширине экрана (918px равен 59px), (550px равен 42px) */
+      font-size: calc(42px + (59 - 42) * ((100vw - 550px) / (918 - 550)));
+      /* функция, при ширине экрана (918px равен 135px), (550px равен 95px) */
+      padding-top: calc(95px + (135 - 95) * ((100vw - 550px) / (918 - 550)));
+    }
+
+    .chooseTour__tabs-link {
+      /* функция, при ширине экрана (918px равен 23px), (550px равен 18px) */
+      font-size: calc(18px + (23 - 18) * ((100vw - 550px) / (918 - 550)));
+    }
+
+    .chooseTour__tabs-link:not(:last-child) {
+      /* функция, при ширине экрана (918px равен 26.5px), (550px равен 10px) */
+      margin-right: calc(10px + (26.5 - 10) * ((100vw - 550px) / (918 - 550)));
+    }
+
+    .chooseTour__cardContainer {
+      justify-content: space-evenly;
+    }
+
+    .chooseTour__cardTur {
+      /* функция, при ширине экрана (918px равен 450px), (550px равен 222px) */
+      width: calc(222px + (450 - 222) * ((100vw - 550px) / (918 - 550)));
+    }
+
+    .chooseTour__cardTur-content {
+      /* функция, при ширине экрана (918px равен 30px), (550px равен 0px) */
+      padding-left: calc(0px + (30 - 0) * ((100vw - 550px) / (918 - 550)));
+      padding-right: calc(0px + (30 - 0) * ((100vw - 550px) / (918 - 550)));
+    }
+
+    .chooseTour__cardTur-content-title {
+      /* функция, при ширине экрана (918px равен 35px), (550px равен 27px) */
+      font-size: calc(27px + (35 - 27) * ((100vw - 550px) / (918 - 550)));
+    }
   }
 }
 
 /*от0px-до549px___________________________________________________*/
 @media (max-width: 549px) {
 
+  /*  */
   /* __heading(раздел-заголовок)__ */
   .navbar {
     /* функция, при ширине экрана (549px равен 509px), (360px равен 320px) */
@@ -112,10 +184,20 @@
     display: none;
   }
 
+  /*от0px-до450px___________________________________________________*/
+  @media (max-width: 450px) {
+
+    /* фиксируем заголовок */
+    .heading {
+      position: absolute;
+    }
+  }
+
+  /*  */
   /* __greeting(раздел-приветствие)__ */
   .greeting__title {
-    /* функция, при ширине экрана (549px равен 460px), (360px равен 340px) */
-    width: calc(340px + (460 - 340) * ((100vw - 360px) / (549 - 360)));
+    /* функция, при ширине экрана (549px равен 460px), (280px равен 260px) */
+    width: calc(260px + (460 - 260) * ((100vw - 280px) / (549 - 280)));
     /* функция, при ширине экрана (549px равен 207.9px), (360px равен 140px) */
     padding-top: calc(140px + (207.9 - 140) * ((100vw - 360px) / (549 - 360)));
     /* функция, при ширине экрана (549px равен 51px), (360px равен 34px) */
@@ -124,8 +206,8 @@
   }
 
   .greeting__slogan {
-    /* функция, при ширине экрана (549px равен 347px), (360px равен 310px) */
-    width: calc(310px + (347 - 310) * ((100vw - 360px) / (549 - 360)));
+    /* функция, при ширине экрана (549px равен 347px), (280px равен 260px) */
+    width: calc(260px + (347 - 260) * ((100vw - 280px) / (549 - 360)));
     /* функция, при ширине экрана (549px равен 18px), (360px равен 16px) */
     font-size: calc(16px + (18 - 16) * ((100vw - 360px) / (549 - 360)));
     padding-top: 41px;
@@ -141,12 +223,98 @@
     font-size: 16px;
   }
 
-  /*от0px-до450px___________________________________________________*/
-  @media (max-width: 450px) {
 
-    /* фиксируем заголовок */
-    .heading {
-      position: absolute;
-    }
+  /*  */
+  /* __chooseTour(раздел-выбрать тур)__ */
+  .chooseTour__title {
+    padding-top: 75px;
+    /* функция, при ширине экрана (549px равен 41px), (360px равен 34px) */
+    font-size: var(--font_size_of_section_title);
+    /* font-size: 34px; */
+    line-height: 112%;
+    letter-spacing: 0.92px;
+  }
+
+  .chooseTour__tabs {
+    width: 275px;
+
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+    padding-top: 30px;
+    margin: auto;
+  }
+
+  .chooseTour__tabs-link {
+    font-size: 16px;
+    line-height: 142%;
+    padding-bottom: 0px;
+  }
+
+  /* Выберем все пункты списка, кроме последнего */
+  .chooseTour__tabs-link:not(:last-child) {
+    margin-right: 0px;
+  }
+
+  /* Выберем 4 элемент списка */
+  .chooseTour__tabs-link:nth-child(4) {
+    position: relative;
+    top: 9px;
+    left: 13px;
+  }
+
+  /* Выберем 5 элемент списка */
+  .chooseTour__tabs-link:nth-child(5) {
+    position: relative;
+    top: 9px;
+    right: 13px;
+  }
+
+  .chooseTour__cardContainer {
+    justify-content: center;
+    margin-top: 56px;
+  }
+
+  .chooseTour__cardTur {
+    /* функция, при ширине экрана (549px равен 485px), (360px равен 318px) */
+    width: calc(318px + (485 - 318) * ((100vw - 360px) / (549 - 360)));
+    border-radius: 20px;
+  }
+
+  /* применяем стили ко всем элементам, кроме двух первых */
+  .chooseTour__cardTur:nth-child(n+2) {
+    margin-top: 18px;
+  }
+
+  .chooseTour__cardTur-content {
+    min-height: 318px;
+    padding: 25px 6px;
+  }
+
+  .chooseTour__cardTur-content-title {
+    max-width: 268px;
+    font-size: 23px;
+    font-weight: 500;
+    line-height: 120%;
+    letter-spacing: 0.04em;
+    padding-left: 20px;
+    padding-bottom: 14px;
+  }
+
+  .chooseTour__cardTur-content-price {
+    padding-left: 20px;
+    font-size: 16px;
+    padding-bottom: 180px;
+  }
+
+  .chooseTour__cardTur-content-link-item {
+    font-size: 16px;
+    line-height: 142%;
+  }
+
+  .chooseTour__cardTur-content-link-item::after {
+    top: 2px;
+    left: 12px;
   }
 }

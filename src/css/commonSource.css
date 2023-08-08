@@ -4,6 +4,7 @@ a {
 }
 
 :root {
+  /* цвета */
   --black-color: #1B1F2B;
   --orange200-color: #EFA501;
   --green400-color: #286562;
@@ -19,6 +20,9 @@ a {
   --green200-color: #627F7E;
   --gray100-color: #F1F3F2;
   --green100-color: #E0F0E5;
+
+  /* размер шрифта заголовка раздела */
+  --font_size_of_section_title: calc(34px + (41 - 34) * ((100vw - 360px) / (549 - 360)));
 }
 
 /* внешняя обертка */
