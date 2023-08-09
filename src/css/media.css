@@ -31,15 +31,49 @@
     padding-top: 49px;
   }
 
-  /*  */
-  /* __chooseTour(раздел-выбрать тур)__ */
+
   /*от1025px-до1200px___________________________________________________*/
   @media (max-width: 1200px) {
+
+    /*  */
+    /* __chooseTour(раздел-выбрать тур)__ */
     .chooseTour__cardTur {
       /* функция, при ширине экрана (1200px равен 370px), (1025px равен 316px) */
       width: calc(316px + (370 - 316) * ((100vw - 1025px) / (1200 - 1025)));
     }
+
+    /*  */
+    /* __collectTour(раздел-собрать тур) */
+    .formFill {
+      /* функция, при ширине экрана (1200px равен 1170px), (1025px равен 918px) */
+      width: calc(918px + (1170 - 918) * ((100vw - 1025px) / (1200 - 1025)));
+      /* функция, при ширине экрана (1200px равен 37px), (1025px равен 28px) */
+      padding-top: calc(28px + (37 - 28) * ((100vw - 1025px) / (1200 - 1025)));
+      /* функция, при ширине экрана (1200px равен 70px), (1025px равен 60px) */
+      padding-right: calc(60px + (70 - 60) * ((100vw - 1025px) / (1200 - 1025)));
+      padding-left: calc(60px + (70 - 60) * ((100vw - 1025px) / (1200 - 1025)));
+    }
+
+    .formFill__inputFields-name,
+    .formFill__inputFields-dropdown,
+    .formFill__inputFields-email,
+    .formFill__inputFields-phone,
+    .formFill__inputFields-dateFrom,
+    .formFill__inputFields-dateTo {
+      /* функция, при ширине экрана (1200px равен 500px), (1025px равен 389px) */
+      width: calc(389px + (500 - 389) * ((100vw - 1025px) / (1200 - 1025)));
+    }
+
+    .formFill__commentField {
+      /* функция, при ширине экрана (1200px равен 1030px), (1025px равен 798px) */
+      width: calc(798px + (1030 - 798) * ((100vw - 1025px) / (1200 - 1025)));
+    }
+
+    .formFill__agreement-input+.formFill__agreement-customCheckbox::before {
+      margin-right: 11px;
+    }
   }
+
 }
 
 
@@ -160,6 +194,61 @@
       font-size: calc(27px + (35 - 27) * ((100vw - 550px) / (918 - 550)));
     }
   }
+
+  /*  */
+  /* __collectTour(раздел-собрать тур) */
+  .secondaryTitle__title {
+    /* функция, при ширине экрана (1024px равен 59px), (550px равен 42px) */
+    font-size: calc(42px + (59 - 42) * ((100vw - 550px) / (1024 - 550)));
+    /* функция, при ширине экрана (1024px равен 135px), (550px равен 95px) */
+    padding-top: calc(95px + (135 - 95) * ((100vw - 550px) / (1024 - 550)));
+  }
+
+  .formFill {
+    /* функция, при ширине экрана (1024px равен 918px), (550px равен 489px) */
+    width: calc(489px + (918 - 489) * ((100vw - 550px) / (1024 - 550)));
+  }
+
+  .formFill__inputFields-name,
+  .formFill__inputFields-dropdown,
+  .formFill__inputFields-email,
+  .formFill__inputFields-phone,
+  .formFill__inputFields-dateFrom,
+  .formFill__inputFields-dateTo {
+    /* функция, при ширине экрана (1024px равен 389px), (550px равен 209px) */
+    width: calc(209px + (389 - 209) * ((100vw - 550px) / (1024 - 550)));
+  }
+
+
+  /*от0px-до670px___________________________________________________*/
+  @media (max-width: 670px) {
+
+    .formFill__inputFields-name-input::placeholder,
+    .formFill__inputFields-dropdown-select-item,
+    .formFill__inputFields-email-input::placeholder,
+    .formFill__inputFields-phone-input::placeholder,
+    .formFill__inputFields-dateFrom-input,
+    .formFill__inputFields-dateTo-input {
+      font-size: 16px;
+    }
+  }
+
+
+  .formFill__commentField {
+    /* функция, при ширине экрана (1024px равен 798px), (550px равен 426px) */
+    width: calc(426px + (798 - 426) * ((100vw - 550px) / (1024 - 550)));
+  }
+
+  .formFill__agreement {
+    width: 100%;
+  }
+
+  .formFill__buttons-find,
+  .formFill__buttons-reset {
+    /* функция, при ширине экрана (1024px равен 235px), (550px равен 162px) */
+    width: calc(162px + (235 - 162) * ((100vw - 550px) / (1024 - 550)));
+  }
+
 }
 
 /*от0px-до549px___________________________________________________*/
@@ -317,4 +406,152 @@
     top: 2px;
     left: 12px;
   }
+
+  /*  */
+  /* __collectTour(раздел-собрать тур) */
+  .secondaryTitle__title {
+    padding-top: 75px;
+    /* функция, при ширине экрана (549px равен 41px), (360px равен 34px) */
+    font-size: var(--font_size_of_section_title);
+    line-height: 112%;
+    letter-spacing: 0.68px;
+  }
+
+  .secondaryTitle__subtitle {
+    padding-top: 21px;
+    max-width: 318px;
+    font-size: 16px;
+  }
+
+  .formFill>* {
+    font-size: 16px;
+  }
+
+  .formFill {
+    /* функция, при ширине экрана (549px равен 489px), (360px равен 318px) */
+    width: calc(318px + (489 - 318) * ((100vw - 360px) / (549 - 360)));
+    margin-top: 41px;
+    padding: 20px 20px 40px 20px;
+    border-radius: 30px;
+  }
+
+  .formFill__inputFields {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .formFill__inputFields-name,
+  .formFill__inputFields-dropdown,
+  .formFill__inputFields-email,
+  .formFill__inputFields-phone,
+  .formFill__inputFields-dateFrom,
+  .formFill__inputFields-dateTo,
+  .formFill__commentField {
+    /* функция, при ширине экрана (549px равен 423px), (360px равен 278px) */
+    width: calc(278px + (423 - 278) * ((100vw - 360px) / (549 - 360)));
+  }
+
+  .formFill__inputFields-name,
+  .formFill__inputFields-dropdown,
+  .formFill__inputFields-email,
+  .formFill__inputFields-phone,
+  .formFill__inputFields-dateFrom,
+  .formFill__inputFields-dateTo,
+  .formFill__commentField,
+  .formFill__age,
+  .formFill__agreement,
+  .formFill__buttons {
+    margin-top: 30px;
+  }
+
+  .formFill__inputFields-name {
+    margin: 0;
+  }
+
+  .formFill__inputFields-email {
+    margin-top: 33px;
+  }
+
+  .formFill__inputFields-name-input,
+  .formFill__inputFields-dropdown-select-item,
+  .formFill__inputFields-email-input,
+  .formFill__inputFields-phone-input,
+  .formFill__inputFields-dateFrom-input,
+  .formFill__inputFields-dateTo-input,
+  .formFill__commentField-textarea {
+    height: 43px;
+    padding: 10px;
+    padding-right: 35px;
+  }
+
+  .formFill__commentField-textarea {
+    height: 132px;
+  }
+
+  .formFill__inputFields-dropdown-select::before {
+    top: 60%;
+    right: 13.59px;
+  }
+
+  .formFill__age-radioGroup {
+    margin-top: 10px;
+  }
+
+  .formFill__age-radioGroup-block:not(:last-child) {
+    margin-right: 25px;
+  }
+
+  .formFill__age-radioGroup-block-input+.formFill__age-radioGroup-block-label::before {
+    width: 20px;
+    height: 20px;
+  }
+
+  .formFill__age-radioGroup-block-input+.formFill__age-radioGroup-block-label::before {
+    border-radius: 0.80em;
+  }
+
+  /* _____formFill__agreement*/
+  .formFill__agreement {
+    margin-top: 24px;
+    max-width: 278px;
+  }
+
+  .formFill__agreement-input+.formFill__agreement-customCheckbox {
+    display: block;
+  }
+
+  .formFill__agreement-input+.formFill__agreement-customCheckbox::before {
+    width: 19px;
+    height: 19px;
+  }
+
+  .formFill__agreement-text {
+    font-size: 16px;
+    letter-spacing: -0.17px;
+  }
+
+  .formFill__agreement-input+.formFill__agreement-customCheckbox::before {
+    margin-right: 10px;
+  }
+
+  /* _____formFill__buttons */
+  .formFill__buttons {
+    margin-top: 20px;
+  }
+
+  .formFill__buttons-find,
+  .formFill__buttons-reset {
+    width: 135px;
+    padding: 12px 30px;
+    margin-top: 10px;
+
+    font-size: 16px;
+    line-height: 142%;
+    text-align: center;
+  }
+
+  .formFill__buttons-find {
+    margin-right: 4px;
+  }
+
 }

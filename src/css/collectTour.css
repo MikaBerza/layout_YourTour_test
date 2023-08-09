@@ -70,11 +70,13 @@
 .formFill__inputFields-dateFrom,
 .formFill__inputFields-dateTo,
 .formFill__commentField,
-.formFill__age,
-.formFill__agreement,
-.formFill__buttons {
+.formFill__agreement {
   margin-top: 33px;
   width: 500px;
+}
+
+.formFill__age {
+  margin-top: 33px;
 }
 
 .formFill__inputFields-name-label,
@@ -116,7 +118,7 @@
   align-items: center;
   padding: 20px;
   /* чтобы текст не залезал на стрелку для развертывания списка */
-  padding-right: 50px;
+  padding-right: 45px;
   margin-top: 8px;
   gap: 10px;
 
