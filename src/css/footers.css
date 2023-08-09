@@ -3,8 +3,7 @@
 /*  */
 
 .footers__card {
-  padding-top: 135px;
-  padding-bottom: 135px;
+  padding: 135px 10px 135px 10px;
 
   display: flex;
   justify-content: center;
@@ -77,6 +76,8 @@
 
 .footers__link {
   max-width: 1168px;
+  padding-left: 53px;
+  padding-right: 53px;
 
   display: flex;
   justify-content: space-between;
@@ -99,6 +100,8 @@
 .footers__link-socialNetwork {
   display: flex;
   max-width: 500px;
+  text-align: center;
+  padding-left: 10px;
 }
 
 .footers__link-socialNetwork-block:not(:last-child) {

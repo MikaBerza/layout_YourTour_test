@@ -348,6 +348,13 @@
     /* функция, при ширине экрана (1024px равен 31px), (550px равен 7px) */
     margin-right: calc(7px + (31 - 7) * ((100vw - 550px) / (1024 - 550)));
   }
+
+  /*  */
+  /* __footer(раздел-нижний колонтитул)__ */
+  .stories__card-content-link-socialNetwork-item {
+    /* функция, при ширине экрана (1024px равен 20px), (550px равен 17px) */
+    font-size: calc(17px + (20 - 17) * ((100vw - 550px) / (1024 - 550)));
+  }
 }
 
 /*от0px-до549px___________________________________________________*/
@@ -821,5 +828,79 @@
   /* нижний отступ */
   .pb-1 {
     padding-bottom: 134px;
+  }
+
+
+  /*  */
+  /* __footer(раздел-нижний колонтитул)__ */
+  .footers__card {
+    padding-top: 75px;
+    padding-bottom: 75px;
+    flex-direction: column;
+  }
+
+  .footers__card-img {
+    width: 130px;
+    height: 133px;
+    border-radius: 20px;
+    margin-bottom: 31px;
+  }
+
+  .footers__card-content {
+    margin: auto;
+  }
+
+  .footers__card-content-title {
+    max-width: 291px;
+    font-size: 23px;
+    text-align: center;
+
+    font-weight: 700;
+    line-height: 120%;
+    letter-spacing: 0.92px;
+  }
+
+  .footers__card-content-text {
+    max-width: 291px;
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .footers__linkContainer {
+    padding-top: 21px;
+    padding-bottom: 21px;
+  }
+
+  .footers__link {
+    /* функция, при ширине экрана (549px равен 53px), (360px равен 0px) */
+    padding-left: calc(0px + (53 - 0) * ((100vw - 360px) / (549 - 360)));
+    padding-right: calc(0px + (53 - 0) * ((100vw - 360px) / (549 - 360)));
+    margin: auto;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .footers__link-text {
+    margin-bottom: 7px;
+  }
+
+  .footers__link-socialNetwork {
+    display: flex;
+    padding-left: 0;
+  }
+
+  .footers__link-text,
+  .footers__link-socialNetwork-block-item {
+    font-size: 16px;
+  }
+
+  .footers__link-socialNetwork-block:not(:last-child) {
+    margin-right: 13px;
+  }
+
+  .footers__link-socialNetwork-block-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 2px;
   }
 }
