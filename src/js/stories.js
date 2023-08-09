@@ -16,7 +16,7 @@ function addAnImage() {
   // Использование локальной переменной thisInnerWidth вместо глобальной переменной innerWidth
   const thisInnerWidth = window.innerWidth;
 
-  if (thisInnerWidth >= 0 && thisInnerWidth < 1024) {
+  if (thisInnerWidth >= 0 && thisInnerWidth <= 549) {
     // функция добавляет карточкам фоновое изображение
     // функция добавляет карточкам фоновый градиент и изображение
     addBackgroundGradientAndImageToCards(
@@ -24,7 +24,7 @@ function addAnImage() {
       gradientBackground,
       arrayLinksToImagesStories3,
     );
-  } else if (thisInnerWidth >= 1024 && thisInnerWidth < 1920) {
+  } else if (thisInnerWidth > 549 && thisInnerWidth <= 1024) {
     // функция добавляет карточкам фоновое изображение
     // функция добавляет карточкам фоновый градиент и изображение
     addBackgroundGradientAndImageToCards(

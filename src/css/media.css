@@ -100,6 +100,17 @@
     width: calc(231px + (347.32 - 231) * ((100vw - 1024px) / (1920 - 1024)));
   }
 
+  /*  */
+  /* __stories(раздел-истории)__ */
+  .stories__cardContainer {
+    /* функция, при ширине экрана (1920px равен 1170px), (1024px равен 918px) */
+    width: calc(918px + (1170 - 918) * ((100vw - 1024px) / (1920 - 1024)));
+  }
+
+  .stories__card {
+    /* функция, при ширине экрана (1920px равен 1170px), (1024px равен 918px) */
+    width: calc(918px + (1170 - 918) * ((100vw - 1024px) / (1920 - 1024)));
+  }
 }
 
 
@@ -312,6 +323,30 @@
   .travelPhotos__cardContainer-block2-img:nth-child(3),
   .travelPhotos__cardContainer-block3-img:nth-child(4) {
     display: none;
+  }
+
+  /*  */
+  /* __stories(раздел-истории)__ */
+  .stories__cardContainer {
+    /* функция, при ширине экрана (1024px равен 918px), (550px равен 489px) */
+    width: calc(489px + (918 - 489) * ((100vw - 550px) / (1024 - 550)));
+  }
+
+  .stories__card {
+    /* функция, при ширине экрана (1024px равен 918px), (550px равен 489px) */
+    width: calc(489px + (918 - 489) * ((100vw - 550px) / (1024 - 550)));
+  }
+
+  .stories__card-content {
+    /* функция, при ширине экрана (1024px равен 60px), (550px равен 10px) */
+    padding-right: calc(10px + (60 - 10) * ((100vw - 550px) / (1024 - 550)));
+    /* функция, при ширине экрана (1024px равен 40px), (550px равен 10px) */
+    padding-left: calc(10px + (40 - 10) * ((100vw - 550px) / (1024 - 550)));
+  }
+
+  .stories__card-content-link-socialNetwork-item:not(:last-child) {
+    /* функция, при ширине экрана (1024px равен 31px), (550px равен 7px) */
+    margin-right: calc(7px + (31 - 7) * ((100vw - 550px) / (1024 - 550)));
   }
 }
 
@@ -710,5 +745,81 @@
   .travelPhotos__cardContainer-block2-img:nth-child(2),
   .travelPhotos__cardContainer-block3-img:nth-child(3) {
     display: none;
+  }
+
+  /*  */
+  /* __stories(раздел-истории)__ */
+  .stories .secondaryTitle__subtitle {
+    max-width: 318px;
+  }
+
+  .stories__cardContainer {
+    margin-top: 50px;
+  }
+
+  .stories__card {
+    border-radius: 20px;
+  }
+
+  .stories__card-img {
+    background-position: 40% center;
+  }
+
+  .stories__card:not(:last-child) {
+    margin-bottom: 19px;
+  }
+
+  .stories__card-content {
+    padding: 30px 10px 33px 10px;
+  }
+
+  .stories__card-content-title {
+    max-width: 160px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+
+    font-size: 23px;
+    font-weight: 700;
+    line-height: 122%;
+    letter-spacing: 0.92px;
+  }
+
+  .stories__card-content-text {
+    max-width: 263px;
+    padding-left: 20px;
+    padding-bottom: 65px;
+    line-height: 143%;
+    font-size: 16px;
+  }
+
+  .stories__card-content-text-main {
+    padding-bottom: 24.7px;
+  }
+
+  .stories__card-content-text-list {
+    padding-left: 9px;
+  }
+
+  /* кастомный размер маркера списка ul*/
+  .stories__card-content-text-list .stories__card-content-text-list-item::before {
+    font-size: 16px;
+  }
+
+  .stories__card-content-link-btn-item {
+    font-size: 16px;
+  }
+
+  .stories__card-content-link-btn-item::after {
+    top: 2px;
+    left: 17px;
+  }
+
+  .stories__card-content-link-socialNetwork {
+    display: none;
+  }
+
+  /* нижний отступ */
+  .pb-1 {
+    padding-bottom: 134px;
   }
 }
