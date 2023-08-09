@@ -16,10 +16,10 @@ function addPhotoGallery() {
 // Использование локальной переменной thisInnerWidth вместо глобальной переменной innerWidth
   const thisInnerWidth = window.innerWidth;
 
-  if (thisInnerWidth >= 0 && thisInnerWidth < 360) {
+  if (thisInnerWidth >= 0 && thisInnerWidth <= 549) {
     // функция добавляет карточкам фоновое изображение
     addBackgroundImagesToCards(nodeListOfCard, arrayLinksToImagesTravelPhotos3);
-  } else if (thisInnerWidth > 360 && thisInnerWidth < 1024) {
+  } else if (thisInnerWidth > 549 && thisInnerWidth <= 1024) {
     // функция добавляет карточкам фоновое изображение
     addBackgroundImagesToCards(nodeListOfCard, arrayLinksToImagesTravelPhotos2);
   } else if (thisInnerWidth >= 1920) {

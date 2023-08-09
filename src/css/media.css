@@ -87,7 +87,18 @@
     }
   }
 
+  /*  */
+  /* __travelPhotos(раздел-фотографии путешествий) */
+  .travelPhotos__cardContainer-block1-img,
+  .travelPhotos__cardContainer-block3-img {
+    /* функция, при ширине экрана (1920px равен 442.5px), (1024px равен 314.666px) */
+    width: calc(314.666px + (442.5 - 314.666) * ((100vw - 1024px) / (1920 - 1024)));
+  }
 
+  .travelPhotos__cardContainer-block2-img {
+    /* функция, при ширине экрана (1920px равен 347.32px), (1024px равен 231px) */
+    width: calc(231px + (347.32 - 231) * ((100vw - 1024px) / (1920 - 1024)));
+  }
 
 }
 
@@ -282,6 +293,26 @@
     width: calc(162px + (235 - 162) * ((100vw - 550px) / (1024 - 550)));
   }
 
+  /*  */
+  /* __travelPhotos(раздел-фотографии путешествий) */
+  .w1-h1,
+  .w2-h2,
+  .w3-h3 {
+    margin-right: 20px;
+  }
+
+  .travelPhotos__cardContainer-block1-img:first-child,
+  .travelPhotos__cardContainer-block2-img:first-child,
+  .travelPhotos__cardContainer-block3-img:first-child {
+    margin-left: 20px;
+  }
+
+  /* применяем стиль к 2, 3, 4 элементу */
+  .travelPhotos__cardContainer-block1-img:nth-child(2),
+  .travelPhotos__cardContainer-block2-img:nth-child(3),
+  .travelPhotos__cardContainer-block3-img:nth-child(4) {
+    display: none;
+  }
 }
 
 /*от0px-до549px___________________________________________________*/
@@ -635,5 +666,49 @@
   .reviews__cardContainer-item-person-photo img {
     position: relative;
     top: 3px;
+  }
+
+  /*  */
+  /* __travelPhotos(раздел-фотографии путешествий) */
+  .travelPhotos .secondaryTitle__subtitle {
+    padding-top: 20px;
+    max-width: 318px;
+  }
+
+  .travelPhotos__cardContainer {
+    margin-top: 50px;
+  }
+
+  /* применяем ко всем элементам кроме первого */
+  .travelPhotos__cardContainer-block1:not(:first-child),
+  .travelPhotos__cardContainer-block2:not(:first-child),
+  .travelPhotos__cardContainer-block3:not(:first-child) {
+    margin-top: 18px;
+  }
+
+
+  .travelPhotos__cardContainer-block1-img,
+  .travelPhotos__cardContainer-block2-img,
+  .travelPhotos__cardContainer-block3-img {
+    height: 110px;
+    border-radius: 20px;
+  }
+
+  /* применить ко всем кроме последнего */
+  .w2-h2:not(:last-child) {
+    /* функция, при ширине экрана (550px равен 20px), (360px равен 10px) */
+    margin-right: calc(10px + (20 - 10) * ((100vw - 360px) / (550 - 360)));
+  }
+
+  .w3-h3:first-child {
+    /* функция, при ширине экрана (550px равен 20px), (360px равен 10px) */
+    margin-right: calc(10px + (20 - 10) * ((100vw - 360px) / (550 - 360)));
+  }
+
+  /* применяем стиль к 3, 2, 3 элементу */
+  .travelPhotos__cardContainer-block1-img:nth-child(3),
+  .travelPhotos__cardContainer-block2-img:nth-child(2),
+  .travelPhotos__cardContainer-block3-img:nth-child(3) {
+    display: none;
   }
 }
