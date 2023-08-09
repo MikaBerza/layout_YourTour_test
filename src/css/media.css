@@ -50,6 +50,7 @@
       /* функция, при ширине экрана (1200px равен 37px), (1025px равен 28px) */
       padding-top: calc(28px + (37 - 28) * ((100vw - 1025px) / (1200 - 1025)));
       /* функция, при ширине экрана (1200px равен 70px), (1025px равен 60px) */
+      padding-bottom: calc(60px + (70 - 60) * ((100vw - 1025px) / (1200 - 1025)));
       padding-right: calc(60px + (70 - 60) * ((100vw - 1025px) / (1200 - 1025)));
       padding-left: calc(60px + (70 - 60) * ((100vw - 1025px) / (1200 - 1025)));
     }
@@ -72,7 +73,21 @@
     .formFill__agreement-input+.formFill__agreement-customCheckbox::before {
       margin-right: 11px;
     }
+
+    /*  */
+    /* __reviews(раздел-отзывы) */
+    .reviews__cardContainer {
+      /* функция, при ширине экрана (1200px равен 1170px), (1025px равен 918px) */
+      width: calc(918px + (1170 - 918) * ((100vw - 1025px) / (1200 - 1025)));
+    }
+
+    .reviews__cardContainer-item {
+      /* функция, при ширине экрана (1200px равен 570px), (1025px равен 450px) */
+      width: calc(450px + (570 - 450) * ((100vw - 1025px) / (1200 - 1025)));
+    }
   }
+
+
 
 }
 
@@ -157,6 +172,9 @@
 
   /*от550px-до918px___________________________________________________*/
   @media (max-width: 918px) {
+
+    /*  */
+    /* __chooseTour(раздел-выбрать тур)__ */
     .chooseTour__title {
       /* функция, при ширине экрана (918px равен 59px), (550px равен 42px) */
       font-size: calc(42px + (59 - 42) * ((100vw - 550px) / (918 - 550)));
@@ -192,6 +210,21 @@
     .chooseTour__cardTur-content-title {
       /* функция, при ширине экрана (918px равен 35px), (550px равен 27px) */
       font-size: calc(27px + (35 - 27) * ((100vw - 550px) / (918 - 550)));
+    }
+
+    /*  */
+    /* __reviews(раздел-отзывы) */
+    .reviews__cardContainer {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 32px;
+    }
+
+    .reviews__cardContainer-item {
+      margin-top: 18px;
+      /* функция, при ширине экрана (918px равен 872px), (550px равен 508px) */
+      width: calc(508px + (872 - 508) * ((100vw - 550px) / (918 - 550)));
     }
   }
 
@@ -554,4 +587,53 @@
     margin-right: 4px;
   }
 
+  /*  */
+  /* __reviews(раздел-отзывы) */
+  .reviews .secondaryTitle__subtitle {
+    max-width: 318px;
+  }
+
+  .reviews__cardContainer-item {
+    border-radius: 20px;
+    padding: 20px;
+    min-height: auto;
+  }
+
+  .reviews__cardContainer-item-text {
+    font-size: 16px;
+    line-height: 144%;
+    /* функция, при ширине экрана (549px равен 467px), (360px равен 277px) */
+    width: calc(277px + (467 - 277) * ((100vw - 360px) / (549 - 360)));
+  }
+
+  /* применяем стили ко всем элементам, начиная с второго */
+  .reviews__cardContainer-item-text-par1:nth-child(n+2) {
+    margin-top: 22px;
+  }
+
+  .reviews__cardContainer-item-person {
+    margin-top: 36px;
+  }
+
+  .reviews__cardContainer-item-person-block {
+    justify-content: end;
+  }
+
+  .reviews__cardContainer-item-person-block-name {
+    margin-top: 20px;
+    font-size: 23px;
+    font-weight: 700;
+    line-height: 120%;
+    letter-spacing: 0.92px;
+  }
+
+  .reviews__cardContainer-item-person-block-tour {
+    font-size: 16px;
+    letter-spacing: -0.16px;
+  }
+
+  .reviews__cardContainer-item-person-photo img {
+    position: relative;
+    top: 3px;
+  }
 }
