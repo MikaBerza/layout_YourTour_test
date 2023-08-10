@@ -32,84 +32,85 @@
   }
 
 
-  /*от1025px-до1200px___________________________________________________*/
-  @media (max-width: 1200px) {
-
-    /*  */
-    /* __chooseTour(раздел-выбрать тур)__ */
-    .chooseTour__cardTur {
-      /* функция, при ширине экрана (1200px равен 370px), (1025px равен 316px) */
-      width: calc(316px + (370 - 316) * ((100vw - 1025px) / (1200 - 1025)));
-    }
-
-    /*  */
-    /* __collectTour(раздел-собрать тур) */
-    .formFill {
-      /* функция, при ширине экрана (1200px равен 1170px), (1025px равен 918px) */
-      width: calc(918px + (1170 - 918) * ((100vw - 1025px) / (1200 - 1025)));
-      /* функция, при ширине экрана (1200px равен 37px), (1025px равен 28px) */
-      padding-top: calc(28px + (37 - 28) * ((100vw - 1025px) / (1200 - 1025)));
-      /* функция, при ширине экрана (1200px равен 70px), (1025px равен 60px) */
-      padding-bottom: calc(60px + (70 - 60) * ((100vw - 1025px) / (1200 - 1025)));
-      padding-right: calc(60px + (70 - 60) * ((100vw - 1025px) / (1200 - 1025)));
-      padding-left: calc(60px + (70 - 60) * ((100vw - 1025px) / (1200 - 1025)));
-    }
-
-    .formFill__inputFields-name,
-    .formFill__inputFields-dropdown,
-    .formFill__inputFields-email,
-    .formFill__inputFields-phone,
-    .formFill__inputFields-dateFrom,
-    .formFill__inputFields-dateTo {
-      /* функция, при ширине экрана (1200px равен 500px), (1025px равен 389px) */
-      width: calc(389px + (500 - 389) * ((100vw - 1025px) / (1200 - 1025)));
-    }
-
-    .formFill__commentField {
-      /* функция, при ширине экрана (1200px равен 1030px), (1025px равен 798px) */
-      width: calc(798px + (1030 - 798) * ((100vw - 1025px) / (1200 - 1025)));
-    }
-
-    .formFill__agreement-input+.formFill__agreement-customCheckbox::before {
-      margin-right: 11px;
-    }
-
-    /*  */
-    /* __reviews(раздел-отзывы) */
-    .reviews__cardContainer {
-      /* функция, при ширине экрана (1200px равен 1170px), (1025px равен 918px) */
-      width: calc(918px + (1170 - 918) * ((100vw - 1025px) / (1200 - 1025)));
-    }
-
-    .reviews__cardContainer-item {
-      /* функция, при ширине экрана (1200px равен 570px), (1025px равен 450px) */
-      width: calc(450px + (570 - 450) * ((100vw - 1025px) / (1200 - 1025)));
-    }
+  /*  */
+  /* __chooseTour(раздел-выбрать тур)__ */
+  .chooseTour__cardContainer {
+    /* функция, при ширине экрана (1920px равен 1200px), (1025px равен 1025px) */
+    width: calc(1025px + (1200 - 1025) * ((100vw - 1025px) / (1920 - 1025)));
   }
+
+  .chooseTour__cardTur {
+    /* функция, при ширине экрана (1920px равен 370px), (1025px равен 316px) */
+    width: calc(316px + (370 - 316) * ((100vw - 1025px) / (1920 - 1025)));
+  }
+
+
+  /*  */
+  /* __collectTour(раздел-собрать тур) */
+  .formFill {
+    /* функция, при ширине экрана (1920px равен 1170px), (1025px равен 918px) */
+    width: calc(918px + (1170 - 918) * ((100vw - 1025px) / (1920 - 1025)));
+    /* функция, при ширине экрана (1920px равен 37px), (1025px равен 28px) */
+    padding-top: calc(28px + (37 - 28) * ((100vw - 1025px) / (1920 - 1025)));
+
+    /* функция, при ширине экрана (1920px равен 70px), (1025px равен 60px) */
+    padding-bottom: calc(60px + (70 - 60) * ((100vw - 1025px) / (1920 - 1025)));
+    padding-right: calc(60px + (70 - 60) * ((100vw - 1025px) / (1920 - 1025)));
+    padding-left: calc(60px + (70 - 60) * ((100vw - 1025px) / (1920 - 1025)));
+  }
+
+  .formFill__inputFields-name,
+  .formFill__inputFields-dropdown,
+  .formFill__inputFields-email,
+  .formFill__inputFields-phone,
+  .formFill__inputFields-dateFrom,
+  .formFill__inputFields-dateTo {
+    /* функция, при ширине экрана (1920px равен 500px), (1025px равен 389px) */
+    width: calc(389px + (500 - 389) * ((100vw - 1025px) / (1920 - 1025)));
+  }
+
+  .formFill__commentField {
+    /* функция, при ширине экрана (1920px равен 1030px), (1025px равен 798px) */
+    width: calc(798px + (1030 - 798) * ((100vw - 1025px) / (1920 - 1025)));
+  }
+
+
+  /*  */
+  /* __reviews(раздел-отзывы) */
+  .reviews__cardContainer {
+    /* функция, при ширине экрана (1920px равен 1170px), (1025px равен 918px) */
+    width: calc(918px + (1170 - 918) * ((100vw - 1025px) / (1920 - 1025)));
+  }
+
+  .reviews__cardContainer-item {
+    /* функция, при ширине экрана (1920px равен 570px), (1025px равен 450px) */
+    width: calc(450px + (570 - 450) * ((100vw - 1025px) / (1920 - 1025)));
+  }
+
 
   /*  */
   /* __travelPhotos(раздел-фотографии путешествий) */
   .travelPhotos__cardContainer-block1-img,
   .travelPhotos__cardContainer-block3-img {
-    /* функция, при ширине экрана (1920px равен 442.5px), (1024px равен 314.666px) */
-    width: calc(314.666px + (442.5 - 314.666) * ((100vw - 1024px) / (1920 - 1024)));
+    /* функция, при ширине экрана (1920px равен 442.5px), (1025px равен 314.666px) */
+    width: calc(314.666px + (442.5 - 314.666) * ((100vw - 1025px) / (1920 - 1025)));
   }
 
   .travelPhotos__cardContainer-block2-img {
-    /* функция, при ширине экрана (1920px равен 347.32px), (1024px равен 231px) */
-    width: calc(231px + (347.32 - 231) * ((100vw - 1024px) / (1920 - 1024)));
+    /* функция, при ширине экрана (1920px равен 347.32px), (1025px равен 231px) */
+    width: calc(231px + (347.32 - 231) * ((100vw - 1025px) / (1920 - 1025)));
   }
 
   /*  */
   /* __stories(раздел-истории)__ */
   .stories__cardContainer {
-    /* функция, при ширине экрана (1920px равен 1170px), (1024px равен 918px) */
-    width: calc(918px + (1170 - 918) * ((100vw - 1024px) / (1920 - 1024)));
+    /* функция, при ширине экрана (1920px равен 1170px), (1025px равен 918px) */
+    width: calc(918px + (1170 - 918) * ((100vw - 1025px) / (1920 - 1025)));
   }
 
   .stories__card {
-    /* функция, при ширине экрана (1920px равен 1170px), (1024px равен 918px) */
-    width: calc(918px + (1170 - 918) * ((100vw - 1024px) / (1920 - 1024)));
+    /* функция, при ширине экрана (1920px равен 1170px), (1025px равен 918px) */
+    width: calc(918px + (1170 - 918) * ((100vw - 1025px) / (1920 - 1025)));
   }
 }
 
@@ -160,10 +161,22 @@
 
   /*  */
   /* __chooseTour(раздел-выбрать тур)__ */
+  .chooseTour__tabs-link {
+    /* функция, при ширине экрана (1024px равен 23px), (550px равен 18px) */
+    font-size: calc(18px + (23 - 18) * ((100vw - 550px) / (1024 - 550)));
+  }
+
+  .chooseTour__tabs-link:not(:last-child) {
+    /* функция, при ширине экрана (1024px равен 26.5px), (550px равен 10px) */
+    margin-right: calc(10px + (26.5 - 10) * ((100vw - 550px) / (1024 - 550)));
+  }
+
   .chooseTour__cardContainer {
-    max-width: 918px;
-    margin-top: 106px;
+    /* функция, при ширине экрана (1024px равен 918px), (550px равен 504px) */
+    width: calc(504px + (918 - 504) * ((100vw - 550px) / (1024 - 550)));
+    margin-top: 88px;
     justify-content: space-between;
+    padding: 18px;
   }
 
   /* отменяем применение стилей к трём последним элементам */
@@ -177,11 +190,16 @@
   }
 
   .chooseTour__cardTur {
-    width: 450px;
+    /* width: 450px; */
+    /* функция, при ширине экрана (1024px равен 450px), (550px равен 242px) */
+    width: calc(242px + (450 - 242) * ((100vw - 550px) / (1024 - 550)));
   }
 
   .chooseTour__cardTur-content {
     justify-content: start;
+    /* функция, при ширине экрана (1024px равен 30px), (550px равен 0px) */
+    padding-left: calc(0px + (30 - 0) * ((100vw - 550px) / (1024 - 550)));
+    padding-right: calc(0px + (30 - 0) * ((100vw - 550px) / (1024 - 550)));
   }
 
   .chooseTour__cardTur-content-title {
@@ -192,76 +210,23 @@
     padding-bottom: 320px;
   }
 
-  /*от550px-до918px___________________________________________________*/
-  @media (max-width: 918px) {
-
-    /*  */
-    /* __chooseTour(раздел-выбрать тур)__ */
-    .chooseTour__title {
-      /* функция, при ширине экрана (918px равен 59px), (550px равен 42px) */
-      font-size: calc(42px + (59 - 42) * ((100vw - 550px) / (918 - 550)));
-      /* функция, при ширине экрана (918px равен 135px), (550px равен 95px) */
-      padding-top: calc(95px + (135 - 95) * ((100vw - 550px) / (918 - 550)));
-    }
-
-    .chooseTour__tabs-link {
-      /* функция, при ширине экрана (918px равен 23px), (550px равен 18px) */
-      font-size: calc(18px + (23 - 18) * ((100vw - 550px) / (918 - 550)));
-    }
-
-    .chooseTour__tabs-link:not(:last-child) {
-      /* функция, при ширине экрана (918px равен 26.5px), (550px равен 10px) */
-      margin-right: calc(10px + (26.5 - 10) * ((100vw - 550px) / (918 - 550)));
-    }
-
-    .chooseTour__cardContainer {
-      justify-content: space-evenly;
-    }
-
-    .chooseTour__cardTur {
-      /* функция, при ширине экрана (918px равен 450px), (550px равен 222px) */
-      width: calc(222px + (450 - 222) * ((100vw - 550px) / (918 - 550)));
-    }
-
-    .chooseTour__cardTur-content {
-      /* функция, при ширине экрана (918px равен 30px), (550px равен 0px) */
-      padding-left: calc(0px + (30 - 0) * ((100vw - 550px) / (918 - 550)));
-      padding-right: calc(0px + (30 - 0) * ((100vw - 550px) / (918 - 550)));
-    }
-
-    .chooseTour__cardTur-content-title {
-      /* функция, при ширине экрана (918px равен 35px), (550px равен 27px) */
-      font-size: calc(27px + (35 - 27) * ((100vw - 550px) / (918 - 550)));
-    }
-
-    /*  */
-    /* __reviews(раздел-отзывы) */
-    .reviews__cardContainer {
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      margin-top: 32px;
-    }
-
-    .reviews__cardContainer-item {
-      margin-top: 18px;
-      /* функция, при ширине экрана (918px равен 872px), (550px равен 508px) */
-      width: calc(508px + (872 - 508) * ((100vw - 550px) / (918 - 550)));
-    }
-  }
 
   /*  */
   /* __collectTour(раздел-собрать тур) */
-  .secondaryTitle__title {
+  .collectTour .secondaryTitle__title {
     /* функция, при ширине экрана (1024px равен 59px), (550px равен 42px) */
     font-size: calc(42px + (59 - 42) * ((100vw - 550px) / (1024 - 550)));
-    /* функция, при ширине экрана (1024px равен 135px), (550px равен 95px) */
-    padding-top: calc(95px + (135 - 95) * ((100vw - 550px) / (1024 - 550)));
+    /* функция, при ширине экрана (1024px равен 117px), (550px равен 95px) */
+    padding-top: calc(95px + (117 - 95) * ((100vw - 550px) / (1024 - 550)));
   }
 
   .formFill {
-    /* функция, при ширине экрана (1024px равен 918px), (550px равен 489px) */
-    width: calc(489px + (918 - 489) * ((100vw - 550px) / (1024 - 550)));
+    /* функция, при ширине экрана (1024px равен 918px), (550px равен 480px) */
+    width: calc(480px + (918 - 480) * ((100vw - 550px) / (1024 - 550)));
+
+    /* функция, при ширине экрана (1024px равен 60px), (550px равен 20px) */
+    padding-right: calc(20px + (60 - 20) * ((100vw - 550px) / (1024 - 550)));
+    padding-left: calc(20px + (60 - 20) * ((100vw - 550px) / (1024 - 550)));
   }
 
   .formFill__inputFields-name,
@@ -270,38 +235,49 @@
   .formFill__inputFields-phone,
   .formFill__inputFields-dateFrom,
   .formFill__inputFields-dateTo {
-    /* функция, при ширине экрана (1024px равен 389px), (550px равен 209px) */
-    width: calc(209px + (389 - 209) * ((100vw - 550px) / (1024 - 550)));
+    /* функция, при ширине экрана (1024px равен 389px), (550px равен 210px) */
+    width: calc(210px + (389 - 210) * ((100vw - 550px) / (1024 - 550)));
   }
 
-
-  /*от0px-до670px___________________________________________________*/
-  @media (max-width: 670px) {
-
-    .formFill__inputFields-name-input::placeholder,
-    .formFill__inputFields-dropdown-select-item,
-    .formFill__inputFields-email-input::placeholder,
-    .formFill__inputFields-phone-input::placeholder,
-    .formFill__inputFields-dateFrom-input,
-    .formFill__inputFields-dateTo-input {
-      font-size: 16px;
-    }
+  .formFill__inputFields-name-input::placeholder,
+  .formFill__inputFields-dropdown-select-item,
+  .formFill__inputFields-email-input::placeholder,
+  .formFill__inputFields-phone-input::placeholder,
+  .formFill__inputFields-dateFrom-input,
+  .formFill__inputFields-dateTo-input {
+    /* функция, при ширине экрана (1024px равен 20px), (550px равен 16px) */
+    font-size: calc(16px + (20 - 16) * ((100vw - 550px) / (1024 - 550)));
   }
-
 
   .formFill__commentField {
-    /* функция, при ширине экрана (1024px равен 798px), (550px равен 426px) */
-    width: calc(426px + (798 - 426) * ((100vw - 550px) / (1024 - 550)));
+    /* функция, при ширине экрана (1024px равен 798px), (550px равен 440px) */
+    width: calc(440px + (798 - 440) * ((100vw - 550px) / (1024 - 550)));
   }
 
   .formFill__agreement {
     width: 100%;
   }
 
+  .formFill__agreement-input+.formFill__agreement-customCheckbox::before {
+    margin-right: 11px;
+  }
+
   .formFill__buttons-find,
   .formFill__buttons-reset {
     /* функция, при ширине экрана (1024px равен 235px), (550px равен 162px) */
     width: calc(162px + (235 - 162) * ((100vw - 550px) / (1024 - 550)));
+  }
+
+  /*  */
+  /* __reviews(раздел-отзывы) */
+  .reviews__cardContainer {
+    /* функция, при ширине экрана (1024px равен 918px), (550px равен 540px) */
+    width: calc(540px + (918 - 540) * ((100vw - 550px) / (1024 - 550)));
+  }
+
+  .reviews__cardContainer-item {
+    /* функция, при ширине экрана (1024px равен 450px), (550px равен 260px) */
+    width: calc(260px + (450 - 260) * ((100vw - 550px) / (1024 - 550)));
   }
 
   /*  */
@@ -356,6 +332,7 @@
     font-size: calc(17px + (20 - 17) * ((100vw - 550px) / (1024 - 550)));
   }
 }
+
 
 /*от0px-до549px___________________________________________________*/
 @media (max-width: 549px) {
@@ -467,8 +444,10 @@
   }
 
   .chooseTour__cardContainer {
+    /* функция, при ширине экрана (549px равен 504px), (360px равен 318px) */
+    width: calc(318px + (504 - 318) * ((100vw - 360px) / (549 - 360)));
     justify-content: center;
-    margin-top: 56px;
+    margin-top: 38px;
   }
 
   .chooseTour__cardTur {
@@ -515,8 +494,8 @@
 
   /*  */
   /* __collectTour(раздел-собрать тур) */
-  .secondaryTitle__title {
-    padding-top: 75px;
+  .collectTour .secondaryTitle__title {
+    padding-top: 57px;
     /* функция, при ширине экрана (549px равен 41px), (360px равен 34px) */
     font-size: var(--font_size_of_section_title);
     line-height: 112%;
@@ -555,6 +534,15 @@
   .formFill__commentField {
     /* функция, при ширине экрана (549px равен 423px), (360px равен 278px) */
     width: calc(278px + (423 - 278) * ((100vw - 360px) / (549 - 360)));
+  }
+
+  .formFill__inputFields-name-input::placeholder,
+  .formFill__inputFields-dropdown-select-item,
+  .formFill__inputFields-email-input::placeholder,
+  .formFill__inputFields-phone-input::placeholder,
+  .formFill__inputFields-dateFrom-input,
+  .formFill__inputFields-dateTo-input {
+    font-size: 16px;
   }
 
   .formFill__inputFields-name,
@@ -662,8 +650,29 @@
 
   /*  */
   /* __reviews(раздел-отзывы) */
+  .reviews .secondaryTitle__title {
+    padding-top: 75px;
+    /* функция, при ширине экрана (549px равен 41px), (360px равен 34px) */
+    font-size: var(--font_size_of_section_title);
+    line-height: 112%;
+    letter-spacing: 0.68px;
+  }
+
   .reviews .secondaryTitle__subtitle {
     max-width: 318px;
+  }
+
+  .reviews__cardContainer {
+    flex-direction: column;
+    /* функция, при ширине экрана (549px равен 467px), (360px равен 318px) */
+    width: calc(318px + (467 - 318) * ((100vw - 360px) / (549 - 360)));
+    margin-top: 32px;
+  }
+
+  .reviews__cardContainer-item {
+    /* функция, при ширине экрана (549px равен 467px), (360px равен 317px) */
+    width: calc(317px + (467 - 317) * ((100vw - 360px) / (549 - 360)));
+    margin-top: 18px;
   }
 
   .reviews__cardContainer-item {
@@ -675,8 +684,7 @@
   .reviews__cardContainer-item-text {
     font-size: 16px;
     line-height: 144%;
-    /* функция, при ширине экрана (549px равен 467px), (360px равен 277px) */
-    width: calc(277px + (467 - 277) * ((100vw - 360px) / (549 - 360)));
+
   }
 
   /* применяем стили ко всем элементам, начиная с второго */
@@ -712,6 +720,14 @@
 
   /*  */
   /* __travelPhotos(раздел-фотографии путешествий) */
+  .travelPhotos .secondaryTitle__title {
+    padding-top: 75px;
+    /* функция, при ширине экрана (549px равен 41px), (360px равен 34px) */
+    font-size: var(--font_size_of_section_title);
+    line-height: 112%;
+    letter-spacing: 0.68px;
+  }
+
   .travelPhotos .secondaryTitle__subtitle {
     padding-top: 20px;
     max-width: 318px;
@@ -756,6 +772,14 @@
 
   /*  */
   /* __stories(раздел-истории)__ */
+  .stories .secondaryTitle__title {
+    padding-top: 75px;
+    /* функция, при ширине экрана (549px равен 41px), (360px равен 34px) */
+    font-size: var(--font_size_of_section_title);
+    line-height: 112%;
+    letter-spacing: 0.68px;
+  }
+
   .stories .secondaryTitle__subtitle {
     max-width: 318px;
   }
