@@ -1,49 +1,27 @@
+.collectTour .secondaryTitle__title {
+  padding-top: 105px;
+}
+
 .collectTour {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-/* __________secondaryTitle */
-.secondaryTitle {
+.collectTour__cardContainer {
+  max-width: 1200px;
   margin: auto;
-}
-
-.secondaryTitle__title {
-  margin: auto;
-  padding-top: 135px;
-  max-width: 529px;
-
-  font-weight: 700;
-  font-size: 59px;
-  line-height: 124%;
-
-  text-align: center;
-  color: var(--black-color);
-}
-
-.secondaryTitle__subtitle {
-  margin: auto;
-  padding-top: 30px;
-  max-width: 409px;
-
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 142%;
-
-  text-align: center;
-  color: var(--gray300-color);
+  margin-top: 99px;
+  padding: 0 30px;
 }
 
 /* __________formFill */
 .formFill {
   max-width: 1170px;
   background-color: var(--white-color);
-
   box-sizing: border-box;
-  padding: 37px 70px 70px 70px;
+  padding: 70px;
   margin: auto;
-  margin-top: 98px;
   border-radius: 50px;
 }
 
@@ -63,6 +41,14 @@
   flex-wrap: wrap;
 }
 
+.formFill__inputFields,
+.formFill__commentField,
+.formFill__age,
+.formFill__agreement,
+.formFill__buttons {
+  width: 100%;
+}
+
 .formFill__inputFields-name,
 .formFill__inputFields-dropdown,
 .formFill__inputFields-email,
@@ -70,13 +56,18 @@
 .formFill__inputFields-dateFrom,
 .formFill__inputFields-dateTo,
 .formFill__commentField,
+.formFill__age,
 .formFill__agreement {
-  margin-top: 33px;
-  width: 500px;
+  margin-bottom: 33px;
 }
 
-.formFill__age {
-  margin-top: 33px;
+.formFill__inputFields-name,
+.formFill__inputFields-dropdown,
+.formFill__inputFields-email,
+.formFill__inputFields-phone,
+.formFill__inputFields-dateFrom,
+.formFill__inputFields-dateTo {
+  width: calc(50% - 15px);
 }
 
 .formFill__inputFields-name-label,
@@ -88,8 +79,6 @@
 .formFill__commentField-label,
 .formFill__age-legend {
   color: var(--black-color);
-  /* inline-block эл. ведёт себя снаружи как строчный, а внутри как блочный */
-  display: inline-block;
 }
 
 .formFill__inputFields-dropdown-select-item,
@@ -120,7 +109,6 @@
   /* чтобы текст не залезал на стрелку для развертывания списка */
   padding-right: 45px;
   margin-top: 8px;
-  gap: 10px;
 
   width: 100%;
   height: 68px;
@@ -137,7 +125,6 @@
 .formFill__inputFields-phone-input::placeholder {
   color: var(--gray300-color);
 }
-
 
 .formFill__inputFields-dropdown-select-item_active {
   color: var(--black-color);
@@ -194,13 +181,8 @@
 }
 
 /* _____formFill__commentField */
-.formFill__commentField {
-  width: 1030px;
-}
-
 .formFill__commentField-textarea {
   height: 152px;
-  width: 100%;
   resize: none;
 }
 
@@ -213,7 +195,8 @@
 
 .formFill__age-radioGroup {
   display: flex;
-  margin-top: 8px;
+  margin-top: 6px;
+  height: 28px;
 }
 
 .formFill__age-radioGroup-block-input {
@@ -273,8 +256,7 @@
 /* _____formFill__agreement */
 .formFill__agreement {
   display: flex;
-  width: 565px;
-  margin-top: 26px;
+  height: 26px;
 }
 
 /* Скрываем чекбокс и оставляем функциональность фокуса */
@@ -285,7 +267,6 @@
 }
 
 .formFill__agreement-input+.formFill__agreement-customCheckbox {
-  display: inline-flex;
   align-items: center;
   user-select: none;
 }
@@ -349,18 +330,13 @@
 
 
 /* _____formFill__buttons */
-.formFill__buttons {
-  margin-top: 31px;
-}
-
 .formFill__buttons-find,
 .formFill__buttons-reset {
   border: none;
   width: 235px;
+  font-size: 20px;
   align-items: center;
-  padding: 17px 30px;
-  gap: 10px;
-  background: var(--green400-color);
+  padding: 18px 30px;
   border-radius: 10px;
   color: var(--white-color);
   /* ease определяет функцию плавности и */
@@ -369,6 +345,7 @@
 }
 
 .formFill__buttons-find {
+  background: var(--green400-color);
   margin-right: 25px;
 }
 

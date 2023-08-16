@@ -6,16 +6,18 @@
 
 .stories .secondaryTitle__title {
   max-width: 615px;
+  padding-top: 135px;
 }
 
 .stories .secondaryTitle__subtitle {
-  max-width: 418px;
+  max-width: 410px;
 }
 
 .stories__cardContainer {
-  width: 1170px;
+  max-width: 1170px;
   margin: auto;
   margin-top: 100px;
+  padding: 0 30px;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
@@ -117,6 +119,8 @@
 .stories__card-content-link {
   display: flex;
   justify-content: space-between;
+  /* Элементы выравниваются по своей базовой линии */
+  align-items: baseline;
 }
 
 .stories__card-content-link-btn-item {
@@ -201,5 +205,5 @@ ___Примечание №2
 
 /* нижний отступ */
 .pb-1 {
-  padding-bottom: 201px;
+  padding-bottom: 200px;
 }

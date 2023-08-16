@@ -22,72 +22,6 @@
       url('../../dist/images/greetingBackgroundImg1024.png');
   }
 
-  .greeting__slogan {
-    /* функция, при ширине экрана (1920px равен 562px), (1025px равен 442px) */
-    width: calc(442px + (562 - 442) * ((100vw - 1025px) / (1920 - 1025)));
-  }
-
-  .greeting__buttons {
-    padding-top: 49px;
-  }
-
-
-  /*  */
-  /* __chooseTour(раздел-выбрать тур)__ */
-  .chooseTour__cardContainer {
-    /* функция, при ширине экрана (1920px равен 1200px), (1025px равен 1025px) */
-    width: calc(1025px + (1200 - 1025) * ((100vw - 1025px) / (1920 - 1025)));
-  }
-
-  .chooseTour__cardTur {
-    /* функция, при ширине экрана (1920px равен 370px), (1025px равен 316px) */
-    width: calc(316px + (370 - 316) * ((100vw - 1025px) / (1920 - 1025)));
-  }
-
-
-  /*  */
-  /* __collectTour(раздел-собрать тур) */
-  .formFill {
-    /* функция, при ширине экрана (1920px равен 1170px), (1025px равен 918px) */
-    width: calc(918px + (1170 - 918) * ((100vw - 1025px) / (1920 - 1025)));
-    /* функция, при ширине экрана (1920px равен 37px), (1025px равен 28px) */
-    padding-top: calc(28px + (37 - 28) * ((100vw - 1025px) / (1920 - 1025)));
-
-    /* функция, при ширине экрана (1920px равен 70px), (1025px равен 60px) */
-    padding-bottom: calc(60px + (70 - 60) * ((100vw - 1025px) / (1920 - 1025)));
-    padding-right: calc(60px + (70 - 60) * ((100vw - 1025px) / (1920 - 1025)));
-    padding-left: calc(60px + (70 - 60) * ((100vw - 1025px) / (1920 - 1025)));
-  }
-
-  .formFill__inputFields-name,
-  .formFill__inputFields-dropdown,
-  .formFill__inputFields-email,
-  .formFill__inputFields-phone,
-  .formFill__inputFields-dateFrom,
-  .formFill__inputFields-dateTo {
-    /* функция, при ширине экрана (1920px равен 500px), (1025px равен 389px) */
-    width: calc(389px + (500 - 389) * ((100vw - 1025px) / (1920 - 1025)));
-  }
-
-  .formFill__commentField {
-    /* функция, при ширине экрана (1920px равен 1030px), (1025px равен 798px) */
-    width: calc(798px + (1030 - 798) * ((100vw - 1025px) / (1920 - 1025)));
-  }
-
-
-  /*  */
-  /* __reviews(раздел-отзывы) */
-  .reviews__cardContainer {
-    /* функция, при ширине экрана (1920px равен 1170px), (1025px равен 918px) */
-    width: calc(918px + (1170 - 918) * ((100vw - 1025px) / (1920 - 1025)));
-  }
-
-  .reviews__cardContainer-item {
-    /* функция, при ширине экрана (1920px равен 570px), (1025px равен 450px) */
-    width: calc(450px + (570 - 450) * ((100vw - 1025px) / (1920 - 1025)));
-  }
-
-
   /*  */
   /* __travelPhotos(раздел-фотографии путешествий) */
   .travelPhotos__cardContainer-block1-img,
@@ -101,25 +35,24 @@
     width: calc(231px + (347.32 - 231) * ((100vw - 1025px) / (1920 - 1025)));
   }
 
-  /*  */
-  /* __stories(раздел-истории)__ */
-  .stories__cardContainer {
-    /* функция, при ширине экрана (1920px равен 1170px), (1025px равен 918px) */
-    width: calc(918px + (1170 - 918) * ((100vw - 1025px) / (1920 - 1025)));
-  }
-
-  .stories__card {
-    /* функция, при ширине экрана (1920px равен 1170px), (1025px равен 918px) */
-    width: calc(918px + (1170 - 918) * ((100vw - 1025px) / (1920 - 1025)));
-  }
 }
 
 
 /*от550px-до1024px___________________________________________________*/
 @media (max-width: 1024px) {
 
-  /* C помощью линейной интерполяции определяю какие размеры должны быть
-  у элементов при размере экрана 550px  */
+  /* общие стили */
+  .secondaryTitle__title {
+    /* функция, при ширине экрана (1024px равен 0px), (360px равен 0.68px) */
+    letter-spacing: calc(0.68px + (0 - 0.68) * ((100vw - 360px) / (1024 - 360)));
+    /* функция, при ширине экрана (1024px равен 59px), (360px равен 34px) */
+    font-size: calc(34px + (59 - 34) * ((100vw - 360px) / (1024 - 360)));
+  }
+
+  .secondaryTitle__subtitle {
+    /* функция, при ширине экрана (1024px равен 20px), (360px равен 16px) */
+    font-size: var(--dynamic-font-size_1);
+  }
 
   /*  */
   /* __heading(раздел-заголовок)__ */
@@ -146,97 +79,141 @@
   /*  */
   /* __greeting(раздел-приветствие)__ */
   .greeting__title {
-    /* функция, при ширине экрана (1024px равен 768px), (550px равен 460px) */
-    width: calc(460px + (768 - 460) * ((100vw - 550px) / (1024 - 550)));
-    /* функция, при ширине экрана (1024px равен 96px), (550px равен 51px) */
-    font-size: calc(51px + (96 - 51) * ((100vw - 550px) / (1024 - 550)));
+    /* функция, при ширине экрана (1024px равен 207px), (360px равен 140px) */
+    padding-top: calc(140px + (207 - 140) * ((100vw - 360px) / (1024 - 360)));
+    /* функция, при ширине экрана (1024px равен 768px), (360px равен 360px) */
+    max-width: calc(360px + (768 - 360) * ((100vw - 360px) / (1024 - 360)));
+    /* функция, при ширине экрана (1024px равен 96px), (360px равен 34px) */
+    font-size: calc(34px + (96 - 34) * ((100vw - 360px) / (1024 - 360)));
+    /* функция, при ширине экрана (1024px равен 1.92px), (360px равен 0.68px) */
+    /* line-height: 112%; */
+    letter-spacing: calc(0.68px + (1.92 - 0.68) * ((100vw - 360px) / (1024 - 360)));
   }
 
   .greeting__slogan {
-    /* функция, при ширине экрана (1024px равен 442px), (550px равен 347px) */
-    width: calc(347px + (442 - 347) * ((100vw - 550px) / (1024 - 550)));
-    /* функция, при ширине экрана (1024px равен 20px), (550px равен 18px) */
-    font-size: calc(18px + (20 - 18) * ((100vw - 550px) / (1024 - 550)));
+    /* функция, при ширине экрана (1024px равен 50px), (360px равен 40px) */
+    padding-top: calc(40px + (50 - 40) * ((100vw - 360px) / (1024 - 360)));
+    /* функция, при ширине экрана (1024px равен 442px), (360px равен 310px) */
+    max-width: calc(310px + (442 - 310) * ((100vw - 360px) / (1024 - 360)));
+    /* функция, при ширине экрана (1024px равен 20px), (360px равен 16px) */
+    font-size: var(--dynamic-font-size_1);
+  }
+
+  .greeting__buttons {
+    /* функция, при ширине экрана (1024px равен 51px), (360px равен 40px) */
+    padding-top: calc(40px + (51 - 40) * ((100vw - 360px) / (1024 - 360)));
+    /* функция, при ширине экрана (1024px равен 118px), (360px равен 52px) */
+    padding-bottom: calc(52px + (118 - 52) * ((100vw - 360px) / (1024 - 360)));
   }
 
   /*  */
   /* __chooseTour(раздел-выбрать тур)__ */
-  .chooseTour__tabs-link {
-    /* функция, при ширине экрана (1024px равен 23px), (550px равен 18px) */
-    font-size: calc(18px + (23 - 18) * ((100vw - 550px) / (1024 - 550)));
+  .chooseTour .secondaryTitle__title {
+    /* функция, при ширине экрана (1024px равен 135px), (360px равен 76px) */
+    padding-top: calc(76px + (135 - 76) * ((100vw - 360px) / (1024 - 360)));
   }
 
-  .chooseTour__tabs-link:not(:last-child) {
-    /* функция, при ширине экрана (1024px равен 26.5px), (550px равен 10px) */
-    margin-right: calc(10px + (26.5 - 10) * ((100vw - 550px) / (1024 - 550)));
+  .chooseTour .secondaryTitle__tabs {
+    /* функция, при ширине экрана (1024px равен 20px), (360px равен 27px) */
+    padding-top: calc(27px + (20 - 27) * ((100vw - 360px) / (1024 - 360)));
+  }
+
+  .chooseTour .secondaryTitle__tabs-link {
+    /* функция, при ширине экрана (1024px равен 4px), (360px равен 0px) */
+    padding-bottom: calc(0px + (4 - 0) * ((100vw - 360px) / (1024 - 360)));
+    /* функция, при ширине экрана (1024px равен 15px), (360px равен 5px) */
+    margin: calc(5px + (15 - 5) * ((100vw - 360px) / (1024 - 360)));
+    /* функция, при ширине экрана (1024px равен 23px), (360px равен 16px) */
+    font-size: var(--dynamic-font-size_2);
   }
 
   .chooseTour__cardContainer {
-    /* функция, при ширине экрана (1024px равен 918px), (550px равен 504px) */
-    width: calc(504px + (918 - 504) * ((100vw - 550px) / (1024 - 550)));
-    margin-top: 88px;
-    justify-content: space-between;
-    padding: 18px;
-  }
-
-  /* отменяем применение стилей к трём последним элементам */
-  .chooseTour__cardTur:nth-last-child(-n+3) {
-    margin-top: 0px;
-  }
-
-  /* применяем стили ко всем элементам, кроме двух первых */
-  .chooseTour__cardTur:nth-child(n+3) {
-    margin-top: 18px;
+    max-width: 936px;
+    /* функция, при ширине экрана (1024px равен 52px), (360px равен 12px) */
+    margin-top: calc(12px + (52 - 12) * ((100vw - 360px) / (1024 - 360)));
+    padding: 9px;
   }
 
   .chooseTour__cardTur {
-    /* width: 450px; */
-    /* функция, при ширине экрана (1024px равен 450px), (550px равен 242px) */
-    width: calc(242px + (450 - 242) * ((100vw - 550px) / (1024 - 550)));
+    width: calc(50% - 18px);
+    margin: 9px;
+    /* функция, при ширине экрана (1024px равен 50px), (360px равен 20px) */
+    border-radius: var(--dynamic-border-sizes_1);
   }
 
   .chooseTour__cardTur-content {
-    justify-content: start;
     /* функция, при ширине экрана (1024px равен 30px), (550px равен 0px) */
     padding-left: calc(0px + (30 - 0) * ((100vw - 550px) / (1024 - 550)));
     padding-right: calc(0px + (30 - 0) * ((100vw - 550px) / (1024 - 550)));
   }
 
   .chooseTour__cardTur-content-title {
-    max-width: 340px;
+    /* функция, при ширине экрана (1024px равен 35px), (360px равен 23px) */
+    font-size: var(--dynamic-font-size_3);
   }
-
-  .chooseTour__cardTur-content-price {
-    padding-bottom: 320px;
-  }
-
 
   /*  */
   /* __collectTour(раздел-собрать тур) */
   .collectTour .secondaryTitle__title {
-    /* функция, при ширине экрана (1024px равен 59px), (550px равен 42px) */
-    font-size: calc(42px + (59 - 42) * ((100vw - 550px) / (1024 - 550)));
-    /* функция, при ширине экрана (1024px равен 117px), (550px равен 95px) */
-    padding-top: calc(95px + (117 - 95) * ((100vw - 550px) / (1024 - 550)));
+    /* функция, при ширине экрана (1024px равен 117px), (360px равен 58px) */
+    padding-top: calc(58px + (117 - 58) * ((100vw - 360px) / (1024 - 360)));
+  }
+
+  .collectTour .secondaryTitle__subtitle {
+    /* функция, при ширине экрана (1024px равен 30px), (360px равен 20px) */
+    padding-top: var(--dynamic-top-internal-indentation_1);
+    /* функция, при ширине экрана (1024px равен 409px), (360px равен 318px) */
+    max-width: calc(318px + (409 - 318) * ((100vw - 360px) / (1024 - 360)));
+  }
+
+  .collectTour__cardContainer {
+    max-width: 918px;
+    /* функция, при ширине экрана (1024px равен 99px), (360px равен 39px) */
+    margin-top: calc(39px + (99 - 39) * ((100vw - 360px) / (1024 - 360)));
+    /* функция, при ширине экрана (1024px равен 30px), (360px равен 21px) */
+    padding-right: var(--dynamic-right-internal-indentation_2);
+    padding-left: var(--dynamic-left-internal-indentation_3);
+
   }
 
   .formFill {
-    /* функция, при ширине экрана (1024px равен 918px), (550px равен 480px) */
-    width: calc(480px + (918 - 480) * ((100vw - 550px) / (1024 - 550)));
-
-    /* функция, при ширине экрана (1024px равен 60px), (550px равен 20px) */
-    padding-right: calc(20px + (60 - 20) * ((100vw - 550px) / (1024 - 550)));
-    padding-left: calc(20px + (60 - 20) * ((100vw - 550px) / (1024 - 550)));
+    /* функция, при ширине экрана (1024px равен 50px), (360px равен 30px) */
+    border-radius: calc(30px + (50 - 30) * ((100vw - 360px) / (1024 - 360)));
+    /* функция, при ширине экрана (1024px равен 60px), (360px равен 22px) */
+    padding-top: calc(22px + (60 - 22) * ((100vw - 360px) / (1024 - 360)));
+    /* функция, при ширине экрана (1024px равен 60px), (360px равен 20px) */
+    padding-right: calc(20px + (60 - 20) * ((100vw - 360px) / (1024 - 360)));
+    padding-left: calc(20px + (60 - 20) * ((100vw - 360px) / (1024 - 360)));
+    /* функция, при ширине экрана (1024px равен 60px), (360px равен 40px) */
+    padding-bottom: calc(40px + (60 - 40) * ((100vw - 360px) / (1024 - 360)));
   }
 
+  /* _____formFill__inputFields */
   .formFill__inputFields-name,
   .formFill__inputFields-dropdown,
   .formFill__inputFields-email,
   .formFill__inputFields-phone,
   .formFill__inputFields-dateFrom,
   .formFill__inputFields-dateTo {
-    /* функция, при ширине экрана (1024px равен 389px), (550px равен 210px) */
-    width: calc(210px + (389 - 210) * ((100vw - 550px) / (1024 - 550)));
+    width: calc(50% - 10px);
+  }
+
+  .formFill__inputFields-name-input,
+  .formFill__inputFields-dropdown-select-item,
+  .formFill__inputFields-email-input,
+  .formFill__inputFields-phone-input,
+  .formFill__inputFields-dateFrom-input,
+  .formFill__inputFields-dateTo-input,
+  .formFill__commentField-textarea {
+    /* функция, при ширине экрана (1024px равен 20px), (360px равен 10px) */
+    padding: calc(10px + (20 - 10) * ((100vw - 360px) / (1024 - 360)));
+    /* функция, при ширине экрана (1024px равен 45px), (360px равен 31px) */
+    padding-right: calc(31px + (45 - 31) * ((100vw - 360px) / (1024 - 360)));
+  }
+
+  .formFill__inputFields-dropdown-select::before {
+    /* функция, при ширине экрана (1024px равен 23.59px), (360px равен 13.59px) */
+    right: calc(13.59px + (23.59 - 13.59) * ((100vw - 360px) / (1024 - 360)));
   }
 
   .formFill__inputFields-name-input::placeholder,
@@ -245,46 +222,95 @@
   .formFill__inputFields-phone-input::placeholder,
   .formFill__inputFields-dateFrom-input,
   .formFill__inputFields-dateTo-input {
-    /* функция, при ширине экрана (1024px равен 20px), (550px равен 16px) */
-    font-size: calc(16px + (20 - 16) * ((100vw - 550px) / (1024 - 550)));
+    /* функция, при ширине экрана (1024px равен 20px), (360px равен 16px) */
+    font-size: var(--dynamic-font-size_1);
   }
 
-  .formFill__commentField {
-    /* функция, при ширине экрана (1024px равен 798px), (550px равен 440px) */
-    width: calc(440px + (798 - 440) * ((100vw - 550px) / (1024 - 550)));
-  }
-
-  .formFill__agreement {
-    width: 100%;
-  }
-
+  /* _____formFill__agreement */
   .formFill__agreement-input+.formFill__agreement-customCheckbox::before {
     margin-right: 11px;
   }
 
+  /* _____formFill__buttons */
   .formFill__buttons-find,
   .formFill__buttons-reset {
-    /* функция, при ширине экрана (1024px равен 235px), (550px равен 162px) */
-    width: calc(162px + (235 - 162) * ((100vw - 550px) / (1024 - 550)));
+    /* функция, при ширине экрана (1024px равен 235px), (360px равен 134px) */
+    width: calc(134px + (235 - 134) * ((100vw - 360px) / (1024 - 360)));
+    /* функция, при ширине экрана (1024px равен 20px), (360px равен 16px) */
+    font-size: var(--dynamic-font-size_1);
+  }
+
+  .formFill__buttons-find {
+    /* функция, при ширине экрана (1024px равен 25px), (360px равен 5px) */
+    margin-right: calc(5px + (25 - 5) * ((100vw - 360px) / (1024 - 360)));
   }
 
   /*  */
   /* __reviews(раздел-отзывы) */
+  .reviews .secondaryTitle__title {
+    /* функция, при ширине экрана (1024px равен 134px), (360px равен 76px) */
+    padding-top: calc(76px + (134 - 76) * ((100vw - 360px) / (1024 - 360)));
+  }
+
+  .reviews .secondaryTitle__subtitle {
+    /* функция, при ширине экрана (1024px равен 30px), (360px равен 20px) */
+    padding-top: var(--dynamic-top-internal-indentation_1);
+    /* функция, при ширине экрана (1024px равен 410px), (360px равен 318px) */
+    max-width: var(--dynamic-width_1);
+  }
+
   .reviews__cardContainer {
-    /* функция, при ширине экрана (1024px равен 918px), (550px равен 540px) */
-    width: calc(540px + (918 - 540) * ((100vw - 550px) / (1024 - 550)));
+    max-width: 918px;
+    /* функция, при ширине экрана (1024px равен 98px), (360px равен 50px) */
+    margin-top: calc(50px + (98 - 50) * ((100vw - 360px) / (1024 - 360)));
+    /* функция, при ширине экрана (1024px равен 30px), (360px равен 21px) */
+    padding-right: var(--dynamic-right-internal-indentation_2);
+    padding-left: var(--dynamic-left-internal-indentation_3);
   }
 
   .reviews__cardContainer-item {
-    /* функция, при ширине экрана (1024px равен 450px), (550px равен 260px) */
-    width: calc(260px + (450 - 260) * ((100vw - 550px) / (1024 - 550)));
+    width: calc(50% - 9px);
+    margin-right: 18px;
+    margin-bottom: 18px;
   }
+
+  .reviews__cardContainer-item-text-par1 {
+    /* функция, при ширине экрана (1024px равен 23px), (360px равен 16px) */
+    font-size: var(--dynamic-font-size_2);
+  }
+
+  .reviews__cardContainer-item-person-block-name {
+    /* функция, при ширине экрана (1024px равен 35px), (360px равен 23px) */
+    font-size: var(--dynamic-font-size_3);
+  }
+
+  .reviews__cardContainer-item-person-block-tour {
+    /* функция, при ширине экрана (1024px равен 17px), (360px равен 16px) */
+    font-size: calc(16px + (17 - 16) * ((100vw - 360px) / (1024 - 360)));
+  }
+
 
   /*  */
   /* __travelPhotos(раздел-фотографии путешествий) */
-  .w1-h1,
-  .w2-h2,
-  .w3-h3 {
+  .travelPhotos .secondaryTitle__title {
+    /* функция, при ширине экрана (1024px равен 134px), (360px равен 76px) */
+    padding-top: calc(76px + (134 - 76) * ((100vw - 360px) / (1024 - 360)));
+  }
+
+  .travelPhotos .secondaryTitle__subtitle {
+    /* функция, при ширине экрана (1024px равен 30px), (360px равен 20px) */
+    padding-top: var(--dynamic-top-internal-indentation_1);
+    /* функция, при ширине экрана (1024px равен 410px), (360px равен 318px) */
+    max-width: var(--dynamic-width_1);
+  }
+
+  .travelPhotos .secondaryTitle__title {
+    padding-top: 119px;
+  }
+
+  .travelPhotos__cardContainer-block1-img,
+  .travelPhotos__cardContainer-block2-img,
+  .travelPhotos__cardContainer-block3-img {
     margin-right: 20px;
   }
 
@@ -303,33 +329,112 @@
 
   /*  */
   /* __stories(раздел-истории)__ */
+  .stories .secondaryTitle__title {
+    /* функция, при ширине экрана (1024px равен 134px), (360px равен 75px) */
+    padding-top: calc(75px + (134 - 75) * ((100vw - 360px) / (1024 - 360)));
+  }
+
+  .stories .secondaryTitle__subtitle {
+    /* функция, при ширине экрана (1024px равен 30px), (360px равен 20px) */
+    padding-top: var(--dynamic-top-internal-indentation_1);
+    /* функция, при ширине экрана (1024px равен 410px), (360px равен 318px) */
+    max-width: var(--dynamic-width_1);
+  }
+
   .stories__cardContainer {
-    /* функция, при ширине экрана (1024px равен 918px), (550px равен 489px) */
-    width: calc(489px + (918 - 489) * ((100vw - 550px) / (1024 - 550)));
+    /* функция, при ширине экрана (1024px равен 100px), (360px равен 51px) */
+    margin-top: calc(51px + (100 - 51) * ((100vw - 360px) / (1024 - 360)));
+    /* функция, при ширине экрана (1024px равен 918px), (360px равен 318px) */
+    max-width: calc(318px + (918 - 318) * ((100vw - 360px) / (1024 - 360)));
+    /* функция, при ширине экрана (1024px равен 30px), (360px равен 21px) */
+    padding-right: var(--dynamic-right-internal-indentation_2);
+    padding-left: var(--dynamic-left-internal-indentation_3);
   }
 
   .stories__card {
-    /* функция, при ширине экрана (1024px равен 918px), (550px равен 489px) */
-    width: calc(489px + (918 - 489) * ((100vw - 550px) / (1024 - 550)));
+    /* функция, при ширине экрана (1024px равен 50px), (360px равен 20px) */
+    border-radius: var(--dynamic-border-sizes_1);
+  }
+
+  .stories__card:not(:last-child) {
+    /* функция, при ширине экрана (1024px равен 49px), (360px равен 20px) */
+    margin-bottom: calc(20px + (49 - 20) * ((100vw - 360px) / (1024 - 360)));
   }
 
   .stories__card-content {
-    /* функция, при ширине экрана (1024px равен 60px), (550px равен 10px) */
-    padding-right: calc(10px + (60 - 10) * ((100vw - 550px) / (1024 - 550)));
-    /* функция, при ширине экрана (1024px равен 40px), (550px равен 10px) */
-    padding-left: calc(10px + (40 - 10) * ((100vw - 550px) / (1024 - 550)));
+    /* функция, при ширине экрана (1024px равен 60px), (360px равен 30px) */
+    padding-top: calc(30px + (60 - 30) * ((100vw - 360px) / (1024 - 360)));
+    padding-right: calc(30px + (60 - 30) * ((100vw - 360px) / (1024 - 360)));
+    /* функция, при ширине экрана (1024px равен 60px), (360px равен 32px) */
+    padding-bottom: calc(32px + (60 - 32) * ((100vw - 360px) / (1024 - 360)));
+    /* функция, при ширине экрана (1024px равен 40px), (360px равен 10px) */
+    padding-left: calc(10px + (40 - 10) * ((100vw - 360px) / (1024 - 360)));
+  }
+
+  .stories__card-content-title {
+    /* функция, при ширине экрана (1024px равен 35px), (360px равен 23px) */
+    font-size: var(--dynamic-font-size_3);
+  }
+
+  .stories__card-content-text {
+    /* функция, при ширине экрана (1024px равен 111px), (360px равен 64px) */
+    padding-bottom: calc(64px + (111 - 64) * ((100vw - 360px) / (1024 - 360)));
+  }
+
+  .pb-1 {
+    /* функция, при ширине экрана (1024px равен 198px), (360px равен 134px) */
+    padding-bottom: calc(134px + (198 - 134) * ((100vw - 360px) / (1024 - 360)));
+  }
+
+  .stories__card-content-text-main,
+  .stories__card-content-text-list {
+    /* функция, при ширине экрана (1024px равен 20px), (360px равен 16px) */
+    font-size: var(--dynamic-font-size_1); line-height: 144%;
+  }
+
+  .stories__card-content-link-btn-item {
+    /* функция, при ширине экрана (1024px равен 23px), (360px равен 16px) */
+    font-size: var(--dynamic-font-size_2);
+  }
+
+  .stories__card-content-link-btn-item::after {
+    /* функция, при ширине экрана (1024px равен 0px), (360px равен 2px) */
+    top: calc(2px + (0 - 2) * ((100vw - 360px) / (1024 - 360)));
+    /* функция, при ширине экрана (1024px равен 15px), (360px равен 17px) */
+    left: calc(17px + (15 - 17) * ((100vw - 360px) / (1024 - 360)));
+  }
+
+  .stories__card-content-link-socialNetwork-item {
+    /* функция, при ширине экрана (1024px равен 20px), (360px равен 16px) */
+    font-size: var(--dynamic-font-size_1);
   }
 
   .stories__card-content-link-socialNetwork-item:not(:last-child) {
-    /* функция, при ширине экрана (1024px равен 31px), (550px равен 7px) */
-    margin-right: calc(7px + (31 - 7) * ((100vw - 550px) / (1024 - 550)));
+    /* функция, при ширине экрана (1024px равен 31x), (550px равен 5px) */
+    margin-right: calc(5px + (31 - 5) * ((100vw - 550px) / (1024 - 550)));
   }
 
   /*  */
   /* __footer(раздел-нижний колонтитул)__ */
-  .stories__card-content-link-socialNetwork-item {
-    /* функция, при ширине экрана (1024px равен 20px), (550px равен 17px) */
-    font-size: calc(17px + (20 - 17) * ((100vw - 550px) / (1024 - 550)));
+  .footers__card-img {
+    /* функция, при ширине экрана (1024px равен 370px), (360px равен 130px) */
+    width: calc(130px + (370 - 130) * ((100vw - 360px) / (1024 - 360)));
+    /* функция, при ширине экрана (1024px равен 370px), (360px равен 133px) */
+    height: calc(133px + (370 - 133) * ((100vw - 360px) / (1024 - 360)));
+    /* функция, при ширине экрана (1024px равен 50px), (360px равен 20px) */
+    border-radius: var(--dynamic-border-sizes_1);
+  }
+
+  .footers__card-content-title {
+    /* функция, при ширине экрана (1024px равен 35px), (360px равен 23px) */
+    font-size: var(--dynamic-font-size_3);
+  }
+
+  .footers__card-content-text,
+  .footers__link-text,
+  .footers__link-socialNetwork-block-item {
+    /* функция, при ширине экрана (1024px равен 20px), (360px равен 16px) */
+    font-size: var(--dynamic-font-size_1);
   }
 }
 
@@ -368,26 +473,7 @@
   /*  */
   /* __greeting(раздел-приветствие)__ */
   .greeting__title {
-    /* функция, при ширине экрана (549px равен 460px), (280px равен 260px) */
-    width: calc(260px + (460 - 260) * ((100vw - 280px) / (549 - 280)));
-    /* функция, при ширине экрана (549px равен 207.9px), (360px равен 140px) */
-    padding-top: calc(140px + (207.9 - 140) * ((100vw - 360px) / (549 - 360)));
-    /* функция, при ширине экрана (549px равен 51px), (360px равен 34px) */
-    font-size: calc(34px + (51 - 34) * ((100vw - 360px) / (549 - 360)));
     line-height: 112%;
-  }
-
-  .greeting__slogan {
-    /* функция, при ширине экрана (549px равен 347px), (280px равен 260px) */
-    width: calc(260px + (347 - 260) * ((100vw - 280px) / (549 - 360)));
-    /* функция, при ширине экрана (549px равен 18px), (360px равен 16px) */
-    font-size: calc(16px + (18 - 16) * ((100vw - 360px) / (549 - 360)));
-    padding-top: 41px;
-  }
-
-  .greeting__buttons {
-    padding-top: 40px;
-    padding-bottom: 52px;
   }
 
   .greeting__buttons-small {
@@ -395,154 +481,59 @@
     font-size: 16px;
   }
 
-
   /*  */
   /* __chooseTour(раздел-выбрать тур)__ */
-  .chooseTour__title {
-    padding-top: 75px;
-    /* функция, при ширине экрана (549px равен 41px), (360px равен 34px) */
-    font-size: var(--font_size_of_section_title);
-    /* font-size: 34px; */
+  .chooseTour .secondaryTitle__title {
     line-height: 112%;
-    letter-spacing: 0.92px;
-  }
-
-  .chooseTour__tabs {
-    width: 275px;
-
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-
-    padding-top: 30px;
-    margin: auto;
-  }
-
-  .chooseTour__tabs-link {
-    font-size: 16px;
-    line-height: 142%;
-    padding-bottom: 0px;
-  }
-
-  /* Выберем все пункты списка, кроме последнего */
-  .chooseTour__tabs-link:not(:last-child) {
-    margin-right: 0px;
-  }
-
-  /* Выберем 4 элемент списка */
-  .chooseTour__tabs-link:nth-child(4) {
-    position: relative;
-    top: 9px;
-    left: 13px;
-  }
-
-  /* Выберем 5 элемент списка */
-  .chooseTour__tabs-link:nth-child(5) {
-    position: relative;
-    top: 9px;
-    right: 13px;
   }
 
   .chooseTour__cardContainer {
-    /* функция, при ширине экрана (549px равен 504px), (360px равен 318px) */
-    width: calc(318px + (504 - 318) * ((100vw - 360px) / (549 - 360)));
-    justify-content: center;
-    margin-top: 38px;
+    max-width: 549px;
   }
 
   .chooseTour__cardTur {
-    /* функция, при ширине экрана (549px равен 485px), (360px равен 318px) */
-    width: calc(318px + (485 - 318) * ((100vw - 360px) / (549 - 360)));
-    border-radius: 20px;
-  }
-
-  /* применяем стили ко всем элементам, кроме двух первых */
-  .chooseTour__cardTur:nth-child(n+2) {
-    margin-top: 18px;
+    width: calc(100% - 24px);
+    max-height: 318px;
   }
 
   .chooseTour__cardTur-content {
     min-height: 318px;
-    padding: 25px 6px;
+    padding: 25px 25px 28px 5px;
   }
 
   .chooseTour__cardTur-content-title {
-    max-width: 268px;
-    font-size: 23px;
-    font-weight: 500;
-    line-height: 120%;
-    letter-spacing: 0.04em;
-    padding-left: 20px;
-    padding-bottom: 14px;
+    letter-spacing: 0.92px;
   }
 
-  .chooseTour__cardTur-content-price {
-    padding-left: 20px;
+  .chooseTour__cardTur-content-title::after {
     font-size: 16px;
-    padding-bottom: 180px;
+    bottom: -4px;
   }
 
   .chooseTour__cardTur-content-link-item {
     font-size: 16px;
-    line-height: 142%;
   }
 
   .chooseTour__cardTur-content-link-item::after {
-    top: 2px;
-    left: 12px;
+    position: relative;
+    content: url('../../dist/images/VectorRight.svg');
+    left: 13px;
+    top: 3px;
   }
 
   /*  */
   /* __collectTour(раздел-собрать тур) */
   .collectTour .secondaryTitle__title {
-    padding-top: 57px;
-    /* функция, при ширине экрана (549px равен 41px), (360px равен 34px) */
-    font-size: var(--font_size_of_section_title);
     line-height: 112%;
-    letter-spacing: 0.68px;
-  }
-
-  .secondaryTitle__subtitle {
-    padding-top: 21px;
-    max-width: 318px;
-    font-size: 16px;
   }
 
   .formFill>* {
     font-size: 16px;
   }
 
-  .formFill {
-    /* функция, при ширине экрана (549px равен 489px), (360px равен 318px) */
-    width: calc(318px + (489 - 318) * ((100vw - 360px) / (549 - 360)));
-    margin-top: 41px;
-    padding: 20px 20px 40px 20px;
-    border-radius: 30px;
-  }
-
+  /* _____formFill__inputFields */
   .formFill__inputFields {
-    display: flex;
     flex-direction: column;
-  }
-
-  .formFill__inputFields-name,
-  .formFill__inputFields-dropdown,
-  .formFill__inputFields-email,
-  .formFill__inputFields-phone,
-  .formFill__inputFields-dateFrom,
-  .formFill__inputFields-dateTo,
-  .formFill__commentField {
-    /* функция, при ширине экрана (549px равен 423px), (360px равен 278px) */
-    width: calc(278px + (423 - 278) * ((100vw - 360px) / (549 - 360)));
-  }
-
-  .formFill__inputFields-name-input::placeholder,
-  .formFill__inputFields-dropdown-select-item,
-  .formFill__inputFields-email-input::placeholder,
-  .formFill__inputFields-phone-input::placeholder,
-  .formFill__inputFields-dateFrom-input,
-  .formFill__inputFields-dateTo-input {
-    font-size: 16px;
   }
 
   .formFill__inputFields-name,
@@ -553,65 +544,52 @@
   .formFill__inputFields-dateTo,
   .formFill__commentField,
   .formFill__age,
-  .formFill__agreement,
-  .formFill__buttons {
-    margin-top: 30px;
-  }
-
-  .formFill__inputFields-name {
-    margin: 0;
-  }
-
-  .formFill__inputFields-email {
-    margin-top: 33px;
+  .formFill__agreement {
+    margin-bottom: 30px;
+    width: 100%;
   }
 
   .formFill__inputFields-name-input,
-  .formFill__inputFields-dropdown-select-item,
   .formFill__inputFields-email-input,
   .formFill__inputFields-phone-input,
   .formFill__inputFields-dateFrom-input,
-  .formFill__inputFields-dateTo-input,
-  .formFill__commentField-textarea {
-    height: 43px;
-    padding: 10px;
-    padding-right: 35px;
+  .formFill__inputFields-dateTo-input {
+    height: 43.5px;
   }
 
+  .formFill__inputFields-dropdown-select-item {
+    height: 46px;
+  }
+
+  .formFill__inputFields-dropdown-select::before {
+    top: 54%;
+  }
+
+  /* _____formFill__commentField */
   .formFill__commentField-textarea {
     height: 132px;
   }
 
-  .formFill__inputFields-dropdown-select::before {
-    top: 60%;
-    right: 13.59px;
-  }
-
+  /* _____formFill__age */
   .formFill__age-radioGroup {
-    margin-top: 10px;
+    margin-top: 8px;
+    height: 23px;
   }
 
   .formFill__age-radioGroup-block:not(:last-child) {
-    margin-right: 25px;
+    margin-right: 30px;
   }
 
   .formFill__age-radioGroup-block-input+.formFill__age-radioGroup-block-label::before {
-    width: 20px;
-    height: 20px;
-  }
-
-  .formFill__age-radioGroup-block-input+.formFill__age-radioGroup-block-label::before {
+    width: 19px;
+    height: 19px;
     border-radius: 0.80em;
+    margin-right: 9px;
   }
 
-  /* _____formFill__agreement*/
+  /* _____formFill__agreement */
   .formFill__agreement {
-    margin-top: 24px;
-    max-width: 278px;
-  }
-
-  .formFill__agreement-input+.formFill__agreement-customCheckbox {
-    display: block;
+    height: 100%;
   }
 
   .formFill__agreement-input+.formFill__agreement-customCheckbox::before {
@@ -629,88 +607,54 @@
   }
 
   /* _____formFill__buttons */
-  .formFill__buttons {
-    margin-top: 20px;
-  }
-
   .formFill__buttons-find,
   .formFill__buttons-reset {
-    width: 135px;
-    padding: 12px 30px;
-    margin-top: 10px;
-
-    font-size: 16px;
-    line-height: 142%;
-    text-align: center;
-  }
-
-  .formFill__buttons-find {
-    margin-right: 4px;
+    padding: 14px 29px;
   }
 
   /*  */
   /* __reviews(раздел-отзывы) */
   .reviews .secondaryTitle__title {
-    padding-top: 75px;
-    /* функция, при ширине экрана (549px равен 41px), (360px равен 34px) */
-    font-size: var(--font_size_of_section_title);
     line-height: 112%;
-    letter-spacing: 0.68px;
   }
 
-  .reviews .secondaryTitle__subtitle {
-    max-width: 318px;
+  /*от0px-до280px___________________________________________________*/
+  @media (max-width: 280px) {
+
+    .formFill__buttons-find,
+    .formFill__buttons-reset {
+      width: 100px;
+      padding: 12px 12px;
+    }
+
+    .reviews .secondaryTitle__title {
+      letter-spacing: -0.9px;
+    }
   }
 
   .reviews__cardContainer {
     flex-direction: column;
-    /* функция, при ширине экрана (549px равен 467px), (360px равен 318px) */
-    width: calc(318px + (467 - 318) * ((100vw - 360px) / (549 - 360)));
-    margin-top: 32px;
   }
 
   .reviews__cardContainer-item {
-    /* функция, при ширине экрана (549px равен 467px), (360px равен 317px) */
-    width: calc(317px + (467 - 317) * ((100vw - 360px) / (549 - 360)));
-    margin-top: 18px;
-  }
-
-  .reviews__cardContainer-item {
+    width: 100%;
     border-radius: 20px;
     padding: 20px;
-    min-height: auto;
+    padding-right: 21px;
   }
 
-  .reviews__cardContainer-item-text {
-    font-size: 16px;
-    line-height: 144%;
-
+  .reviews__cardContainer-item-text-par1 {
+    line-height: 143%;
   }
 
-  /* применяем стили ко всем элементам, начиная с второго */
   .reviews__cardContainer-item-text-par1:nth-child(n+2) {
-    margin-top: 22px;
+    margin-top: 25px;
   }
 
   .reviews__cardContainer-item-person {
-    margin-top: 36px;
-  }
-
-  .reviews__cardContainer-item-person-block {
-    justify-content: end;
-  }
-
-  .reviews__cardContainer-item-person-block-name {
-    margin-top: 20px;
-    font-size: 23px;
-    font-weight: 700;
-    line-height: 120%;
+    margin-top: 37px;
     letter-spacing: 0.92px;
-  }
-
-  .reviews__cardContainer-item-person-block-tour {
-    font-size: 16px;
-    letter-spacing: -0.16px;
+    align-items: end;
   }
 
   .reviews__cardContainer-item-person-photo img {
@@ -721,11 +665,9 @@
   /*  */
   /* __travelPhotos(раздел-фотографии путешествий) */
   .travelPhotos .secondaryTitle__title {
-    padding-top: 75px;
-    /* функция, при ширине экрана (549px равен 41px), (360px равен 34px) */
-    font-size: var(--font_size_of_section_title);
+    max-width: 318px;
+    padding-top: 57px;
     line-height: 112%;
-    letter-spacing: 0.68px;
   }
 
   .travelPhotos .secondaryTitle__subtitle {
@@ -753,12 +695,12 @@
   }
 
   /* применить ко всем кроме последнего */
-  .w2-h2:not(:last-child) {
+  .travelPhotos__cardContainer-block2-img:not(:last-child) {
     /* функция, при ширине экрана (550px равен 20px), (360px равен 10px) */
     margin-right: calc(10px + (20 - 10) * ((100vw - 360px) / (550 - 360)));
   }
 
-  .w3-h3:first-child {
+  .travelPhotos__cardContainer-block3-img:first-child {
     /* функция, при ширине экрана (550px равен 20px), (360px равен 10px) */
     margin-right: calc(10px + (20 - 10) * ((100vw - 360px) / (550 - 360)));
   }
@@ -773,153 +715,68 @@
   /*  */
   /* __stories(раздел-истории)__ */
   .stories .secondaryTitle__title {
-    padding-top: 75px;
-    /* функция, при ширине экрана (549px равен 41px), (360px равен 34px) */
-    font-size: var(--font_size_of_section_title);
     line-height: 112%;
-    letter-spacing: 0.68px;
-  }
-
-  .stories .secondaryTitle__subtitle {
-    max-width: 318px;
-  }
-
-  .stories__cardContainer {
-    margin-top: 50px;
-  }
-
-  .stories__card {
-    border-radius: 20px;
-  }
-
-  .stories__card-img {
-    background-position: 40% center;
-  }
-
-  .stories__card:not(:last-child) {
-    margin-bottom: 19px;
-  }
-
-  .stories__card-content {
-    padding: 30px 10px 33px 10px;
-  }
-
-  .stories__card-content-title {
-    max-width: 160px;
-    padding-left: 20px;
-    padding-bottom: 20px;
-
-    font-size: 23px;
-    font-weight: 700;
-    line-height: 122%;
-    letter-spacing: 0.92px;
-  }
-
-  .stories__card-content-text {
-    max-width: 263px;
-    padding-left: 20px;
-    padding-bottom: 65px;
-    line-height: 143%;
-    font-size: 16px;
-  }
-
-  .stories__card-content-text-main {
-    padding-bottom: 24.7px;
-  }
-
-  .stories__card-content-text-list {
-    padding-left: 9px;
-  }
-
-  /* кастомный размер маркера списка ul*/
-  .stories__card-content-text-list .stories__card-content-text-list-item::before {
-    font-size: 16px;
-  }
-
-  .stories__card-content-link-btn-item {
-    font-size: 16px;
-  }
-
-  .stories__card-content-link-btn-item::after {
-    top: 2px;
-    left: 17px;
   }
 
   .stories__card-content-link-socialNetwork {
     display: none;
   }
 
-  /* нижний отступ */
-  .pb-1 {
-    padding-bottom: 134px;
+  .stories__card-content-title {
+    max-width: 162px;
+    letter-spacing: 0.92px;
+    padding-bottom: 20px;
   }
 
+  .stories__card-content-text-main {
+    padding-bottom: 24px;
+  }
+
+  .stories__card-content-text-list {
+    line-height: 137%;
+    padding-left: 9px;
+  }
 
   /*  */
   /* __footer(раздел-нижний колонтитул)__ */
   .footers__card {
+    flex-direction: column;
     padding-top: 75px;
     padding-bottom: 75px;
-    flex-direction: column;
-  }
-
-  .footers__card-img {
-    width: 130px;
-    height: 133px;
-    border-radius: 20px;
-    margin-bottom: 31px;
   }
 
   .footers__card-content {
-    margin: auto;
+    margin-left: 0px;
+    margin-top: 32px;
+    text-align: center;
   }
 
   .footers__card-content-title {
-    max-width: 291px;
-    font-size: 23px;
-    text-align: center;
-
     font-weight: 700;
     line-height: 120%;
     letter-spacing: 0.92px;
   }
 
-  .footers__card-content-text {
-    max-width: 291px;
-    font-size: 16px;
-    text-align: center;
-  }
-
   .footers__linkContainer {
-    padding-top: 21px;
-    padding-bottom: 21px;
+    padding: 21px;
   }
 
   .footers__link {
-    /* функция, при ширине экрана (549px равен 53px), (360px равен 0px) */
-    padding-left: calc(0px + (53 - 0) * ((100vw - 360px) / (549 - 360)));
-    padding-right: calc(0px + (53 - 0) * ((100vw - 360px) / (549 - 360)));
-    margin: auto;
     flex-direction: column;
-    justify-content: center;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .footers__link-text {
-    margin-bottom: 7px;
-  }
-
-  .footers__link-socialNetwork {
-    display: flex;
-    padding-left: 0;
-  }
-
-  .footers__link-text,
-  .footers__link-socialNetwork-block-item {
-    font-size: 16px;
+    margin-bottom: 8px;
   }
 
   .footers__link-socialNetwork-block:not(:last-child) {
-    margin-right: 13px;
+    margin-right: 15px;
+  }
+
+  .footers__link-socialNetwork {
+    padding-left: 0px;
   }
 
   .footers__link-socialNetwork-block-icon {

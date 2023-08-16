@@ -21,19 +21,34 @@ a {
   --gray100-color: #F1F3F2;
   --green100-color: #E0F0E5;
 
-  /* размер шрифта заголовка раздела */
-  --font_size_of_section_title: calc(34px + (41 - 34) * ((100vw - 360px) / (549 - 360)));
+  /* динамические размеры шрифтов */
+  /* функция, при ширине экрана (1024px равен 59px), (360px равен 34px) */
+  --dynamic-font-size_1: calc(16px + (20 - 16) * ((100vw - 360px) / (1024 - 360)));
+  /* функция, при ширине экрана (1024px равен 23px), (360px равен 16px) */
+  --dynamic-font-size_2: calc(16px + (23 - 16) * ((100vw - 360px) / (1024 - 360)));
+  /* функция, при ширине экрана (1024px равен 35px), (360px равен 23px) */
+  --dynamic-font-size_3: calc(23px + (35 - 23) * ((100vw - 360px) / (1024 - 360)));
+
+  /* динамические размеры границ */
+  /* функция, при ширине экрана (1024px равен 50px), (360px равен 20px) */
+  --dynamic-border-sizes_1: calc(20px + (50 - 20) * ((100vw - 360px) / (1024 - 360)));
+
+  /* динамические отступы */
+  /* функция, при ширине экрана (1024px равен 30px), (360px равен 20px) */
+  --dynamic-top-internal-indentation_1: calc(20px + (30 - 20) * ((100vw - 360px) / (1024 - 360)));
+  /* функция, при ширине экрана (1024px равен 30px), (360px равен 21px) */
+  --dynamic-right-internal-indentation_2: calc(21px + (30 - 21) * ((100vw - 360px) / (1024 - 360)));
+  --dynamic-left-internal-indentation_3: calc(21px + (30 - 21) * ((100vw - 360px) / (1024 - 360)));
+
+  /* динамическая ширина */
+  /* функция, при ширине экрана (1024px равен 410px), (360px равен 318px) */
+  --dynamic-width_1: calc(318px + (410 - 318) * ((100vw - 360px) / (1024 - 360)));
 }
 
 /* внешняя обертка */
 .wrapper {
   font-family: 'Roboto', 'Times New Roman', Times, serif;
   font-style: normal;
-}
-
-/* размер viewport */
-.vt-w1 {
-  width: 100%;
 }
 
 /* фоновый цвет */
@@ -49,18 +64,77 @@ a {
   border-radius: 50px;
 }
 
-/* ширина и высота картинки */
-/* .w1-h1 {
-  width: 23%;
-  height: 301px;
-} */
+/* __________secondaryTitle */
+.secondaryTitle {
+  margin: auto;
+}
 
-/* .w2-h2 {
-  width: 23%;
-  height: 301px;
-} */
+.secondaryTitle__title {
+  margin: auto;
+  max-width: 529px;
 
-/* .w3-h3 {
-  width: 23%;
-  height: 301px;
-} */
+  font-weight: 700;
+  font-size: 59px;
+  line-height: 124%;
+
+  text-align: center;
+  color: var(--black-color);
+}
+
+.secondaryTitle__tabs {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  padding: 20px 15px 15px 15px;
+}
+
+.secondaryTitle__tabs-link {
+  padding-bottom: 4px;
+  margin: 15px;
+  margin-bottom: 18px;
+  font-size: 23px;
+  font-weight: 700;
+  line-height: 122%;
+  color: var(--black-color);
+
+  /* начальное значение */
+  border-bottom: 2px solid transparent;
+  transition: border-bottom 0.3s ease, color 0.3s ease;
+}
+
+.secondaryTitle__tabs-link:hover {
+  /* измененное значение */
+  border-bottom: 2px solid var(--black-color);
+  color: var(--black-color);
+}
+
+/* Выбранный вариант вкладки*/
+.secondaryTitle__tabs-link_active {
+  /* измененное значение */
+  border-bottom: 2px solid var(--orange200-color);
+  color: var(--orange200-color);
+}
+
+/* установим :hover для выбранного варианта вкладки, чтобы
+обычный :hover--->(.secondaryTitle__tabs-link:hover) не перебивал его 
+Без такой записи обычный :hover перебивает выбранный варианта вкладки */
+.secondaryTitle__tabs-link_active:hover {
+  border-bottom: 2px solid var(--orange200-color);
+  color: var(--orange200-color);
+}
+
+.secondaryTitle__subtitle {
+  margin: auto;
+  padding-top: 30px;
+  max-width: 409px;
+
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 142%;
+
+  text-align: center;
+  color: var(--gray300-color);
+}

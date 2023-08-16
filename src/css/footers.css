@@ -2,9 +2,16 @@
 /*  */
 /*  */
 
-.footers__card {
-  padding: 135px 10px 135px 10px;
+.footers {
+  display: flex;
+  flex-direction: column;
+}
 
+.footers__card {
+  max-width: 771px;
+  margin: auto;
+
+  padding: 135px 30px 135px 30px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -69,7 +76,6 @@
 
 .footers__linkContainer {
   background: var(--beige200-color);
-  width: 100%;
   padding-top: 30px;
   padding-bottom: 30px;
 }

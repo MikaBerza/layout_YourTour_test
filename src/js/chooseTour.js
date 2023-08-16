@@ -10,7 +10,7 @@ const gradientBackground = 'linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(
 // самовызывающаяся функция добавляет/удаляет стиль для вкладки и ссылки
 (function toggleStyleTabsAndLinks() {
   // получим статическую коллекцию NodeList элементов вкладок
-  const nodeListOfTabs = document.querySelectorAll('.chooseTour__tabs-link');
+  const nodeListOfTabs = document.querySelectorAll('.secondaryTitle__tabs-link');
 
   // удалить стиль из всех элементов
   function removeStyleFromAllItems(nodeListName, className) {
@@ -22,8 +22,8 @@ const gradientBackground = 'linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(
   // добавим/удалим стиль вкладки
   nodeListOfTabs.forEach((item) => {
     item.addEventListener('click', () => {
-      removeStyleFromAllItems(nodeListOfTabs, 'chooseTour__tabs-link_active');
-      addStyleAnItem(item, 'chooseTour__tabs-link_active');
+      removeStyleFromAllItems(nodeListOfTabs, 'secondaryTitle__tabs-link_active');
+      addStyleAnItem(item, 'secondaryTitle__tabs-link_active');
     });
   });
 }());

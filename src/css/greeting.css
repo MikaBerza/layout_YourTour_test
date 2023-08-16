@@ -5,11 +5,14 @@
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
+
+  display: flex;
+  flex-direction: column;
 }
 
 .greeting__title {
   max-width: 768px;
-  padding-top: 207.9px;
+  padding-top: 207px;
   margin: auto;
   text-align: center;
 
@@ -17,12 +20,12 @@
   font-size: 96px;
   line-height: 109%;
 
-  letter-spacing: 0.02em;
+  letter-spacing: 1.92px;
   color: var(--white-color);
 }
 
 .greeting__slogan {
-  width: 562px;
+  max-width: 562px;
   margin: auto;
   padding-top: 50px;
 
@@ -36,7 +39,7 @@
 .greeting__buttons {
   margin: auto;
   padding-top: 50px;
-  padding-bottom: 119px;
+  padding-bottom: 118px;
   text-align: center;
 }
 
