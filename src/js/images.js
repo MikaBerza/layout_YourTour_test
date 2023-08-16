@@ -1,3 +1,8 @@
+// импортируем значки веб-сайта (fav_icons_YT)
+import '../assets/images/fav_icons_YT/apple-touch-icon.png';
+import '../assets/images/fav_icons_YT/favicon-32x32.png';
+import '../assets/images/fav_icons_YT/favicon-16x16.png';
+import '../assets/images/fav_icons_YT/safari-pinned-tab.svg';
 // импортируем изображение для раздела ("greeting")
 import '../assets/images/greeting/greetingBackgroundImg1920.png';
 import '../assets/images/greeting/greetingBackgroundImg1024.png';
