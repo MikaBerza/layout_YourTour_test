@@ -1,6 +1,7 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const CopyPlugin = require('copy-webpack-plugin');
 
 module.exports = {
   mode: 'development',
@@ -42,6 +43,12 @@ module.exports = {
     }),
     new MiniCssExtractPlugin({
       filename: '[name].css',
+    }),
+    new CopyPlugin({
+      patterns: [
+        { from: './src/assets/images/fav_icons_YT/site.webmanifest', to: 'images' },
+        { from: './src/assets/images/fav_icons_YT/browserconfig.xml', to: 'images' },
+      ],
     }),
   ],
   module: {
