@@ -7,14 +7,6 @@ module.exports = {
   mode: 'development',
   entry: {
     index: './src/js/index.js',
-    images: './src/js/images.js',
-    heading: './src/js/heading.js',
-    chooseTour: './src/js/chooseTour.js',
-    collectTour: './src/js/collectTour.js',
-    travelPhotos: './src/js/travelPhotos.js',
-    stories: './src/js/stories.js',
-    // всегда последний
-    modules: './src/js/modules.js',
   },
   output: {
     filename: '[name].js',
@@ -30,24 +22,20 @@ module.exports = {
     new HtmlWebpackPlugin({
       filename: 'index.html',
       template: './src/pages/index.html',
-      chunks: [
-        'index',
-        'images',
-        'heading',
-        'chooseTour',
-        'collectTour',
-        'travelPhotos',
-        'stories',
-        'modules',
-      ],
     }),
     new MiniCssExtractPlugin({
       filename: '[name].css',
     }),
     new CopyPlugin({
       patterns: [
-        { from: './src/assets/images/fav_icons_YT/site.webmanifest', to: 'images' },
-        { from: './src/assets/images/fav_icons_YT/browserconfig.xml', to: 'images' },
+        {
+          from: './src/assets/images/fav_icons_YT/site.webmanifest',
+          to: 'images',
+        },
+        {
+          from: './src/assets/images/fav_icons_YT/browserconfig.xml',
+          to: 'images',
+        },
       ],
     }),
   ],
