@@ -17,12 +17,12 @@
 
 /* __________formFill */
 .formFill {
-  max-width: 1170px;
-  background-color: var(--white-color);
   box-sizing: border-box;
-  padding: 70px;
+  max-width: 1170px;
   margin: auto;
+  padding: 70px;
   border-radius: 50px;
+  background-color: var(--white-color);
 }
 
 /* Примечание
@@ -99,24 +99,22 @@
 .formFill__inputFields-dateFrom-input,
 .formFill__inputFields-dateTo-input,
 .formFill__commentField-textarea {
-  /* убираем обводку вокруг нажатого поля */
-  outline: none;
   box-sizing: border-box;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+  width: 100%;
+  height: 68px;
+  margin-top: 8px;
   padding: 20px;
   /* чтобы текст не залезал на стрелку для развертывания списка */
   padding-right: 45px;
-  margin-top: 8px;
-
-  width: 100%;
-  height: 68px;
-  background: var(--beige100-color);
-
   border: 1px solid var(--beige200-color);
   border-radius: 10px;
+  /* убираем обводку вокруг нажатого поля */
+  outline: none;
+  background: var(--beige100-color);
   color: var(--black-color);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .formFill__inputFields-name-input::placeholder,
@@ -165,7 +163,6 @@
   right: 23.59px;
   /* подвинем на 50% высоты вектора вверх */
   transform: translateY(-50%);
-
   /* Свойство pointer-events определяет, 
   как HTML-элемент реагирует на различные события мыши,
   т.е. мы делаем элемент прозрачным для клика и 
@@ -183,20 +180,21 @@
 /* _____formFill__commentField */
 .formFill__commentField-textarea {
   height: 152px;
+  /* Указывает, можно ли пользователю изменять размеры текстового поля */
   resize: none;
 }
 
 /* _____formFill__age */
 .formFill__age {
-  border: 0;
-  padding: 0;
   margin-left: 0;
+  padding: 0;
+  border: 0;
 }
 
 .formFill__age-radioGroup {
-  display: flex;
-  margin-top: 6px;
   height: 28px;
+  margin-top: 6px;
+  display: flex;
 }
 
 .formFill__age-radioGroup-block-input {
@@ -222,25 +220,26 @@
 .formFill__age-radioGroup-block-input+.formFill__age-radioGroup-block-label {
   display: inline-flex;
   align-items: center;
+  /* Свойство, которое запрещает возможность выбора текста */
   user-select: none;
 }
 
 .formFill__age-radioGroup-block-input+.formFill__age-radioGroup-block-label::before {
   content: '';
-  display: inline-block;
   width: 24px;
   height: 24px;
+  border: 1px solid var(--black-color);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 50% 50%;
+  display: inline-block;
   flex-shrink: 0;
   flex-grow: 0;
-  border: 1px solid var(--black-color);
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: 50% 50%;
 }
 
 .formFill__age-radioGroup-block-input+.formFill__age-radioGroup-block-label::before {
-  border-radius: 0.60em;
   margin-right: 11px;
+  border-radius: 0.60em;
 }
 
 .formFill__age-radioGroup-block-input:checked+.formFill__age-radioGroup-block-label::before {
@@ -255,8 +254,8 @@
 
 /* _____formFill__agreement */
 .formFill__agreement {
-  display: flex;
   height: 26px;
+  display: flex;
 }
 
 /* Скрываем чекбокс и оставляем функциональность фокуса */
@@ -273,15 +272,15 @@
 
 .formFill__agreement-input+.formFill__agreement-customCheckbox::before {
   content: '';
-  display: inline-block;
   width: 26px;
   height: 26px;
+  border: 1px solid var(--black-color);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 50% 50%;
+  display: inline-block;
   flex-shrink: 0;
   flex-grow: 0;
-  border: 1px solid var(--black-color);
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: 50% 50%;
 }
 
 .formFill__agreement-input:checked+.formFill__agreement-customCheckbox::before {
@@ -291,19 +290,18 @@
 
 .formFill__agreement-text {
   margin: 0;
-  color: var(--gray300-color);
   font-size: 17px;
   font-weight: 400;
   line-height: 142%;
   letter-spacing: -0.17px;
+  color: var(--gray300-color);
 }
 
 .formFill__agreement-text-link {
-  color: var(--black-color);
-  cursor: pointer;
-
   /* начальное значение */
   border-bottom: 1px solid transparent;
+  color: var(--black-color);
+  cursor: pointer;
   transition: border-bottom 0.3s ease, color 0.3s ease;
 }
 
@@ -320,8 +318,8 @@
 }
 
 .formFill__agreement-input+.formFill__agreement-customCheckbox::before {
-  border-radius: 0.25em;
   margin-right: 19px;
+  border-radius: 0.25em;
 }
 
 .formFill__agreement-input:checked+.formFill__agreement-customCheckbox::before {
@@ -332,21 +330,21 @@
 /* _____formFill__buttons */
 .formFill__buttons-find,
 .formFill__buttons-reset {
-  border: none;
   width: 235px;
-  font-size: 20px;
-  align-items: center;
   padding: 18px 30px;
+  border: none;
   border-radius: 10px;
   color: var(--white-color);
+  font-size: 20px;
+  align-items: center;
   /* ease определяет функцию плавности и */
   /* обозначает постепенное ускорение и замедление в течение всего перехода */
   transition: background-color 0.3s ease;
 }
 
 .formFill__buttons-find {
-  background: var(--green400-color);
   margin-right: 25px;
+  background: var(--green400-color);
 }
 
 .formFill__buttons-find:hover {

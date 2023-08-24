@@ -43,10 +43,10 @@
 
   /* общие стили */
   .secondaryTitle__title {
-    /* функция, при ширине экрана (1024px равен 0px), (360px равен 0.68px) */
-    letter-spacing: calc(0.68px + (0 - 0.68) * ((100vw - 360px) / (1024 - 360)));
     /* функция, при ширине экрана (1024px равен 59px), (360px равен 34px) */
     font-size: calc(34px + (59 - 34) * ((100vw - 360px) / (1024 - 360)));
+    /* функция, при ширине экрана (1024px равен 0px), (360px равен 0.68px) */
+    letter-spacing: calc(0.68px + (0 - 0.68) * ((100vw - 360px) / (1024 - 360)));
   }
 
   .secondaryTitle__subtitle {
@@ -79,10 +79,10 @@
   /*  */
   /* __greeting(раздел-приветствие)__ */
   .greeting__title {
-    /* функция, при ширине экрана (1024px равен 207px), (360px равен 140px) */
-    padding-top: calc(140px + (207 - 140) * ((100vw - 360px) / (1024 - 360)));
     /* функция, при ширине экрана (1024px равен 768px), (360px равен 360px) */
     max-width: calc(360px + (768 - 360) * ((100vw - 360px) / (1024 - 360)));
+    /* функция, при ширине экрана (1024px равен 207px), (360px равен 140px) */
+    padding-top: calc(140px + (207 - 140) * ((100vw - 360px) / (1024 - 360)));
     /* функция, при ширине экрана (1024px равен 96px), (360px равен 34px) */
     font-size: calc(34px + (96 - 34) * ((100vw - 360px) / (1024 - 360)));
     /* функция, при ширине экрана (1024px равен 1.92px), (360px равен 0.68px) */
@@ -91,10 +91,10 @@
   }
 
   .greeting__slogan {
-    /* функция, при ширине экрана (1024px равен 50px), (360px равен 40px) */
-    padding-top: calc(40px + (50 - 40) * ((100vw - 360px) / (1024 - 360)));
     /* функция, при ширине экрана (1024px равен 442px), (360px равен 310px) */
     max-width: calc(310px + (442 - 310) * ((100vw - 360px) / (1024 - 360)));
+    /* функция, при ширине экрана (1024px равен 50px), (360px равен 40px) */
+    padding-top: calc(40px + (50 - 40) * ((100vw - 360px) / (1024 - 360)));
     /* функция, при ширине экрана (1024px равен 20px), (360px равен 16px) */
     font-size: var(--dynamic-font-size_1);
   }
@@ -119,10 +119,10 @@
   }
 
   .chooseTour .secondaryTitle__tabs-link {
-    /* функция, при ширине экрана (1024px равен 4px), (360px равен 0px) */
-    padding-bottom: calc(0px + (4 - 0) * ((100vw - 360px) / (1024 - 360)));
     /* функция, при ширине экрана (1024px равен 15px), (360px равен 5px) */
     margin: calc(5px + (15 - 5) * ((100vw - 360px) / (1024 - 360)));
+    /* функция, при ширине экрана (1024px равен 4px), (360px равен 0px) */
+    padding-bottom: calc(0px + (4 - 0) * ((100vw - 360px) / (1024 - 360)));
     /* функция, при ширине экрана (1024px равен 23px), (360px равен 16px) */
     font-size: var(--dynamic-font-size_2);
   }
@@ -160,10 +160,10 @@
   }
 
   .collectTour .secondaryTitle__subtitle {
-    /* функция, при ширине экрана (1024px равен 30px), (360px равен 20px) */
-    padding-top: var(--dynamic-top-internal-indentation_1);
     /* функция, при ширине экрана (1024px равен 409px), (360px равен 318px) */
     max-width: calc(318px + (409 - 318) * ((100vw - 360px) / (1024 - 360)));
+    /* функция, при ширине экрана (1024px равен 30px), (360px равен 20px) */
+    padding-top: var(--dynamic-top-internal-indentation_1);
   }
 
   .collectTour__cardContainer {
@@ -177,8 +177,6 @@
   }
 
   .formFill {
-    /* функция, при ширине экрана (1024px равен 50px), (360px равен 30px) */
-    border-radius: calc(30px + (50 - 30) * ((100vw - 360px) / (1024 - 360)));
     /* функция, при ширине экрана (1024px равен 60px), (360px равен 22px) */
     padding-top: calc(22px + (60 - 22) * ((100vw - 360px) / (1024 - 360)));
     /* функция, при ширине экрана (1024px равен 60px), (360px равен 20px) */
@@ -186,6 +184,8 @@
     padding-left: calc(20px + (60 - 20) * ((100vw - 360px) / (1024 - 360)));
     /* функция, при ширине экрана (1024px равен 60px), (360px равен 40px) */
     padding-bottom: calc(40px + (60 - 40) * ((100vw - 360px) / (1024 - 360)));
+    /* функция, при ширине экрана (1024px равен 50px), (360px равен 30px) */
+    border-radius: calc(30px + (50 - 30) * ((100vw - 360px) / (1024 - 360)));
   }
 
   /* _____formFill__inputFields */
@@ -253,10 +253,10 @@
   }
 
   .reviews .secondaryTitle__subtitle {
-    /* функция, при ширине экрана (1024px равен 30px), (360px равен 20px) */
-    padding-top: var(--dynamic-top-internal-indentation_1);
     /* функция, при ширине экрана (1024px равен 410px), (360px равен 318px) */
     max-width: var(--dynamic-width_1);
+    /* функция, при ширине экрана (1024px равен 30px), (360px равен 20px) */
+    padding-top: var(--dynamic-top-internal-indentation_1);
   }
 
   .reviews__cardContainer {
@@ -298,10 +298,10 @@
   }
 
   .travelPhotos .secondaryTitle__subtitle {
-    /* функция, при ширине экрана (1024px равен 30px), (360px равен 20px) */
-    padding-top: var(--dynamic-top-internal-indentation_1);
     /* функция, при ширине экрана (1024px равен 410px), (360px равен 318px) */
     max-width: var(--dynamic-width_1);
+    /* функция, при ширине экрана (1024px равен 30px), (360px равен 20px) */
+    padding-top: var(--dynamic-top-internal-indentation_1);
   }
 
   .travelPhotos .secondaryTitle__title {
@@ -335,17 +335,17 @@
   }
 
   .stories .secondaryTitle__subtitle {
-    /* функция, при ширине экрана (1024px равен 30px), (360px равен 20px) */
-    padding-top: var(--dynamic-top-internal-indentation_1);
     /* функция, при ширине экрана (1024px равен 410px), (360px равен 318px) */
     max-width: var(--dynamic-width_1);
+    /* функция, при ширине экрана (1024px равен 30px), (360px равен 20px) */
+    padding-top: var(--dynamic-top-internal-indentation_1);
   }
 
   .stories__cardContainer {
-    /* функция, при ширине экрана (1024px равен 100px), (360px равен 51px) */
-    margin-top: calc(51px + (100 - 51) * ((100vw - 360px) / (1024 - 360)));
     /* функция, при ширине экрана (1024px равен 918px), (360px равен 318px) */
     max-width: calc(318px + (918 - 318) * ((100vw - 360px) / (1024 - 360)));
+    /* функция, при ширине экрана (1024px равен 100px), (360px равен 51px) */
+    margin-top: calc(51px + (100 - 51) * ((100vw - 360px) / (1024 - 360)));
     /* функция, при ширине экрана (1024px равен 30px), (360px равен 21px) */
     padding-right: var(--dynamic-right-internal-indentation_2);
     padding-left: var(--dynamic-left-internal-indentation_3);
@@ -389,7 +389,8 @@
   .stories__card-content-text-main,
   .stories__card-content-text-list {
     /* функция, при ширине экрана (1024px равен 20px), (360px равен 16px) */
-    font-size: var(--dynamic-font-size_1); line-height: 144%;
+    font-size: var(--dynamic-font-size_1);
+    line-height: 144%;
   }
 
   .stories__card-content-link-btn-item {
@@ -506,8 +507,8 @@
   }
 
   .chooseTour__cardTur-content-title::after {
-    font-size: 16px;
     bottom: -4px;
+    font-size: 16px;
   }
 
   .chooseTour__cardTur-content-link-item {
@@ -515,8 +516,8 @@
   }
 
   .chooseTour__cardTur-content-link-item::after {
-    position: relative;
     content: url('../../dist/images/VectorRight.svg');
+    position: relative;
     left: 13px;
     top: 3px;
   }
@@ -545,8 +546,8 @@
   .formFill__commentField,
   .formFill__age,
   .formFill__agreement {
-    margin-bottom: 30px;
     width: 100%;
+    margin-bottom: 30px;
   }
 
   .formFill__inputFields-name-input,
@@ -572,8 +573,8 @@
 
   /* _____formFill__age */
   .formFill__age-radioGroup {
-    margin-top: 8px;
     height: 23px;
+    margin-top: 8px;
   }
 
   .formFill__age-radioGroup-block:not(:last-child) {
@@ -583,8 +584,8 @@
   .formFill__age-radioGroup-block-input+.formFill__age-radioGroup-block-label::before {
     width: 19px;
     height: 19px;
-    border-radius: 0.80em;
     margin-right: 9px;
+    border-radius: 0.80em;
   }
 
   /* _____formFill__agreement */
@@ -638,9 +639,9 @@
 
   .reviews__cardContainer-item {
     width: 100%;
-    border-radius: 20px;
     padding: 20px;
     padding-right: 21px;
+    border-radius: 20px;
   }
 
   .reviews__cardContainer-item-text-par1 {
@@ -653,8 +654,8 @@
 
   .reviews__cardContainer-item-person {
     margin-top: 37px;
-    letter-spacing: 0.92px;
     align-items: end;
+    letter-spacing: 0.92px;
   }
 
   .reviews__cardContainer-item-person-photo img {
@@ -671,8 +672,8 @@
   }
 
   .travelPhotos .secondaryTitle__subtitle {
-    padding-top: 20px;
     max-width: 318px;
+    padding-top: 20px;
   }
 
   .travelPhotos__cardContainer {
@@ -724,8 +725,8 @@
 
   .stories__card-content-title {
     max-width: 162px;
-    letter-spacing: 0.92px;
     padding-bottom: 20px;
+    letter-spacing: 0.92px;
   }
 
   .stories__card-content-text-main {
@@ -733,16 +734,16 @@
   }
 
   .stories__card-content-text-list {
-    line-height: 137%;
     padding-left: 9px;
+    line-height: 137%;
   }
 
   /*  */
   /* __footer(раздел-нижний колонтитул)__ */
   .footers__card {
-    flex-direction: column;
     padding-top: 75px;
     padding-bottom: 75px;
+    flex-direction: column;
   }
 
   .footers__card-content {
@@ -762,9 +763,9 @@
   }
 
   .footers__link {
-    flex-direction: column;
     padding-left: 0;
     padding-right: 0;
+    flex-direction: column;
   }
 
   .footers__link-text {

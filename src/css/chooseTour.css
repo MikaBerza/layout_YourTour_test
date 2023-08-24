@@ -31,50 +31,43 @@
 }
 
 .chooseTour__cardTur-img {
+  height: 100%;
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 100%;
-}
-
-.chooseTour__cardTur-img {
   /* ease определяет функцию плавности и */
   /* обозначает постепенное ускорение и замедление в течение всего перехода */
   transition: transform 0.3s ease;
 }
 
 .chooseTour__cardTur-content {
-  min-height: 531px;
   /* Элемент с position: sticky «прилипает» к экрану при 
   прокрутке, пока не встретится с границей 
   родительского блока */
   position: sticky;
   bottom: 892px;
-  box-sizing: border-box;
+  min-height: 531px;
   padding: 50px 50px 50px 30px;
-
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-
   cursor: pointer;
 }
 
 .chooseTour__cardTur-content-title {
   position: relative;
-  left: 0;
   bottom: 0;
+  left: 0;
   margin: 0;
   /* функция, при ширине экрана (1920px равен 23px), (1024px равен 0px) */
   margin-right: calc(0px + (23 - 0) * ((100vw - 1024px) / (1920 - 1024)));
-  padding-left: 20px;
   padding-bottom: 32px;
-
+  padding-left: 20px;
+  color: var(--white-color);
   font-size: 35px;
   font-weight: 500;
   line-height: 122%;
-
-  color: var(--white-color);
 }
 
 .chooseTour__cardTur-content-title::after {
@@ -83,39 +76,35 @@
   left: 20px;
   bottom: -9px;
   margin: 0;
-
+  color: var(--white-color);
   font-size: 17px;
   font-weight: 400;
   line-height: 142%;
   letter-spacing: -0.01em;
-
-  color: var(--white-color);
-
 }
 
 .chooseTour__cardTur-content-link {
   position: relative;
-  left: 0;
   bottom: 0;
+  left: 0;
 }
 
 .chooseTour__cardTur-content-link-item {
   box-sizing: border-box;
   padding: 7px 32px 7px 20px;
+  border-radius: 50px;
+  color: var(--white-color);
   font-size: 23px;
   font-weight: 700;
   line-height: 122%;
-  color: var(--white-color);
-
-  border-radius: 50px;
   /* ease определяет функцию плавности и */
   /* обозначает постепенное ускорение и замедление в течение всего перехода */
   transition: background-color 0.3s ease;
 }
 
 .chooseTour__cardTur-content-link-item::after {
-  position: relative;
   content: url('../../dist/images/VectorRight.svg');
+  position: relative;
   left: 11px;
 }
 

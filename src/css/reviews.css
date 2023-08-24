@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
 }
+
 .reviews .secondaryTitle__title {
   padding-top: 135px;
 }
@@ -17,22 +18,21 @@
   padding: 0 30px;
   display: flex;
   justify-content: center;
-
   flex-wrap: wrap;
 }
 
 .reviews__cardContainer-item {
+  box-sizing: border-box;
   width: calc(50% - 15px);
   margin-right: 30px;
   margin-bottom: 30px;
+  padding: 40px;
+  padding-bottom: 36px;
+  border-radius: 50px;
+  background: var(--beige200-color);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  box-sizing: border-box;
-  border-radius: 50px;
-  padding: 40px;
-  padding-bottom: 36px;
-  background: var(--beige200-color);
 }
 
 /* у каждого 2 элемента будет отсутствовать отступ справа */
@@ -64,19 +64,19 @@
 }
 
 .reviews__cardContainer-item-person-block-name {
-  display: block;
   font-size: 35px;
   font-weight: 500;
   line-height: 122%;
+  display: block;
 }
 
 .reviews__cardContainer-item-person-block-tour {
-  display: block;
   margin-top: 8px;
+  color: var(--gray300-color);
   font-size: 17px;
   line-height: 142%;
   letter-spacing: -0.17px;
-  color: var(--gray300-color);
+  display: block;
 }
 
 .reviews__cardContainer-item-person-photo img {

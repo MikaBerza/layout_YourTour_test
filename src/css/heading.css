@@ -12,32 +12,30 @@
   left: 50%;
   transform: translateX(-50%);
   z-index: 999;
-
-  display: block;
   width: 100%;
+  display: block;
 }
 
 .navbar {
   width: 1168px;
   margin: auto;
-
+  padding-top: 27px;
+  padding-bottom: 29px;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 27px;
-  padding-bottom: 29px;
 }
 
 .navbar__logo {
-  padding-right: 10px;
   /* прижмем элемент к левому краю */
   margin-right: auto;
+  padding-right: 10px;
 }
 
 .navbar__telephoneNumber {
-  padding-left: 10px;
   /* прижмем элемент к правому краю */
   margin-left: auto;
+  padding-left: 10px;
 }
 
 .navbar__logo-YourTour,
@@ -47,15 +45,13 @@
 
 .navbar__menu {
   width: 468px;
-
-  display: flex;
-  justify-content: space-between;
+  margin: 0;
   padding-left: 0;
   padding-bottom: 4px;
-
   /* Убираем маркеры */
   list-style-type: none;
-  margin: 0;
+  display: flex;
+  justify-content: space-between;
 }
 
 /* Выберем все пункты списка, кроме последнего */
@@ -64,14 +60,13 @@
 }
 
 .navbar__menu-link {
-  font-size: 20px;
-  color: var(--white-color);
   /* начальное значение */
   border-bottom: 1px solid transparent;
-  transition: border-bottom 0.3s ease;
-
+  color: var(--white-color);
+  font-size: 20px;
   /* запрещаем перенос текста на другую строку */
   white-space: nowrap;
+  transition: border-bottom 0.3s ease;
 }
 
 .navbar__menu-link:hover {
