@@ -1,5 +1,5 @@
 /* ___________@media-директива_____________________________________ */
-/*от1025px-до1920px___________________________________________________*/
+/*от1025px-до1920px_________________________________________________*/
 @media (max-width: 1920px) {
 
   /*  */
@@ -59,6 +59,11 @@
   .navbar {
     /* функция, при ширине экрана (1024px равен 910px), (550px равен 488px) */
     width: calc(488px + (910 - 488) * ((100vw - 550px) / (1024 - 550)));
+  }
+
+  .navbar__menu {
+    /* функция, при ширине экрана (1025px равен 408px), (768px равен 330px) */
+    width: calc(330px + (408 - 330) * ((100vw - 768px) / (1025 - 768)));
   }
 
   .navbar__menu-link {
@@ -173,7 +178,6 @@
     /* функция, при ширине экрана (1024px равен 30px), (360px равен 21px) */
     padding-right: var(--dynamic-right-internal-indentation_2);
     padding-left: var(--dynamic-left-internal-indentation_3);
-
   }
 
   .formFill {
@@ -287,6 +291,50 @@
   .reviews__cardContainer-item-person-block-tour {
     /* функция, при ширине экрана (1024px равен 17px), (360px равен 16px) */
     font-size: calc(16px + (17 - 16) * ((100vw - 360px) / (1024 - 360)));
+  }
+
+
+  /*от0px-до768px___________________________________________________*/
+  @media (max-width: 767px) {
+
+    /*  */
+    /* __heading(раздел-заголовок)__ */
+    .navbar__menu {
+      display: none;
+    }
+
+    /*  */
+    /* __reviews(раздел-отзывы) */
+    .reviews__cardContainer {
+      flex-direction: column;
+    }
+
+    .reviews__cardContainer-item {
+      width: 100%;
+      padding: 20px;
+      padding-right: 21px;
+      border-radius: 20px;
+    }
+
+    .reviews__cardContainer-item-text-par1 {
+      line-height: 143%;
+    }
+
+    .reviews__cardContainer-item-text-par1:nth-child(n+2) {
+      margin-top: 25px;
+    }
+
+    .reviews__cardContainer-item-person {
+      margin-top: 37px;
+      align-items: end;
+      letter-spacing: 0.92px;
+    }
+
+    .reviews__cardContainer-item-person-photo img {
+      position: relative;
+      top: 3px;
+    }
+
   }
 
 
@@ -440,7 +488,7 @@
 }
 
 
-/*от0px-до549px___________________________________________________*/
+/*от0px-до549px______________________________________________________*/
 @media (max-width: 549px) {
 
   /*  */
@@ -458,9 +506,6 @@
     width: 124px;
   }
 
-  .navbar__menu {
-    display: none;
-  }
 
   /*от0px-до450px___________________________________________________*/
   @media (max-width: 450px) {
@@ -631,36 +676,6 @@
     .reviews .secondaryTitle__title {
       letter-spacing: -0.9px;
     }
-  }
-
-  .reviews__cardContainer {
-    flex-direction: column;
-  }
-
-  .reviews__cardContainer-item {
-    width: 100%;
-    padding: 20px;
-    padding-right: 21px;
-    border-radius: 20px;
-  }
-
-  .reviews__cardContainer-item-text-par1 {
-    line-height: 143%;
-  }
-
-  .reviews__cardContainer-item-text-par1:nth-child(n+2) {
-    margin-top: 25px;
-  }
-
-  .reviews__cardContainer-item-person {
-    margin-top: 37px;
-    align-items: end;
-    letter-spacing: 0.92px;
-  }
-
-  .reviews__cardContainer-item-person-photo img {
-    position: relative;
-    top: 3px;
   }
 
   /*  */
