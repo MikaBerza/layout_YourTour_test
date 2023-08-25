@@ -13,8 +13,8 @@ import '../assets/images/fav_icons_YT/mstile-270x270.png';
 import '../assets/images/fav_icons_YT/mstile-558x270.png';
 import '../assets/images/fav_icons_YT/mstile-558x558.png';
 // импортируем изображение для раздела ("greeting")
-import '../assets/images/greeting/greetingBackgroundImg1920.png';
-import '../assets/images/greeting/greetingBackgroundImg1024.png';
+import '../assets/images/greeting/greetingBackgroundImg.png';
+// import '../assets/images/greeting/greetingBackgroundImg1024.png';
 // импортируем изображение для раздела ("chooseTour")
 import photo1 from '../assets/images/chooseTour/card_tour_photo_1.png';
 import photo2 from '../assets/images/chooseTour/card_tour_photo_2.png';
@@ -32,45 +32,28 @@ import '../assets/images/VectorChecked.svg';
 // импортируем изображение для раздела ("reviews")
 import '../assets/images/reviewPhoto1.png';
 import '../assets/images/reviewPhoto2.png';
-// импортируем изображение для раздела ("travelPhotos 1920px")
-import travelPhoto1 from '../assets/images/travelPhotos/1920px/travelPhoto1_1920.png';
-import travelPhoto2 from '../assets/images/travelPhotos/1920px/travelPhoto2_1920.png';
-import travelPhoto3 from '../assets/images/travelPhotos/1920px/travelPhoto3_1920.png';
-import travelPhoto4 from '../assets/images/travelPhotos/1920px/travelPhoto4_1920.png';
-import travelPhoto5 from '../assets/images/travelPhotos/1920px/travelPhoto5_1920.png';
-import travelPhoto6 from '../assets/images/travelPhotos/1920px/travelPhoto6_1920.png';
-import travelPhoto7 from '../assets/images/travelPhotos/1920px/travelPhoto7_1920.png';
-import travelPhoto8 from '../assets/images/travelPhotos/1920px/travelPhoto8_1920.png';
-import travelPhoto9 from '../assets/images/travelPhotos/1920px/travelPhoto9_1920.png';
-import travelPhoto10 from '../assets/images/travelPhotos/1920px/travelPhoto10_1920.png';
-import travelPhoto11 from '../assets/images/travelPhotos/1920px/travelPhoto11_1920.png';
-import travelPhoto12 from '../assets/images/travelPhotos/1920px/travelPhoto12_1920.png';
-import travelPhoto13 from '../assets/images/travelPhotos/1920px/travelPhoto13_1920.png';
-// импортируем изображение для раздела ("travelPhotos 1024px")
-import travelPhoto1A from '../assets/images/travelPhotos/1024px/travelPhoto1_1024.png';
-import travelPhoto3A from '../assets/images/travelPhotos/1024px/travelPhoto3_1024.png';
-import travelPhoto8A from '../assets/images/travelPhotos/1024px/travelPhoto8_1024.png';
-import travelPhoto9A from '../assets/images/travelPhotos/1024px/travelPhoto9_1024.png';
-import travelPhoto10A from '../assets/images/travelPhotos/1024px/travelPhoto10_1024.png';
-// импортируем изображение для раздела ("travelPhotos 1024px")
-import travelPhoto1B from '../assets/images/travelPhotos/360px/travelPhoto1_360.png';
-import travelPhoto10B from '../assets/images/travelPhotos/360px/travelPhoto10_360.png';
-// импортируем изображение для раздела ("stories 1920px")
-import storiesPhoto1 from '../assets/images/stories/1920px/storyPhoto1_1920.png';
-import storiesPhoto2 from '../assets/images/stories/1920px/storyPhoto2_1920.png';
-import storiesPhoto3 from '../assets/images/stories/1920px/storyPhoto3_1920.png';
-// импортируем изображение для раздела ("stories 1024px")
-import storiesPhoto1A from '../assets/images/stories/1024px/storyPhoto1_1024.png';
-import storiesPhoto2A from '../assets/images/stories/1024px/storyPhoto2_1024.png';
-import storiesPhoto3A from '../assets/images/stories/1024px/storyPhoto3_1024.png';
-// импортируем изображение для раздела ("stories 360px")
-import storiesPhoto1B from '../assets/images/stories/360px/storyPhoto1_360.png';
-import storiesPhoto2B from '../assets/images/stories/360px/storyPhoto2_360.png';
-import storiesPhoto3B from '../assets/images/stories/360px/storyPhoto3_360.png';
+// импортируем изображение для раздела ("travelPhotos")
+import travelPhoto1 from '../assets/images/travelPhotos/travelPhoto1.png';
+import travelPhoto2 from '../assets/images/travelPhotos/travelPhoto2.png';
+import travelPhoto3 from '../assets/images/travelPhotos/travelPhoto3.png';
+import travelPhoto4 from '../assets/images/travelPhotos/travelPhoto4.png';
+import travelPhoto5 from '../assets/images/travelPhotos/travelPhoto5.png';
+import travelPhoto6 from '../assets/images/travelPhotos/travelPhoto6.png';
+import travelPhoto7 from '../assets/images/travelPhotos/travelPhoto7.png';
+import travelPhoto8 from '../assets/images/travelPhotos/travelPhoto8.png';
+import travelPhoto9 from '../assets/images/travelPhotos/travelPhoto9.png';
+import travelPhoto10 from '../assets/images/travelPhotos/travelPhoto10.png';
+import travelPhoto11 from '../assets/images/travelPhotos/travelPhoto11.png';
+import travelPhoto12 from '../assets/images/travelPhotos/travelPhoto12.png';
+import travelPhoto13 from '../assets/images/travelPhotos/travelPhoto13.png';
+// импортируем изображение для раздела ("stories")
+import storiesPhoto1 from '../assets/images/stories/storyPhoto1.png';
+import storiesPhoto2 from '../assets/images/stories/storyPhoto2.png';
+import storiesPhoto3 from '../assets/images/stories/storyPhoto3.png';
 // импортируем изображение для раздела ("footers")
 import '../assets/images/footersPhoto.png';
 
-// массив с ссылками на изображения из ("chooseTour")
+// экспортируем массив с ссылками на изображения из ("chooseTour")
 export const arrayLinksToImagesChooseTour = [
   photo1,
   photo2,
@@ -80,7 +63,7 @@ export const arrayLinksToImagesChooseTour = [
   photo6,
 ];
 
-// массив с ссылками на изображения из ("travelPhotos 1920px")
+// экспортируем массив с ссылками на изображения из ("travelPhotos")
 export const arrayLinksToImagesTravelPhotos1 = [
   travelPhoto1,
   travelPhoto2,
@@ -97,55 +80,9 @@ export const arrayLinksToImagesTravelPhotos1 = [
   travelPhoto13,
 ];
 
-// массив с ссылками на изображения из ("travelPhotos 1024px")
-export const arrayLinksToImagesTravelPhotos2 = [
-  travelPhoto1A,
-  travelPhoto2,
-  travelPhoto3A,
-  travelPhoto4,
-  travelPhoto5,
-  travelPhoto6,
-  travelPhoto7,
-  travelPhoto8A,
-  travelPhoto9A,
-  travelPhoto10A,
-  travelPhoto11,
-  travelPhoto12,
-  travelPhoto13,
-];
-
-// массив с ссылками на изображения из ("travelPhotos 360px")
-export const arrayLinksToImagesTravelPhotos3 = [
-  travelPhoto1B,
-  travelPhoto2,
-  travelPhoto3A,
-  travelPhoto4,
-  travelPhoto5,
-  travelPhoto6,
-  travelPhoto7,
-  travelPhoto8A,
-  travelPhoto9A,
-  travelPhoto10B,
-  travelPhoto11,
-  travelPhoto12,
-  travelPhoto13,
-];
-
 // массив с ссылками на изображения из ("stories 1920px")
 export const arrayLinksToImagesStories1 = [
   storiesPhoto1,
   storiesPhoto2,
   storiesPhoto3,
-];
-// массив с ссылками на изображения из ("stories 1024px")
-export const arrayLinksToImagesStories2 = [
-  storiesPhoto1A,
-  storiesPhoto2A,
-  storiesPhoto3A,
-];
-// массив с ссылками на изображения из ("stories 360px")
-export const arrayLinksToImagesStories3 = [
-  storiesPhoto1B,
-  storiesPhoto2B,
-  storiesPhoto3B,
 ];

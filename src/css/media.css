@@ -15,14 +15,6 @@
   }
 
   /*  */
-  /* __greeting(раздел-приветствие)__ */
-  .greeting {
-    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0.00) 100%),
-      linear-gradient(0deg, rgba(0, 0, 0, 0.23) 0%, rgba(0, 0, 0, 0.23) 100%),
-      url('../../dist/images/greetingBackgroundImg1024.png');
-  }
-
-  /*  */
   /* __travelPhotos(раздел-фотографии путешествий) */
   .travelPhotos__cardContainer-block1-img,
   .travelPhotos__cardContainer-block3-img {
@@ -107,8 +99,8 @@
   .greeting__buttons {
     /* функция, при ширине экрана (1024px равен 51px), (360px равен 40px) */
     padding-top: calc(40px + (51 - 40) * ((100vw - 360px) / (1024 - 360)));
-    /* функция, при ширине экрана (1024px равен 118px), (360px равен 52px) */
-    padding-bottom: calc(52px + (118 - 52) * ((100vw - 360px) / (1024 - 360)));
+    /* функция, при ширине экрана (1024px равен 118px), (360px равен 51px) */
+    padding-bottom: calc(51px + (118 - 51) * ((100vw - 360px) / (1024 - 360)));
   }
 
   /*  */
@@ -682,7 +674,7 @@
   /* __travelPhotos(раздел-фотографии путешествий) */
   .travelPhotos .secondaryTitle__title {
     max-width: 318px;
-    padding-top: 57px;
+    padding-top: 56px;
     line-height: 112%;
   }
 
