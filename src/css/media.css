@@ -34,7 +34,7 @@
 @media (max-width: 1024px) {
 
   /* общие стили */
-  .secondaryTitle__title {
+  .section-title {
     /* функция, при ширине экрана (1024px равен 59px), (360px равен 34px) */
     font-size: calc(34px + (59 - 34) * ((100vw - 360px) / (1024 - 360)));
     /* функция, при ширине экрана (1024px равен 0px), (360px равен 0.68px) */
@@ -105,7 +105,7 @@
 
   /*  */
   /* __chooseTour(раздел-выбрать тур)__ */
-  .chooseTour .secondaryTitle__title {
+  .chooseTour .section-title {
     /* функция, при ширине экрана (1024px равен 135px), (360px равен 76px) */
     padding-top: calc(76px + (135 - 76) * ((100vw - 360px) / (1024 - 360)));
   }
@@ -151,7 +151,7 @@
 
   /*  */
   /* __collectTour(раздел-собрать тур) */
-  .collectTour .secondaryTitle__title {
+  .collectTour .section-title {
     /* функция, при ширине экрана (1024px равен 117px), (360px равен 58px) */
     padding-top: calc(58px + (117 - 58) * ((100vw - 360px) / (1024 - 360)));
   }
@@ -243,7 +243,7 @@
 
   /*  */
   /* __reviews(раздел-отзывы) */
-  .reviews .secondaryTitle__title {
+  .reviews .section-title {
     /* функция, при ширине экрана (1024px равен 134px), (360px равен 76px) */
     padding-top: calc(76px + (134 - 76) * ((100vw - 360px) / (1024 - 360)));
   }
@@ -332,7 +332,7 @@
 
   /*  */
   /* __travelPhotos(раздел-фотографии путешествий) */
-  .travelPhotos .secondaryTitle__title {
+  .travelPhotos .section-title {
     /* функция, при ширине экрана (1024px равен 134px), (360px равен 76px) */
     padding-top: calc(76px + (134 - 76) * ((100vw - 360px) / (1024 - 360)));
   }
@@ -344,7 +344,7 @@
     padding-top: var(--dynamic-top-internal-indentation_1);
   }
 
-  .travelPhotos .secondaryTitle__title {
+  .travelPhotos .section-title {
     padding-top: 119px;
   }
 
@@ -369,7 +369,7 @@
 
   /*  */
   /* __stories(раздел-истории)__ */
-  .stories .secondaryTitle__title {
+  .stories .section-title {
     /* функция, при ширине экрана (1024px равен 134px), (360px равен 75px) */
     padding-top: calc(75px + (134 - 75) * ((100vw - 360px) / (1024 - 360)));
   }
@@ -521,7 +521,7 @@
 
   /*  */
   /* __chooseTour(раздел-выбрать тур)__ */
-  .chooseTour .secondaryTitle__title {
+  .chooseTour .section-title {
     line-height: 112%;
   }
 
@@ -561,7 +561,7 @@
 
   /*  */
   /* __collectTour(раздел-собрать тур) */
-  .collectTour .secondaryTitle__title {
+  .collectTour .section-title {
     line-height: 112%;
   }
 
@@ -652,7 +652,7 @@
 
   /*  */
   /* __reviews(раздел-отзывы) */
-  .reviews .secondaryTitle__title {
+  .reviews .section-title {
     line-height: 112%;
   }
 
@@ -665,14 +665,14 @@
       padding: 12px 12px;
     }
 
-    .reviews .secondaryTitle__title {
+    .reviews .section-title {
       letter-spacing: -0.9px;
     }
   }
 
   /*  */
   /* __travelPhotos(раздел-фотографии путешествий) */
-  .travelPhotos .secondaryTitle__title {
+  .travelPhotos .section-title {
     max-width: 318px;
     padding-top: 56px;
     line-height: 112%;
@@ -722,7 +722,7 @@
 
   /*  */
   /* __stories(раздел-истории)__ */
-  .stories .secondaryTitle__title {
+  .stories .section-title {
     line-height: 112%;
   }
 
