@@ -11,7 +11,7 @@
   flex-direction: column;
 }
 
-.section-title {
+.section-title-main {
   max-width: 768px;
   margin: auto;
   padding-top: 207px;
@@ -23,7 +23,7 @@
   text-align: center;
 }
 
-.section-subtitle {
+.section-subtitle-main {
   max-width: 562px;
   margin: auto;
   padding-top: 50px;
