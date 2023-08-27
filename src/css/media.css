@@ -75,7 +75,7 @@
 
   /*  */
   /* __greeting(раздел-приветствие)__ */
-  .greeting__title {
+  .section-title {
     /* функция, при ширине экрана (1024px равен 768px), (360px равен 360px) */
     max-width: calc(360px + (768 - 360) * ((100vw - 360px) / (1024 - 360)));
     /* функция, при ширине экрана (1024px равен 207px), (360px равен 140px) */
@@ -87,7 +87,7 @@
     letter-spacing: calc(0.68px + (1.92 - 0.68) * ((100vw - 360px) / (1024 - 360)));
   }
 
-  .greeting__slogan {
+  .section-subtitle {
     /* функция, при ширине экрана (1024px равен 442px), (360px равен 310px) */
     max-width: calc(310px + (442 - 310) * ((100vw - 360px) / (1024 - 360)));
     /* функция, при ширине экрана (1024px равен 50px), (360px равен 40px) */
@@ -96,7 +96,7 @@
     font-size: var(--dynamic-font-size_1);
   }
 
-  .greeting__buttons {
+  .buttons {
     /* функция, при ширине экрана (1024px равен 51px), (360px равен 40px) */
     padding-top: calc(40px + (51 - 40) * ((100vw - 360px) / (1024 - 360)));
     /* функция, при ширине экрана (1024px равен 118px), (360px равен 51px) */
@@ -510,11 +510,11 @@
 
   /*  */
   /* __greeting(раздел-приветствие)__ */
-  .greeting__title {
+  .section-title {
     line-height: 112%;
   }
 
-  .greeting__buttons-small {
+  .buttons__small {
     width: 114px;
     font-size: 16px;
   }

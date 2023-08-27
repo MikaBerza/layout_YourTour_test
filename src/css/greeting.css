@@ -11,7 +11,7 @@
   flex-direction: column;
 }
 
-.greeting__title {
+.section-title {
   max-width: 768px;
   margin: auto;
   padding-top: 207px;
@@ -23,7 +23,7 @@
   text-align: center;
 }
 
-.greeting__slogan {
+.section-subtitle {
   max-width: 562px;
   margin: auto;
   padding-top: 50px;
@@ -34,14 +34,14 @@
   text-align: center;
 }
 
-.greeting__buttons {
+.buttons {
   margin: auto;
   padding-top: 50px;
   padding-bottom: 118px;
   text-align: center;
 }
 
-.greeting__buttons-small {
+.buttons__small {
   width: 118px;
   padding: 5px 20px;
   border: none;
@@ -58,13 +58,13 @@
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.greeting__buttons-small:hover {
+.buttons__small:hover {
   background: var(--orange200-color);
   color: var(--white-color);
   cursor: pointer;
 }
 
-.greeting__buttons-small:active {
+.buttons__small:active {
   background: var(--orange100-color);
   color: var(--black-color);
   cursor: pointer;
