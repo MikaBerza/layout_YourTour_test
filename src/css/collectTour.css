@@ -1,22 +1,22 @@
-.collectTour .section-title {
+.collect-tour .section-title {
   padding-top: 105px;
 }
 
-.collectTour {
+.collect-tour {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.collectTour__cardContainer {
+.collect-tour__container {
   max-width: 1200px;
   margin: auto;
   margin-top: 99px;
   padding: 0 30px;
 }
 
-/* __________formFill */
-.formFill {
+/* __________form-fill */
+.form-fill {
   box-sizing: border-box;
   max-width: 1170px;
   margin: auto;
@@ -27,63 +27,63 @@
 
 /* Примечание
 Эта запись задает стиль для всех непосредственных потомков элементов, 
-которые являются дочерними элементами элементов с классом "formFill" */
-.formFill>* {
+которые являются дочерними элементами элементов с классом "form-fill" */
+.form-fill>* {
   font-weight: 400;
   font-size: 20px;
   line-height: 142%;
 }
 
-/* _____formFill__inputFields */
-.formFill__inputFields {
+/* _____input-fields */
+.input-fields {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
 
-.formFill__inputFields,
-.formFill__commentField,
-.formFill__age,
-.formFill__agreement,
-.formFill__buttons {
+.input-fields,
+.comment-field,
+.radio-fields,
+.agreement-field,
+.buttons-group {
   width: 100%;
 }
 
-.formFill__inputFields-name,
-.formFill__inputFields-dropdown,
-.formFill__inputFields-email,
-.formFill__inputFields-phone,
-.formFill__inputFields-dateFrom,
-.formFill__inputFields-dateTo,
-.formFill__commentField,
-.formFill__age,
-.formFill__agreement {
+.input-fields__name,
+.input-fields__dropdown,
+.input-fields__email,
+.input-fields__phone,
+.input-fields__dateFrom,
+.input-fields__dateTo,
+.comment-field,
+.radio-fields,
+.agreement-field {
   margin-bottom: 33px;
 }
 
-.formFill__inputFields-name,
-.formFill__inputFields-dropdown,
-.formFill__inputFields-email,
-.formFill__inputFields-phone,
-.formFill__inputFields-dateFrom,
-.formFill__inputFields-dateTo {
+.input-fields__name,
+.input-fields__dropdown,
+.input-fields__email,
+.input-fields__phone,
+.input-fields__dateFrom,
+.input-fields__dateTo {
   width: calc(50% - 15px);
 }
 
-.formFill__inputFields-name-label,
-.formFill__inputFields-dropdown-label,
-.formFill__inputFields-email-label,
-.formFill__inputFields-phone-label,
-.formFill__inputFields-dateFrom-label,
-.formFill__inputFields-dateTo-label,
-.formFill__commentField-label,
-.formFill__age-legend {
+.input-fields__name-label,
+.input-fields__dropdown-label,
+.input-fields__email-label,
+.input-fields__phone-label,
+.input-fields__dateFrom-label,
+.input-fields__dateTo-label,
+.comment-field__label,
+.legend-title {
   color: var(--black-color);
 }
 
-.formFill__inputFields-dropdown-select-item,
-.formFill__inputFields-dateFrom-input[type="date"]::-webkit-calendar-picker-indicator,
-.formFill__inputFields-dateTo-input[type="date"]::-webkit-calendar-picker-indicator {
+.input-fields__dropdown-select-item,
+.input-fields__dateFrom-input[type="date"]::-webkit-calendar-picker-indicator,
+.input-fields__dateTo-input[type="date"]::-webkit-calendar-picker-indicator {
   /* уберем стрелку у select */
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -92,13 +92,13 @@
   display: none;
 }
 
-.formFill__inputFields-name-input,
-.formFill__inputFields-dropdown-select-item,
-.formFill__inputFields-email-input,
-.formFill__inputFields-phone-input,
-.formFill__inputFields-dateFrom-input,
-.formFill__inputFields-dateTo-input,
-.formFill__commentField-textarea {
+.input-fields__name-input,
+.input-fields__dropdown-select-item,
+.input-fields__email-input,
+.input-fields__phone-input,
+.input-fields__dateFrom-input,
+.input-fields__dateTo-input,
+.comment-field__textarea {
   box-sizing: border-box;
   width: 100%;
   height: 68px;
@@ -117,44 +117,44 @@
   align-items: center;
 }
 
-.formFill__inputFields-name-input::placeholder,
-.formFill__inputFields-dropdown-select-item,
-.formFill__inputFields-email-input::placeholder,
-.formFill__inputFields-phone-input::placeholder {
+.input-fields__name-input::placeholder,
+.input-fields__dropdown-select-item,
+.input-fields__email-input::placeholder,
+.input-fields__phone-input::placeholder {
   color: var(--gray300-color);
 }
 
-.formFill__inputFields-dropdown-select-item_active {
+.input-fields__dropdown-select-item_active {
   color: var(--black-color);
 }
 
-.formFill__inputFields-name-input:hover,
-.formFill__inputFields-dropdown-select-item:hover,
-.formFill__inputFields-email-input:hover,
-.formFill__inputFields-phone-input:hover,
-.formFill__inputFields-dateFrom-input:hover,
-.formFill__inputFields-dateTo-input:hover,
-.formFill__commentField-textarea:hover {
+.input-fields__name-input:hover,
+.input-fields__dropdown-select-item:hover,
+.input-fields__email-input:hover,
+.input-fields__phone-input:hover,
+.input-fields__dateFrom-input:hover,
+.input-fields__dateTo-input:hover,
+.comment-field__textarea:hover {
   background: var(--beige200-color);
   cursor: pointer;
 }
 
-.formFill__inputFields-name-input:focus,
-.formFill__inputFields-dropdown-select-item:focus,
-.formFill__inputFields-email-input:focus,
-.formFill__inputFields-phone-input:focus,
-.formFill__inputFields-dateFrom-input:focus,
-.formFill__inputFields-dateTo-input:focus,
-.formFill__commentField-textarea:focus {
+.input-fields__name-input:focus,
+.input-fields__dropdown-select-item:focus,
+.input-fields__email-input:focus,
+.input-fields__phone-input:focus,
+.input-fields__dateFrom-input:focus,
+.input-fields__dateTo-input:focus,
+.comment-field__textarea:focus {
   border: 1px solid var(--gray300-color);
 }
 
-.formFill__inputFields-dropdown-select {
+.input-fields__dropdown-select {
   /* чтобы стрелка оказалась в границах select */
   position: relative;
 }
 
-.formFill__inputFields-dropdown-select::before {
+.input-fields__dropdown-select::before {
   content: url('../../dist/images/VectorDown.svg');
   position: absolute;
   /* отступ 50% от верхней границе*/
@@ -170,34 +170,34 @@
   pointer-events: none;
 }
 
-.formFill__inputFields-dateFrom-input,
-.formFill__inputFields-dateTo-input {
+.input-fields__dateFrom-input,
+.input-fields__dateTo-input {
   /* преобразуем текст элемента в заглавные символы */
   text-transform: uppercase;
   color: var(--gray300-color);
 }
 
-/* _____formFill__commentField */
-.formFill__commentField-textarea {
+/* _____comment-field */
+.comment-field__textarea {
   height: 152px;
   /* Указывает, можно ли пользователю изменять размеры текстового поля */
   resize: none;
 }
 
-/* _____formFill__age */
-.formFill__age {
+/* _____radio-fields */
+.radio-fields {
   margin-left: 0;
   padding: 0;
   border: 0;
 }
 
-.formFill__age-radioGroup {
+.radio-group {
   height: 28px;
   margin-top: 6px;
   display: flex;
 }
 
-.formFill__age-radioGroup-block-input {
+.radio-group__item-input {
   /* Скрываем стандартный radio*/
   /* Это необходимо, чтобы мы могли получить состояние фокуса, 
   а затем стилизовать нами сделанный radio */
@@ -206,25 +206,25 @@
   opacity: 0;
 }
 
-.formFill__age-radioGroup-block:not(:last-child) {
+.radio-group__item:not(:last-child) {
   margin-right: 31px;
 }
 
-.formFill__age-radioGroup-block-label {
+.radio-group__item-label {
   max-width: 250px;
 }
 
 /* Примечание
 .className1+.className2 - это означает, что этот CSS применяется только для тех 
 элементов className2, которые следуют непосредственно за элементом className1  */
-.formFill__age-radioGroup-block-input+.formFill__age-radioGroup-block-label {
+.radio-group__item-input+.radio-group__item-label {
   display: inline-flex;
   align-items: center;
   /* Свойство, которое запрещает возможность выбора текста */
   user-select: none;
 }
 
-.formFill__age-radioGroup-block-input+.formFill__age-radioGroup-block-label::before {
+.radio-group__item-input+.radio-group__item-label::before {
   content: '';
   width: 24px;
   height: 24px;
@@ -237,40 +237,40 @@
   flex-grow: 0;
 }
 
-.formFill__age-radioGroup-block-input+.formFill__age-radioGroup-block-label::before {
+.radio-group__item-input+.radio-group__item-label::before {
   margin-right: 11px;
   border-radius: 0.60em;
 }
 
-.formFill__age-radioGroup-block-input:checked+.formFill__age-radioGroup-block-label::before {
+.radio-group__item-input:checked+.radio-group__item-label::before {
   border-color: var(--black-color);
   background-color: var(--white-color);
 }
 
-.formFill__age-radioGroup-block-input:checked+.formFill__age-radioGroup-block-label::before {
+.radio-group__item-input:checked+.radio-group__item-label::before {
   background-image: url('../../dist/images/VectorRadio.svg');
 }
 
 
-/* _____formFill__agreement */
-.formFill__agreement {
+/* _____agreement-field */
+.agreement-field {
   height: 26px;
   display: flex;
 }
 
 /* Скрываем чекбокс и оставляем функциональность фокуса */
-.formFill__agreement-input[type=checkbox] {
+.agreement-field__input[type=checkbox] {
   position: absolute;
   z-index: -1;
   opacity: 0;
 }
 
-.formFill__agreement-input+.formFill__agreement-customCheckbox {
+.agreement-field__input+.agreement-field__customCheckbox {
   align-items: center;
   user-select: none;
 }
 
-.formFill__agreement-input+.formFill__agreement-customCheckbox::before {
+.agreement-field__input+.agreement-field__customCheckbox::before {
   content: '';
   width: 26px;
   height: 26px;
@@ -283,12 +283,12 @@
   flex-grow: 0;
 }
 
-.formFill__agreement-input:checked+.formFill__agreement-customCheckbox::before {
+.agreement-field__input:checked+.agreement-field__customCheckbox::before {
   border-color: var(--black-color);
   background-color: var(--white-color);
 }
 
-.formFill__agreement-text {
+.agreement-field__text {
   margin: 0;
   font-size: 17px;
   font-weight: 400;
@@ -297,7 +297,7 @@
   color: var(--gray300-color);
 }
 
-.formFill__agreement-text-link {
+.agreement-field__link {
   /* начальное значение */
   border-bottom: 1px solid transparent;
   color: var(--black-color);
@@ -305,31 +305,31 @@
   transition: border-bottom 0.3s ease, color 0.3s ease;
 }
 
-.formFill__agreement-text-link:hover {
+.agreement-field__link:hover {
   /* измененное значение */
   border-bottom: 1px solid var(--black-color);
   color: var(--black-color);
 }
 
-.formFill__agreement-text-link:active {
+.agreement-field__link:active {
   /* измененное значение */
   border-bottom: 1px solid var(--green400-color);
   color: var(--green400-color);
 }
 
-.formFill__agreement-input+.formFill__agreement-customCheckbox::before {
+.agreement-field__input+.agreement-field__customCheckbox::before {
   margin-right: 19px;
   border-radius: 0.25em;
 }
 
-.formFill__agreement-input:checked+.formFill__agreement-customCheckbox::before {
+.agreement-field__input:checked+.agreement-field__customCheckbox::before {
   background-image: url('../../dist/images/VectorChecked.svg');
 }
 
 
-/* _____formFill__buttons */
-.formFill__buttons-find,
-.formFill__buttons-reset {
+/* _____buttons-group */
+.buttons-group__find,
+.buttons-group__reset {
   width: 235px;
   padding: 18px 30px;
   border: none;
@@ -342,30 +342,30 @@
   transition: background-color 0.3s ease;
 }
 
-.formFill__buttons-find {
+.buttons-group__find {
   margin-right: 25px;
   background: var(--green400-color);
 }
 
-.formFill__buttons-find:hover {
+.buttons-group__find:hover {
   background: var(--green300-color);
   cursor: pointer;
 }
 
-.formFill__buttons-find:active {
+.buttons-group__find:active {
   background: var(--green200-color);
 }
 
-.formFill__buttons-reset {
+.buttons-group__reset {
   background: var(--green100-color);
   color: var(--green400-color);
 }
 
-.formFill__buttons-reset:hover {
+.buttons-group__reset:hover {
   background: var(--gray100-color);
   cursor: pointer;
 }
 
-.formFill__buttons-reset:active {
+.buttons-group__reset:active {
   background: var(--gray200-color);
 }

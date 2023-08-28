@@ -23,7 +23,7 @@ import photo4 from '../assets/images/chooseTour/card_tour_photo_4.png';
 import photo5 from '../assets/images/chooseTour/card_tour_photo_5.png';
 import photo6 from '../assets/images/chooseTour/card_tour_photo_6.png';
 import '../assets/images/VectorRight.svg';
-// импортируем изображение для раздела ("collectTour")
+// импортируем изображение для раздела ("collect-tour")
 import '../assets/images/VectorDown.svg';
 // импортируем изображение для раздела ("Age")
 import '../assets/images/VectorRadio.svg';

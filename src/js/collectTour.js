@@ -1,13 +1,13 @@
 // импортируем функции
 import { removeStyleAnItem, addStyleAnItem } from './modules';
 // получим элемент формы
-const formElement = document.querySelector('.formFill');
+const formElement = document.querySelector('.form-fill');
 // получим элемент select
 const dropdownSelectItem = formElement.querySelector(
-  '.formFill__inputFields-dropdown-select-item',
+  '.input-fields__dropdown-select-item',
 );
 // получим элемент кнопки (Сбросить)
-const btnReset = formElement.querySelector('.formFill__buttons-reset');
+const btnReset = formElement.querySelector('.buttons-group__reset');
 
 // получаем данные формы из полей ввода
 function getFormData(event) {
@@ -52,7 +52,7 @@ function clearFormFields(event) {
   // удаляем стиль элементу
   removeStyleAnItem(
     dropdownSelectItem,
-    'formFill__inputFields-dropdown-select-item_active',
+    'input-fields__dropdown-select-item_active',
   );
 }
 
@@ -60,7 +60,7 @@ function clearFormFields(event) {
 dropdownSelectItem.addEventListener('change', () => {
   addStyleAnItem(
     dropdownSelectItem,
-    'formFill__inputFields-dropdown-select-item_active',
+    'input-fields__dropdown-select-item_active',
   );
 });
 
