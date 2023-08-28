@@ -255,7 +255,7 @@
     padding-top: var(--dynamic-top-internal-indentation_1);
   }
 
-  .reviews__cardContainer {
+  .reviews__container {
     max-width: 918px;
     /* функция, при ширине экрана (1024px равен 98px), (360px равен 50px) */
     margin-top: calc(50px + (98 - 50) * ((100vw - 360px) / (1024 - 360)));
@@ -264,23 +264,23 @@
     padding-left: var(--dynamic-left-internal-indentation_3);
   }
 
-  .reviews__cardContainer-item {
+  .card-reviews {
     width: calc(50% - 9px);
     margin-right: 18px;
     margin-bottom: 18px;
   }
 
-  .reviews__cardContainer-item-text-par1 {
+  .review-text-par1 {
     /* функция, при ширине экрана (1024px равен 23px), (360px равен 16px) */
     font-size: var(--dynamic-font-size_2);
   }
 
-  .reviews__cardContainer-item-person-block-name {
+  .review-author__text-name {
     /* функция, при ширине экрана (1024px равен 35px), (360px равен 23px) */
     font-size: var(--dynamic-font-size_3);
   }
 
-  .reviews__cardContainer-item-person-block-tour {
+  .review-author__text-description {
     /* функция, при ширине экрана (1024px равен 17px), (360px равен 16px) */
     font-size: calc(16px + (17 - 16) * ((100vw - 360px) / (1024 - 360)));
   }
@@ -297,32 +297,32 @@
 
     /*  */
     /* __reviews(раздел-отзывы) */
-    .reviews__cardContainer {
+    .reviews__container {
       flex-direction: column;
     }
 
-    .reviews__cardContainer-item {
+    .card-reviews {
       width: 100%;
       padding: 20px;
       padding-right: 21px;
       border-radius: 20px;
     }
 
-    .reviews__cardContainer-item-text-par1 {
+    .review-text-par1 {
       line-height: 143%;
     }
 
-    .reviews__cardContainer-item-text-par1:nth-child(n+2) {
+    .review-text-par1:nth-child(n+2) {
       margin-top: 25px;
     }
 
-    .reviews__cardContainer-item-person {
+    .review-author {
       margin-top: 37px;
       align-items: end;
       letter-spacing: 0.92px;
     }
 
-    .reviews__cardContainer-item-person-photo img {
+    .review-author__photo img {
       position: relative;
       top: 3px;
     }
