@@ -1,53 +1,53 @@
-.travelPhotos .section-title {
+.travel-photos .section-title {
   max-width: 723px;
   padding-top: 104px;
 }
 
-.travelPhotos .section-subtitle {
+.travel-photos .section-subtitle {
   max-width: 410px;
   padding-top: 28px;
 }
 
-.travelPhotos__cardContainer {
+.travel-photos__wrapper {
   margin: auto;
   margin-top: 100px;
 }
 
-.travelPhotos__cardContainer-block1,
-.travelPhotos__cardContainer-block2,
-.travelPhotos__cardContainer-block3 {
+.travel-photos__wrapper-block1,
+.travel-photos__wrapper-block2,
+.travel-photos__wrapper-block3 {
   width: 100%;
   display: flex;
   justify-content: center;
 }
 
 /* применяем ко всем элементам кроме первого */
-.travelPhotos__cardContainer-block1:not(:first-child),
-.travelPhotos__cardContainer-block2:not(:first-child),
-.travelPhotos__cardContainer-block3:not(:first-child) {
+.travel-photos__wrapper-block1:not(:first-child),
+.travel-photos__wrapper-block2:not(:first-child),
+.travel-photos__wrapper-block3:not(:first-child) {
   margin-top: 30px;
 }
 
-.travelPhotos__cardContainer-block1-img {
+.travel-photos__wrapper-block1-img {
   width: 23%;
   height: 301px;
   margin-right: 30px;
 }
 
-.travelPhotos__cardContainer-block2-img {
+.travel-photos__wrapper-block2-img {
   width: 18.1%;
   height: 301px;
   margin-right: 30px;
 }
 
-.travelPhotos__cardContainer-block3-img {
+.travel-photos__wrapper-block3-img {
   width: 23%;
   height: 301px;
   margin-right: 30px;
 }
 
-.travelPhotos__cardContainer-block1-img:first-child,
-.travelPhotos__cardContainer-block2-img:first-child,
-.travelPhotos__cardContainer-block3-img:first-child {
+.travel-photos__wrapper-block1-img:first-child,
+.travel-photos__wrapper-block2-img:first-child,
+.travel-photos__wrapper-block3-img:first-child {
   margin-left: 30px;
 }
