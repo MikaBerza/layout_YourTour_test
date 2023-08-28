@@ -457,7 +457,7 @@
 
   /*  */
   /* __footer(раздел-нижний колонтитул)__ */
-  .footers__card-img {
+  .footers-card__img {
     /* функция, при ширине экрана (1024px равен 370px), (360px равен 130px) */
     width: calc(130px + (370 - 130) * ((100vw - 360px) / (1024 - 360)));
     /* функция, при ширине экрана (1024px равен 370px), (360px равен 133px) */
@@ -466,14 +466,14 @@
     border-radius: var(--dynamic-border-sizes_1);
   }
 
-  .footers__card-content-title {
+  .footers-card__title {
     /* функция, при ширине экрана (1024px равен 35px), (360px равен 23px) */
     font-size: var(--dynamic-font-size_3);
   }
 
-  .footers__card-content-text,
-  .footers__link-text,
-  .footers__link-socialNetwork-block-item {
+  .footers-card__text,
+  .footers-social-network__title,
+  .footers-social-network__link {
     /* функция, при ширине экрана (1024px равен 20px), (360px равен 16px) */
     font-size: var(--dynamic-font-size_1);
   }
@@ -747,47 +747,47 @@
 
   /*  */
   /* __footer(раздел-нижний колонтитул)__ */
-  .footers__card {
+  .footers-card {
     padding-top: 75px;
     padding-bottom: 75px;
     flex-direction: column;
   }
 
-  .footers__card-content {
+  .footers-card__content {
     margin-left: 0px;
     margin-top: 32px;
     text-align: center;
   }
 
-  .footers__card-content-title {
+  .footers-card__title {
     font-weight: 700;
     line-height: 120%;
     letter-spacing: 0.92px;
   }
 
-  .footers__linkContainer {
+  .footers-social-network {
     padding: 21px;
   }
 
-  .footers__link {
+  .footers-social-network__wrapper {
     padding-left: 0;
     padding-right: 0;
     flex-direction: column;
   }
 
-  .footers__link-text {
+  .footers-social-network__title {
     margin-bottom: 8px;
   }
 
-  .footers__link-socialNetwork-block:not(:last-child) {
+  .footers-social-network__inner-wrap:not(:last-child) {
     margin-right: 15px;
   }
 
-  .footers__link-socialNetwork {
+  .footers-social-network__name {
     padding-left: 0px;
   }
 
-  .footers__link-socialNetwork-block-icon {
+  .footers-social-network__icon {
     width: 20px;
     height: 20px;
     margin-right: 2px;
