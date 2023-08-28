@@ -270,17 +270,17 @@
     margin-bottom: 18px;
   }
 
-  .review-text-par1 {
+  .card-reviews__text {
     /* функция, при ширине экрана (1024px равен 23px), (360px равен 16px) */
     font-size: var(--dynamic-font-size_2);
   }
 
-  .review-author__text-name {
+  .card-reviews__author-name {
     /* функция, при ширине экрана (1024px равен 35px), (360px равен 23px) */
     font-size: var(--dynamic-font-size_3);
   }
 
-  .review-author__text-description {
+  .card-reviews__author-tour-name {
     /* функция, при ширине экрана (1024px равен 17px), (360px равен 16px) */
     font-size: calc(16px + (17 - 16) * ((100vw - 360px) / (1024 - 360)));
   }
@@ -308,21 +308,21 @@
       border-radius: 20px;
     }
 
-    .review-text-par1 {
+    .card-reviews__text {
       line-height: 143%;
     }
 
-    .review-text-par1:nth-child(n+2) {
+    .card-reviews__text:nth-child(n+2) {
       margin-top: 25px;
     }
 
-    .review-author {
+    .card-reviews__about-author {
       margin-top: 37px;
       align-items: end;
       letter-spacing: 0.92px;
     }
 
-    .review-author__photo img {
+    .card-reviews__author-photo img {
       position: relative;
       top: 3px;
     }

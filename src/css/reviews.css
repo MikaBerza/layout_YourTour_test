@@ -40,7 +40,7 @@
   margin-right: 0px;
 }
 
-.review-text {
+.card-reviews__wrapper-text {
   margin: 0;
   color: var(--black-color);
   font-size: 23px;
@@ -48,29 +48,29 @@
   line-height: 28px;
 }
 
-.review-text-par1 {
+.card-reviews__text {
   margin: 0;
 }
 
 /* применяем стили ко всем элементам, начиная с второго */
-.review-text-par1:nth-child(n+2) {
+.card-reviews__text:nth-child(n+2) {
   margin-top: 27px;
 }
 
-.review-author {
+.card-reviews__about-author {
   margin-top: 70px;
   display: flex;
   justify-content: space-between;
 }
 
-.review-author__text-name {
+.card-reviews__author-name {
   font-size: 35px;
   font-weight: 500;
   line-height: 122%;
   display: block;
 }
 
-.review-author__text-description {
+.card-reviews__author-tour-name {
   margin-top: 8px;
   color: var(--gray300-color);
   font-size: 17px;
@@ -79,7 +79,7 @@
   display: block;
 }
 
-.review-author__photo img {
+.card-reviews__author-photo img {
   width: 75px;
   height: 75px;
   border-radius: 100px;
