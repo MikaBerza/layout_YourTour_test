@@ -1,4 +1,4 @@
-// импортируем массив с ссылками на изображения из раздела chooseTour(раздел-выбрать тур)
+// импортируем массив с ссылками на изображения из раздела choose-tour(раздел-выбрать тур)
 import { arrayLinksToImagesTravelPhotos1 } from './images';
 // импортируем функции
 import { addBackgroundImagesToCards } from './modules';

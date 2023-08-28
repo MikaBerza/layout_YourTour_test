@@ -41,7 +41,7 @@
     letter-spacing: calc(0.68px + (0 - 0.68) * ((100vw - 360px) / (1024 - 360)));
   }
 
-  .secondaryTitle__subtitle {
+  .section-subtitle {
     /* функция, при ширине экрана (1024px равен 20px), (360px равен 16px) */
     font-size: var(--dynamic-font-size_1);
   }
@@ -104,18 +104,18 @@
   }
 
   /*  */
-  /* __chooseTour(раздел-выбрать тур)__ */
-  .chooseTour .section-title {
+  /* __choose-tour(раздел-выбрать тур)__ */
+  .choose-tour .section-title {
     /* функция, при ширине экрана (1024px равен 135px), (360px равен 76px) */
     padding-top: calc(76px + (135 - 76) * ((100vw - 360px) / (1024 - 360)));
   }
 
-  .chooseTour .secondaryTitle__tabs {
+  .choose-tour .tabs {
     /* функция, при ширине экрана (1024px равен 20px), (360px равен 27px) */
     padding-top: calc(27px + (20 - 27) * ((100vw - 360px) / (1024 - 360)));
   }
 
-  .chooseTour .secondaryTitle__tabs-link {
+  .choose-tour .tabs__link {
     /* функция, при ширине экрана (1024px равен 15px), (360px равен 5px) */
     margin: calc(5px + (15 - 5) * ((100vw - 360px) / (1024 - 360)));
     /* функция, при ширине экрана (1024px равен 4px), (360px равен 0px) */
@@ -124,27 +124,27 @@
     font-size: var(--dynamic-font-size_2);
   }
 
-  .chooseTour__cardContainer {
+  .choose-tour__container {
     max-width: 936px;
     /* функция, при ширине экрана (1024px равен 52px), (360px равен 12px) */
     margin-top: calc(12px + (52 - 12) * ((100vw - 360px) / (1024 - 360)));
     padding: 9px;
   }
 
-  .chooseTour__cardTur {
+  .card-tur {
     width: calc(50% - 18px);
     margin: 9px;
     /* функция, при ширине экрана (1024px равен 50px), (360px равен 20px) */
     border-radius: var(--dynamic-border-sizes_1);
   }
 
-  .chooseTour__cardTur-content {
+  .card-tur__content {
     /* функция, при ширине экрана (1024px равен 30px), (550px равен 0px) */
     padding-left: calc(0px + (30 - 0) * ((100vw - 550px) / (1024 - 550)));
     padding-right: calc(0px + (30 - 0) * ((100vw - 550px) / (1024 - 550)));
   }
 
-  .chooseTour__cardTur-content-title {
+  .card-tur__content-title {
     /* функция, при ширине экрана (1024px равен 35px), (360px равен 23px) */
     font-size: var(--dynamic-font-size_3);
   }
@@ -156,7 +156,7 @@
     padding-top: calc(58px + (117 - 58) * ((100vw - 360px) / (1024 - 360)));
   }
 
-  .collectTour .secondaryTitle__subtitle {
+  .collectTour .section-subtitle {
     /* функция, при ширине экрана (1024px равен 409px), (360px равен 318px) */
     max-width: calc(318px + (409 - 318) * ((100vw - 360px) / (1024 - 360)));
     /* функция, при ширине экрана (1024px равен 30px), (360px равен 20px) */
@@ -248,7 +248,7 @@
     padding-top: calc(76px + (134 - 76) * ((100vw - 360px) / (1024 - 360)));
   }
 
-  .reviews .secondaryTitle__subtitle {
+  .reviews .section-subtitle {
     /* функция, при ширине экрана (1024px равен 410px), (360px равен 318px) */
     max-width: var(--dynamic-width_1);
     /* функция, при ширине экрана (1024px равен 30px), (360px равен 20px) */
@@ -337,7 +337,7 @@
     padding-top: calc(76px + (134 - 76) * ((100vw - 360px) / (1024 - 360)));
   }
 
-  .travelPhotos .secondaryTitle__subtitle {
+  .travelPhotos .section-subtitle {
     /* функция, при ширине экрана (1024px равен 410px), (360px равен 318px) */
     max-width: var(--dynamic-width_1);
     /* функция, при ширине экрана (1024px равен 30px), (360px равен 20px) */
@@ -374,7 +374,7 @@
     padding-top: calc(75px + (134 - 75) * ((100vw - 360px) / (1024 - 360)));
   }
 
-  .stories .secondaryTitle__subtitle {
+  .stories .section-subtitle {
     /* функция, при ширине экрана (1024px равен 410px), (360px равен 318px) */
     max-width: var(--dynamic-width_1);
     /* функция, при ширине экрана (1024px равен 30px), (360px равен 20px) */
@@ -520,39 +520,39 @@
   }
 
   /*  */
-  /* __chooseTour(раздел-выбрать тур)__ */
-  .chooseTour .section-title {
+  /* __choose-tour(раздел-выбрать тур)__ */
+  .choose-tour .section-title {
     line-height: 112%;
   }
 
-  .chooseTour__cardContainer {
+  .choose-tour__container {
     max-width: 549px;
   }
 
-  .chooseTour__cardTur {
+  .card-tur {
     width: calc(100% - 24px);
     max-height: 318px;
   }
 
-  .chooseTour__cardTur-content {
+  .card-tur__content {
     min-height: 318px;
     padding: 25px 25px 28px 5px;
   }
 
-  .chooseTour__cardTur-content-title {
+  .card-tur__content-title {
     letter-spacing: 0.92px;
   }
 
-  .chooseTour__cardTur-content-title::after {
+  .card-tur__content-title::after {
     bottom: -4px;
     font-size: 16px;
   }
 
-  .chooseTour__cardTur-content-link-item {
+  .card-tur__content-link-item {
     font-size: 16px;
   }
 
-  .chooseTour__cardTur-content-link-item::after {
+  .card-tur__content-link-item::after {
     content: url('../../dist/images/VectorRight.svg');
     position: relative;
     left: 13px;
@@ -678,7 +678,7 @@
     line-height: 112%;
   }
 
-  .travelPhotos .secondaryTitle__subtitle {
+  .travelPhotos .section-subtitle {
     max-width: 318px;
     padding-top: 20px;
   }

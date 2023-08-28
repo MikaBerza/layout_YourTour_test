@@ -15,7 +15,7 @@ import '../assets/images/fav_icons_YT/mstile-558x558.png';
 // импортируем изображение для раздела ("greeting")
 import '../assets/images/greeting/greetingBackgroundImg.png';
 // import '../assets/images/greeting/greetingBackgroundImg1024.png';
-// импортируем изображение для раздела ("chooseTour")
+// импортируем изображение для раздела ("choose-tour")
 import photo1 from '../assets/images/chooseTour/card_tour_photo_1.png';
 import photo2 from '../assets/images/chooseTour/card_tour_photo_2.png';
 import photo3 from '../assets/images/chooseTour/card_tour_photo_3.png';
@@ -53,7 +53,7 @@ import storiesPhoto3 from '../assets/images/stories/storyPhoto3.png';
 // импортируем изображение для раздела ("footers")
 import '../assets/images/footersPhoto.png';
 
-// экспортируем массив с ссылками на изображения из ("chooseTour")
+// экспортируем массив с ссылками на изображения из ("choose-tour")
 export const arrayLinksToImagesChooseTour = [
   photo1,
   photo2,

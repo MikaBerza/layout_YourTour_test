@@ -87,7 +87,7 @@ a {
   text-align: center;
 }
 
-.secondaryTitle__tabs {
+.tabs {
   max-width: 1200px;
   margin: auto;
   padding: 20px 15px 15px 15px;
@@ -97,7 +97,7 @@ a {
   flex-wrap: wrap;
 }
 
-.secondaryTitle__tabs-link {
+.tabs__link {
   margin: 15px;
   margin-bottom: 18px;
   padding-bottom: 4px;
@@ -113,28 +113,28 @@ a {
   line-height: 122%;
 }
 
-.secondaryTitle__tabs-link:hover {
+.tabs__link:hover {
   /* измененное значение */
   border-bottom: 2px solid var(--black-color);
   color: var(--black-color);
 }
 
 /* Выбранный вариант вкладки*/
-.secondaryTitle__tabs-link_active {
+.tabs__link_active {
   /* измененное значение */
   border-bottom: 2px solid var(--orange200-color);
   color: var(--orange200-color);
 }
 
 /* установим :hover для выбранного варианта вкладки, чтобы
-обычный :hover--->(.secondaryTitle__tabs-link:hover) не перебивал его 
+обычный :hover--->(.tabs__link:hover) не перебивал его 
 Без такой записи обычный :hover перебивает выбранный варианта вкладки */
-.secondaryTitle__tabs-link_active:hover {
+.tabs__link_active:hover {
   border-bottom: 2px solid var(--orange200-color);
   color: var(--orange200-color);
 }
 
-.secondaryTitle__subtitle {
+.section-subtitle {
   max-width: 409px;
   margin: auto;
   padding-top: 30px;

@@ -1,18 +1,18 @@
 /* Примечание
-.chooseTour>*{}
+.choose-tour>*{}
 Эта запись задает стиль для всех непосредственных потомков элементов, 
-которые являются дочерними элементами элементов с классом "chooseTour" */
-.chooseTour .section-title {
+которые являются дочерними элементами элементов с классом "choose-tour" */
+.choose-tour .section-title {
   padding-top: 135px;
 }
 
-.chooseTour {
+.choose-tour {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.chooseTour__cardContainer {
+.choose-tour__container {
   max-width: 1200px;
   margin: auto;
   margin-top: 38px;
@@ -22,7 +22,7 @@
   flex-wrap: wrap;
 }
 
-.chooseTour__cardTur {
+.card-tur {
   width: calc(33.33% - 30px);
   margin: 15px;
   border-radius: 50px;
@@ -30,7 +30,7 @@
   overflow: hidden;
 }
 
-.chooseTour__cardTur-img {
+.card-tur__img {
   height: 100%;
   background-position: center center;
   background-size: cover;
@@ -40,7 +40,7 @@
   transition: transform 0.3s ease;
 }
 
-.chooseTour__cardTur-content {
+.card-tur__content {
   /* Элемент с position: sticky «прилипает» к экрану при 
   прокрутке, пока не встретится с границей 
   родительского блока */
@@ -55,7 +55,7 @@
   cursor: pointer;
 }
 
-.chooseTour__cardTur-content-title {
+.card-tur__content-title {
   position: relative;
   bottom: 0;
   left: 0;
@@ -70,7 +70,7 @@
   line-height: 122%;
 }
 
-.chooseTour__cardTur-content-title::after {
+.card-tur__content-title::after {
   content: 'от 80 000 руб';
   position: absolute;
   left: 20px;
@@ -83,13 +83,13 @@
   letter-spacing: -0.01em;
 }
 
-.chooseTour__cardTur-content-link {
+.card-tur__content-link {
   position: relative;
   bottom: 0;
   left: 0;
 }
 
-.chooseTour__cardTur-content-link-item {
+.card-tur__content-link-item {
   box-sizing: border-box;
   padding: 7px 32px 7px 20px;
   border-radius: 50px;
@@ -102,7 +102,7 @@
   transition: background-color 0.3s ease;
 }
 
-.chooseTour__cardTur-content-link-item::after {
+.card-tur__content-link-item::after {
   content: url('../../dist/images/VectorRight.svg');
   position: relative;
   left: 11px;
@@ -112,12 +112,12 @@
 применялось сразу два стиля: 
 1-й_стиль увеличивал фоновое изображение
 2-й_стиль создавал форму кнопки на ссылке */
-.chooseTour__cardTur:hover .chooseTour__cardTur-img {
+.card-tur:hover .card-tur__img {
   transform: scale(1.2);
   cursor: pointer;
 }
 
-.chooseTour__cardTur:hover .chooseTour__cardTur-content-link-item {
+.card-tur:hover .card-tur__content-link-item {
   border-radius: 50px;
   background-color: var(--green400-color);
 }
@@ -133,10 +133,10 @@ ___Примечание №2
 которые одновременно имеют два класса: `.class1` и `.class2` */
 
 /* установим :hover для выбранного варианта ссылки, чтобы
-обычный :hover--->(.chooseTour__cardTur:hover .chooseTour__cardTur-content-link-item:active) 
+обычный :hover--->(.card-tur:hover .card-tur__content-link-item:active) 
 не перебивал его.
 Без такой записи обычный :hover перебивает выбранный варианта ссылки*/
-.chooseTour__cardTur:hover .chooseTour__cardTur-content-link-item:active {
+.card-tur:hover .card-tur__content-link-item:active {
   border-radius: 50px;
   background-color: var(--orange200-color);
   color: var(--white-color);
