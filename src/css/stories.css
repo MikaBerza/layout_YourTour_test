@@ -13,7 +13,7 @@
   max-width: 410px;
 }
 
-.stories__cardContainer {
+.stories__container {
   max-width: 1170px;
   margin: auto;
   margin-top: 100px;
@@ -23,7 +23,7 @@
   flex-wrap: wrap;
 }
 
-.stories__card {
+.card-stories {
   position: relative;
   width: 100%;
   height: auto;
@@ -31,11 +31,11 @@
   overflow: hidden;
 }
 
-.stories__card:not(:last-child) {
+.card-stories:not(:last-child) {
   margin-bottom: 49px;
 }
 
-.stories__card-img {
+.card-stories__img {
   height: 100%;
   background-position: center center;
   background-size: cover;
@@ -45,7 +45,7 @@
   transition: transform 0.3s ease;
 }
 
-.stories__card-content {
+.card-stories__content {
   /* Элемент с position: sticky «прилипает» к экрану при 
   прокрутке, пока не встретится с границей 
   родительского блока */
@@ -58,7 +58,7 @@
   cursor: pointer;
 }
 
-.stories__card-content-title {
+.card-stories__title {
   position: relative;
   bottom: 0;
   left: 0;
@@ -72,7 +72,7 @@
   line-height: 122%;
 }
 
-.stories__card-content-text {
+.card-stories__wrapper-text {
   position: relative;
   bottom: 0;
   left: 0;
@@ -86,35 +86,35 @@
   line-height: 142%;
 }
 
-.stories__card-content-text-main,
-.stories__card-content-text-list {
+.card-stories__description,
+.card-stories__list-advantages {
   margin: 0;
 }
 
-.stories__card-content-text-main {
+.card-stories__description {
   padding-bottom: 25px;
 }
 
-.stories__card-content-text-list {
+.card-stories__list-advantages {
   padding-left: 12px;
   list-style: none;
 }
 
 /* кастомный размер маркера списка ul*/
-.stories__card-content-text-list .stories__card-content-text-list-item::before {
+.card-stories__list-advantages .card-stories__list-advantages-item::before {
   content: "•";
   margin-right: 10px;
   font-size: 20px;
 }
 
-.stories__card-content-link {
+.card-stories__link-group {
   display: flex;
   justify-content: space-between;
   /* Элементы выравниваются по своей базовой линии */
   align-items: baseline;
 }
 
-.stories__card-content-link-btn-item {
+.card-stories__button-link-item {
   padding: 7px 32px 7px 20px;
   border-radius: 50px;
   color: var(--white-color);
@@ -126,13 +126,13 @@
   transition: background-color 0.3s ease;
 }
 
-.stories__card-content-link-btn-item::after {
+.card-stories__button-link-item::after {
   content: url('../../dist/images/VectorRight.svg');
   position: relative;
   left: 15px;
 }
 
-.stories__card-content-link-socialNetwork-item {
+.card-stories__social-network-link-item {
   /* начальное значение */
   border-bottom: 1px solid transparent;
   color: var(--white-color);
@@ -142,17 +142,17 @@
   transition: border-bottom 0.3s ease, color 0.3s ease;
 }
 
-.stories__card-content-link-socialNetwork-item:not(:last-child) {
+.card-stories__social-network-link-item:not(:last-child) {
   margin-right: 31px;
 }
 
-.stories__card-content-link-socialNetwork-item:hover {
+.card-stories__social-network-link-item:hover {
   /* измененное значение */
   border-bottom: 1px solid var(--white-color);
   color: var(--white-color);
 }
 
-.stories__card-content-link-socialNetwork-item:active {
+.card-stories__social-network-link-item:active {
   /* измененное значение */
   border-bottom: 1px solid var(--orange200-color);
   color: var(--orange200-color);
@@ -162,12 +162,12 @@
 применялось сразу два стиля: 
 1-й_стиль увеличивал фоновое изображение
 2-й_стиль создавал форму кнопки на ссылке */
-.stories__card:hover .stories__card-img {
+.card-stories:hover .card-stories__img {
   transform: scale(1.2);
   cursor: pointer;
 }
 
-.stories__card:hover .stories__card-content-link-btn-item {
+.card-stories:hover .card-stories__button-link-item {
   border-radius: 50px;
   background-color: var(--green400-color);
 }
@@ -183,10 +183,10 @@ ___Примечание №2
 которые одновременно имеют два класса: `.class1` и `.class2` */
 
 /* установим :hover для выбранного варианта ссылки, чтобы
-обычный :hover--->(.stories__card:hover .stories__card-content-link-btn-item:active) 
+обычный :hover--->(.card-stories:hover .card-stories__button-link-item:active) 
 не перебивал его.
 Без такой записи обычный :hover перебивает выбранный варианта ссылки*/
-.stories__card:hover .stories__card-content-link-btn-item:active {
+.card-stories:hover .card-stories__button-link-item:active {
   border-radius: 50px;
   background-color: var(--orange200-color);
   color: var(--white-color);

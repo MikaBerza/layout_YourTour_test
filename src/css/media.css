@@ -381,7 +381,7 @@
     padding-top: var(--dynamic-top-internal-indentation_1);
   }
 
-  .stories__cardContainer {
+  .stories__container {
     /* функция, при ширине экрана (1024px равен 918px), (360px равен 318px) */
     max-width: calc(318px + (918 - 318) * ((100vw - 360px) / (1024 - 360)));
     /* функция, при ширине экрана (1024px равен 100px), (360px равен 51px) */
@@ -391,17 +391,17 @@
     padding-left: var(--dynamic-left-internal-indentation_3);
   }
 
-  .stories__card {
+  .card-stories {
     /* функция, при ширине экрана (1024px равен 50px), (360px равен 20px) */
     border-radius: var(--dynamic-border-sizes_1);
   }
 
-  .stories__card:not(:last-child) {
+  .card-stories:not(:last-child) {
     /* функция, при ширине экрана (1024px равен 49px), (360px равен 20px) */
     margin-bottom: calc(20px + (49 - 20) * ((100vw - 360px) / (1024 - 360)));
   }
 
-  .stories__card-content {
+  .card-stories__content {
     /* функция, при ширине экрана (1024px равен 60px), (360px равен 30px) */
     padding-top: calc(30px + (60 - 30) * ((100vw - 360px) / (1024 - 360)));
     padding-right: calc(30px + (60 - 30) * ((100vw - 360px) / (1024 - 360)));
@@ -411,12 +411,12 @@
     padding-left: calc(10px + (40 - 10) * ((100vw - 360px) / (1024 - 360)));
   }
 
-  .stories__card-content-title {
+  .card-stories__title {
     /* функция, при ширине экрана (1024px равен 35px), (360px равен 23px) */
     font-size: var(--dynamic-font-size_3);
   }
 
-  .stories__card-content-text {
+  .card-stories__wrapper-text {
     /* функция, при ширине экрана (1024px равен 111px), (360px равен 64px) */
     padding-bottom: calc(64px + (111 - 64) * ((100vw - 360px) / (1024 - 360)));
   }
@@ -426,31 +426,31 @@
     padding-bottom: calc(134px + (198 - 134) * ((100vw - 360px) / (1024 - 360)));
   }
 
-  .stories__card-content-text-main,
-  .stories__card-content-text-list {
+  .card-stories__description,
+  .card-stories__list-advantages {
     /* функция, при ширине экрана (1024px равен 20px), (360px равен 16px) */
     font-size: var(--dynamic-font-size_1);
     line-height: 144%;
   }
 
-  .stories__card-content-link-btn-item {
+  .card-stories__button-link-item {
     /* функция, при ширине экрана (1024px равен 23px), (360px равен 16px) */
     font-size: var(--dynamic-font-size_2);
   }
 
-  .stories__card-content-link-btn-item::after {
+  .card-stories__button-link-item::after {
     /* функция, при ширине экрана (1024px равен 0px), (360px равен 2px) */
     top: calc(2px + (0 - 2) * ((100vw - 360px) / (1024 - 360)));
     /* функция, при ширине экрана (1024px равен 15px), (360px равен 17px) */
     left: calc(17px + (15 - 17) * ((100vw - 360px) / (1024 - 360)));
   }
 
-  .stories__card-content-link-socialNetwork-item {
+  .card-stories__social-network-link-item {
     /* функция, при ширине экрана (1024px равен 20px), (360px равен 16px) */
     font-size: var(--dynamic-font-size_1);
   }
 
-  .stories__card-content-link-socialNetwork-item:not(:last-child) {
+  .card-stories__social-network-link-item:not(:last-child) {
     /* функция, при ширине экрана (1024px равен 31x), (550px равен 5px) */
     margin-right: calc(5px + (31 - 5) * ((100vw - 550px) / (1024 - 550)));
   }
@@ -726,21 +726,21 @@
     line-height: 112%;
   }
 
-  .stories__card-content-link-socialNetwork {
+  .card-stories__social-network-link {
     display: none;
   }
 
-  .stories__card-content-title {
+  .card-stories__title {
     max-width: 162px;
     padding-bottom: 20px;
     letter-spacing: 0.92px;
   }
 
-  .stories__card-content-text-main {
+  .card-stories__description {
     padding-bottom: 24px;
   }
 
-  .stories__card-content-text-list {
+  .card-stories__list-advantages {
     padding-left: 9px;
     line-height: 137%;
   }

@@ -3,7 +3,7 @@ import { arrayLinksToImagesStories1 } from './images';
 // импортируем функции
 import { addBackgroundGradientAndImageToCards } from './modules';
 // получим статическую коллекцию NodeList элементов карточек
-const nodeListOfCard = document.querySelectorAll('.stories__card-img');
+const nodeListOfCard = document.querySelectorAll('.card-stories__img');
 // фоновый градиент(стиль), для карточки
 const gradientBackground = 'linear-gradient(270deg, rgba(0, 0, 0, 0) 0.01%, rgba(0, 0, 0, 0.2) 100%)';
 
