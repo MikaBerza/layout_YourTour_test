@@ -55,7 +55,7 @@
   cursor: pointer;
 }
 
-.card-tur__content-title {
+.card-tur__title {
   position: relative;
   bottom: 0;
   left: 0;
@@ -70,7 +70,7 @@
   line-height: 122%;
 }
 
-.card-tur__content-title::after {
+.card-tur__title::after {
   content: 'от 80 000 руб';
   position: absolute;
   left: 20px;
@@ -83,13 +83,13 @@
   letter-spacing: -0.01em;
 }
 
-.card-tur__content-link {
+.card-tur__link {
   position: relative;
   bottom: 0;
   left: 0;
 }
 
-.card-tur__content-link-item {
+.card-tur__link-item {
   box-sizing: border-box;
   padding: 7px 32px 7px 20px;
   border-radius: 50px;
@@ -102,7 +102,7 @@
   transition: background-color 0.3s ease;
 }
 
-.card-tur__content-link-item::after {
+.card-tur__link-item::after {
   content: url('../../dist/images/VectorRight.svg');
   position: relative;
   left: 11px;
@@ -117,7 +117,7 @@
   cursor: pointer;
 }
 
-.card-tur:hover .card-tur__content-link-item {
+.card-tur:hover .card-tur__link-item {
   border-radius: 50px;
   background-color: var(--green400-color);
 }
@@ -133,10 +133,10 @@ ___Примечание №2
 которые одновременно имеют два класса: `.class1` и `.class2` */
 
 /* установим :hover для выбранного варианта ссылки, чтобы
-обычный :hover--->(.card-tur:hover .card-tur__content-link-item:active) 
+обычный :hover--->(.card-tur:hover .card-tur__link-item:active) 
 не перебивал его.
 Без такой записи обычный :hover перебивает выбранный варианта ссылки*/
-.card-tur:hover .card-tur__content-link-item:active {
+.card-tur:hover .card-tur__link-item:active {
   border-radius: 50px;
   background-color: var(--orange200-color);
   color: var(--white-color);

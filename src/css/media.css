@@ -144,7 +144,7 @@
     padding-right: calc(0px + (30 - 0) * ((100vw - 550px) / (1024 - 550)));
   }
 
-  .card-tur__content-title {
+  .card-tur__title {
     /* функция, при ширине экрана (1024px равен 35px), (360px равен 23px) */
     font-size: var(--dynamic-font-size_3);
   }
@@ -539,20 +539,20 @@
     padding: 25px 25px 28px 5px;
   }
 
-  .card-tur__content-title {
+  .card-tur__title {
     letter-spacing: 0.92px;
   }
 
-  .card-tur__content-title::after {
+  .card-tur__title::after {
     bottom: -4px;
     font-size: 16px;
   }
 
-  .card-tur__content-link-item {
+  .card-tur__link-item {
     font-size: 16px;
   }
 
-  .card-tur__content-link-item::after {
+  .card-tur__link-item::after {
     content: url('../../dist/images/VectorRight.svg');
     position: relative;
     left: 13px;
