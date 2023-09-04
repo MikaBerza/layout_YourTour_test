@@ -208,6 +208,7 @@
 
 .radio-group__item:not(:last-child) {
   margin-right: 31px;
+  /* margin-right: 17px; */
 }
 
 .radio-group__item-label {
@@ -228,23 +229,17 @@
   content: '';
   width: 24px;
   height: 24px;
-  border: 1px solid var(--black-color);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: 50% 50%;
-  display: inline-block;
-  flex-shrink: 0;
-  flex-grow: 0;
-}
-
-.radio-group__item-input+.radio-group__item-label::before {
   margin-right: 11px;
+  border: 1px solid var(--black-color);
   border-radius: 0.60em;
 }
 
 .radio-group__item-input:checked+.radio-group__item-label::before {
-  border-color: var(--black-color);
-  background-color: var(--white-color);
+  position: relative;
+  content: '•';
+  /* функция, при ширине экрана (1920px равен 59px), (360px равен 47px) */
+  font-size: calc(47px + (59 - 47) * ((100vw - 360px) / (1920 - 360)));
+  text-align: center;
 }
 
 /* _____agreement-field */
@@ -270,17 +265,20 @@
   width: 26px;
   height: 26px;
   border: 1px solid var(--black-color);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: 50% 50%;
+  border-radius: 0.25em;
+  border-color: var(--black-color);
+  margin-right: 19px;
+  background-color: var(--white-color);
   display: inline-block;
-  flex-shrink: 0;
-  flex-grow: 0;
 }
 
 .agreement-field__input:checked+.agreement-field__customCheckbox::before {
-  border-color: var(--black-color);
-  background-color: var(--white-color);
+  position: relative;
+  content: '✔';
+  border-radius: 0.25em;
+  /* функция, при ширине экрана (1920px равен 20px), (360px равен 14px) */
+  font-size: calc(14px + (20 - 14) * ((100vw - 360px) / (1920 - 360)));
+  text-align: center;
 }
 
 .agreement-field__text {
@@ -312,10 +310,9 @@
   color: var(--green400-color);
 }
 
-.agreement-field__input+.agreement-field__customCheckbox::before {
-  margin-right: 19px;
-  border-radius: 0.25em;
-}
+/* .agreement-field__input+.agreement-field__customCheckbox::before {
+
+} */
 
 /* _____buttons-group */
 .buttons-group__find,
