@@ -25,10 +25,6 @@ import photo6 from '../assets/images/chooseTour/card_tour_photo_6.png';
 import '../assets/images/VectorRight.svg';
 // импортируем изображение для раздела ("collect-tour")
 import '../assets/images/VectorDown.svg';
-// импортируем изображение для раздела ("Age")
-import '../assets/images/VectorRadio.svg';
-// импортируем изображение для раздела ("agreement")
-import '../assets/images/VectorChecked.svg';
 // импортируем изображение для раздела ("reviews")
 import '../assets/images/reviewPhoto1.png';
 import '../assets/images/reviewPhoto2.png';

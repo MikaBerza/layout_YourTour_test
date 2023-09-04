@@ -247,11 +247,6 @@
   background-color: var(--white-color);
 }
 
-.radio-group__item-input:checked+.radio-group__item-label::before {
-  background-image: url('../../dist/images/VectorRadio.svg');
-}
-
-
 /* _____agreement-field */
 .agreement-field {
   height: 26px;
@@ -321,11 +316,6 @@
   margin-right: 19px;
   border-radius: 0.25em;
 }
-
-.agreement-field__input:checked+.agreement-field__customCheckbox::before {
-  background-image: url('../../dist/images/VectorChecked.svg');
-}
-
 
 /* _____buttons-group */
 .buttons-group__find,
