@@ -1,37 +1,41 @@
-/* ___________Main_________________________________________________ */
 /* __section__greeting(приветствие)__*/
 .greeting {
+  display: flex;
+  flex-direction: column;
+
   background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0.00) 100%),
     linear-gradient(0deg, rgba(0, 0, 0, 0.23) 0%, rgba(0, 0, 0, 0.23) 100%),
     url('../../dist/images/greetingBackgroundImg.png');
+  background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  background-repeat: no-repeat;
-  display: flex;
-  flex-direction: column;
 }
 
 .section-title-main {
   max-width: 768px;
   margin: auto;
   padding-top: 207px;
-  color: var(--white-color);
+
   font-size: 96px;
   font-weight: 700;
   line-height: 109%;
-  letter-spacing: 1.92px;
   text-align: center;
+  letter-spacing: 1.92px;
+
+  color: var(--white-color);
 }
 
 .section-subtitle-main {
   max-width: 562px;
   margin: auto;
   padding-top: 50px;
-  color: var(--white-color);
+
   font-size: 20px;
   font-weight: 400;
   line-height: 142%;
   text-align: center;
+
+  color: var(--white-color);
 }
 
 .buttons {
@@ -44,28 +48,30 @@
 .buttons__small {
   width: 118px;
   padding: 5px 20px;
-  border: none;
-  border-radius: 10px;
-  background: var(--white-color);
-  color: var(--black-color);
+
   font-size: 17px;
   font-weight: 400;
   line-height: 142%;
   letter-spacing: -0.01em;
-  cursor: pointer;
-  /* ease определяет функцию плавности и */
-  /* обозначает постепенное ускорение и замедление в течение всего перехода */
+
+  color: var(--black-color);
+  background: var(--white-color);
+
+  border: none;
+  border-radius: 10px;
+
   transition: background-color 0.3s ease, color 0.3s ease;
+  cursor: pointer;
 }
 
 .buttons__small:hover {
-  background: var(--orange200-color);
   color: var(--white-color);
+  background: var(--orange200-color);
   cursor: pointer;
 }
 
 .buttons__small:active {
-  background: var(--orange100-color);
   color: var(--black-color);
+  background: var(--orange100-color);
   cursor: pointer;
 }

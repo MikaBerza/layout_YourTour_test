@@ -140,8 +140,9 @@
 
   .card-tur__content {
     /* функция, при ширине экрана (1024px равен 30px), (550px равен 0px) */
-    padding-left: calc(0px + (30 - 0) * ((100vw - 550px) / (1024 - 550)));
     padding-right: calc(0px + (30 - 0) * ((100vw - 550px) / (1024 - 550)));
+    padding-left: calc(0px + (30 - 0) * ((100vw - 550px) / (1024 - 550)));
+
   }
 
   .card-tur__title {
@@ -177,9 +178,10 @@
     padding-top: calc(22px + (60 - 22) * ((100vw - 360px) / (1024 - 360)));
     /* функция, при ширине экрана (1024px равен 60px), (360px равен 20px) */
     padding-right: calc(20px + (60 - 20) * ((100vw - 360px) / (1024 - 360)));
-    padding-left: calc(20px + (60 - 20) * ((100vw - 360px) / (1024 - 360)));
     /* функция, при ширине экрана (1024px равен 60px), (360px равен 40px) */
     padding-bottom: calc(40px + (60 - 40) * ((100vw - 360px) / (1024 - 360)));
+    /* функция, при ширине экрана (1024px равен 60px), (360px равен 20px) */
+    padding-left: calc(20px + (60 - 20) * ((100vw - 360px) / (1024 - 360)));
     /* функция, при ширине экрана (1024px равен 50px), (360px равен 30px) */
     border-radius: calc(30px + (50 - 30) * ((100vw - 360px) / (1024 - 360)));
   }
@@ -317,8 +319,8 @@
     }
 
     .card-reviews__about-author {
-      margin-top: 37px;
       align-items: end;
+      margin-top: 37px;
       letter-spacing: 0.92px;
     }
 
@@ -553,10 +555,10 @@
   }
 
   .card-tur__link-item::after {
-    content: url('../../dist/images/VectorRight.svg');
     position: relative;
-    left: 13px;
     top: 3px;
+    left: 13px;
+    content: url('../../dist/images/VectorRight.svg');
   }
 
   /*  */
@@ -748,14 +750,14 @@
   /*  */
   /* __footer(раздел-нижний колонтитул)__ */
   .footers-card {
+    flex-direction: column;
     padding-top: 75px;
     padding-bottom: 75px;
-    flex-direction: column;
   }
 
   .footers-card__content {
-    margin-left: 0px;
     margin-top: 32px;
+    margin-left: 0px;
     text-align: center;
   }
 
@@ -770,9 +772,9 @@
   }
 
   .footers-social-network__wrapper {
-    padding-left: 0;
-    padding-right: 0;
     flex-direction: column;
+    padding-right: 0;
+    padding-left: 0;
   }
 
   .footers-social-network__title {

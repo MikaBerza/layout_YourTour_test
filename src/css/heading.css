@@ -1,39 +1,33 @@
 /* ___________Header_____________________________________________________ */
 .heading {
-  /* Классу "heading" задано свойство "position: fixed", 
-которое фиксирует его относительно экрана и позволят ему оставаться на месте 
-независимо от скроллинга страницы. Также ему задано свойство "left: 50%", 
-которое заставляет его начинаться по центру родительского блока, 
-а свойство "transform: translateX(-50%)" сдвигает его влево на 50% от его 
-собственной ширины. Это позволяет шапке находиться по центру родительского 
-блока независимо от его ширины. */
   position: fixed;
   top: 0;
   left: 50%;
-  transform: translateX(-50%);
   z-index: 999;
-  width: 100%;
+
   display: block;
+  width: 100%;
+
+  transform: translateX(-50%);
 }
 
 .navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   width: 1168px;
   margin: auto;
   padding-top: 27px;
   padding-bottom: 29px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .navbar__logo {
-  /* прижмем элемент к левому краю */
   margin-right: auto;
   padding-right: 10px;
 }
 
 .navbar__telephoneNumber {
-  /* прижмем элемент к правому краю */
   margin-left: auto;
   padding-left: 10px;
 }
@@ -44,14 +38,15 @@
 }
 
 .navbar__menu {
-  width: 468px;
-  margin: 0;
-  padding-left: 0;
-  padding-bottom: 4px;
-  /* Убираем маркеры */
-  list-style-type: none;
   display: flex;
   justify-content: space-between;
+
+  width: 468px;
+  margin: 0;
+  padding-bottom: 4px;
+  padding-left: 0;
+
+  list-style-type: none;
 }
 
 /* Выберем все пункты списка, кроме последнего */
@@ -60,17 +55,16 @@
 }
 
 .navbar__menu-link {
-  /* начальное значение */
-  border-bottom: 1px solid transparent;
-  color: var(--white-color);
   font-size: 20px;
-  /* запрещаем перенос текста на другую строку */
   white-space: nowrap;
+
+  color: var(--white-color);
+  border-bottom: 1px solid transparent;
+
   transition: border-bottom 0.3s ease;
 }
 
 .navbar__menu-link:hover {
-  /* измененное значение */
   border-bottom: 1px solid var(--white-color)
 }
 

@@ -1,7 +1,3 @@
-/* Примечание
-.choose-tour>*{}
-Эта запись задает стиль для всех непосредственных потомков элементов, 
-которые являются дочерними элементами элементов с классом "choose-tour" */
 .choose-tour .section-title {
   padding-top: 135px;
 }
@@ -13,45 +9,44 @@
 }
 
 .choose-tour__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
   max-width: 1200px;
   margin: auto;
   margin-top: 38px;
   padding: 15px;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
 }
 
 .card-tur {
+  overflow: hidden;
   width: calc(33.33% - 30px);
   margin: 15px;
   border-radius: 50px;
-  /* отображаем только область внутри элемента, остальное будет скрыто  */
-  overflow: hidden;
 }
 
 .card-tur__img {
   height: 100%;
+  background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  background-repeat: no-repeat;
-  /* ease определяет функцию плавности и */
-  /* обозначает постепенное ускорение и замедление в течение всего перехода */
+
   transition: transform 0.3s ease;
 }
 
 .card-tur__content {
-  /* Элемент с position: sticky «прилипает» к экрану при 
-  прокрутке, пока не встретится с границей 
-  родительского блока */
   position: sticky;
   bottom: 892px;
-  min-height: 531px;
-  padding: 50px 50px 50px 30px;
-  box-sizing: border-box;
+
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
+  min-height: 531px;
+  padding: 50px 50px 50px 30px;
+  box-sizing: border-box;
+
   cursor: pointer;
 }
 
@@ -64,23 +59,28 @@
   margin-right: calc(0px + (23 - 0) * ((100vw - 1024px) / (1920 - 1024)));
   padding-bottom: 32px;
   padding-left: 20px;
-  color: var(--white-color);
+
   font-size: 35px;
   font-weight: 500;
   line-height: 122%;
+
+  color: var(--white-color);
 }
 
 .card-tur__title::after {
-  content: 'от 80 000 руб';
   position: absolute;
-  left: 20px;
   bottom: -9px;
+  left: 20px;
   margin: 0;
-  color: var(--white-color);
+
   font-size: 17px;
   font-weight: 400;
   line-height: 142%;
   letter-spacing: -0.01em;
+
+  color: var(--white-color);
+
+  content: 'от 80 000 руб';
 }
 
 .card-tur__link {
@@ -92,52 +92,35 @@
 .card-tur__link-item {
   box-sizing: border-box;
   padding: 7px 32px 7px 20px;
-  border-radius: 50px;
-  color: var(--white-color);
+
   font-size: 23px;
   font-weight: 700;
   line-height: 122%;
-  /* ease определяет функцию плавности и */
-  /* обозначает постепенное ускорение и замедление в течение всего перехода */
+
+  color: var(--white-color);
+  border-radius: 50px;
+
   transition: background-color 0.3s ease;
 }
 
 .card-tur__link-item::after {
-  content: url('../../dist/images/VectorRight.svg');
   position: relative;
   left: 11px;
+  content: url('../../dist/images/VectorRight.svg');
 }
 
-/* делаем такую запись чтобы при наведении курсора на один элемент
-применялось сразу два стиля: 
-1-й_стиль увеличивал фоновое изображение
-2-й_стиль создавал форму кнопки на ссылке */
 .card-tur:hover .card-tur__img {
   transform: scale(1.2);
   cursor: pointer;
 }
 
 .card-tur:hover .card-tur__link-item {
-  border-radius: 50px;
   background-color: var(--green400-color);
+  border-radius: 50px;
 }
 
-/*___Примечание №1 
-.class1 .class2 такая запись означает, 
-что стили будут применяться к тем элементам HTML, 
-которые имеют класс `.class2`, 
-но только внутри элементов HTML с классом `.class1` 
-___Примечание №2
-Если записать без пробела (`.class1.class2`), 
-это означает, что стили будут применяться к элементам HTML, 
-которые одновременно имеют два класса: `.class1` и `.class2` */
-
-/* установим :hover для выбранного варианта ссылки, чтобы
-обычный :hover--->(.card-tur:hover .card-tur__link-item:active) 
-не перебивал его.
-Без такой записи обычный :hover перебивает выбранный варианта ссылки*/
 .card-tur:hover .card-tur__link-item:active {
-  border-radius: 50px;
-  background-color: var(--orange200-color);
   color: var(--white-color);
+  background-color: var(--orange200-color);
+  border-radius: 50px;
 }

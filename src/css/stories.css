@@ -14,21 +14,22 @@
 }
 
 .stories__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
   max-width: 1170px;
   margin: auto;
   margin-top: 100px;
   padding: 0 30px;
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
 }
 
 .card-stories {
   position: relative;
+  overflow: hidden;
   width: 100%;
   height: auto;
   border-radius: 50px;
-  overflow: hidden;
 }
 
 .card-stories:not(:last-child) {
@@ -37,11 +38,10 @@
 
 .card-stories__img {
   height: 100%;
+  background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  background-repeat: no-repeat;
-  /* ease определяет функцию плавности и */
-  /* обозначает постепенное ускорение и замедление в течение всего перехода */
+
   transition: transform 0.3s ease;
 }
 
@@ -51,10 +51,12 @@
   родительского блока */
   position: sticky;
   bottom: 0;
-  box-sizing: border-box;
-  padding: 60px 60px 60px 40px;
+
   display: flex;
   flex-direction: column;
+  box-sizing: border-box;
+  padding: 60px 60px 60px 40px;
+
   cursor: pointer;
 }
 
@@ -66,10 +68,12 @@
   margin: 0;
   padding-bottom: 37px;
   padding-left: 20px;
-  color: var(--white-color);
+
   font-size: 35px;
   font-weight: 500;
   line-height: 122%;
+
+  color: var(--white-color);
 }
 
 .card-stories__wrapper-text {
@@ -80,10 +84,12 @@
   margin: 0;
   padding-bottom: 115px;
   padding-left: 20px;
-  color: var(--white-color);
+
   font-size: 20px;
   font-weight: 400;
   line-height: 142%;
+
+  color: var(--white-color);
 }
 
 .card-stories__description,
@@ -102,43 +108,44 @@
 
 /* кастомный размер маркера списка ul*/
 .card-stories__list-advantages .card-stories__list-advantages-item::before {
-  content: "•";
   margin-right: 10px;
   font-size: 20px;
+  content: "•";
 }
 
 .card-stories__link-group {
   display: flex;
-  justify-content: space-between;
-  /* Элементы выравниваются по своей базовой линии */
+  /* элементы выравниваются по своей базовой линии */
   align-items: baseline;
+  justify-content: space-between;
 }
 
 .card-stories__button-link-item {
   padding: 7px 32px 7px 20px;
-  border-radius: 50px;
-  color: var(--white-color);
+
   font-size: 23px;
   font-weight: 700;
   line-height: 122%;
-  /* ease определяет функцию плавности и */
-  /* обозначает постепенное ускорение и замедление в течение всего перехода */
+
+  color: var(--white-color);
+  border-radius: 50px;
   transition: background-color 0.3s ease;
 }
 
 .card-stories__button-link-item::after {
-  content: url('../../dist/images/VectorRight.svg');
   position: relative;
   left: 15px;
+  content: url('../../dist/images/VectorRight.svg');
 }
 
 .card-stories__social-network-link-item {
-  /* начальное значение */
-  border-bottom: 1px solid transparent;
-  color: var(--white-color);
   font-size: 20px;
   font-weight: 400;
   line-height: 142%;
+
+  color: var(--white-color);
+  border-bottom: 1px solid transparent;
+
   transition: border-bottom 0.3s ease, color 0.3s ease;
 }
 
@@ -147,15 +154,13 @@
 }
 
 .card-stories__social-network-link-item:hover {
-  /* измененное значение */
-  border-bottom: 1px solid var(--white-color);
   color: var(--white-color);
+  border-bottom: 1px solid var(--white-color);
 }
 
 .card-stories__social-network-link-item:active {
-  /* измененное значение */
-  border-bottom: 1px solid var(--orange200-color);
   color: var(--orange200-color);
+  border-bottom: 1px solid var(--orange200-color);
 }
 
 /* делаем такую запись чтобы при наведении курсора на один элемент
@@ -168,8 +173,8 @@
 }
 
 .card-stories:hover .card-stories__button-link-item {
-  border-radius: 50px;
   background-color: var(--green400-color);
+  border-radius: 50px;
 }
 
 /*___Примечание №1 
@@ -187,9 +192,9 @@ ___Примечание №2
 не перебивал его.
 Без такой записи обычный :hover перебивает выбранный варианта ссылки*/
 .card-stories:hover .card-stories__button-link-item:active {
-  border-radius: 50px;
-  background-color: var(--orange200-color);
   color: var(--white-color);
+  background-color: var(--orange200-color);
+  border-radius: 50px;
 }
 
 /* нижний отступ */

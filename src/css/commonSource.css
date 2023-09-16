@@ -63,11 +63,10 @@ a {
 
 /* стили для изображений */
 .bgi-1 {
-  border-radius: 50px;
-
+  background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  background-repeat: no-repeat;
+  border-radius: 50px;
 }
 
 /* __________secondaryTitle */
@@ -79,22 +78,22 @@ a {
   max-width: 529px;
   margin: auto;
 
-  color: var(--black-color);
-
   font-size: 59px;
   font-weight: 700;
   line-height: 124%;
   text-align: center;
+
+  color: var(--black-color);
 }
 
 .tabs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
   max-width: 1200px;
   margin: auto;
   padding: 20px 15px 15px 15px;
-
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
 }
 
 .tabs__link {
@@ -102,36 +101,31 @@ a {
   margin-bottom: 18px;
   padding-bottom: 4px;
 
-  /* начальное значение */
-  border-bottom: 2px solid transparent;
-  transition: border-bottom 0.3s ease, color 0.3s ease;
-
-  color: var(--black-color);
-
   font-size: 23px;
   font-weight: 700;
   line-height: 122%;
+
+  color: var(--black-color);
+  border-bottom: 2px solid transparent;
+  transition: border-bottom 0.3s ease, color 0.3s ease;
 }
 
 .tabs__link:hover {
-  /* измененное значение */
-  border-bottom: 2px solid var(--black-color);
   color: var(--black-color);
+  border-bottom: 2px solid var(--black-color);
 }
 
-/* Выбранный вариант вкладки*/
 .tabs__link_active {
-  /* измененное значение */
-  border-bottom: 2px solid var(--orange200-color);
   color: var(--orange200-color);
+  border-bottom: 2px solid var(--orange200-color);
 }
 
 /* установим :hover для выбранного варианта вкладки, чтобы
 обычный :hover--->(.tabs__link:hover) не перебивал его 
 Без такой записи обычный :hover перебивает выбранный варианта вкладки */
 .tabs__link_active:hover {
-  border-bottom: 2px solid var(--orange200-color);
   color: var(--orange200-color);
+  border-bottom: 2px solid var(--orange200-color);
 }
 
 .section-subtitle {

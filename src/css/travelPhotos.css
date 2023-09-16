@@ -16,9 +16,9 @@
 .travel-photos__wrapper-block1,
 .travel-photos__wrapper-block2,
 .travel-photos__wrapper-block3 {
-  width: 100%;
   display: flex;
   justify-content: center;
+  width: 100%;
 }
 
 /* применяем ко всем элементам кроме первого */

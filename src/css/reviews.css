@@ -12,27 +12,30 @@
 }
 
 .reviews__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
   max-width: 1170px;
   margin: auto;
   margin-top: 100px;
   padding: 0 30px;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
 }
 
 .card-reviews {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
   box-sizing: border-box;
   width: calc(50% - 15px);
   margin-right: 30px;
   margin-bottom: 30px;
   padding: 40px;
   padding-bottom: 36px;
-  border-radius: 50px;
+
   background: var(--beige200-color);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  border-radius: 50px;
 }
 
 /* у каждого 2 элемента будет отсутствовать отступ справа */
@@ -42,10 +45,12 @@
 
 .card-reviews__wrapper-text {
   margin: 0;
-  color: var(--black-color);
+
   font-size: 23px;
   font-weight: 700;
   line-height: 28px;
+
+  color: var(--black-color);
 }
 
 .card-reviews__text {
@@ -58,25 +63,25 @@
 }
 
 .card-reviews__about-author {
-  margin-top: 70px;
   display: flex;
   justify-content: space-between;
+  margin-top: 70px;
 }
 
 .card-reviews__author-name {
+  display: block;
   font-size: 35px;
   font-weight: 500;
   line-height: 122%;
-  display: block;
 }
 
 .card-reviews__author-tour-name {
+  display: block;
   margin-top: 8px;
-  color: var(--gray300-color);
   font-size: 17px;
   line-height: 142%;
   letter-spacing: -0.17px;
-  display: block;
+  color: var(--gray300-color);
 }
 
 .card-reviews__author-photo img {
