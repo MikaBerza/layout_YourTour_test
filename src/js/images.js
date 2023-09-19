@@ -43,9 +43,9 @@ import '../assets/images/reviewPhoto2.png';
 // import travelPhoto12 from '../assets/images/travelPhotos/travelPhoto12.png';
 // import travelPhoto13 from '../assets/images/travelPhotos/travelPhoto13.png';
 // импортируем изображение для раздела ("stories")
-import storiesPhoto1 from '../assets/images/stories/storyPhoto1.png';
-import storiesPhoto2 from '../assets/images/stories/storyPhoto2.png';
-import storiesPhoto3 from '../assets/images/stories/storyPhoto3.png';
+// import storiesPhoto1 from '../assets/images/stories/storyPhoto1.png';
+// import storiesPhoto2 from '../assets/images/stories/storyPhoto2.png';
+// import storiesPhoto3 from '../assets/images/stories/storyPhoto3.png';
 // импортируем изображение для раздела ("footers")
 import '../assets/images/footersPhoto.png';
 
@@ -77,8 +77,8 @@ import '../assets/images/footersPhoto.png';
 // ];
 
 // массив с ссылками на изображения из ("stories 1920px")
-export const arrayLinksToImagesStories1 = [
-  storiesPhoto1,
-  storiesPhoto2,
-  storiesPhoto3,
-];
+// export const arrayLinksToImagesStories1 = [
+//   storiesPhoto1,
+//   storiesPhoto2,
+//   storiesPhoto3,
+// ];
