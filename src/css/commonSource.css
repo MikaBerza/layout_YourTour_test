@@ -61,12 +61,11 @@ a {
   background: var(--beige100-color);
 }
 
-/* стили для изображений */
-.bgi-1 {
+/* стили позиционирования для изображений */
+.bgp-1 {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  border-radius: 50px;
 }
 
 /* __________secondaryTitle */

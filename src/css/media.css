@@ -16,13 +16,13 @@
 
   /*  */
   /* __travel-photos(раздел-фотографии путешествий) */
-  .travel-photos__wrapper-block1-img,
-  .travel-photos__wrapper-block3-img {
+  .travel-photos__img1,
+  .travel-photos__img3 {
     /* функция, при ширине экрана (1920px равен 442.5px), (1025px равен 314.666px) */
     width: calc(314.666px + (442.5 - 314.666) * ((100vw - 1025px) / (1920 - 1025)));
   }
 
-  .travel-photos__wrapper-block2-img {
+  .travel-photos__img2 {
     /* функция, при ширине экрана (1920px равен 347.32px), (1025px равен 231px) */
     width: calc(231px + (347.32 - 231) * ((100vw - 1025px) / (1920 - 1025)));
   }
@@ -350,22 +350,22 @@
     padding-top: 119px;
   }
 
-  .travel-photos__wrapper-block1-img,
-  .travel-photos__wrapper-block2-img,
-  .travel-photos__wrapper-block3-img {
+  .travel-photos__img1,
+  .travel-photos__img2,
+  .travel-photos__img3 {
     margin-right: 20px;
   }
 
-  .travel-photos__wrapper-block1-img:first-child,
-  .travel-photos__wrapper-block2-img:first-child,
-  .travel-photos__wrapper-block3-img:first-child {
+  .travel-photos__img1:first-child,
+  .travel-photos__img2:first-child,
+  .travel-photos__img3:first-child {
     margin-left: 20px;
   }
 
   /* применяем стиль к 2, 3, 4 элементу */
-  .travel-photos__wrapper-block1-img:nth-child(2),
-  .travel-photos__wrapper-block2-img:nth-child(3),
-  .travel-photos__wrapper-block3-img:nth-child(4) {
+  .travel-photos__img1:nth-child(2),
+  .travel-photos__img2:nth-child(3),
+  .travel-photos__img3:nth-child(4) {
     display: none;
   }
 
@@ -690,35 +690,35 @@
   }
 
   /* применяем ко всем элементам кроме первого */
-  .travel-photos__wrapper-block1:not(:first-child),
-  .travel-photos__wrapper-block2:not(:first-child),
-  .travel-photos__wrapper-block3:not(:first-child) {
+  .travel-photos__inner1:not(:first-child),
+  .travel-photos__inner2:not(:first-child),
+  .travel-photos__inner3:not(:first-child) {
     margin-top: 18px;
   }
 
 
-  .travel-photos__wrapper-block1-img,
-  .travel-photos__wrapper-block2-img,
-  .travel-photos__wrapper-block3-img {
+  .travel-photos__img1,
+  .travel-photos__img2,
+  .travel-photos__img3 {
     height: 110px;
     border-radius: 20px;
   }
 
   /* применить ко всем кроме последнего */
-  .travel-photos__wrapper-block2-img:not(:last-child) {
+  .travel-photos__img2:not(:last-child) {
     /* функция, при ширине экрана (550px равен 20px), (360px равен 10px) */
     margin-right: calc(10px + (20 - 10) * ((100vw - 360px) / (550 - 360)));
   }
 
-  .travel-photos__wrapper-block3-img:first-child {
+  .travel-photos__img3:first-child {
     /* функция, при ширине экрана (550px равен 20px), (360px равен 10px) */
     margin-right: calc(10px + (20 - 10) * ((100vw - 360px) / (550 - 360)));
   }
 
   /* применяем стиль к 3, 2, 3 элементу */
-  .travel-photos__wrapper-block1-img:nth-child(3),
-  .travel-photos__wrapper-block2-img:nth-child(2),
-  .travel-photos__wrapper-block3-img:nth-child(3) {
+  .travel-photos__img1:nth-child(3),
+  .travel-photos__img2:nth-child(2),
+  .travel-photos__img3:nth-child(3) {
     display: none;
   }
 
