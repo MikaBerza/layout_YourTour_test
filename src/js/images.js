@@ -16,12 +16,12 @@ import '../assets/images/fav_icons_YT/mstile-558x558.png';
 import '../assets/images/greeting/greetingBackgroundImg.png';
 // import '../assets/images/greeting/greetingBackgroundImg1024.png';
 // импортируем изображение для раздела ("choose-tour")
-import photo1 from '../assets/images/chooseTour/card_tour_photo_1.png';
-import photo2 from '../assets/images/chooseTour/card_tour_photo_2.png';
-import photo3 from '../assets/images/chooseTour/card_tour_photo_3.png';
-import photo4 from '../assets/images/chooseTour/card_tour_photo_4.png';
-import photo5 from '../assets/images/chooseTour/card_tour_photo_5.png';
-import photo6 from '../assets/images/chooseTour/card_tour_photo_6.png';
+// import photo1 from '../assets/images/chooseTour/card_tour_photo_1.png';
+// import photo2 from '../assets/images/chooseTour/card_tour_photo_2.png';
+// import photo3 from '../assets/images/chooseTour/card_tour_photo_3.png';
+// import photo4 from '../assets/images/chooseTour/card_tour_photo_4.png';
+// import photo5 from '../assets/images/chooseTour/card_tour_photo_5.png';
+// import photo6 from '../assets/images/chooseTour/card_tour_photo_6.png';
 import '../assets/images/VectorRight.svg';
 // импортируем изображение для раздела ("collect-tour")
 import '../assets/images/VectorDown.svg';
@@ -50,14 +50,14 @@ import storiesPhoto3 from '../assets/images/stories/storyPhoto3.png';
 import '../assets/images/footersPhoto.png';
 
 // экспортируем массив с ссылками на изображения из ("choose-tour")
-export const arrayLinksToImagesChooseTour = [
-  photo1,
-  photo2,
-  photo3,
-  photo4,
-  photo5,
-  photo6,
-];
+// export const arrayLinksToImagesChooseTour = [
+//   photo1,
+//   photo2,
+//   photo3,
+//   photo4,
+//   photo5,
+//   photo6,
+// ];
 
 // экспортируем массив с ссылками на изображения из ("travelPhotos")
 export const arrayLinksToImagesTravelPhotos1 = [

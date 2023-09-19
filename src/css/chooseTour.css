@@ -35,6 +35,42 @@
   transition: transform 0.3s ease;
 }
 
+.card-tur__img_bg1 {
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0.00) 100%),
+    linear-gradient(0deg, rgba(0, 0, 0, 0.23) 0%, rgba(0, 0, 0, 0.23) 100%),
+    url('../../dist/images/card_tour_photo_1.png');
+}
+
+.card-tur__img_bg2 {
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0.00) 100%),
+    linear-gradient(0deg, rgba(0, 0, 0, 0.23) 0%, rgba(0, 0, 0, 0.23) 100%),
+    url('../../dist/images/card_tour_photo_2.png');
+}
+
+.card-tur__img_bg3 {
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0.00) 100%),
+    linear-gradient(0deg, rgba(0, 0, 0, 0.23) 0%, rgba(0, 0, 0, 0.23) 100%),
+    url('../../dist/images/card_tour_photo_3.png');
+}
+
+.card-tur__img_bg4 {
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0.00) 100%),
+    linear-gradient(0deg, rgba(0, 0, 0, 0.23) 0%, rgba(0, 0, 0, 0.23) 100%),
+    url('../../dist/images/card_tour_photo_4.png');
+}
+
+.card-tur__img_bg5 {
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0.00) 100%),
+    linear-gradient(0deg, rgba(0, 0, 0, 0.23) 0%, rgba(0, 0, 0, 0.23) 100%),
+    url('../../dist/images/card_tour_photo_5.png');
+}
+
+.card-tur__img_bg6 {
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0.00) 100%),
+    linear-gradient(0deg, rgba(0, 0, 0, 0.23) 0%, rgba(0, 0, 0, 0.23) 100%),
+    url('../../dist/images/card_tour_photo_6.png');
+}
+
 .card-tur__content {
   position: sticky;
   bottom: 892px;
