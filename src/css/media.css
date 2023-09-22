@@ -310,7 +310,7 @@
   /*  */
   /* __heading__ */
   .navbar {
-    padding: 27px 20px 29px;
+    padding: 20px 20px ;
   }
 
   .navbar__menu {
@@ -872,13 +872,13 @@
 }
 
 /*450px___________________________________________________*/
-@media (max-width: 450px) {
+/* @media (max-width: 450px) { */
 
   /* фиксируем заголовок */
-  .heading {
+  /* .heading {
     position: absolute;
-  }
-}
+  } */
+/* } */
 
 /*до_359px___________________________________________________*/
 @media (max-width: 359px) {

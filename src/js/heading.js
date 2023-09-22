@@ -12,7 +12,7 @@ import { removeStyleAnItem, addStyleAnItem } from './modules';
 
   // добавить стиль навигационной панели
   function addNavbarStyle() {
-    addStyleAnItem(heading, 'scrolled-bgn');
+    addStyleAnItem(heading, 'scrolled-fix-bgn');
     addStyleAnItem(logoYourTour, 'scrolled-color');
     addStyleAnItem(logoTelephoneNumber, 'scrolled-color');
 
@@ -24,7 +24,7 @@ import { removeStyleAnItem, addStyleAnItem } from './modules';
 
   // удалить стиль навигационной панели
   function removeNavbarStyle() {
-    removeStyleAnItem(heading, 'scrolled-bgn');
+    removeStyleAnItem(heading, 'scrolled-fix-bgn');
     removeStyleAnItem(logoYourTour, 'scrolled-color');
     removeStyleAnItem(logoTelephoneNumber, 'scrolled-color');
 
@@ -37,10 +37,8 @@ import { removeStyleAnItem, addStyleAnItem } from './modules';
   window.addEventListener('scroll', () => {
     // Использование локальной переменной thisScrollY вместо глобальной переменной scrollY
     const thisScrollY = window.scrollY;
-    // Использование локальной переменной thisInnerWidth вместо глобальной переменной innerWidth
-    const thisInnerWidth = window.innerWidth;
-    // если ширина экрана больше 450px и scroll больше 0
-    if (thisInnerWidth > 450 && thisScrollY > 0) {
+    // если вертикальный scroll больше 450px
+    if (thisScrollY > 450) {
       addNavbarStyle();
     } else {
       removeNavbarStyle();
