@@ -1,21 +1,54 @@
-.choose-tour .section-title {
-  padding-top: 135px;
-}
-
 .choose-tour {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
+.choose-tour .section-title {
+  padding-top: 135px;
+}
+
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px 15px 15px 15px;
+}
+
+.tabs__link {
+  margin: 15px 15px 18px 15px;
+  padding-bottom: 4px;
+  font-size: 23px;
+  font-weight: 700;
+  line-height: 122%;
+  color: var(--black-color);
+  border-bottom: 2px solid transparent;
+  transition: border-bottom 0.3s ease, color 0.3s ease;
+}
+
+.tabs__link:hover {
+  color: var(--black-color);
+  border-bottom: 2px solid var(--black-color);
+}
+
+.tabs__link_active {
+  color: var(--orange200-color);
+  border-bottom: 2px solid var(--orange200-color);
+}
+
+.tabs__link_active:hover {
+  color: var(--orange200-color);
+  border-bottom: 2px solid var(--orange200-color);
+}
+
 .choose-tour__container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-
   max-width: 1200px;
-  margin: auto;
-  margin-top: 38px;
+  margin: 38px auto 0;
   padding: 15px;
 }
 
@@ -70,15 +103,12 @@
 .card-tur__content {
   position: sticky;
   bottom: 892px;
-
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-
   min-height: 531px;
   padding: 50px 50px 50px 30px;
   box-sizing: border-box;
-
   cursor: pointer;
 }
 
@@ -86,16 +116,11 @@
   position: relative;
   bottom: 0;
   left: 0;
-  margin: 0;
-  /* функция, при ширине экрана (1920px равен 23px), (1024px равен 0px) */
-  margin-right: calc(0px + (23 - 0) * ((100vw - 1024px) / (1920 - 1024)));
-  padding-bottom: 32px;
-  padding-left: 20px;
-
+  margin: 0 23px 0 0;
+  padding: 0 0 32px 20px;
   font-size: 35px;
   font-weight: 500;
   line-height: 122%;
-
   color: var(--white-color);
 }
 
@@ -104,14 +129,11 @@
   bottom: -9px;
   left: 20px;
   margin: 0;
-
   font-size: 17px;
   font-weight: 400;
   line-height: 142%;
   letter-spacing: -0.01em;
-
   color: var(--white-color);
-
   content: 'от 80 000 руб';
 }
 
@@ -124,14 +146,11 @@
 .card-tur__link-item {
   box-sizing: border-box;
   padding: 7px 32px 7px 20px;
-
   font-size: 23px;
   font-weight: 700;
   line-height: 122%;
-
   color: var(--white-color);
   border-radius: 50px;
-
   transition: background-color 0.3s ease;
 }
 

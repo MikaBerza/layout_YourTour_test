@@ -17,10 +17,8 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-
   max-width: 1170px;
-  margin: auto;
-  margin-top: 100px;
+  margin: 100px auto 0;
   padding: 0 30px;
 }
 
@@ -57,17 +55,12 @@
 }
 
 .card-stories__content {
-  /* Элемент с position: sticky «прилипает» к экрану при 
-  прокрутке, пока не встретится с границей 
-  родительского блока */
   position: sticky;
   bottom: 0;
-
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
   padding: 60px 60px 60px 40px;
-
   cursor: pointer;
 }
 
@@ -77,13 +70,10 @@
   left: 0;
   max-width: 554px;
   margin: 0;
-  padding-bottom: 37px;
-  padding-left: 20px;
-
+  padding: 0 0 37px 20px;
   font-size: 35px;
   font-weight: 500;
   line-height: 122%;
-
   color: var(--white-color);
 }
 
@@ -93,13 +83,10 @@
   left: 0;
   max-width: 554px;
   margin: 0;
-  padding-bottom: 115px;
-  padding-left: 20px;
-
+  padding: 0 0 115px 20px;
   font-size: 20px;
   font-weight: 400;
   line-height: 142%;
-
   color: var(--white-color);
 }
 
@@ -117,7 +104,6 @@
   list-style: none;
 }
 
-/* кастомный размер маркера списка ul*/
 .card-stories__list-advantages .card-stories__list-advantages-item::before {
   margin-right: 10px;
   font-size: 20px;
@@ -126,18 +112,15 @@
 
 .card-stories__link-group {
   display: flex;
-  /* элементы выравниваются по своей базовой линии */
   align-items: baseline;
   justify-content: space-between;
 }
 
 .card-stories__button-link-item {
   padding: 7px 32px 7px 20px;
-
   font-size: 23px;
   font-weight: 700;
   line-height: 122%;
-
   color: var(--white-color);
   border-radius: 50px;
   transition: background-color 0.3s ease;
@@ -153,10 +136,8 @@
   font-size: 20px;
   font-weight: 400;
   line-height: 142%;
-
   color: var(--white-color);
   border-bottom: 1px solid transparent;
-
   transition: border-bottom 0.3s ease, color 0.3s ease;
 }
 
@@ -174,10 +155,6 @@
   border-bottom: 1px solid var(--orange200-color);
 }
 
-/* делаем такую запись чтобы при наведении курсора на один элемент
-применялось сразу два стиля: 
-1-й_стиль увеличивал фоновое изображение
-2-й_стиль создавал форму кнопки на ссылке */
 .card-stories:hover .card-stories__img {
   transform: scale(1.2);
   cursor: pointer;
@@ -188,27 +165,12 @@
   border-radius: 50px;
 }
 
-/*___Примечание №1 
-.class1 .class2 такая запись означает, 
-что стили будут применяться к тем элементам HTML, 
-которые имеют класс `.class2`, 
-но только внутри элементов HTML с классом `.class1` 
-___Примечание №2
-Если записать без пробела (`.class1.class2`), 
-это означает, что стили будут применяться к элементам HTML, 
-которые одновременно имеют два класса: `.class1` и `.class2` */
-
-/* установим :hover для выбранного варианта ссылки, чтобы
-обычный :hover--->(.card-stories:hover .card-stories__button-link-item:active) 
-не перебивал его.
-Без такой записи обычный :hover перебивает выбранный варианта ссылки*/
 .card-stories:hover .card-stories__button-link-item:active {
   color: var(--white-color);
   background-color: var(--orange200-color);
   border-radius: 50px;
 }
 
-/* нижний отступ */
 .pb-1 {
   padding-bottom: 200px;
 }

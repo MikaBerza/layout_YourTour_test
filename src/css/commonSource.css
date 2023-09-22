@@ -1,25 +1,4 @@
-/* :root – это глобальный псевдокласс, в котором объявляются переменные для их дальнейшего использования
-
-Назначение переменных с помощью :root обеспечивает глобальную область видимости для переменных, 
-что позволяет использовать их в разных частях стиля, а также переопределять значения переменных 
-на уровне всего документа */
 :root {
-  /* динамические отступы */
-  /* функция, при ширине экрана (1024px равен 30px), (360px равен 20px) */
-  --dynamic-top-internal-indentation_1: calc(20px + (30 - 20) * ((100vw - 360px) / (1024 - 360)));
-  /* функция, при ширине экрана (1024px равен 30px), (360px равен 21px) */
-  --dynamic-right-internal-indentation_2: calc(21px + (30 - 21) * ((100vw - 360px) / (1024 - 360)));
-  --dynamic-left-internal-indentation_3: calc(21px + (30 - 21) * ((100vw - 360px) / (1024 - 360)));
-
-  /* динамическая ширина */
-  /* функция, при ширине экрана (1024px равен 410px), (360px равен 318px) */
-  --dynamic-width_1: calc(318px + (410 - 318) * ((100vw - 360px) / (1024 - 360)));
-
-  /* динамические размеры границ */
-  /* функция, при ширине экрана (1024px равен 50px), (360px равен 20px) */
-  --dynamic-border-sizes_1: calc(20px + (50 - 20) * ((100vw - 360px) / (1024 - 360)));
-
-  /* цвета */
   --black-color: #1B1F2B;
   --orange200-color: #EFA501;
   --green400-color: #286562;
@@ -35,107 +14,45 @@
   --green200-color: #627F7E;
   --gray100-color: #F1F3F2;
   --green100-color: #E0F0E5;
-
-  /* динамические размеры шрифтов */
-  /* функция, при ширине экрана (1024px равен 59px), (360px равен 34px) */
-  --dynamic-font-size_1: calc(16px + (20 - 16) * ((100vw - 360px) / (1024 - 360)));
-  /* функция, при ширине экрана (1024px равен 23px), (360px равен 16px) */
-  --dynamic-font-size_2: calc(16px + (23 - 16) * ((100vw - 360px) / (1024 - 360)));
-  /* функция, при ширине экрана (1024px равен 35px), (360px равен 23px) */
-  --dynamic-font-size_3: calc(23px + (35 - 23) * ((100vw - 360px) / (1024 - 360)));
 }
 
 a {
-  /* убираем подчеркивание */
   text-decoration: none;
 }
 
-/* внешняя обертка */
 .wrapper {
   font-family: 'Roboto', 'Times New Roman', Times, serif;
   font-style: normal;
 }
 
-/* фоновый цвет */
 .bgc-1 {
   background: var(--beige100-color);
 }
 
-/* стили позиционирования для изображений */
 .bgp-1 {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
 }
 
-/* __________secondaryTitle */
-.secondaryTitle {
-  margin: auto;
-}
-
 .section-title {
   max-width: 529px;
   margin: auto;
-
+  padding: 0 20px;
   font-size: 59px;
   font-weight: 700;
   line-height: 124%;
   text-align: center;
-
   color: var(--black-color);
-}
-
-.tabs {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-
-  max-width: 1200px;
-  margin: auto;
-  padding: 20px 15px 15px 15px;
-}
-
-.tabs__link {
-  margin: 15px;
-  margin-bottom: 18px;
-  padding-bottom: 4px;
-
-  font-size: 23px;
-  font-weight: 700;
-  line-height: 122%;
-
-  color: var(--black-color);
-  border-bottom: 2px solid transparent;
-  transition: border-bottom 0.3s ease, color 0.3s ease;
-}
-
-.tabs__link:hover {
-  color: var(--black-color);
-  border-bottom: 2px solid var(--black-color);
-}
-
-.tabs__link_active {
-  color: var(--orange200-color);
-  border-bottom: 2px solid var(--orange200-color);
-}
-
-/* установим :hover для выбранного варианта вкладки, чтобы
-обычный :hover--->(.tabs__link:hover) не перебивал его 
-Без такой записи обычный :hover перебивает выбранный варианта вкладки */
-.tabs__link_active:hover {
-  color: var(--orange200-color);
-  border-bottom: 2px solid var(--orange200-color);
 }
 
 .section-subtitle {
   max-width: 409px;
   margin: auto;
   padding-top: 30px;
-
   font-size: 20px;
   font-weight: 400;
   line-height: 142%;
   text-align: center;
-
   color: var(--gray300-color);
 }

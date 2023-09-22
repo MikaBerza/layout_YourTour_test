@@ -1,13 +1,10 @@
-/* ___________Header_____________________________________________________ */
 .heading {
   position: fixed;
   top: 0;
   left: 50%;
   z-index: 999;
-
   display: block;
   width: 100%;
-
   transform: translateX(-50%);
 }
 
@@ -15,11 +12,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
-
-  width: 1168px;
+  max-width: 1168px;
   margin: auto;
-  padding-top: 27px;
-  padding-bottom: 29px;
+  padding: 27px 57px 29px;
 }
 
 .navbar__logo {
@@ -40,16 +35,12 @@
 .navbar__menu {
   display: flex;
   justify-content: space-between;
-
   width: 468px;
   margin: 0;
-  padding-bottom: 4px;
-  padding-left: 0;
-
+  padding: 0 0 4px 0;
   list-style-type: none;
 }
 
-/* Выберем все пункты списка, кроме последнего */
 .navbar__menu-item:not(:last-child) {
   padding-right: 10px;
 }
@@ -57,10 +48,8 @@
 .navbar__menu-link {
   font-size: 20px;
   white-space: nowrap;
-
   color: var(--white-color);
   border-bottom: 1px solid transparent;
-
   transition: border-bottom 0.3s ease;
 }
 

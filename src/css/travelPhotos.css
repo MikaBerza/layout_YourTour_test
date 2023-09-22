@@ -9,19 +9,17 @@
 }
 
 .travel-photos__wrapper {
-  margin: auto;
-  margin-top: 100px;
+  margin: 100px auto 0;
 }
 
 .travel-photos__inner1,
 .travel-photos__inner2,
 .travel-photos__inner3 {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   width: 100%;
 }
 
-/* применяем ко всем элементам кроме первого */
 .travel-photos__inner1:not(:first-child),
 .travel-photos__inner2:not(:first-child),
 .travel-photos__inner3:not(:first-child) {
