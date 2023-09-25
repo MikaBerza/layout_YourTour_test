@@ -91,11 +91,21 @@
   text-align: center;
 }
 
+.footers-social-network__inner-wrap {
+  display: flex;
+}
+
 .footers-social-network__inner-wrap:not(:last-child) {
-  margin-right: 26px;
+  margin-right: 30px;
+}
+
+.footers-social-network__icon {
+  display: block;
+  margin-right: 6px;
 }
 
 .footers-social-network__link {
+  display: block;
   color: var(--black-color);
   border-bottom: 1px solid transparent;
   transition: border-bottom 0.3s ease;
@@ -104,9 +114,4 @@
 .footers-social-network__link:hover {
   border-bottom: 1px solid var(--black-color);
   cursor: pointer;
-}
-
-.footers-social-network__icon {
-  margin-right: 6px;
-  vertical-align: sub;
 }
