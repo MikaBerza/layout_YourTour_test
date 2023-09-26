@@ -21,6 +21,7 @@
   height: 301px;
   border-radius: 50px;
   grid-column: span 5;
+  object-fit: cover;
 }
 
 .travel-photos__img2 {
@@ -28,6 +29,7 @@
   height: 301px;
   border-radius: 50px;
   grid-column: span 4;
+  object-fit: cover;
 }
 
 .travel-photos__img3 {
@@ -35,4 +37,5 @@
   height: 301px;
   border-radius: 50px;
   grid-column: span 5;
+  object-fit: cover;
 }
