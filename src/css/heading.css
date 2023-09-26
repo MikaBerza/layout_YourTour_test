@@ -61,6 +61,18 @@
   position: fixed;
   background-color: rgba(243, 239, 232, 0.6);
   backdrop-filter: blur(27px);
+
+  animation: appearing 2s;
+}
+
+@keyframes appearing {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
 .scrolled-color {
