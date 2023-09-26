@@ -188,6 +188,7 @@
 
 .radio-group__item-label {
   max-width: 250px;
+  cursor: pointer;
 }
 
 .radio-group__item-input+.radio-group__item-label {
@@ -227,6 +228,7 @@
 .agreement-field__input+.agreement-field__customCheckbox {
   align-items: center;
   user-select: none;
+  cursor: pointer;
 }
 
 .agreement-field__input+.agreement-field__customCheckbox::before {
